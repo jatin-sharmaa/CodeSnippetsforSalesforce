@@ -1,11 +1,17 @@
 {
     "name": "audibenecodesnippets",
-    "displayName": "AudibeneCodeSnippets",
+    "displayName": "Audibene Code Snippets",
     "description": "Code Snippets for Audibene",
     "version": "0.0.1",
+    "icon": "icon.png",
+    "publisher": "JatinSharma",
     "engines": {
         "vscode": "^1.46.0"
     },
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/jatinsharmaa/AudibeneCodeSnippets"
+	},
     "categories": [
         "Snippets"
     ],
@@ -13,8 +19,12 @@
         "snippets": [
             {
                 "language": "html",
-                "path": "./snippets/snippets.code-snippets"
-            }
+                "path": "./snippets/html.code-snippets"
+            },
+            {
+				"language": "javascript",
+				"path": "./snippets/js.code-snippets"
+			}
         ]
     }
 }

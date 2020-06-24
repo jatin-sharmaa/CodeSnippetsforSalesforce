@@ -1,0 +1,9 @@
+{
+    "Test": {
+        "prefix": "AB:Test",
+        "body": [
+            "Test Successful"
+        ],
+        "description": "Testing"
+    }
+}
