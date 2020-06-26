@@ -21,4 +21,4 @@ AB:clog | console.log
 Initial Release
 
 **Enjoy!**
-> Created By : jatin.s@hear.com
+> Created By : UI/UX Team Audibene

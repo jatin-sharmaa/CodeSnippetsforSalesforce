@@ -4,7 +4,7 @@
     "description": "Code Snippets for Audibene",
     "version": "0.0.1",
     "icon": "icon.png",
-    "publisher": "JatinSharma",
+    "publisher": "UIUXTeamAudibene",
     "engines": {
         "vscode": "^1.46.0"
     },
