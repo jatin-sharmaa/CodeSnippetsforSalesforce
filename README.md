@@ -1,7 +1,9 @@
 # Audibene Code Snippets
 
-A set of HTML and CSS Snippets for Visual Studio Code.
-Create a new HTML document and type 'AB:' to see all available snippets.
+A set of HTML and JS Snippets for Visual Studio Code.
+Create a new HTML document and type 'adbn:' to see all available snippets.
+
+![promo](./images/screen1.png)
 
 ## Available Snippets
 
