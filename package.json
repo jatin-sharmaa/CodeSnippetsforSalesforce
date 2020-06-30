@@ -24,6 +24,10 @@
             {
 				"language": "javascript",
 				"path": "./snippets/js.code-snippets"
+            },
+            {
+				"language": "apex",
+				"path": "./snippets/apex.code-snippets"
 			}
         ]
     }
