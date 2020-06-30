@@ -1,0 +1,73 @@
+{
+    "System Debug": {
+        "prefix": "abdn:sysDebug",
+        "body": ["System.debug('${1:variable}: ' + ${1:variable});"],
+        "description": "System Debug"
+    },
+    "New Function": {
+        "prefix": "abdn:function",
+        "body": [
+            "${1|public,static,private|} ${2:Function Name} (${3:parameters}){",
+            "\t${4:Body}",
+            "}"
+        ],
+        "description": "New Function"
+    },
+    "New Test Function": {
+        "prefix": "abdn:testFunction",
+        "body": [
+            "@isTest",
+            "${1|public,static,private|} ${2:Function Name}_Test (${3:parameters}){",
+            "\ttest.startTest();",
+            "\t${4:Body}",
+            "\ttest.stropTest();",
+            "}"
+        ],
+        "description": "New Function"
+    },
+    "Try Catch": {
+        "prefix": "abdn:tryCatch",
+        "body": [
+            "try {",
+            "\t${1:Data}",
+            "} catch(Exception e) {",
+            "\tSystem.debug(e.getMessage());",
+            "}"
+        ],
+        "description": "Try Catch"
+    },
+    "If Else": {
+        "prefix": "adbn:ifElse",
+        "body": [
+            "if( ${1:condition} ){",
+            "\t${2:code in if}",
+            "} else {",
+            "\t${2:code in else};",
+            "}"
+        ],
+        "description": "If Else"
+    },
+    "Getter Setter": {
+        "prefix": "adbn:getset",
+        "body": [
+            "${1|public,static,private|} ${2:Function Name} {",
+            "\tget {",
+            "\t\t${3:code}",
+            "\t\treturn // variable",
+            "\t} set;",
+            "}"
+        ],
+        "description": "Getter Setter"
+    },
+    "System Assert": {
+        "prefix": "adbn:assert",
+        "body": [ "system.assert(${1:variable 1}, ${2:variable 2});"],
+        "description": "System Assert"
+    },
+    "System Assert Equal": {
+        "prefix": "adbn:assertEqual",
+        "body": [ "system.assertEquals(${1:variable 1}, ${2:variable 2});"],
+        "description": "System Assert Equal"
+    },
+    
+}
