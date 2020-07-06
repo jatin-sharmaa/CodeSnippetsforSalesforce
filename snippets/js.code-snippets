@@ -1,7 +1,37 @@
 {
     "console Log": {
-        "prefix": "AB:clog",
+        "prefix": "adbn:clog",
         "body": ["console.log('$1:', $1);"],
         "description": "Console Log"
     },
+    "JSON-1": {
+        "prefix": "adbn-json:stringify-and-parse",
+        "body": ["JSON.parse(JSON.stringify($1));"],
+        "description": "JSON.parse(JSON.stringify(data))"
+    },
+    "JSON-2": {
+        "prefix": "adbn-json:parse",
+        "body": ["JSON.parse($1);"],
+        "description": "JSON.parse(data)"
+    },
+    "JSON-3": {
+        "prefix": "adbn-json:stringify",
+        "body": ["JSON.stringify($1);"],
+        "description": "JSON.stringify(data)"
+    },
+    "event-3": {
+        "prefix": "adbn-evt:dataSet",
+        "body": ["event.currentTarget.dataset;"],
+        "description": "dataSet"
+    },
+    "promise": {
+        "prefix": "adbn:promise",
+        "body": "return new Promise((resolve, reject) => {\n\t${1}\n});",
+        "description": "Creates and returns a new Promise in the standard ES6 syntax"
+    },
+    "thenCatch": {
+        "prefix": "adbn:thencatch",
+        "body": ".then((${1:result}) => {\n\t${2}\n}).catch((${3:err}) => {\n\t${4}\n});",
+        "description": "Add the .then and .catch methods to handle promises"
+    }
 }
