@@ -1,0 +1,198 @@
+{
+    "slds-align_absolute-center": {
+        "prefix": "slds:align_absolute-center",
+        "body": [ "slds-align_absolute-center" ],
+        "description": "Class will absolutely center children content"
+    },
+    "slds-border_bottom": {
+        "prefix": "slds:border_bottom",
+        "body": ["slds-border_bottom"],
+        "description": "Adds a bottom border to an element"
+    },
+    "slds-border_left": {
+        "prefix": "slds:border_left",
+        "body": ["slds-border_left"],
+        "description": "Adds a left border to an element"
+    },
+    "slds-border_right": {
+        "prefix": "slds:border_right",
+        "body": ["slds-border_right"],
+        "description": "Adds a right border to an element"
+    },
+    "slds-border_top": {
+        "prefix": "slds:border_top",
+        "body": ["slds-border_top"],
+        "description": "Adds a top border to an element"
+    },
+    "slds-box": {
+        "prefix": "slds:box",
+        "body": ["slds-box"],
+        "description": "Provides 1rem base padding and borders"
+    },
+    "slds-box_x-small": {
+        "prefix": "slds:box_x_small",
+        "body": ["slds-box slds-box_x-small"],
+        "description": "Provides .5rem base padding and borders"
+    },
+    "slds-box_xx-small": {
+        "prefix": "slds:box_xx_small",
+        "body": ["slds-box slds-box_xx-small"],
+        "description": "Provides .25rem base padding and borders"
+    },
+    "slds-box_shade": {
+        "prefix": "slds:box_shade",
+        "body": ["slds-box slds-theme_shade"],
+        "description": "Sets the background color to gray"
+    },
+    "slds-box_inverse": {
+        "prefix": "slds:box_inverse",
+        "body": ["slds-box slds-theme_inverse"],
+        "description": "Sets the background color to dark blue"
+    },
+    "slds-box_alt-inverse": {
+        "prefix": "slds:box_alt-inverse",
+        "body": ["slds-box slds-theme_alt-inverse"],
+        "description": "Sets the background color to darker blue"
+    },
+    "slds-box_success": {
+        "prefix": "slds:box_success",
+        "body": ["slds-box slds-theme_success"],
+        "description": "Sets the background color to green"
+    },
+    "slds-box_info": {
+        "prefix": "slds:box_info",
+        "body": ["slds-box slds-theme_info"],
+        "description": "Sets the background color to gray-ish blue"
+    },
+    "slds-box_warning": {
+        "prefix": "slds:box_warning",
+        "body": ["slds-box slds-theme_warning"],
+        "description": "Sets the background color to yellow"
+    },
+    "slds-box_error": {
+        "prefix": "slds:box_error",
+        "body": ["slds-box slds-theme_error"],
+        "description": "Sets the background color to red"
+    },
+    "slds-box_offline": {
+        "prefix": "slds:box_offline",
+        "body": ["slds-box slds-theme_offline"],
+        "description": "Sets the background color to black"
+    },
+    "slds-box_texture": {
+        "prefix": "slds:box_texture",
+        "body": ["slds-box slds-theme_alert-texture"],
+        "description": "Adds striped background"
+    },
+    "slds-float_left": {
+        "prefix": "slds:float_left",
+        "body": ["slds-float_left"],
+        "description": "Pulls element from document flow and floats left. Text and other elements wrap around it."
+    },
+    "slds-float_none": {
+        "prefix": "slds:float_none",
+        "body": ["slds-float_none"],
+        "description": "Removes float from an element that has attribute already"
+    },
+    "slds-float_right": {
+        "prefix": "slds:float_right",
+        "body": ["slds-float_right"],
+        "description": "Pulls element from document flow and floats right. Text and other elements wrap around it."
+    },
+    "slds-assistive-text" : {
+        "prefix": "slds:assistive-text",
+        "body": ["slds-assistive-text"],
+        "description": "Hides an element yet enables a screen reader to read the element that is hidden"
+    },
+    "slds-hide" : {
+        "prefix": "slds:hide",
+        "body": ["slds-hide"],
+        "description": "Hides an element from the page by setting display propery to none"
+    },
+    "slds-show" : {
+        "prefix": "slds:show",
+        "body": ["slds-show"],
+        "description": "Shows the element by setting display property to block"
+    },
+    "slds-show_inline-block" : {
+        "prefix": "slds:show_inline-block",
+        "body": ["slds-show_inline-block"],
+        "description": "Shows the element by setting display to inline-block"
+    },
+    "slds-show_inline" : {
+        "prefix": "slds:show_inline",
+        "body": ["slds-show_inline"],
+        "description": "Shows the element by setting display to inline"
+    },
+    "transition-hide" : {
+        "prefix": "slds:transition-hide",
+        "body": ["transition-hide"],
+        "description": "Hides an element from the page by setting the opacity property set to 0"
+    },
+    "transition-show" : {
+        "prefix": "slds:transition-show",
+        "body": ["transition-show"],
+        "description": "Shows the element using the opacity property set to 1"
+    },
+    "slds-hidden" : {
+        "prefix": "slds:hidden",
+        "body": ["slds-hidden"],
+        "description": "Hides an element but reserve the space on the page"
+    },
+    "slds-visible" : {
+        "prefix": "slds:visible",
+        "body": ["slds-visible"],
+        "description": "Shows an element which was hidden by slds-hidden"
+    },
+    "slds-hide_x-small": {
+        "prefix": "slds:hide_x-small",
+        "body": ["slds-hide_x-small"],
+        "description": "Hides content above 320px screen"
+    },
+    "slds-hide_small": {
+        "prefix": "slds:hide_small",
+        "body": ["slds-hide_small"],
+        "description": "Hides content above 480px screen"
+    },
+    "slds-hide_medium": {
+        "prefix": "slds:hide_medium",
+        "body": ["slds-hide_medium"],
+        "description": "Hides content above 768px screen"
+    },
+    "slds-hide_large": {
+        "prefix": "slds:hide_large",
+        "body": ["slds-hide_large"],
+        "description": "Hides content above 1024px screen"
+    },
+    "slds-hide_x-large": {
+        "prefix": "slds:hide_x-large",
+        "body": ["slds-hide_x-large"],
+        "description": "Hides content above 1280px screen"
+    },
+    "slds-show_x-small": {
+        "prefix": "slds:show_x-small",
+        "body": ["slds-show_x-small"],
+        "description": "Shows content above 320px screen"
+    },
+    "slds-show_small": {
+        "prefix": "slds:show_small",
+        "body": ["slds-show_small"],
+        "description": "Shows content above 480px screen, hides for below"
+    },
+    "slds-show_medium": {
+        "prefix": "slds:show_medium",
+        "body": ["slds-show_medium"],
+        "description": "Shows content above 768px screen, hides for below"
+    },
+    "slds-show_large": {
+        "prefix": "slds:show_large",
+        "body": ["slds-show_large"],
+        "description": "Shows content above 1024px screen, hides for below"
+    },
+    "slds-show_x-large": {
+        "prefix": "slds:show_x-large",
+        "body": ["slds-show_x-large"],
+        "description": "Shows content above 1280px screen, hides for below"
+    },
+
+}

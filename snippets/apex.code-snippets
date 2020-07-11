@@ -7,8 +7,8 @@
     "New Function": {
         "prefix": "abdn:function",
         "body": [
-            "${1|public,static,private|} ${2:Function Name} (${3:parameters}){",
-            "\t${4:Body}",
+            "${1|public,static,private|} ${2:FunctionName} (${3:parameters}){",
+            "\t${4:body}",
             "}"
         ],
         "description": "New Function"
@@ -17,9 +17,9 @@
         "prefix": "abdn:testFunction",
         "body": [
             "@isTest",
-            "${1|public,static,private|} ${2:Function Name}_Test (${3:parameters}){",
+            "${1|public,static,private|} ${2:FunctionName}_Test (${3:parameters}){",
             "\ttest.startTest();",
-            "\t${4:Body}",
+            "\t${4:body}",
             "\ttest.stropTest();",
             "}"
         ],
@@ -29,28 +29,17 @@
         "prefix": "abdn:tryCatch",
         "body": [
             "try {",
-            "\t${1:Data}",
+            "\t${1:data}",
             "} catch(Exception e) {",
             "\tSystem.debug(e.getMessage());",
             "}"
         ],
         "description": "Try Catch"
     },
-    "If Else": {
-        "prefix": "adbn:ifElse",
-        "body": [
-            "if( ${1:condition} ){",
-            "\t${2:code in if}",
-            "} else {",
-            "\t${2:code in else};",
-            "}"
-        ],
-        "description": "If Else"
-    },
     "Getter Setter": {
         "prefix": "adbn:getset",
         "body": [
-            "${1|public,static,private|} ${2:Function Name} {",
+            "${1|public,static,private|} ${2:FunctionName} {",
             "\tget {",
             "\t\t${3:code}",
             "\t\treturn // variable",
