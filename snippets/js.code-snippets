@@ -1,22 +1,22 @@
 {
     "console Log": {
         "prefix": "adbn:clog",
-        "body": ["console.log('$1:', $1);"],
+        "body": ["console.log('${1:variable}:', ${1:variable});"],
         "description": "Console Log"
     },
     "JSON-1": {
         "prefix": "adbn-json:stringify-and-parse",
-        "body": ["JSON.parse(JSON.stringify($1));"],
+        "body": ["JSON.parse(JSON.stringify(${1:variable}));"],
         "description": "JSON.parse(JSON.stringify(data))"
     },
     "JSON-2": {
         "prefix": "adbn-json:parse",
-        "body": ["JSON.parse($1);"],
+        "body": ["JSON.parse(${1:variable});"],
         "description": "JSON.parse(data)"
     },
     "JSON-3": {
         "prefix": "adbn-json:stringify",
-        "body": ["JSON.stringify($1);"],
+        "body": ["JSON.stringify(${1:variable});"],
         "description": "JSON.stringify(data)"
     },
     "event-3": {
