@@ -302,6 +302,41 @@
         ],
         "description": "Inverse Weak Text Color"
     },
+    "Modal Layer": {
+        "prefix": "adbn:modalLayer",
+        "body": [
+            "<!--  ====== Paste below function in controller ====== -->",
+            "closeModal : function(component, event, helper) {",
+            "\thelper.closeModal(component);",
+            "}",
+            "<!-- ====== Paste below function in helper ====== -->",
+            "closeModal : function(component) {",
+            "\tvar currentValue = component.get(\"v.displayModal\");",
+            "\tcomponent.set(\"v.displayModal\", !currentValue);",
+            "}\n",
+            "<aura:attribute name=\"displayModal\" type=\"Boolean\" default=\"true\" description=\"boolean flag to control modal visibility\"/>\n",
+            "<aura:if isTrue=\"{!v.displayModal}\">",
+            "\t<div role=\"dialog\" tabindex=\"-1\" aria-labelledby=\"Modal\" class=\"slds-modal slds-fade-in-open slds-modal_small\">",
+            "\t\t<div class=\"slds-modal__container c__modalContainer\">",
+            "\t\t\t<div class=\"slds-modal__header\">",
+            "\t\t\t\t<button class=\"slds-button slds-button--icon-inverse slds-modal__close\" onclick=\"{!c.closeModal}\">",
+            "\t\t\t\t\t<lightning:icon iconName=\"utility:close\" size=\"medium\" variant=\"bare\"/>",
+            "\t\t\t\t\t<span class=\"slds-assistive-text\">{Label.c.Close}</span>",
+            "\t\t\t\t</button>",
+            "\t\t\t\t<h1 class=\"slds-text-heading--medium c__fontWeightTitle\">${1:Modal Title}</h1>",
+            "\t\t\t</div>",
+            "\t\t\t<div class=\"slds-modal__content slds-p-around--medium c__modalContent\">",
+            "\t\t\t\t<div class=\"c_tableWrapper\">",
+            "\t\t\t\t\t${2:Modal Body}",
+            "\t\t\t\t</div>",
+            "\t\t\t</div>",
+            "\t\t</div>",
+            "\t</div>",
+            "\t<div class=\"slds-backdrop slds-backdrop_open\" aura:id=\"modalBackground\"></div>",
+            "</aura:if>",
+        ],
+        "description": "Audibene Modal Layer"
+    },
     "LWC Base Card": {
         "prefix": "adbn-card:basic-lwc",
         "body": [
@@ -443,7 +478,6 @@
         ],
         "description": "Button Group Aura Dropdown "
     },
-
     "aura_if": {
         "prefix": "adbn-aura:if",
         "body": [

@@ -194,5 +194,1004 @@
         "body": ["slds-show_x-large"],
         "description": "Shows content above 1280px screen, hides for below"
     },
-
+    "slds-has-bottom-magnet": {
+        "prefix": "slds:bottom-magnet",
+        "body": ["slds-has-bottom-magnet"],
+        "description": "Assumes element below is connected"
+    },
+    "slds-has-top-magnet": {
+        "prefix": "slds:top-magnet",
+        "body": ["slds-has-top-magnet"],
+        "description": "Assumes element above is connected"
+    },
+    "slds-var-m-around_xxx-small": {
+        "prefix": "slds-vd-margin:around_xxx-small",
+        "body": ["slds-var-m-around_xxx-small"],
+        "description": "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-around_xx-small": {
+        "prefix": "slds-vd-margin:around_xx-small",
+        "body": ["slds-var-m-around_xx-small"],
+        "description": "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-around_x-small": {
+        "prefix": "slds-vd-margin:around_x-small",
+        "body": ["slds-var-m-around_x-small"],
+        "description": "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-around_small": {
+        "prefix": "slds-vd-margin:around_small",
+        "body": ["slds-var-m-around_small"],
+        "description": "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-m-around_medium": {
+        "prefix": "slds-vd-margin:around_medium",
+        "body": ["slds-var-m-around_medium"],
+        "description": "Adds margin of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-m-around_large": {
+        "prefix": "slds-vd-margin:around_large",
+        "body": ["slds-var-m-around_large"],
+        "description": "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-m-around_x-large": {
+        "prefix": "slds-vd-margin:around_x-large",
+        "body": ["slds-var-m-around_x-large"],
+        "description": "Adds margin of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-m-around_xx-large": {
+        "prefix": "slds-vd-margin:around_xx-large",
+        "body": ["slds-var-m-around_xx-large"],
+        "description": "Adds margin of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-m-around_none": {
+        "prefix": "slds-margin:around_none",
+        "body": ["slds-m-around_none"],
+        "description": "Removes margin from all sides"
+    },
+    "slds-m-around_xxx-small": {
+        "prefix": "slds-margin:around_xxx-small",
+        "body": ["slds-m-around_xxx-small"],
+        "description": "Adds .125rem margin to all sides"
+    },
+    "slds-m-around_xx-small": {
+        "prefix": "slds-margin:around_xx-small",
+        "body": ["slds-m-around_xx-small"],
+        "description": "Adds .25rem margin to all sides"
+    },
+    "slds-m-around_x-small": {
+        "prefix": "slds-margin:around_x-small",
+        "body": ["slds-m-around_x-small"],
+        "description": "Adds .5rem margin to all sides"
+    },
+    "slds-m-around_small": {
+        "prefix": "slds-margin:around_small",
+        "body": ["slds-m-around_small"],
+        "description": "Adds .75rem margin to all sides"
+    },
+    "slds-m-around_medium": {
+        "prefix": "slds-margin:around_medium",
+        "body": ["slds-m-around_medium"],
+        "description": "Adds 1rem margin to all sides"
+    },
+    "slds-m-around_large": {
+        "prefix": "slds-margin:around_large",
+        "body": ["slds-m-around_large"],
+        "description": "Adds 1.5rem margin to all sides"
+    },
+    "slds-m-around_x-large": {
+        "prefix": "slds-margin:around_x-large",
+        "body": ["slds-m-around_x-large"],
+        "description": "Adds 2rem margin to all sides"
+    },
+    "slds-m-around_xx-large": {
+        "prefix": "slds-margin:around_xx-large",
+        "body": ["slds-m-around_xx-large"],
+        "description": "Adds 3rem margin to all sides"
+    },
+    "slds-var-m-top_xxx-small": {
+        "prefix": "slds-vd-margin:top_xxx-small",
+        "body": ["slds-var-m-top_xxx-small"],
+        "description": "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-top_xx-small": {
+        "prefix": "slds-vd-margin:top_xx-small",
+        "body": ["slds-var-m-top_xx-small"],
+        "description": "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-top_x-small": {
+        "prefix": "slds-vd-margin:top_x-small",
+        "body": ["slds-var-m-top_x-small"],
+        "description": "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-top_small": {
+        "prefix": "slds-vd-margin:top_small",
+        "body": ["slds-var-m-top_small"],
+        "description": "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-m-top_medium": {
+        "prefix": "slds-vd-margin:top_medium",
+        "body": ["slds-var-m-top_medium"],
+        "description": "Adds margin of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-m-top_large": {
+        "prefix": "slds-vd-margin:top_large",
+        "body": ["slds-var-m-top_large"],
+        "description": "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-m-top_x-large": {
+        "prefix": "slds-vd-margin:top_x-large",
+        "body": ["slds-var-m-top_x-large"],
+        "description": "Adds margin of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-m-top_xx-large": {
+        "prefix": "slds-vd-margin:top_xx-large",
+        "body": ["slds-var-m-top_xx-large"],
+        "description": "Adds margin of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-m-top_none": {
+        "prefix": "slds-margin:top_none",
+        "body": ["slds-m-top_none"],
+        "description": "Removes margin from top"
+    },
+    "slds-m-top_xxx-small": {
+        "prefix": "slds-margin:top_xxx-small",
+        "body": ["slds-m-top_xxx-small"],
+        "description": "Adds .125rem margin to top"
+    },
+    "slds-m-top_xx-small": {
+        "prefix": "slds-margin:top_xx-small",
+        "body": ["slds-m-top_xx-small"],
+        "description": "Adds .25rem margin to top"
+    },
+    "slds-m-top_x-small": {
+        "prefix": "slds-margin:top_x-small",
+        "body": ["slds-m-top_x-small"],
+        "description": "Adds .5rem margin to top"
+    },
+    "slds-m-top_small": {
+        "prefix": "slds-margin:top_small",
+        "body": ["slds-m-top_small"],
+        "description": "Adds .75rem margin to top"
+    },
+    "slds-m-top_medium": {
+        "prefix": "slds-margin:top_medium",
+        "body": ["slds-m-top_medium"],
+        "description": "Adds 1rem margin to top"
+    },
+    "slds-m-top_large": {
+        "prefix": "slds-margin:top_large",
+        "body": ["slds-m-top_large"],
+        "description": "Adds 1.5rem margin to top"
+    },
+    "slds-m-top_x-large": {
+        "prefix": "slds-margin:top_x-large",
+        "body": ["slds-m-top_x-large"],
+        "description": "Adds 2rem margin to top"
+    },
+    "slds-m-top_xx-large": {
+        "prefix": "slds-margin:top_xx-large",
+        "body": ["slds-m-top_xx-large"],
+        "description": "Adds 3rem margin to top"
+    },
+    "slds-var-m-left_xxx-small": {
+        "prefix": "slds-vd-margin:left_xxx-small",
+        "body": ["slds-var-m-left_xxx-small"],
+        "description": "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-left_xx-small": {
+        "prefix": "slds-vd-margin:left_xx-small",
+        "body": ["slds-var-m-left_xx-small"],
+        "description": "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-left_x-small": {
+        "prefix": "slds-vd-margin:left_x-small",
+        "body": ["slds-var-m-left_x-small"],
+        "description": "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-left_small": {
+        "prefix": "slds-vd-margin:left_small",
+        "body": ["slds-var-m-left_small"],
+        "description": "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-m-left_medium": {
+        "prefix": "slds-vd-margin:left_medium",
+        "body": ["slds-var-m-left_medium"],
+        "description": "Adds margin of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-m-left_large": {
+        "prefix": "slds-vd-margin:left_large",
+        "body": ["slds-var-m-left_large"],
+        "description": "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-m-left_x-large": {
+        "prefix": "slds-vd-margin:left_x-large",
+        "body": ["slds-var-m-left_x-large"],
+        "description": "Adds margin of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-m-left_xx-large": {
+        "prefix": "slds-vd-margin:left_xx-large",
+        "body": ["slds-var-m-left_xx-large"],
+        "description": "Adds margin of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-m-left_none": {
+        "prefix": "slds-margin:left_none",
+        "body": ["slds-m-left_none"],
+        "description": "Removes margin from left"
+    },
+    "slds-m-left_xxx-small": {
+        "prefix": "slds-margin:left_xxx-small",
+        "body": ["slds-m-left_xxx-small"],
+        "description": "Adds .125rem margin to left"
+    },
+    "slds-m-left_xx-small": {
+        "prefix": "slds-margin:left_xx-small",
+        "body": ["slds-m-left_xx-small"],
+        "description": "Adds .25rem margin to left"
+    },
+    "slds-m-left_x-small": {
+        "prefix": "slds-margin:left_x-small",
+        "body": ["slds-m-left_x-small"],
+        "description": "Adds .5rem margin to left"
+    },
+    "slds-m-left_small": {
+        "prefix": "slds-margin:left_small",
+        "body": ["slds-m-left_small"],
+        "description": "Adds .75rem margin to left"
+    },
+    "slds-m-left_medium": {
+        "prefix": "slds-margin:left_medium",
+        "body": ["slds-m-left_medium"],
+        "description": "Adds 1rem margin to left"
+    },
+    "slds-m-left_large": {
+        "prefix": "slds-margin:left_large",
+        "body": ["slds-m-left_large"],
+        "description": "Adds 1.5rem margin to left"
+    },
+    "slds-m-left_x-large": {
+        "prefix": "slds-margin:left_x-large",
+        "body": ["slds-m-left_x-large"],
+        "description": "Adds 2rem margin to left"
+    },
+    "slds-m-left_xx-large": {
+        "prefix": "slds-margin:left_xx-large",
+        "body": ["slds-m-left_xx-large"],
+        "description": "Adds 3rem margin to left"
+    },
+    "slds-var-m-right_xxx-small": {
+        "prefix": "slds-vd-margin:right_xxx-small",
+        "body": ["slds-var-m-right_xxx-small"],
+        "description": "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-right_xx-small": {
+        "prefix": "slds-vd-margin:right_xx-small",
+        "body": ["slds-var-m-right_xx-small"],
+        "description": "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-right_x-small": {
+        "prefix": "slds-vd-margin:right_x-small",
+        "body": ["slds-var-m-right_x-small"],
+        "description": "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-right_small": {
+        "prefix": "slds-vd-margin:right_small",
+        "body": ["slds-var-m-right_small"],
+        "description": "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-m-right_medium": {
+        "prefix": "slds-vd-margin:right_medium",
+        "body": ["slds-var-m-right_medium"],
+        "description": "Adds margin of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-m-right_large": {
+        "prefix": "slds-vd-margin:right_large",
+        "body": ["slds-var-m-right_large"],
+        "description": "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-m-right_x-large": {
+        "prefix": "slds-vd-margin:right_x-large",
+        "body": ["slds-var-m-right_x-large"],
+        "description": "Adds margin of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-m-right_xx-large": {
+        "prefix": "slds-vd-margin:right_xx-large",
+        "body": ["slds-var-m-right_xx-large"],
+        "description": "Adds margin of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-m-right_none": {
+        "prefix": "slds-margin:right_none",
+        "body": ["slds-m-right_none"],
+        "description": "Removes margin from right"
+    },
+    "slds-m-right_xxx-small": {
+        "prefix": "slds-margin:right_xxx-small",
+        "body": ["slds-m-right_xxx-small"],
+        "description": "Adds .125rem margin to right"
+    },
+    "slds-m-right_xx-small": {
+        "prefix": "slds-margin:right_xx-small",
+        "body": ["slds-m-right_xx-small"],
+        "description": "Adds .25rem margin to right"
+    },
+    "slds-m-right_x-small": {
+        "prefix": "slds-margin:right_x-small",
+        "body": ["slds-m-right_x-small"],
+        "description": "Adds .5rem margin to right"
+    },
+    "slds-m-right_small": {
+        "prefix": "slds-margin:right_small",
+        "body": ["slds-m-right_small"],
+        "description": "Adds .75rem margin to right"
+    },
+    "slds-m-right_medium": {
+        "prefix": "slds-margin:right_medium",
+        "body": ["slds-m-right_medium"],
+        "description": "Adds 1rem margin to right"
+    },
+    "slds-m-right_large": {
+        "prefix": "slds-margin:right_large",
+        "body": ["slds-m-right_large"],
+        "description": "Adds 1.5rem margin to right"
+    },
+    "slds-m-right_x-large": {
+        "prefix": "slds-margin:right_x-large",
+        "body": ["slds-m-right_x-large"],
+        "description": "Adds 2rem margin to right"
+    },
+    "slds-m-right_xx-large": {
+        "prefix": "slds-margin:right_xx-large",
+        "body": ["slds-m-right_xx-large"],
+        "description": "Adds 3rem margin to right"
+    },
+    "slds-var-m-bottom_xxx-small": {
+        "prefix": "slds-vd-margin:bottom_xxx-small",
+        "body": ["slds-var-m-bottom_xxx-small"],
+        "description": "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-bottom_xx-small": {
+        "prefix": "slds-vd-margin:bottom_xx-small",
+        "body": ["slds-var-m-bottom_xx-small"],
+        "description": "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-bottom_x-small": {
+        "prefix": "slds-vd-margin:bottom_x-small",
+        "body": ["slds-var-m-bottom_x-small"],
+        "description": "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-m-bottom_small": {
+        "prefix": "slds-vd-margin:bottom_small",
+        "body": ["slds-var-m-bottom_small"],
+        "description": "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-m-bottom_medium": {
+        "prefix": "slds-vd-margin:bottom_medium",
+        "body": ["slds-var-m-bottom_medium"],
+        "description": "Adds margin of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-m-bottom_large": {
+        "prefix": "slds-vd-margin:bottom_large",
+        "body": ["slds-var-m-bottom_large"],
+        "description": "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-m-bottom_x-large": {
+        "prefix": "slds-vd-margin:bottom_x-large",
+        "body": ["slds-var-m-bottom_x-large"],
+        "description": "Adds margin of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-m-bottom_xx-large": {
+        "prefix": "slds-vd-margin:bottom_xx-large",
+        "body": ["slds-var-m-bottom_xx-large"],
+        "description": "Adds margin of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-m-bottom_none": {
+        "prefix": "slds-margin:bottom_none",
+        "body": ["slds-m-bottom_none"],
+        "description": "Removes margin from bottom"
+    },
+    "slds-m-bottom_xxx-small": {
+        "prefix": "slds-margin:bottom_xxx-small",
+        "body": ["slds-m-bottom_xxx-small"],
+        "description": "Adds .125rem margin to bottom"
+    },
+    "slds-m-bottom_xx-small": {
+        "prefix": "slds-margin:bottom_xx-small",
+        "body": ["slds-m-bottom_xx-small"],
+        "description": "Adds .25rem margin to bottom"
+    },
+    "slds-m-bottom_x-small": {
+        "prefix": "slds-margin:bottom_x-small",
+        "body": ["slds-m-bottom_x-small"],
+        "description": "Adds .5rem margin to bottom"
+    },
+    "slds-m-bottom_small": {
+        "prefix": "slds-margin:bottom_small",
+        "body": ["slds-m-bottom_small"],
+        "description": "Adds .75rem margin to bottom"
+    },
+    "slds-m-bottom_medium": {
+        "prefix": "slds-margin:bottom_medium",
+        "body": ["slds-m-bottom_medium"],
+        "description": "Adds 1rem margin to bottom"
+    },
+    "slds-m-bottom_large": {
+        "prefix": "slds-margin:bottom_large",
+        "body": ["slds-m-bottom_large"],
+        "description": "Adds 1.5rem margin to bottom"
+    },
+    "slds-m-bottom_x-large": {
+        "prefix": "slds-margin:bottom_x-large",
+        "body": ["slds-m-bottom_x-large"],
+        "description": "Adds 2rem margin to bottom"
+    },
+    "slds-m-bottom_xx-large": {
+        "prefix": "slds-margin:bottom_xx-large",
+        "body": ["slds-m-bottom_xx-large"],
+        "description": "Adds 3rem margin to bottom"
+    },
+    "slds-m-vertical_none": {
+        "prefix": "slds-margin:vertical_none",
+        "body": ["slds-m-vertical_none"],
+        "description": "Removes margin from top and bottom"
+    },
+    "slds-m-vertical_xxx-small": {
+        "prefix": "slds-margin:vertical_xxx-small",
+        "body": ["slds-m-vertical_xxx-small"],
+        "description": "Adds .125rem margin to top and bottom"
+    },
+    "slds-m-vertical_xx-small": {
+        "prefix": "slds-margin:vertical_xx-small",
+        "body": ["slds-m-vertical_xx-small"],
+        "description": "Adds .25rem margin to top and bottom"
+    },
+    "slds-m-vertical_x-small": {
+        "prefix": "slds-margin:vertical_x-small",
+        "body": ["slds-m-vertical_x-small"],
+        "description": "Adds .5rem margin to top and bottom"
+    },
+    "slds-m-vertical_small": {
+        "prefix": "slds-margin:vertical_small",
+        "body": ["slds-m-vertical_small"],
+        "description": "Adds .75rem margin to top and bottom"
+    },
+    "slds-m-vertical_medium": {
+        "prefix": "slds-margin:vertical_medium",
+        "body": ["slds-m-vertical_medium"],
+        "description": "Adds 1rem margin to top and bottom"
+    },
+    "slds-m-vertical_large": {
+        "prefix": "slds-margin:vertical_large",
+        "body": ["slds-m-vertical_large"],
+        "description": "Adds 1.5rem margin to top and bottom"
+    },
+    "slds-m-vertical_x-large": {
+        "prefix": "slds-margin:vertical_x-large",
+        "body": ["slds-m-vertical_x-large"],
+        "description": "Adds 2rem margin to top and bottom"
+    },
+    "slds-m-vertical_xx-large": {
+        "prefix": "slds-margin:vertical_xx-large",
+        "body": ["slds-m-vertical_xx-large"],
+        "description": "Adds 3rem margin to top and bottom"
+    },
+    "slds-var-p-around_xxx-small": {
+        "prefix": "slds-vd-padding:around_xxx-small",
+        "body": ["slds-var-p-around_xxx-small"],
+        "description": "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-around_xx-small": {
+        "prefix": "slds-vd-padding:around_xx-small",
+        "body": ["slds-var-p-around_xx-small"],
+        "description": "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-around_x-small": {
+        "prefix": "slds-vd-padding:around_x-small",
+        "body": ["slds-var-p-around_x-small"],
+        "description": "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-around_small": {
+        "prefix": "slds-vd-padding:around_small",
+        "body": ["slds-var-p-around_small"],
+        "description": "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-p-around_medium": {
+        "prefix": "slds-vd-padding:around_medium",
+        "body": ["slds-var-p-around_medium"],
+        "description": "Adds padding of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-p-around_large": {
+        "prefix": "slds-vd-padding:around_large",
+        "body": ["slds-var-p-around_large"],
+        "description": "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-p-around_x-large": {
+        "prefix": "slds-vd-padding:around_x-large",
+        "body": ["slds-var-p-around_x-large"],
+        "description": "Adds padding of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-p-around_xx-large": {
+        "prefix": "slds-vd-padding:around_xx-large",
+        "body": ["slds-var-p-around_xx-large"],
+        "description": "Adds padding of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-p-around_none": {
+        "prefix": "slds-padding:around_none",
+        "body": ["slds-p-around_none"],
+        "description": "Removes padding from all sides"
+    },
+    "slds-p-around_xxx-small": {
+        "prefix": "slds-padding:around_xxx-small",
+        "body": ["slds-p-around_xxx-small"],
+        "description": "Adds .125rem padding to all sides"
+    },
+    "slds-p-around_xx-small": {
+        "prefix": "slds-padding:around_xx-small",
+        "body": ["slds-p-around_xx-small"],
+        "description": "Adds .25rem padding to all sides"
+    },
+    "slds-p-around_x-small": {
+        "prefix": "slds-padding:around_x-small",
+        "body": ["slds-p-around_x-small"],
+        "description": "Adds .5rem padding to all sides"
+    },
+    "slds-p-around_small": {
+        "prefix": "slds-padding:around_small",
+        "body": ["slds-p-around_small"],
+        "description": "Adds .75rem padding to all sides"
+    },
+    "slds-p-around_medium": {
+        "prefix": "slds-padding:around_medium",
+        "body": ["slds-p-around_medium"],
+        "description": "Adds 1rem padding to all sides"
+    },
+    "slds-p-around_large": {
+        "prefix": "slds-padding:around_large",
+        "body": ["slds-p-around_large"],
+        "description": "Adds 1.5rem padding to all sides"
+    },
+    "slds-p-around_x-large": {
+        "prefix": "slds-padding:around_x-large",
+        "body": ["slds-p-around_x-large"],
+        "description": "Adds 2rem padding to all sides"
+    },
+    "slds-p-around_xx-large": {
+        "prefix": "slds-padding:around_xx-large",
+        "body": ["slds-p-around_xx-large"],
+        "description": "Adds 3rem padding to all sides"
+    },
+    "slds-var-p-top_xxx-small": {
+        "prefix": "slds-vd-padding:top_xxx-small",
+        "body": ["slds-var-p-top_xxx-small"],
+        "description": "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-top_xx-small": {
+        "prefix": "slds-vd-padding:top_xx-small",
+        "body": ["slds-var-p-top_xx-small"],
+        "description": "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-top_x-small": {
+        "prefix": "slds-vd-padding:top_x-small",
+        "body": ["slds-var-p-top_x-small"],
+        "description": "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-top_small": {
+        "prefix": "slds-vd-padding:top_small",
+        "body": ["slds-var-p-top_small"],
+        "description": "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-p-top_medium": {
+        "prefix": "slds-vd-padding:top_medium",
+        "body": ["slds-var-p-top_medium"],
+        "description": "Adds padding of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-p-top_large": {
+        "prefix": "slds-vd-padding:top_large",
+        "body": ["slds-var-p-top_large"],
+        "description": "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-p-top_x-large": {
+        "prefix": "slds-vd-padding:top_x-large",
+        "body": ["slds-var-p-top_x-large"],
+        "description": "Adds padding of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-p-top_xx-large": {
+        "prefix": "slds-vd-padding:top_xx-large",
+        "body": ["slds-var-p-top_xx-large"],
+        "description": "Adds padding of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-p-top_none": {
+        "prefix": "slds-padding:top_none",
+        "body": ["slds-p-top_none"],
+        "description": "Removes padding from top"
+    },
+    "slds-p-top_xxx-small": {
+        "prefix": "slds-padding:top_xxx-small",
+        "body": ["slds-p-top_xxx-small"],
+        "description": "Adds .125rem padding to top"
+    },
+    "slds-p-top_xx-small": {
+        "prefix": "slds-padding:top_xx-small",
+        "body": ["slds-p-top_xx-small"],
+        "description": "Adds .25rem padding to top"
+    },
+    "slds-p-top_x-small": {
+        "prefix": "slds-padding:top_x-small",
+        "body": ["slds-p-top_x-small"],
+        "description": "Adds .5rem padding to top"
+    },
+    "slds-p-top_small": {
+        "prefix": "slds-padding:top_small",
+        "body": ["slds-p-top_small"],
+        "description": "Adds .75rem padding to top"
+    },
+    "slds-p-top_medium": {
+        "prefix": "slds-padding:top_medium",
+        "body": ["slds-p-top_medium"],
+        "description": "Adds 1rem padding to top"
+    },
+    "slds-p-top_large": {
+        "prefix": "slds-padding:top_large",
+        "body": ["slds-p-top_large"],
+        "description": "Adds 1.5rem padding to top"
+    },
+    "slds-p-top_x-large": {
+        "prefix": "slds-padding:top_x-large",
+        "body": ["slds-p-top_x-large"],
+        "description": "Adds 2rem padding to top"
+    },
+    "slds-p-top_xx-large": {
+        "prefix": "slds-padding:top_xx-large",
+        "body": ["slds-p-top_xx-large"],
+        "description": "Adds 3rem padding to top"
+    },
+    "slds-var-p-left_xxx-small": {
+        "prefix": "slds-vd-padding:left_xxx-small",
+        "body": ["slds-var-p-left_xxx-small"],
+        "description": "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-left_xx-small": {
+        "prefix": "slds-vd-padding:left_xx-small",
+        "body": ["slds-var-p-left_xx-small"],
+        "description": "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-left_x-small": {
+        "prefix": "slds-vd-padding:left_x-small",
+        "body": ["slds-var-p-left_x-small"],
+        "description": "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-left_small": {
+        "prefix": "slds-vd-padding:left_small",
+        "body": ["slds-var-p-left_small"],
+        "description": "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-p-left_medium": {
+        "prefix": "slds-vd-padding:left_medium",
+        "body": ["slds-var-p-left_medium"],
+        "description": "Adds padding of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-p-left_large": {
+        "prefix": "slds-vd-padding:left_large",
+        "body": ["slds-var-p-left_large"],
+        "description": "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-p-left_x-large": {
+        "prefix": "slds-vd-padding:left_x-large",
+        "body": ["slds-var-p-left_x-large"],
+        "description": "Adds padding of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-p-left_xx-large": {
+        "prefix": "slds-vd-padding:left_xx-large",
+        "body": ["slds-var-p-left_xx-large"],
+        "description": "Adds padding of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-p-left_none": {
+        "prefix": "slds-padding:left_none",
+        "body": ["slds-p-left_none"],
+        "description": "Removes padding from left"
+    },
+    "slds-p-left_xxx-small": {
+        "prefix": "slds-padding:left_xxx-small",
+        "body": ["slds-p-left_xxx-small"],
+        "description": "Adds .125rem padding to left"
+    },
+    "slds-p-left_xx-small": {
+        "prefix": "slds-padding:left_xx-small",
+        "body": ["slds-p-left_xx-small"],
+        "description": "Adds .25rem padding to left"
+    },
+    "slds-p-left_x-small": {
+        "prefix": "slds-padding:left_x-small",
+        "body": ["slds-p-left_x-small"],
+        "description": "Adds .5rem padding to left"
+    },
+    "slds-p-left_small": {
+        "prefix": "slds-padding:left_small",
+        "body": ["slds-p-left_small"],
+        "description": "Adds .75rem padding to left"
+    },
+    "slds-p-left_medium": {
+        "prefix": "slds-padding:left_medium",
+        "body": ["slds-p-left_medium"],
+        "description": "Adds 1rem padding to left"
+    },
+    "slds-p-left_large": {
+        "prefix": "slds-padding:left_large",
+        "body": ["slds-p-left_large"],
+        "description": "Adds 1.5rem padding to left"
+    },
+    "slds-p-left_x-large": {
+        "prefix": "slds-padding:left_x-large",
+        "body": ["slds-p-left_x-large"],
+        "description": "Adds 2rem padding to left"
+    },
+    "slds-p-left_xx-large": {
+        "prefix": "slds-padding:left_xx-large",
+        "body": ["slds-p-left_xx-large"],
+        "description": "Adds 3rem padding to left"
+    },
+    "slds-var-p-right_xxx-small": {
+        "prefix": "slds-vd-padding:right_xxx-small",
+        "body": ["slds-var-p-right_xxx-small"],
+        "description": "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-right_xx-small": {
+        "prefix": "slds-vd-padding:right_xx-small",
+        "body": ["slds-var-p-right_xx-small"],
+        "description": "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-right_x-small": {
+        "prefix": "slds-vd-padding:right_x-small",
+        "body": ["slds-var-p-right_x-small"],
+        "description": "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-right_small": {
+        "prefix": "slds-vd-padding:right_small",
+        "body": ["slds-var-p-right_small"],
+        "description": "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-p-right_medium": {
+        "prefix": "slds-vd-padding:right_medium",
+        "body": ["slds-var-p-right_medium"],
+        "description": "Adds padding of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-p-right_large": {
+        "prefix": "slds-vd-padding:right_large",
+        "body": ["slds-var-p-right_large"],
+        "description": "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-p-right_x-large": {
+        "prefix": "slds-vd-padding:right_x-large",
+        "body": ["slds-var-p-right_x-large"],
+        "description": "Adds padding of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-p-right_xx-large": {
+        "prefix": "slds-vd-padding:right_xx-large",
+        "body": ["slds-var-p-right_xx-large"],
+        "description": "Adds padding of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-p-right_none": {
+        "prefix": "slds-padding:right_none",
+        "body": ["slds-p-right_none"],
+        "description": "Removes padding from right"
+    },
+    "slds-p-right_xxx-small": {
+        "prefix": "slds-padding:right_xxx-small",
+        "body": ["slds-p-right_xxx-small"],
+        "description": "Adds .125rem padding to right"
+    },
+    "slds-p-right_xx-small": {
+        "prefix": "slds-padding:right_xx-small",
+        "body": ["slds-p-right_xx-small"],
+        "description": "Adds .25rem padding to right"
+    },
+    "slds-p-right_x-small": {
+        "prefix": "slds-padding:right_x-small",
+        "body": ["slds-p-right_x-small"],
+        "description": "Adds .5rem padding to right"
+    },
+    "slds-p-right_small": {
+        "prefix": "slds-padding:right_small",
+        "body": ["slds-p-right_small"],
+        "description": "Adds .75rem padding to right"
+    },
+    "slds-p-right_medium": {
+        "prefix": "slds-padding:right_medium",
+        "body": ["slds-p-right_medium"],
+        "description": "Adds 1rem padding to right"
+    },
+    "slds-p-right_large": {
+        "prefix": "slds-padding:right_large",
+        "body": ["slds-p-right_large"],
+        "description": "Adds 1.5rem padding to right"
+    },
+    "slds-p-right_x-large": {
+        "prefix": "slds-padding:right_x-large",
+        "body": ["slds-p-right_x-large"],
+        "description": "Adds 2rem padding to right"
+    },
+    "slds-p-right_xx-large": {
+        "prefix": "slds-padding:right_xx-large",
+        "body": ["slds-p-right_xx-large"],
+        "description": "Adds 3rem padding to right"
+    },
+    "slds-var-p-bottom_xxx-small": {
+        "prefix": "slds-vd-padding:bottom_xxx-small",
+        "body": ["slds-var-p-bottom_xxx-small"],
+        "description": "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-bottom_xx-small": {
+        "prefix": "slds-vd-padding:bottom_xx-small",
+        "body": ["slds-var-p-bottom_xx-small"],
+        "description": "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-bottom_x-small": {
+        "prefix": "slds-vd-padding:bottom_x-small",
+        "body": ["slds-var-p-bottom_x-small"],
+        "description": "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view"
+    },
+    "slds-var-p-bottom_small": {
+        "prefix": "slds-vd-padding:bottom_small",
+        "body": ["slds-var-p-bottom_small"],
+        "description": "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view"
+    },
+    "slds-var-p-bottom_medium": {
+        "prefix": "slds-vd-padding:bottom_medium",
+        "body": ["slds-var-p-bottom_medium"],
+        "description": "Adds padding of 1rem in Comfy view and 0.5rem in Compact view"
+    },
+    "slds-var-p-bottom_large": {
+        "prefix": "slds-vd-padding:bottom_large",
+        "body": ["slds-var-p-bottom_large"],
+        "description": "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view"
+    },
+    "slds-var-p-bottom_x-large": {
+        "prefix": "slds-vd-padding:bottom_x-large",
+        "body": ["slds-var-p-bottom_x-large"],
+        "description": "Adds padding of 2rem in Comfy view and 1rem in Compact view"
+    },
+    "slds-var-p-bottom_xx-large": {
+        "prefix": "slds-vd-padding:bottom_xx-large",
+        "body": ["slds-var-p-bottom_xx-large"],
+        "description": "Adds padding of 3rem in Comfy view and 1.5rem in Compact view"
+    },
+    "slds-p-bottom_none": {
+        "prefix": "slds-padding:bottom_none",
+        "body": ["slds-p-bottom_none"],
+        "description": "Removes padding from bottom"
+    },
+    "slds-p-bottom_xxx-small": {
+        "prefix": "slds-padding:bottom_xxx-small",
+        "body": ["slds-p-bottom_xxx-small"],
+        "description": "Adds .125rem padding to bottom"
+    },
+    "slds-p-bottom_xx-small": {
+        "prefix": "slds-padding:bottom_xx-small",
+        "body": ["slds-p-bottom_xx-small"],
+        "description": "Adds .25rem padding to bottom"
+    },
+    "slds-p-bottom_x-small": {
+        "prefix": "slds-padding:bottom_x-small",
+        "body": ["slds-p-bottom_x-small"],
+        "description": "Adds .5rem padding to bottom"
+    },
+    "slds-p-bottom_small": {
+        "prefix": "slds-padding:bottom_small",
+        "body": ["slds-p-bottom_small"],
+        "description": "Adds .75rem padding to bottom"
+    },
+    "slds-p-bottom_medium": {
+        "prefix": "slds-padding:bottom_medium",
+        "body": ["slds-p-bottom_medium"],
+        "description": "Adds 1rem padding to bottom"
+    },
+    "slds-p-bottom_large": {
+        "prefix": "slds-padding:bottom_large",
+        "body": ["slds-p-bottom_large"],
+        "description": "Adds 1.5rem padding to bottom"
+    },
+    "slds-p-bottom_x-large": {
+        "prefix": "slds-padding:bottom_x-large",
+        "body": ["slds-p-bottom_x-large"],
+        "description": "Adds 2rem padding to bottom"
+    },
+    "slds-p-bottom_xx-large": {
+        "prefix": "slds-padding:bottom_xx-large",
+        "body": ["slds-p-bottom_xx-large"],
+        "description": "Adds 3rem padding to bottom"
+    },
+    "slds-p-vertical_none": {
+        "prefix": "slds-padding:vertical_none",
+        "body": ["slds-p-vertical_none"],
+        "description": "Removes padding from top and bottom"
+    },
+    "slds-p-vertical_xxx-small": {
+        "prefix": "slds-padding:vertical_xxx-small",
+        "body": ["slds-p-vertical_xxx-small"],
+        "description": "Adds .125rem padding to top and bottom"
+    },
+    "slds-p-vertical_xx-small": {
+        "prefix": "slds-padding:vertical_xx-small",
+        "body": ["slds-p-vertical_xx-small"],
+        "description": "Adds .25rem padding to top and bottom"
+    },
+    "slds-p-vertical_x-small": {
+        "prefix": "slds-padding:vertical_x-small",
+        "body": ["slds-p-vertical_x-small"],
+        "description": "Adds .5rem padding to top and bottom"
+    },
+    "slds-p-vertical_small": {
+        "prefix": "slds-padding:vertical_small",
+        "body": ["slds-p-vertical_small"],
+        "description": "Adds .75rem padding to top and bottom"
+    },
+    "slds-p-vertical_medium": {
+        "prefix": "slds-padding:vertical_medium",
+        "body": ["slds-p-vertical_medium"],
+        "description": "Adds 1rem padding to top and bottom"
+    },
+    "slds-p-vertical_large": {
+        "prefix": "slds-padding:vertical_large",
+        "body": ["slds-p-vertical_large"],
+        "description": "Adds 1.5rem padding to top and bottom"
+    },
+    "slds-p-vertical_x-large": {
+        "prefix": "slds-padding:vertical_x-large",
+        "body": ["slds-p-vertical_x-large"],
+        "description": "Adds 2rem padding to top and bottom"
+    },
+    "slds-p-vertical_xx-large": {
+        "prefix": "slds-padding:vertical_xx-large",
+        "body": ["slds-p-vertical_xx-large"],
+        "description": "Adds 3rem padding to top and bottom"
+    },
+    "slds-scrollable": {
+        "prefix": "slds-scrollable:auto",
+        "body": ["slds-scrollable"],
+        "description": "Forces element to scroll horizontally and vertically when content exceeds element's width and height"
+    },
+    "slds-scrollable_none": {
+        "prefix": "slds-scrollable:none",
+        "body": ["slds-scrollable_none"],
+        "description": "Forces overflow items to not scroll within element's width and height"
+    },
+    "slds-scrollable_y": {
+        "prefix": "slds-scrollable:yAxis",
+        "body": ["slds-scrollable_y"],
+        "description": "Forces element to scroll vertically when content exceeds element's height"
+    },
+    "slds-scrollable_x": {
+        "prefix": "slds-scrollable:xAxis",
+        "body": ["slds-scrollable_x"],
+        "description": "Forces element to scroll vertically when content exceeds element's width"
+    },
+    "slds-truncate": {
+        "prefix": "slds:truncate",
+        "body": ["slds-truncate"],
+        "description": "Truncates text"
+    },
+    "slds-truncate_container_25": {
+        "prefix": "slds-truncate:25%",
+        "body": ["slds-truncate_container_25"],
+        "description": "Truncates text at 25% of its parent container"
+    },
+    "slds-truncate_container_33": {
+        "prefix": "slds-truncate:33%",
+        "body": ["slds-truncate_container_33"],
+        "description": "Truncates text at 33% of its parent container"
+    },
+    "slds-truncate_container_50": {
+        "prefix": "slds-truncate:50%",
+        "body": ["slds-truncate_container_50"],
+        "description": "Truncates text at 50% of its parent container"
+    },
+    "slds-truncate_container_66": {
+        "prefix": "slds-truncate:66%",
+        "body": ["slds-truncate_container_66"],
+        "description": "Truncates text at 66% of its parent container"
+    },
+    "slds-truncate_container_75": {
+        "prefix": "slds-truncate:75%",
+        "body": ["slds-truncate_container_75"],
+        "description": "Truncates text at 75% of its parent container"
+    },
 }
