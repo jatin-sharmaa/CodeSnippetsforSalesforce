@@ -337,6 +337,141 @@
         ],
         "description": "Audibene Modal Layer"
     },
+
+    /********************* Aura / LWC Components********************/
+
+    "Aura Text Input":{
+        "prefix":"adbn-input:text-aura",
+        "body":[
+            "<lightning:input name=\"${1:input1}\" label=\"${2:Input}\" value=\"${3:value}\" placeholder=\"${4:type here...}\"/>"
+        ]
+    },
+
+    "LWC Text Input":{
+        "prefix":"adbn-input:text-lwc",
+        "body":[
+            "<lightning-input type=\"text\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:type here...} \"></lightning-input>"
+        ]
+    },
+    "Aura Number Input":{
+        "prefix": "adbn-input:number-aura",
+        "body": [
+            "<lightning:input type=\"number\" name=\"${1:input1}\" label=\"${2:Number}\" placeholder=\"${3:type here...}\"/>"
+        ]
+    },
+    
+    "LWC Number Input":{
+        "prefix":"adbn-input:number-lwc",
+        "body":[
+            "<lightning-input type=\"number\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:enter number...} \"></lightning-input>"
+        ]
+    },
+
+    "Aura Search Input":{
+        "prefix": "adbn-input:search-aura",
+        "body":[
+            "<div onkeyup=\"{! c.handleKeyUp }\">",
+            "\t<lightning:input",
+            "\t\ttype=\"search\"",
+            "\t\taura:id=\"${1:enter-search}\"",
+            "\t\tname=\"${2:input1}\"",
+            "\t\tlabel=\"${3:Search when user hits the 'enter' key}\"",
+            "\t/>",
+            "</div>"
+            ]
+    },
+
+    "LWC Search Input":{
+        "prefix":"adbn-input:search-lwc",
+        "body":[
+            "  "
+        ]
+    },
+    "Aura Date input":{
+        "prefix":"adbn-input:date-aura",
+        "body":[
+            "<lightning:input type=\"date\" name=\"${1:input1}\" label=\"${2:Date}\" value=\"${3:2020-12-31}\" placeholder=\"${4:enter date...}\"/>"
+        ]
+    },
+
+    "LWC Date Input":{
+        "prefix":"adbn-input:date-lwc",
+        "body":[
+            "<lightning-input type=\"date\" name=\"${1:input1}\" label=\"${2:Date}\" value=\"${3:2020-12-31}\"></lightning-input>"
+        ]
+    },
+
+    "Aura Time Input":{
+        "prefix":"adbn-input:time-aura",
+        "body":[
+            "<lightning:input type=\"time\" name=\"${1:input1}\" label=\"${2:Time}\" value=\"${3:23:59:59.000Z} placeholder=\"${4:enter time...}\"/>"
+        ]
+    },
+
+    "LWC Time Input":{
+        "prefix":"adbn-input:time-lwc",
+        "body":[
+            "<lightning-input type=\"time\" name=\"${1:input1}\" label=\"${2:Time}\" value=\"${3:2020-12-31}\"></lightning-input>"
+        ]
+    },
+
+    
+    "Aura DateTime Input":{
+        "prefix":"adbn-input:datetime-aura",
+        "body":[
+            "<lightning:input type=\"datetime\" name=\"${1:input1}\" label=\"${2:Date Time}\" value=\"${3:2000-12-31T23:59:59Z}\"/>"
+        ]
+    },
+
+    "LWC DateTime Input":{
+        "prefix":"adbn-input:datetime-lwc",
+        "body":[
+            "<lightning-input type=\"datetime\" name=\"${1:input1}\" label=\"${2:Date Time}\" value=\"${3:2000-12-31T23:59:59Z}\"></lightning-input>"
+        ]
+    },
+
+    "Aura File Input":{
+    "prefix": "adbn-input:file-aura",
+    "body": [
+        "<lightning:input type=\"file\" name=\"${1:input1}\"  label=\"${2:Attachment}\" multiple=\"${3|true,false|}\" accept=\"${4:}\" onchange=\"{! c.${5:handleFilesChange} }\"/>"
+    ]
+    },
+
+    "LWC File Input":{
+        "prefix":"adbn-input:file-lwc",
+        "body":[
+            "<lightning-input type=\"file\" name=\"${1:input1}\"  label=\"${2:Attachment}\" multiple=\"${3|true,false|}\" accept=\"${4:}\" onchange=\"{! c.${5:handleFilesChange} }\"/></lightning-input>"
+        ]
+    },
+
+    "Aura Email Input":{
+        "prefix": "adbn-input:email-aura",
+        "body":[
+            "<lightning:input type=\"email\" name=\"${1:input1}\" label=\"${2:Email}\" value=\"${3:abc@domain.com}\"  placeholder=\"${4:youraddress@company.com}\"/>"
+        ]
+    },
+
+    "LWC Email Input":{
+        "prefix":"adbn-input:email-lwc",
+        "body":[
+            "<lightning-input type=\"email\" name=\"${1:input1}\" label=\"${2:Email}\" value=\"${3:abc@domain.com}\"  placeholder=\"${4:youraddress@company.com}\"></lightning-input>"
+        ]
+    },
+
+    "Aura Password Input":{
+        "prefix": "adbn-input:password-aura",
+        "body": [
+            "<lightning:input type=\"password\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"Enter Password...\"/>"
+        ]
+    },
+
+    "LWC Password Input":{
+        "prefix":"adbn-input:password-lwc",
+        "body":[
+            "<lightning-input type=\"password\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:Enter Password...} \"></lightning-input>"
+        ]
+    },
+
     "LWC Base Card": {
         "prefix": "adbn-card:basic-lwc",
         "body": [
@@ -501,7 +636,7 @@
     },
     "aura_attribute": {
         "prefix": "adbn-aura:attribute",
-        "body": "<aura:attribute name=\"${1:name}\" type=\"${2|Boolean,Date,DateTime,Decimal,Double,Integer,Long,String,Function,Object,Array,List,Map,Set,Id|}\" default=\"${3:optionalDefault}\" />",
+        "body": "<aura:attribute name=\"${1:input1}\" type=\"${2|Boolean,Date,DateTime,Decimal,Double,Integer,Long,String,Function,Object,Array,List,Map,Set,Id|}\" default=\"${3:optionalDefault}\" />",
         "description": ""
     },
     "interface_has_record_id": {
