@@ -1,9 +1,10 @@
 # Change Log
 
-All notable changes to the "audibenecodesnippets" extension will be documented in this file.
+All notable changes to the Audibene Code Snippets extension will be documented in this file.
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+## [1.0.0 - Amber]
 
-## [Unreleased]
-
-- Initial release
+- Snippets for SLDS HTML 
+- Snippets for Aura Components
+- Snippets for Javascript
+- Snippets for Apex
