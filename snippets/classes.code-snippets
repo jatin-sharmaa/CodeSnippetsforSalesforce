@@ -674,6 +674,51 @@
         "body": ["slds-m-vertical_xx-large"],
         "description": "Adds 3rem margin to top and bottom"
     },
+    "slds-m-horizontal_none": {
+        "prefix": "slds-margin:horizontal_none",
+        "body": ["slds-m-horizontal_none"],
+        "description": "Removes margin from left and right"
+    },
+    "slds-m-horizontal_xxx-small": {
+        "prefix": "slds-margin:horizontal_xxx-small",
+        "body": ["slds-m-horizontal_xxx-small"],
+        "description": "Adds .125rem margin to left and right"
+    },
+    "slds-m-horizontal_xx-small": {
+        "prefix": "slds-margin:horizontal_xx-small",
+        "body": ["slds-m-horizontal_xx-small"],
+        "description": "Adds .25rem margin to left and right"
+    },
+    "slds-m-horizontal_x-small": {
+        "prefix": "slds-margin:horizontal_x-small",
+        "body": ["slds-m-horizontal_x-small"],
+        "description": "Adds .5rem margin to left and right"
+    },
+    "slds-m-horizontal_small": {
+        "prefix": "slds-margin:horizontal_small",
+        "body": ["slds-m-horizontal_small"],
+        "description": "Adds .75rem margin to left and right"
+    },
+    "slds-m-horizontal_medium": {
+        "prefix": "slds-margin:horizontal_medium",
+        "body": ["slds-m-horizontal_medium"],
+        "description": "Adds 1rem margin to left and right"
+    },
+    "slds-m-horizontal_large": {
+        "prefix": "slds-margin:horizontal_large",
+        "body": ["slds-m-horizontal_large"],
+        "description": "Adds 1.5rem margin to left and right"
+    },
+    "slds-m-horizontal_x-large": {
+        "prefix": "slds-margin:horizontal_x-large",
+        "body": ["slds-m-horizontal_x-large"],
+        "description": "Adds 2rem margin to left and right"
+    },
+    "slds-m-horizontal_xx-large": {
+        "prefix": "slds-margin:horizontal_xx-large",
+        "body": ["slds-m-horizontal_xx-large"],
+        "description": "Adds 3rem margin to left and right"
+    },
     "slds-var-p-around_xxx-small": {
         "prefix": "slds-vd-padding:around_xxx-small",
         "body": ["slds-var-p-around_xxx-small"],
@@ -1143,6 +1188,51 @@
         "prefix": "slds-padding:vertical_xx-large",
         "body": ["slds-p-vertical_xx-large"],
         "description": "Adds 3rem padding to top and bottom"
+    },
+    "slds-p-horizontal_none": {
+        "prefix": "slds-padding:horizontal_none",
+        "body": ["slds-p-horizontal_none"],
+        "description": "Removes padding from left and right"
+    },
+    "slds-p-horizontal_xxx-small": {
+        "prefix": "slds-padding:horizontal_xxx-small",
+        "body": ["slds-p-horizontal_xxx-small"],
+        "description": "Adds .125rem padding to left and right"
+    },
+    "slds-p-horizontal_xx-small": {
+        "prefix": "slds-padding:horizontal_xx-small",
+        "body": ["slds-p-horizontal_xx-small"],
+        "description": "Adds .25rem padding to left and right"
+    },
+    "slds-p-horizontal_x-small": {
+        "prefix": "slds-padding:horizontal_x-small",
+        "body": ["slds-p-horizontal_x-small"],
+        "description": "Adds .5rem padding to left and right"
+    },
+    "slds-p-horizontal_small": {
+        "prefix": "slds-padding:horizontal_small",
+        "body": ["slds-p-horizontal_small"],
+        "description": "Adds .75rem padding to left and right"
+    },
+    "slds-p-horizontal_medium": {
+        "prefix": "slds-padding:horizontal_medium",
+        "body": ["slds-p-horizontal_medium"],
+        "description": "Adds 1rem padding to left and right"
+    },
+    "slds-p-horizontal_large": {
+        "prefix": "slds-padding:horizontal_large",
+        "body": ["slds-p-horizontal_large"],
+        "description": "Adds 1.5rem padding to left and right"
+    },
+    "slds-p-horizontal_x-large": {
+        "prefix": "slds-padding:horizontal_x-large",
+        "body": ["slds-p-horizontal_x-large"],
+        "description": "Adds 2rem padding to left and right"
+    },
+    "slds-p-horizontal_xx-large": {
+        "prefix": "slds-padding:horizontal_xx-large",
+        "body": ["slds-p-horizontal_xx-large"],
+        "description": "Adds 3rem padding to left and right"
     },
     "slds-scrollable": {
         "prefix": "slds-scrollable:auto",
