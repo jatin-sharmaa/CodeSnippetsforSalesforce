@@ -353,8 +353,6 @@ slds-truncate_container_50 | slds-truncate:50% | Truncates text at 50% of its pa
 slds-truncate_container_66 | slds-truncate:66% | Truncates text at 66% of its parent container
 slds-truncate_container_75 | slds-truncate:75% | Truncates text at 75% of its parent container
 
-=======================================
-
 ## Release Notes
 
 ### 1.0.0 - Amber
