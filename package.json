@@ -2,7 +2,7 @@
     "name": "audibenecodesnippets",
     "displayName": "Audibene Code Snippets",
     "description": "Code Snippets for Audibene",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "icon": "icon.png",
     "publisher": "UIUXTeamAudibene",
     "engines": {

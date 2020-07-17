@@ -1,6 +1,6 @@
 # Audibene Code Snippets
 
-A set of HTML and JS Snippets for Visual Studio Code.
+A set of HTML, JS and Apex Snippets for Visual Studio Code.
 Create a new HTML document and type 'adbn:' to see all available snippets.
 
 ![promo](./images/screen1.png)
@@ -357,8 +357,16 @@ slds-truncate_container_75 | slds-truncate:75% | Truncates text at 75% of its pa
 
 ## Release Notes
 
-### 0.0.1
-Initial Release
+### 1.0.0 
+    - Snippets for SLDS HTML 
+    - Snippets for Aura Components
+    - Snippets for Javascript
+    - Snippets for Apex
 
-**Enjoy!**
-> Created By : UI/UX Team Audibene
+## Credits
+The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit Bhargava** and **Ashutosh Bhardwaj** for supporting us in this project and providing us valuable feedback and we would also like to thank the entire **Salesforce Team** to have given us their feedback on the survey which motivated us to build this tool.
+
+## Contributors
+    - Marcel Hirthe
+    - Jatin Sharma
+    - Suraj Raval 
