@@ -357,16 +357,16 @@ slds-truncate_container_75 | slds-truncate:75% | Truncates text at 75% of its pa
 
 ## Release Notes
 
-### 1.0.0 
-    - Snippets for SLDS HTML 
-    - Snippets for Aura Components
-    - Snippets for Javascript
-    - Snippets for Apex
+### 1.0.0 - Amber
+- Snippets for SLDS HTML 
+- Snippets for Aura Components
+- Snippets for Javascript
+- Snippets for Apex
 
 ## Credits
 The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit Bhargava** and **Ashutosh Bhardwaj** for supporting us in this project and providing us valuable feedback and we would also like to thank the entire **Salesforce Team** to have given us their feedback on the survey which motivated us to build this tool.
 
 ## Contributors
-    - Marcel Hirthe
-    - Jatin Sharma
-    - Suraj Raval 
+- Marcel Hirthe
+- Jatin Sharma
+- Suraj Raval 
