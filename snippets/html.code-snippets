@@ -302,6 +302,257 @@
         ],
         "description": "Inverse Weak Text Color"
     },
+  
+
+    /********************* Aura / LWC Components********************/
+
+    "Aura Text Input":{
+        "prefix":"adbn-input:text-aura",
+        "body": "<lightning:input name=\"${1:input1}\" label=\"${2:Input}\" value=\"${3:value}\" placeholder=\"${4:type here...}\"/>"
+    },
+
+    "LWC Text Input":{
+        "prefix":"adbn-input:text-lwc",
+        "body":"<lightning-input type=\"text\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:type here...} \"></lightning-input>"
+    },
+    "Aura Number Input":{
+        "prefix": "adbn-input:number-aura",
+        "body": "<lightning:input type=\"number\" name=\"${1:input1}\" label=\"${2:Number}\" placeholder=\"${3:type here...}\"/>"
+    },
+    
+    "LWC Number Input":{
+        "prefix":"adbn-input:number-lwc",
+        "body": "<lightning-input type=\"number\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:enter number...} \"></lightning-input>"
+    },
+
+    "Aura Search Input":{
+        "prefix": "adbn-input:search-aura",
+        "body":[
+            "<div onkeyup=\"{! c.handleKeyUp }\">",
+            "\t<lightning:input",
+            "\t\ttype=\"search\"",
+            "\t\taura:id=\"${1:enter-search}\"",
+            "\t\tname=\"${2:input1}\"",
+            "\t\tlabel=\"${3:Search when user hits the 'enter' key}\"",
+            "\t/>",
+            "</div>"
+            ]
+    },
+
+    "LWC Search Input":{
+        "prefix":"adbn-input:search-lwc",
+        "body":[
+            "<div onkeyup={${3:handleKeyUp}}>",
+            "\t<lightning-input",
+            "\t\tname=\"${1:name}\"",
+            "\t\tlabel=\"${2:Search when user hits the 'enter' key}\"",
+            "\t\ttype=\"search\"",
+            "\t></lightning-input>",
+            "</div>"
+        ]
+    },
+
+    "Aura Date input":{
+        "prefix":"adbn-input:date-aura",
+        "body":"<lightning:input type=\"date\" name=\"${1:input1}\" label=\"${2:Date}\" value=\"${3:2020-12-31}\" placeholder=\"${4:enter date...}\"/>" 
+    },
+
+    "LWC Date Input":{
+        "prefix":"adbn-input:date-lwc",
+        "body": "<lightning-input type=\"date\" name=\"${1:input1}\" label=\"${2:Date}\" value=\"${3:2020-12-31}\"></lightning-input>"
+    },
+
+    "Aura Time Input":{
+        "prefix":"adbn-input:time-aura",
+        "body":"<lightning:input type=\"time\" name=\"${1:input1}\" label=\"${2:Time}\" value=\"${3:23:59:59.000Z} placeholder=\"${4:enter time...}\"/>"  
+    },
+
+    "LWC Time Input":{
+        "prefix":"adbn-input:time-lwc",
+        "body": "<lightning-input type=\"time\" name=\"${1:input1}\" label=\"${2:Time}\" value=\"${3:2020-12-31}\"></lightning-input>"
+    },
+
+    "Aura DateTime Input":{
+        "prefix":"adbn-input:datetime-aura",
+        "body":"<lightning:input type=\"datetime\" name=\"${1:input1}\" label=\"${2:Date Time}\" value=\"${3:2000-12-31T23:59:59Z}\"/>" 
+    },
+
+    "LWC DateTime Input":{
+        "prefix":"adbn-input:datetime-lwc",
+        "body": "<lightning-input type=\"datetime\" name=\"${1:input1}\" label=\"${2:Date Time}\" value=\"${3:2000-12-31T23:59:59Z}\"></lightning-input>"
+    },
+
+    "Aura File Input":{
+        "prefix": "adbn-input:file-aura",
+        "body": "<lightning:input type=\"file\" name=\"${1:input1}\"  label=\"${2:Attachment}\" multiple=\"${3|true,false|}\" accept=\"${4:}\" onchange=\"{! c.${5:handleFilesChange} }\"/>"
+    },
+
+    "LWC File Input":{
+        "prefix":"adbn-input:file-lwc",
+        "body":"<lightning-input type=\"file\" name=\"${1:input1}\"  label=\"${2:Attachment}\" multiple=\"${3|true,false|}\" accept=\"${4:}\" onchange=\"{! c.${5:handleFilesChange} }\"/></lightning-input>"
+    },
+
+    "Aura Email Input":{
+        "prefix": "adbn-input:email-aura",
+        "body": "<lightning:input type=\"email\" name=\"${1:input1}\" label=\"${2:Email}\" value=\"${3:abc@domain.com}\"  placeholder=\"${4:youraddress@company.com}\"/>"
+    },
+
+    "LWC Email Input":{
+        "prefix":"adbn-input:email-lwc",
+        "body": "<lightning-input type=\"email\" name=\"${1:input1}\" label=\"${2:Email}\" value=\"${3:abc@domain.com}\"  placeholder=\"${4:youraddress@company.com}\"></lightning-input>"
+    },
+
+    "Aura Password Input":{
+        "prefix": "adbn-input:password-aura",
+        "body": "<lightning:input type=\"password\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"Enter Password...\"/>"
+    },
+
+    "LWC Password Input":{
+        "prefix":"adbn-input:password-lwc",
+        "body": "<lightning-input type=\"password\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:Enter Password...} \"></lightning-input>"
+    },
+
+    "Aura Input Address":{
+        "prefix": "adbn-input:address-aura",
+        "body":[
+            "<div style=\"max-width: ${14:400px}\">",
+            "\t<lightning:inputAddress",
+                "\t\taddressLabel=\"${1:Address}\"",
+                "\t\tstreetLabel=\"${2:Street}\"",
+                "\t\tcityLabel=\"${3:City}\"",
+                "\t\tcountryLabel=\"${4:Country}\"",
+                "\t\tprovinceLabel=\"${5:Province}\"",
+                "\t\tpostalCodeLabel=\"${6:PostalCode}\"",
+                "\t\tstreet=\"${7:}\"",
+                "\t\tcity=\"${8:}\"",
+                "\t\tcountry=\"${9:}\"",
+                "\t\tprovince=\"${10:}\"",
+                "\t\tpostalCode=\"${11:}\"",
+                "\t\trequired=\"${12|true,false|}\"",
+                "\t\tfieldLevelHelp=\"${13:Help Text for inputAddress field}\"",
+            "\t/>",
+        "</div>"],
+        "description": "Aura Input fields for Address"
+    },
+
+    "LWC Input Address":{
+        "prefix": "adbn-input:address-lwc",
+        "body": [
+            "<lightning-input-address",
+                "\taddress-label=\"${1:Address}\"",
+                "\tstreet-label=\"${2:Street}\"",
+                "\tcity-label=\"${3:City}\"",
+                "\tcountry-label=\"${4:Country}\"",
+                "\tprovince-label=\"${5:Province}\"",
+                "\tpostal-code-label=\"${6:PostalCode}\"",
+                "\tstreet=\"${7:}\"",
+                "\tcity=\"${8:}\"",
+                "\tcountry=\"${9:}\"",
+                "\tprovince=\"${10:}\"",
+                "\tpostal-code=\"${11:}\"",
+                "\tfield-level-help=\"${13:Help Text for inputAddress field}\">",
+            "</lightning-input-address>",
+        ],
+        "description": "LWC Input fields for Address"
+    },
+
+    "Aura Checkbox": {
+        "prefix": "adbn:checkbox-aura",
+        "body": "",
+        "description": ""
+    },
+    
+    "LWC Checkbox":{
+        "prefix": "adbn:checkbox-lwc",
+        "body": "",
+        "description": ""
+    },
+
+    "Aura Checkbox Group":{
+        "prefix": "adbn:checkbox-group-aura",
+        "body": "",
+        "description": ""
+    },
+    "LWC Checkbox Group":{
+        "prefix": "adbn:checkbox-group-lwc",
+        "body": "",
+        "description": ""
+    },
+
+    "Aura Combobox (Select)":{
+        "prefix": "adbn:combobox-aura",
+        "body": "",
+        "description": ""
+    },
+
+    "LWC Combobox (Select)":{
+        "prefix": "adbn:combobox-lwc",
+        "body": "",
+        "description": ""
+    },
+
+    "Aura Toggle button":{
+        "prefix": "adbn:toggle-button-aura",
+        "body": "",
+        "description": ""
+    },
+
+    "LWC Toggle button":{
+        "prefix": "adbn:toggle-button-lwc",
+        "body": "",
+        "description": ""
+    },
+
+    "Aura Radio Button":{
+        "prefix": "adbn:radio-button-aura",
+        "body": "",
+        "description": ""
+    },
+
+    "LWC Radio button":{
+        "prefix": "adbn:radio-button-lwc",
+        "body": "",
+        "description": ""
+    },
+
+    "Aura Text Area":{
+        "prefix": "adbn:text-aread-aura",
+        "body": "",
+        "description": ""
+    },
+
+    "LWC Text Area":{
+        "prefix": "adbn:text-area-lwc",
+        "body": "",
+        "description": ""
+    },
+    "Aura Dual List Box":{
+        "prefix": "adbn:dual-list-box-aura",
+        "body": "",
+        "description": ""
+    },
+    "LWC Dual List Box":{
+        "prefix": "adbn:dual-list-box-lwc",
+        "body": "",
+        "description": ""
+    },
+
+    "Aura Data Table":{
+        "prefix": "adbn:data-table-aura",
+        "body": "",
+        "description": ""
+    },
+
+    "Aura Formatted Text":{
+        "prefix": "adbn:formatted-text-aura",
+        "body":""
+    },
+    "LWC Formatted Text":{
+        "prefix": "adbn:formatted-text-aura",
+        "body":"<lightning-formatted-text value=\"${1:test@domain.com}\" linkify=${2|true,false|}></lightning-formatted-text>"
+    },
+
+    /*****************************/
     "Modal Layer": {
         "prefix": "adbn:modalLayer",
         "body": [
@@ -337,141 +588,7 @@
         ],
         "description": "Audibene Modal Layer"
     },
-
-    /********************* Aura / LWC Components********************/
-
-    "Aura Text Input":{
-        "prefix":"adbn-input:text-aura",
-        "body":[
-            "<lightning:input name=\"${1:input1}\" label=\"${2:Input}\" value=\"${3:value}\" placeholder=\"${4:type here...}\"/>"
-        ]
-    },
-
-    "LWC Text Input":{
-        "prefix":"adbn-input:text-lwc",
-        "body":[
-            "<lightning-input type=\"text\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:type here...} \"></lightning-input>"
-        ]
-    },
-    "Aura Number Input":{
-        "prefix": "adbn-input:number-aura",
-        "body": [
-            "<lightning:input type=\"number\" name=\"${1:input1}\" label=\"${2:Number}\" placeholder=\"${3:type here...}\"/>"
-        ]
-    },
     
-    "LWC Number Input":{
-        "prefix":"adbn-input:number-lwc",
-        "body":[
-            "<lightning-input type=\"number\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:enter number...} \"></lightning-input>"
-        ]
-    },
-
-    "Aura Search Input":{
-        "prefix": "adbn-input:search-aura",
-        "body":[
-            "<div onkeyup=\"{! c.handleKeyUp }\">",
-            "\t<lightning:input",
-            "\t\ttype=\"search\"",
-            "\t\taura:id=\"${1:enter-search}\"",
-            "\t\tname=\"${2:input1}\"",
-            "\t\tlabel=\"${3:Search when user hits the 'enter' key}\"",
-            "\t/>",
-            "</div>"
-            ]
-    },
-
-    "LWC Search Input":{
-        "prefix":"adbn-input:search-lwc",
-        "body":[
-            "  "
-        ]
-    },
-    "Aura Date input":{
-        "prefix":"adbn-input:date-aura",
-        "body":[
-            "<lightning:input type=\"date\" name=\"${1:input1}\" label=\"${2:Date}\" value=\"${3:2020-12-31}\" placeholder=\"${4:enter date...}\"/>"
-        ]
-    },
-
-    "LWC Date Input":{
-        "prefix":"adbn-input:date-lwc",
-        "body":[
-            "<lightning-input type=\"date\" name=\"${1:input1}\" label=\"${2:Date}\" value=\"${3:2020-12-31}\"></lightning-input>"
-        ]
-    },
-
-    "Aura Time Input":{
-        "prefix":"adbn-input:time-aura",
-        "body":[
-            "<lightning:input type=\"time\" name=\"${1:input1}\" label=\"${2:Time}\" value=\"${3:23:59:59.000Z} placeholder=\"${4:enter time...}\"/>"
-        ]
-    },
-
-    "LWC Time Input":{
-        "prefix":"adbn-input:time-lwc",
-        "body":[
-            "<lightning-input type=\"time\" name=\"${1:input1}\" label=\"${2:Time}\" value=\"${3:2020-12-31}\"></lightning-input>"
-        ]
-    },
-
-    
-    "Aura DateTime Input":{
-        "prefix":"adbn-input:datetime-aura",
-        "body":[
-            "<lightning:input type=\"datetime\" name=\"${1:input1}\" label=\"${2:Date Time}\" value=\"${3:2000-12-31T23:59:59Z}\"/>"
-        ]
-    },
-
-    "LWC DateTime Input":{
-        "prefix":"adbn-input:datetime-lwc",
-        "body":[
-            "<lightning-input type=\"datetime\" name=\"${1:input1}\" label=\"${2:Date Time}\" value=\"${3:2000-12-31T23:59:59Z}\"></lightning-input>"
-        ]
-    },
-
-    "Aura File Input":{
-    "prefix": "adbn-input:file-aura",
-    "body": [
-        "<lightning:input type=\"file\" name=\"${1:input1}\"  label=\"${2:Attachment}\" multiple=\"${3|true,false|}\" accept=\"${4:}\" onchange=\"{! c.${5:handleFilesChange} }\"/>"
-    ]
-    },
-
-    "LWC File Input":{
-        "prefix":"adbn-input:file-lwc",
-        "body":[
-            "<lightning-input type=\"file\" name=\"${1:input1}\"  label=\"${2:Attachment}\" multiple=\"${3|true,false|}\" accept=\"${4:}\" onchange=\"{! c.${5:handleFilesChange} }\"/></lightning-input>"
-        ]
-    },
-
-    "Aura Email Input":{
-        "prefix": "adbn-input:email-aura",
-        "body":[
-            "<lightning:input type=\"email\" name=\"${1:input1}\" label=\"${2:Email}\" value=\"${3:abc@domain.com}\"  placeholder=\"${4:youraddress@company.com}\"/>"
-        ]
-    },
-
-    "LWC Email Input":{
-        "prefix":"adbn-input:email-lwc",
-        "body":[
-            "<lightning-input type=\"email\" name=\"${1:input1}\" label=\"${2:Email}\" value=\"${3:abc@domain.com}\"  placeholder=\"${4:youraddress@company.com}\"></lightning-input>"
-        ]
-    },
-
-    "Aura Password Input":{
-        "prefix": "adbn-input:password-aura",
-        "body": [
-            "<lightning:input type=\"password\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"Enter Password...\"/>"
-        ]
-    },
-
-    "LWC Password Input":{
-        "prefix":"adbn-input:password-lwc",
-        "body":[
-            "<lightning-input type=\"password\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:Enter Password...} \"></lightning-input>"
-        ]
-    },
-
     "LWC Base Card": {
         "prefix": "adbn-card:basic-lwc",
         "body": [
@@ -486,6 +603,7 @@
         ],
         "description": "LWC Basic Card"
     },
+    
     "Aura Base Card": {
         "prefix": "adbn-card:basic-aura",
         "body": [

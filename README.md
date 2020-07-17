@@ -51,6 +51,17 @@ adbn-textColor:inverse-weak | Inverse Weak Text Color
 ### Aura
 Trigger | Description
 --- | ---
+adbn-input:text-aura | Aura Text Input
+adbn-input:number-aura | Aura Number Input
+adbn-input:text-search-aura | Aura Search Input
+adbn-input:date-aura | Aura Date Input
+adbn-input:time-aura | Aura Time Input
+adbn-input:datetime-aura | Aura Date Time Input
+adbn-input:file-aura | Aura File Input
+adbn-input:email-aura | Aura Email Input
+adbn-input:password-aura | Aura Email Input
+adbn-input:address-aura | Aura Email Input
+
 adbn:modalLayer | Audibene Modal Layer
 adbn-card:basic-aura | Aura Basic Card
 adbn-card:narrow-aura | Aura Narrow Card
