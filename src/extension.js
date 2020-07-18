@@ -350,7 +350,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
-                label: "slds:assistive-text",
+                label: "assistive-text",
                 insertText: new vscode.SnippetString(
                     "slds-assistive-text",
                 ),
@@ -358,7 +358,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:show_inline-block",
+                label: "show_inline-block",
                 insertText: new vscode.SnippetString(
                     "slds-show_inline-block",
                 ),
@@ -366,7 +366,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:show_inline",
+                label: "show_inline",
                 insertText: new vscode.SnippetString(
                     "slds-show_inline",
                 ),
@@ -374,7 +374,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:transition-hide",
+                label: "transition-hide",
                 insertText: new vscode.SnippetString(
                     "transition-hide",
                 ),
@@ -382,7 +382,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:transition-show",
+                label: "transition-show",
                 insertText: new vscode.SnippetString(
                     "transition-show",
                 ),
@@ -390,7 +390,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:hide_x-small",
+                label: "hide_x-small",
                 insertText: new vscode.SnippetString(
                     "slds-hide_x-small",
                 ),
@@ -398,7 +398,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:hide_small",
+                label: "hide_small",
                 insertText: new vscode.SnippetString(
                     "slds-hide_small",
                 ),
@@ -406,7 +406,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:hide_medium",
+                label: "hide_medium",
                 insertText: new vscode.SnippetString(
                     "slds-hide_medium",
                 ),
@@ -414,7 +414,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:hide_large",
+                label: "hide_large",
                 insertText: new vscode.SnippetString(
                     "slds-hide_large",
                 ),
@@ -422,7 +422,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:hide_x-large",
+                label: "hide_x-large",
                 insertText: new vscode.SnippetString(
                     "slds-hide_x-large",
                 ),
@@ -430,7 +430,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:show_x-small",
+                label: "show_x-small",
                 insertText: new vscode.SnippetString(
                     "slds-show_x-small",
                 ),
@@ -438,7 +438,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:show_small",
+                label: "show_small",
                 insertText: new vscode.SnippetString(
                     "slds-show_small",
                 ),
@@ -446,7 +446,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:show_medium",
+                label: "show_medium",
                 insertText: new vscode.SnippetString(
                     "slds-show_medium",
                 ),
@@ -454,7 +454,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:show_large",
+                label: "show_large",
                 insertText: new vscode.SnippetString(
                     "slds-show_large",
                 ),
@@ -462,7 +462,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:show_x-large",
+                label: "show_x-large",
                 insertText: new vscode.SnippetString(
                     "slds-show_x-large",
                 ),
@@ -470,7 +470,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:bottom-magnet",
+                label: "bottom-magnet",
                 insertText: new vscode.SnippetString(
                     "slds-has-bottom-magnet",
                 ),
@@ -478,7 +478,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:top-magnet",
+                label: "top-magnet",
                 insertText: new vscode.SnippetString(
                     "slds-has-top-magnet",
                 ),
@@ -1517,7 +1517,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:hide",
+                label: "hide",
                 insertText: new vscode.SnippetString(
                     "slds-hide",
                 ),
@@ -1525,7 +1525,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:show",
+                label: "show",
                 insertText: new vscode.SnippetString(
                     "slds-show",
                 ),
@@ -1533,7 +1533,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:hidden",
+                label: "hidden",
                 insertText: new vscode.SnippetString(
                     "slds-hidden",
                 ),
@@ -1541,7 +1541,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:visible",
+                label: "visible",
                 insertText: new vscode.SnippetString(
                     "slds-visible",
                 ),
@@ -2557,7 +2557,7 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "slds:truncate",
+                label: "truncate",
                 insertText: new vscode.SnippetString(
                     "slds-truncate",
                 ),

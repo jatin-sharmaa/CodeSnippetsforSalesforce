@@ -1,15 +1,262 @@
 # Audibene Code Snippets
 
 A set of HTML, JS and Apex Snippets for Visual Studio Code.
-Create a new HTML document and type 'adbn:' to see all available snippets.
+You can also press `Ctrl + Space` if the snippets are not displayed
 
 ![promo](./images/screen1.png)
 
+## Configurations
+- Enable Apex snippets
+- Enable Aura Snippets
+- Enable JavaScript snippets
+- Enable LWC Snippets
+- Enable SLDS Classes
+- Enable Advanced Mode
+
 ## Available Snippets
 
-### HTML
+### HTML Snippets
 Trigger | Description
 --- | ---
+bold | Adds Strong tag and moves the cursor between the tags to enter text
+grid:1 Column | Adds SLDS grid layout along with single column
+grid:2 Columns | Adds SLDS grid layout along with two columns
+grid:3 Columns | Adds SLDS grid layout along with three columns
+column | Adds Column
+Modal Layer | Adds the Audibene Modal Layer HTML along with Controller and Helper function
+absolute:center | Adds SLDS layout for absolute center
+heading | Adds heading HTML. Supports heading_large, heading_medium, heading_small
+text | Adds text HTML - Supports align_left, align_center ,align_right, color_default, color_success,color_weak, color_error, color_inverse, color_inverse-weak
+
+### Apex Snippets
+Trigger | Description
+--- | ---
+sysDebug | System Debug
+function | New Function
+testFunction | New Test Function
+tryCatch | Try Catch
+getset | Getter Setter
+assert | System Assert
+assertEqual | System Assert Equal
+
+### Javascript Snippets
+Trigger | Description
+--- | ---
+console.log | Console Log
+json:stringify-and-parse | JSON.parse(JSON.stringify(data))
+json:parse | JSON.parse(data)
+json:stringify | JSON.stringify(data)
+evt:dataSet | dataSet
+promise | Creates and returns a new Promise in the standard ES6 syntax
+thencatch | Add the .then and .catch methods to handle promises
+
+### Aura Snippets
+Trigger | Description
+--- | ---
+input:text-aura | Text input fields are for entering single-line text.
+input:number-aura | Number input fields support decimal, percentage, and currency values.
+input:search-aura | Search input fields enable search queries
+input:date-aura | Date input fields provide a date picker for entering a date.
+input:time-aura | Time input fields provide a dropdown list of time values
+input:datetime-aura | Date/Time input fields provide a date and time picker for entering a date and time.
+input:file-aura | File input fields support upload of single or multiple files and can restrict the accepted file types
+input:email-aura | Email input fields are for entering email addresses
+input:password-aura | Password input fields obscure your text input
+card:basic-aura | Aura Basic Card
+icon:aura | Aura Icon
+button:basic-aura | Basic Button Aura
+button:icon-aura | Basic Button Aura
+button:group-aura | Button Group Aura
+if | Conditionally instantiates and renders either the body or the components in the else attribute.
+iteration | Renders a view of a collection of items. Supports iterations containing components that can be created exclusively on the client-side.
+attribute | Adds Attributes HTML
+hasRecordId | Add the force:hasRecordId interface to a Lightning component to enable the component to be assigned the ID of the current record
+appHostable | Add the force:appHostable interface to a Lightning component to allow it to be used as a custom tab in Lightning Experience or the Salesforce mobile app. Attribute name recordId, type String
+hasSObjectName | Add the force:hasSObjectName interface to a Lightning component to enable the component to be assigned the API name of current record’s sObject type. Attribute name sObjectName, type String
+lightningQuickAction | Add the force:lightningQuickAction interface to a Lightning component to allow it to be used as a custom action in Lightning Experience or the Salesforce mobile app
+lightningQuickActionWithoutHeader | Add the force:lightningQuickActionWithoutHeader interface to a Lightning component to allow it to be used as a custom action in Lightning Experience or the Salesforce mobile app
+availableForAllPageTypes | To make your component available for record pages and any other type of page, implement the flexipage:availableForAllPageTypes interface
+availableForRecordHome | To make your component available for record pages only, implement the flexipage:availableForRecordHome interface.
+init | This event is automatically fired when an app or component is initialized, prior to rendering.
+
+### Ligntning Web Components Snippets
+Trigger | Description
+--- | ---
+input:text-lwc | Text input fields are for entering single-line text.
+input:number-lwc | Number input fields support decimal, percentage, and currency values.
+input:search-lwc | Search input fields enable search queries
+input:date-lwc | Date input fields provide a date picker for entering a date.
+input:time-lwc | Time input fields provide a dropdown list of time values
+input:datetime-lwc | Date/Time input fields provide a date and time picker for entering a date and time.
+input:file-lwc | File input fields support upload of single or multiple files and can restrict th
+input:email-lwc | Email input fields are for entering email addresses
+input:password-lwc | Password input fields obscure your text input
+card:basic-lwc | LWC Basic Card
+icon:lwc | LWC Icon. Supports all Utility icons
+button:basic-lwc | Basic Button LWC
+button:icon-lwc | Basic Button LWC
+button:group-lwc | Button Group LWC
+
+### SLDS Classes 
+> These will only work inside the class attributes
+
+Trigger | Description
+--- | ---
+align_absolute-center | Class will absolutely center children content
+border_bottom | Adds a bottom border to an element
+border_left | Adds a left border to an element
+border_right | Adds a right border to an element
+border_top | Adds a top border to an element
+box | Provides 1rem base padding and borders
+box_x_small | Provides .5rem base padding and borders
+box_xx_small | Provides .25rem base padding and borders
+box_shade | Sets the background color to gray
+box_inverse | Sets the background color to dark blue
+box_alt-inverse | Sets the background color to darker blue
+box_success | Sets the background color to green
+box_info | Sets the background color to gray-ish blue
+box_warning | Sets the background color to yellow
+box_error | Sets the background color to red
+box_offline | Sets the background color to black
+box_texture | Adds striped background
+float_left | Pulls element from document flow and floats left. Text and other elements wrap around it.
+float_none | Removes float from an element that has attribute already
+float_right | Pulls element from document flow and floats right. Text and other elements wrap around it.
+slds:hide | Hides an element from the page by setting display propery to none
+slds:show | Shows the element by setting display property to block
+slds:hidden | Hides an element but reserve the space on the page
+slds:visible | Shows an element which was hidden by slds-hidden
+margin:around_none | Removes margin from all sides
+margin:around_xxx-small | Adds .125rem margin to all sides
+margin:around_xx-small | Adds .25rem margin to all sides
+margin:around_x-small | Adds .5rem margin to all sides
+margin:around_small | Adds .75rem margin to all sides
+margin:around_medium | Adds 1rem margin to all sides
+margin:around_large | Adds 1.5rem margin to all sides
+margin:around_x-large | Adds 2rem margin to all sides
+margin:around_xx-large | Adds 3rem margin to all sides
+margin:top_none | Removes margin from top
+margin:top_xxx-small | Adds .125rem margin to top
+margin:top_xx-small | Adds .25rem margin to top
+margin:top_x-small | Adds .5rem margin to top
+margin:top_small | Adds .75rem margin to top
+margin:top_medium | Adds 1rem margin to top
+margin:top_large | Adds 1.5rem margin to top
+margin:top_x-large | Adds 2rem margin to top
+margin:top_xx-large | Adds 3rem margin to top
+margin:left_none | Removes margin from left
+margin:left_xxx-small | Adds .125rem margin to left
+margin:left_xx-small | Adds .25rem margin to left
+margin:left_x-small | Adds .5rem margin to left
+margin:left_small | Adds .75rem margin to left
+margin:left_medium | Adds 1rem margin to left
+margin:left_large | Adds 1.5rem margin to left
+margin:left_x-large | Adds 2rem margin to left
+margin:left_xx-large | Adds 3rem margin to left
+margin:right_none | Removes margin from right
+margin:right_xxx-small | Adds .125rem margin to right
+margin:right_xx-small | Adds .25rem margin to right
+margin:right_x-small | Adds .5rem margin to right
+margin:right_small | Adds .75rem margin to right
+margin:right_medium | Adds 1rem margin to right
+margin:right_large | Adds 1.5rem margin to right
+margin:right_x-large | Adds 2rem margin to right
+margin:right_xx-large | Adds 3rem margin to right
+margin:bottom_none | Removes margin from bottom
+margin:bottom_xxx-small | Adds .125rem margin to bottom
+margin:bottom_xx-small | Adds .25rem margin to bottom
+margin:bottom_x-small | Adds .5rem margin to bottom
+margin:bottom_small | Adds .75rem margin to bottom
+margin:bottom_medium | Adds 1rem margin to bottom
+margin:bottom_large | Adds 1.5rem margin to bottom
+margin:bottom_x-large | Adds 2rem margin to bottom
+margin:bottom_xx-large | Adds 3rem margin to bottom
+margin:vertical_none | Removes margin from top and bottom
+margin:vertical_xxx-small | Adds .125rem margin to top and bottom
+margin:vertical_xx-small | Adds .25rem margin to top and bottom
+margin:vertical_x-small | Adds .5rem margin to top and bottom
+margin:vertical_small | Adds .75rem margin to top and bottom
+margin:vertical_medium | Adds 1rem margin to top and bottom
+margin:vertical_large | Adds 1.5rem margin to top and bottom
+margin:vertical_x-large | Adds 2rem margin to top and bottom
+margin:vertical_xx-large | Adds 3rem margin to top and bottom
+margin:horizontal_none | Removes margin from left and right
+margin:horizontal_xxx-small | Adds .125rem margin to left and right
+margin:horizontal_xx-small | Adds .25rem margin to left and right
+margin:horizontal_x-small | Adds .5rem margin to left and right
+margin:horizontal_small | Adds .75rem margin to left and right
+margin:horizontal_medium | Adds 1rem margin to left and right
+margin:horizontal_large | Adds 1.5rem margin to left and right
+margin:horizontal_x-large | Adds 2rem margin to left and right
+margin:horizontal_xx-large | Adds 3rem margin to left and right
+padding:around_none | Removes padding from all sides
+padding:around_xxx-small | Adds .125rem padding to all sides
+padding:around_xx-small | Adds .25rem padding to all sides
+padding:around_x-small | Adds .5rem padding to all sides
+padding:around_small | Adds .75rem padding to all sides
+padding:around_medium | Adds 1rem padding to all sides
+padding:around_large | Adds 1.5rem padding to all sides
+padding:around_x-large | Adds 2rem padding to all sides
+padding:around_xx-large | Adds 3rem padding to all sides
+padding:top_none | Removes padding from top
+padding:top_xxx-small | Adds .125rem padding to top
+padding:top_xx-small | Adds .25rem padding to top
+padding:top_x-small | Adds .5rem padding to top
+padding:top_small | Adds .75rem padding to top
+padding:top_medium | Adds 1rem padding to top
+padding:top_large | Adds 1.5rem padding to top
+padding:top_x-large | Adds 2rem padding to top
+padding:top_xx-large | Adds 3rem padding to top
+padding:left_none | Removes padding from left
+padding:left_xxx-small | Adds .125rem padding to left
+padding:left_xx-small | Adds .25rem padding to left
+padding:left_x-small | Adds .5rem padding to left
+padding:left_small | Adds .75rem padding to left
+padding:left_medium | Adds 1rem padding to left
+padding:left_large | Adds 1.5rem padding to left
+padding:left_x-large | Adds 2rem padding to left
+padding:left_xx-large | Adds 3rem padding to left
+padding:right_none | Removes padding from right
+padding:right_xxx-small | Adds .125rem padding to right
+padding:right_xx-small | Adds .25rem padding to right
+padding:right_x-small | Adds .5rem padding to right
+padding:right_small | Adds .75rem padding to right
+padding:right_medium | Adds 1rem padding to right
+padding:right_large | Adds 1.5rem padding to right
+padding:right_x-large | Adds 2rem padding to right
+padding:right_xx-large | Adds 3rem padding to right
+padding:bottom_none | Removes padding from bottom
+padding:bottom_xxx-small | Adds .125rem padding to bottom
+padding:bottom_xx-small | Adds .25rem padding to bottom
+padding:bottom_x-small | Adds .5rem padding to bottom
+padding:bottom_small | Adds .75rem padding to bottom
+padding:bottom_medium | Adds 1rem padding to bottom
+padding:bottom_large | Adds 1.5rem padding to bottom
+padding:bottom_x-large | Adds 2rem padding to bottom
+padding:bottom_xx-large | Adds 3rem padding to bottom
+padding:vertical_none | Removes padding from top and bottom
+padding:vertical_xxx-small | Adds .125rem padding to top and bottom
+padding:vertical_xx-small | Adds .25rem padding to top and bottom
+padding:vertical_x-small | Adds .5rem padding to top and bottom
+padding:vertical_small | Adds .75rem padding to top and bottom
+padding:vertical_medium | Adds 1rem padding to top and bottom
+padding:vertical_large | Adds 1.5rem padding to top and bottom
+padding:vertical_x-large | Adds 2rem padding to top and bottom
+padding:vertical_xx-large | Adds 3rem padding to top and bottom
+padding:horizontal_none | Removes padding from left and right
+padding:horizontal_xxx-small | Adds .125rem padding to left and right
+padding:horizontal_xx-small | Adds .25rem padding to left and right
+padding:horizontal_x-small | Adds .5rem padding to left and right
+padding:horizontal_small | Adds .75rem padding to left and right
+padding:horizontal_medium | Adds 1rem padding to left and right
+padding:horizontal_large | Adds 1.5rem padding to left and right
+padding:horizontal_x-large | Adds 2rem padding to left and right
+padding:horizontal_xx-large | Adds 3rem padding to left and right
+slds:truncate | Truncates text
+
+
+
+
 adbn-grid | Default Grid
 adbn-grid:gutters | Grid Gutters
 adbn-grid:wrap | Grid Wrap
@@ -48,318 +295,157 @@ adbn-textColor:red | Red Text Color
 adbn-textColor:inverse | Inverse Text Color
 adbn-textColor:inverse-weak | Inverse Weak Text Color
 
-### Aura
+
+### Advacned Mode
+
+#### HTML Snippets
 Trigger | Description
 --- | ---
-adbn:modalLayer | Audibene Modal Layer
-adbn-card:basic-aura | Aura Basic Card
-adbn-card:narrow-aura | Aura Narrow Card
-adbn-icon:aura | Aura Icon
-adbn-button:basic-aura | Basic Button Aura
-adbn-button:icon-aura | Basic Button Aura
-adbn-button:group-aura | Button Group Aura
-adbn-button:group-dropdown-aura | Button Group Aura Dropdown 
-adbn-aura:if | Conditionally instantiates and renders either the body or the components in the else attribute.
-adbn-aura:iteration | Renders a view of a collection of items. Supports iterations containing components that can be created exclusively on the client-side.
-adbn-aura:attribute | Quikly add attribute to aura component
-adbn-aura:hasRecordId | Add the force:hasRecordId interface to a Lightning component to enable the component to be assigned the ID of the current record
-adbn-aura:appHostable | Add the force:appHostable interface to a Lightning component to allow it to be used as a custom tab in Lightning Experience or the Salesforce mobile app. Attribute name recordId, type String
-adbn-aura:hasSObjectName | Add the force:hasSObjectName interface to a Lightning component to enable the component to be assigned the API name of current record’s sObject type. Attribute name sObjectName, type String
-adbn-aura:lightningQuickAction | Add the force:lightningQuickAction interface to a Lightning component to allow it to be used as a custom action in Lightning Experience or the Salesforce mobile app
-adbn-aura:lightningQuickActionWithoutHeader | Add the force:lightningQuickActionWithoutHeader interface to a Lightning component to allow it to be used as a custom action in Lightning Experience or the Salesforce mobile app
-adbn-aura:availableForAllPageTypes | To make your component available for record pages and any other type of page, implement the flexipage:availableForAllPageTypes interface
-adbn-aura:availableForRecordHome | To make your component available for record pages only, implement the flexipage:availableForRecordHome interface.
-adbn-aura:init | This event is automatically fired when an app or component is initialized, prior to rendering.
+grid:gutters | Grid Gutters
+grid:wrap | Grid Wrap
+grid:vertical | Grid Vertical
+grid:centered | Grid centered
+grid:spaced | Grid evenly spaced
+grid:spread | Grid evenly spread
+grid:right | Grid Right
+grid:vertical_top | Vertical Top
+grid:vertical_center | Vertical Center
+grid:vertical_bottom | Vertical Bottom
+heading:large | Large Heading
+heading:medium | Medium Heading
+heading:small | Small Heading
+text:left | Text Left
+text:center | Text Center
+text:right | Text Right
+textColor:default | Default Text Color
+textColor:green | Green Text Color
+textColor:weak | Weak Text Color
+textColor:red | Red Text Color
+textColor:inverse | Inverse Text Color
+textColor:inverse-weak | Inverse Weak Text Color
 
-### LWC
+#### SLDS Classes
 Trigger | Description
 --- | ---
-adbn-card:basic-lwc | LWC Base Card
-adbn-card:narrow-lwc | LWC Narrow Card
-adbn-icon:lwc | LWC Icon
-adbn-button:basic-lwc | LWC Button
-adbn-button:icon-lwc | LWC Icon Button
-adbn-card:basic-lwc | LWC Basic Card
-adbn-card:narrow-lwc | LWC Narrow Card
-adbn-icon:lwc | LWC Icon
-adbn-button:basic-lwc | Basic Button LWC
-adbn-button:icon-lwc | Basic Button LWC
-adbn-button:group-lwc | Button Group LWC
-adbn-button:group-dropdown-lwc | Button Group Dropdown LWC
-
-### JS
-Trigger | Description
---- | ---
-adbn:clog | Console Log
-adbn-json:stringify-and-parse | JSON.parse(JSON.stringify(data))
-adbn-json:parse | JSON.parse(data)
-adbn-json:stringify | JSON.stringify(data)
-adbn-evt:dataSet | dataSet
-adbn:promise | Creates and returns a new Promise in the standard ES6 syntax
-adbn:thencatch | Add the .then and .catch methods to handle promises
-
-### Apex
-Trigger | Description
---- | ---
-abdn:sysDebug | System Debug
-abdn:function | New Function
-abdn:testFunction | New Test Function
-abdn:tryCatch | Try Catch
-adbn:ifElse | If Else
-adbn:getset | Getter Setter
-adbn:assert | System Assert
-adbn:assertEqual | System Assert Equal
-
-### Classes
-Class | Trigger | Description
---- | --- | ---
-slds-align_absolute-center  | slds:align_absolute-center | Class will absolutely center children content
-slds-border_bottom | slds:border_bottom | Adds a bottom border to an element
-slds-border_left | slds:border_left | Adds a left border to an element
-slds-border_right | slds:border_right | Adds a right border to an element
-slds-border_top | slds:border_top | Adds a top border to an element
-slds-box | slds:box | Provides 1rem base padding and borders
-slds-box slds-box_x-small | slds:box_x_small | Provides .5rem base padding and borders
-slds-box slds-box_xx-small | slds:box_xx_small | Provides .25rem base padding and borders
-slds-box slds-theme_shade | slds:box_shade | Sets the background color to gray
-slds-box slds-theme_inverse | slds:box_inverse | Sets the background color to dark blue
-slds-box slds-theme_alt-inverse | slds:box_alt-inverse | Sets the background color to darker blue
-slds-box slds-theme_success | slds:box_success | Sets the background color to green
-slds-box slds-theme_info | slds:box_info | Sets the background color to gray-ish blue
-slds-box slds-theme_warning | slds:box_warning | Sets the background color to yellow
-slds-box slds-theme_error | slds:box_error | Sets the background color to red
-slds-box slds-theme_offline | slds:box_offline | Sets the background color to black
-slds-box slds-theme_alert-texture | slds:box_texture | Adds striped background
-slds-float_left | slds:float_left | Pulls element from document flow and floats left. Text and other elements wrap around it.
-slds-float_none | slds:float_none | Removes float from an element that has attribute already
-slds-float_right | slds:float_right | Pulls element from document flow and floats right. Text and other elements wrap around it.
-slds-assistive-text | slds:assistive-text | Hides an element yet enables a screen reader to read the element that is hidden
-slds-hide | slds:hide | Hides an element from the page by setting display propery to none
-slds-show | slds:show | Shows the element by setting display property to block
-slds-show_inline-block | slds:show_inline-block | Shows the element by setting display to inline-block
-slds-show_inline | slds:show_inline | Shows the element by setting display to inline
-transition-hide | slds:transition-hide | Hides an element from the page by setting the opacity property set to 0
-transition-show | slds:transition-show | Shows the element using the opacity property set to 1
-slds-hidden | slds:hidden | Hides an element but reserve the space on the page
-slds-visible | slds:visible | Shows an element which was hidden by slds-hidden
-slds-hide_x-small | slds:hide_x-small | Hides content above 320px screen
-slds-hide_small | slds:hide_small | Hides content above 480px screen
-slds-hide_medium | slds:hide_medium | Hides content above 768px screen
-slds-hide_large | slds:hide_large | Hides content above 1024px screen
-slds-hide_x-large | slds:hide_x-large | Hides content above 1280px screen
-slds-show_x-small | slds:show_x-small | Shows content above 320px screen
-slds-show_small | slds:show_small | Shows content above 480px screen, hides for below
-slds-show_medium | slds:show_medium | Shows content above 768px screen, hides for below
-slds-show_large | slds:show_large | Shows content above 1024px screen, hides for below
-slds-show_x-large | slds:show_x-large | Shows content above 1280px screen, hides for below
-slds-has-bottom-magnet | slds:bottom-magnet | Assumes element below is connected
-slds-has-top-magnet | slds:top-magnet | Assumes element above is connected
-slds-var-m-around_xxx-small | slds-vd-margin:around_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-m-around_xx-small | slds-vd-margin:around_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-m-around_x-small | slds-vd-margin:around_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-m-around_small | slds-vd-margin:around_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-m-around_medium | slds-vd-margin:around_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-m-around_large | slds-vd-margin:around_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-m-around_x-large | slds-vd-margin:around_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
-slds-var-m-around_xx-large | slds-vd-margin:around_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
-slds-m-around_none | slds-margin:around_none | Removes margin from all sides
-slds-m-around_xxx-small | slds-margin:around_xxx-small | Adds .125rem margin to all sides
-slds-m-around_xx-small | slds-margin:around_xx-small | Adds .25rem margin to all sides
-slds-m-around_x-small | slds-margin:around_x-small | Adds .5rem margin to all sides
-slds-m-around_small | slds-margin:around_small | Adds .75rem margin to all sides
-slds-m-around_medium | slds-margin:around_medium | Adds 1rem margin to all sides
-slds-m-around_large | slds-margin:around_large | Adds 1.5rem margin to all sides
-slds-m-around_x-large | slds-margin:around_x-large | Adds 2rem margin to all sides
-slds-m-around_xx-large | slds-margin:around_xx-large | Adds 3rem margin to all sides
-slds-var-m-top_xxx-small | slds-vd-margin:top_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-m-top_xx-small | slds-vd-margin:top_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-m-top_x-small | slds-vd-margin:top_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-m-top_small | slds-vd-margin:top_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-m-top_medium | slds-vd-margin:top_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-m-top_large | slds-vd-margin:top_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-m-top_x-large | slds-vd-margin:top_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
-slds-var-m-top_xx-large | slds-vd-margin:top_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
-slds-m-top_none | slds-margin:top_none | Removes margin from top
-slds-m-top_xxx-small | slds-margin:top_xxx-small | Adds .125rem margin to top
-slds-m-top_xx-small | slds-margin:top_xx-small | Adds .25rem margin to top
-slds-m-top_x-small | slds-margin:top_x-small | Adds .5rem margin to top
-slds-m-top_small | slds-margin:top_small | Adds .75rem margin to top
-slds-m-top_medium | slds-margin:top_medium | Adds 1rem margin to top
-slds-m-top_large | slds-margin:top_large | Adds 1.5rem margin to top
-slds-m-top_x-large | slds-margin:top_x-large | Adds 2rem margin to top
-slds-m-top_xx-large | slds-margin:top_xx-large | Adds 3rem margin to top
-slds-var-m-left_xxx-small | slds-vd-margin:left_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-m-left_xx-small | slds-vd-margin:left_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-m-left_x-small | slds-vd-margin:left_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-m-left_small | slds-vd-margin:left_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-m-left_medium | slds-vd-margin:left_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-m-left_large | slds-vd-margin:left_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-m-left_x-large | slds-vd-margin:left_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
-slds-var-m-left_xx-large | slds-vd-margin:left_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
-slds-m-left_none | slds-margin:left_none | Removes margin from left
-slds-m-left_xxx-small | slds-margin:left_xxx-small | Adds .125rem margin to left
-slds-m-left_xx-small | slds-margin:left_xx-small | Adds .25rem margin to left
-slds-m-left_x-small | slds-margin:left_x-small | Adds .5rem margin to left
-slds-m-left_small | slds-margin:left_small | Adds .75rem margin to left
-slds-m-left_medium | slds-margin:left_medium | Adds 1rem margin to left
-slds-m-left_large | slds-margin:left_large | Adds 1.5rem margin to left
-slds-m-left_x-large | slds-margin:left_x-large | Adds 2rem margin to left
-slds-m-left_xx-large | slds-margin:left_xx-large | Adds 3rem margin to left
-slds-var-m-right_xxx-small | slds-vd-margin:right_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-m-right_xx-small | slds-vd-margin:right_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-m-right_x-small | slds-vd-margin:right_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-m-right_small | slds-vd-margin:right_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-m-right_medium | slds-vd-margin:right_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-m-right_large | slds-vd-margin:right_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-m-right_x-large | slds-vd-margin:right_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
-slds-var-m-right_xx-large | slds-vd-margin:right_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
-slds-m-right_none | slds-margin:right_none | Removes margin from right
-slds-m-right_xxx-small | slds-margin:right_xxx-small | Adds .125rem margin to right
-slds-m-right_xx-small | slds-margin:right_xx-small | Adds .25rem margin to right
-slds-m-right_x-small | slds-margin:right_x-small | Adds .5rem margin to right
-slds-m-right_small | slds-margin:right_small | Adds .75rem margin to right
-slds-m-right_medium | slds-margin:right_medium | Adds 1rem margin to right
-slds-m-right_large | slds-margin:right_large | Adds 1.5rem margin to right
-slds-m-right_x-large | slds-margin:right_x-large | Adds 2rem margin to right
-slds-m-right_xx-large | slds-margin:right_xx-large | Adds 3rem margin to right
-slds-var-m-bottom_xxx-small | slds-vd-margin:bottom_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-m-bottom_xx-small | slds-vd-margin:bottom_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-m-bottom_x-small | slds-vd-margin:bottom_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-m-bottom_small | slds-vd-margin:bottom_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-m-bottom_medium | slds-vd-margin:bottom_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-m-bottom_large | slds-vd-margin:bottom_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-m-bottom_x-large | slds-vd-margin:bottom_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
-slds-var-m-bottom_xx-large | slds-vd-margin:bottom_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
-slds-m-bottom_none | slds-margin:bottom_none | Removes margin from bottom
-slds-m-bottom_xxx-small | slds-margin:bottom_xxx-small | Adds .125rem margin to bottom
-slds-m-bottom_xx-small | slds-margin:bottom_xx-small | Adds .25rem margin to bottom
-slds-m-bottom_x-small | slds-margin:bottom_x-small | Adds .5rem margin to bottom
-slds-m-bottom_small | slds-margin:bottom_small | Adds .75rem margin to bottom
-slds-m-bottom_medium | slds-margin:bottom_medium | Adds 1rem margin to bottom
-slds-m-bottom_large | slds-margin:bottom_large | Adds 1.5rem margin to bottom
-slds-m-bottom_x-large | slds-margin:bottom_x-large | Adds 2rem margin to bottom
-slds-m-bottom_xx-large | slds-margin:bottom_xx-large | Adds 3rem margin to bottom
-slds-m-vertical_none | slds-margin:vertical_none | Removes margin from top and bottom
-slds-m-vertical_xxx-small | slds-margin:vertical_xxx-small | Adds .125rem margin to top and bottom
-slds-m-vertical_xx-small | slds-margin:vertical_xx-small | Adds .25rem margin to top and bottom
-slds-m-vertical_x-small | slds-margin:vertical_x-small | Adds .5rem margin to top and bottom
-slds-m-vertical_small | slds-margin:vertical_small | Adds .75rem margin to top and bottom
-slds-m-vertical_medium | slds-margin:vertical_medium | Adds 1rem margin to top and bottom
-slds-m-vertical_large | slds-margin:vertical_large | Adds 1.5rem margin to top and bottom
-slds-m-vertical_x-large | slds-margin:vertical_x-large | Adds 2rem margin to top and bottom
-slds-m-vertical_xx-large | slds-margin:vertical_xx-large | Adds 3rem margin to top and bottom
-slds-var-p-around_xxx-small | slds-vd-padding:around_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-p-around_xx-small | slds-vd-padding:around_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-p-around_x-small | slds-vd-padding:around_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-p-around_small | slds-vd-padding:around_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-p-around_medium | slds-vd-padding:around_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-p-around_large | slds-vd-padding:around_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-p-around_x-large | slds-vd-padding:around_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
-slds-var-p-around_xx-large | slds-vd-padding:around_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
-slds-p-around_none | slds-padding:around_none | Removes padding from all sides
-slds-p-around_xxx-small | slds-padding:around_xxx-small | Adds .125rem padding to all sides
-slds-p-around_xx-small | slds-padding:around_xx-small | Adds .25rem padding to all sides
-slds-p-around_x-small | slds-padding:around_x-small | Adds .5rem padding to all sides
-slds-p-around_small | slds-padding:around_small | Adds .75rem padding to all sides
-slds-p-around_medium | slds-padding:around_medium | Adds 1rem padding to all sides
-slds-p-around_large | slds-padding:around_large | Adds 1.5rem padding to all sides
-slds-p-around_x-large | slds-padding:around_x-large | Adds 2rem padding to all sides
-slds-p-around_xx-large | slds-padding:around_xx-large | Adds 3rem padding to all sides
-slds-var-p-top_xxx-small | slds-vd-padding:top_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-p-top_xx-small | slds-vd-padding:top_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-p-top_x-small | slds-vd-padding:top_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-p-top_small | slds-vd-padding:top_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-p-top_medium | slds-vd-padding:top_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-p-top_large | slds-vd-padding:top_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-p-top_x-large | slds-vd-padding:top_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
-slds-var-p-top_xx-large | slds-vd-padding:top_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
-slds-p-top_none | slds-padding:top_none | Removes padding from top
-slds-p-top_xxx-small | slds-padding:top_xxx-small | Adds .125rem padding to top
-slds-p-top_xx-small | slds-padding:top_xx-small | Adds .25rem padding to top
-slds-p-top_x-small | slds-padding:top_x-small | Adds .5rem padding to top
-slds-p-top_small | slds-padding:top_small | Adds .75rem padding to top
-slds-p-top_medium | slds-padding:top_medium | Adds 1rem padding to top
-slds-p-top_large | slds-padding:top_large | Adds 1.5rem padding to top
-slds-p-top_x-large | slds-padding:top_x-large | Adds 2rem padding to top
-slds-p-top_xx-large | slds-padding:top_xx-large | Adds 3rem padding to top
-slds-var-p-left_xxx-small | slds-vd-padding:left_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-p-left_xx-small | slds-vd-padding:left_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-p-left_x-small | slds-vd-padding:left_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-p-left_small | slds-vd-padding:left_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-p-left_medium | slds-vd-padding:left_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-p-left_large | slds-vd-padding:left_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-p-left_x-large | slds-vd-padding:left_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
-slds-var-p-left_xx-large | slds-vd-padding:left_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
-slds-p-left_none | slds-padding:left_none | Removes padding from left
-slds-p-left_xxx-small | slds-padding:left_xxx-small | Adds .125rem padding to left
-slds-p-left_xx-small | slds-padding:left_xx-small | Adds .25rem padding to left
-slds-p-left_x-small | slds-padding:left_x-small | Adds .5rem padding to left
-slds-p-left_small | slds-padding:left_small | Adds .75rem padding to left
-slds-p-left_medium | slds-padding:left_medium | Adds 1rem padding to left
-slds-p-left_large | slds-padding:left_large | Adds 1.5rem padding to left
-slds-p-left_x-large | slds-padding:left_x-large | Adds 2rem padding to left
-slds-p-left_xx-large | slds-padding:left_xx-large | Adds 3rem padding to left
-slds-var-p-right_xxx-small | slds-vd-padding:right_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-p-right_xx-small | slds-vd-padding:right_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-p-right_x-small | slds-vd-padding:right_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-p-right_small | slds-vd-padding:right_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-p-right_medium | slds-vd-padding:right_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-p-right_large | slds-vd-padding:right_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-p-right_x-large | slds-vd-padding:right_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
-slds-var-p-right_xx-large | slds-vd-padding:right_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
-slds-p-right_none | slds-padding:right_none | Removes padding from right
-slds-p-right_xxx-small | slds-padding:right_xxx-small | Adds .125rem padding to right
-slds-p-right_xx-small | slds-padding:right_xx-small | Adds .25rem padding to right
-slds-p-right_x-small | slds-padding:right_x-small | Adds .5rem padding to right
-slds-p-right_small | slds-padding:right_small | Adds .75rem padding to right
-slds-p-right_medium | slds-padding:right_medium | Adds 1rem padding to right
-slds-p-right_large | slds-padding:right_large | Adds 1.5rem padding to right
-slds-p-right_x-large | slds-padding:right_x-large | Adds 2rem padding to right
-slds-p-right_xx-large | slds-padding:right_xx-large | Adds 3rem padding to right
-slds-var-p-bottom_xxx-small | slds-vd-padding:bottom_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
-slds-var-p-bottom_xx-small | slds-vd-padding:bottom_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
-slds-var-p-bottom_x-small | slds-vd-padding:bottom_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
-slds-var-p-bottom_small | slds-vd-padding:bottom_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
-slds-var-p-bottom_medium | slds-vd-padding:bottom_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
-slds-var-p-bottom_large | slds-vd-padding:bottom_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
-slds-var-p-bottom_x-large | slds-vd-padding:bottom_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
-slds-var-p-bottom_xx-large | slds-vd-padding:bottom_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
-slds-p-bottom_none | slds-padding:bottom_none | Removes padding from bottom
-slds-p-bottom_xxx-small | slds-padding:bottom_xxx-small | Adds .125rem padding to bottom
-slds-p-bottom_xx-small | slds-padding:bottom_xx-small | Adds .25rem padding to bottom
-slds-p-bottom_x-small | slds-padding:bottom_x-small | Adds .5rem padding to bottom
-slds-p-bottom_small | slds-padding:bottom_small | Adds .75rem padding to bottom
-slds-p-bottom_medium | slds-padding:bottom_medium | Adds 1rem padding to bottom
-slds-p-bottom_large | slds-padding:bottom_large | Adds 1.5rem padding to bottom
-slds-p-bottom_x-large | slds-padding:bottom_x-large | Adds 2rem padding to bottom
-slds-p-bottom_xx-large | slds-padding:bottom_xx-large | Adds 3rem padding to bottom
-slds-p-vertical_none | slds-padding:vertical_none | Removes padding from top and bottom
-slds-p-vertical_xxx-small | slds-padding:vertical_xxx-small | Adds .125rem padding to top and bottom
-slds-p-vertical_xx-small | slds-padding:vertical_xx-small | Adds .25rem padding to top and bottom
-slds-p-vertical_x-small | slds-padding:vertical_x-small | Adds .5rem padding to top and bottom
-slds-p-vertical_small | slds-padding:vertical_small | Adds .75rem padding to top and bottom
-slds-p-vertical_medium | slds-padding:vertical_medium | Adds 1rem padding to top and bottom
-slds-p-vertical_large | slds-padding:vertical_large | Adds 1.5rem padding to top and bottom
-slds-p-vertical_x-large | slds-padding:vertical_x-large | Adds 2rem padding to top and bottom
-slds-p-vertical_xx-large | slds-padding:vertical_xx-large | Adds 3rem padding to top and bottom
-slds-scrollable | slds-scrollable:auto | Forces element to scroll horizontally and vertically when content exceeds element's width and height
-slds-scrollable_none | slds-scrollable:none | Forces overflow items to not scroll within element's width and height
-slds-scrollable_y | slds-scrollable:yAxis | Forces element to scroll vertically when content exceeds element's height
-slds-scrollable_x | slds-scrollable:xAxis | Forces element to scroll vertically when content exceeds element's width
-slds-truncate | slds:truncate | Truncates text
-slds-truncate_container_25 | slds-truncate:25% | Truncates text at 25% of its parent container
-slds-truncate_container_33 | slds-truncate:33% | Truncates text at 33% of its parent container
-slds-truncate_container_50 | slds-truncate:50% | Truncates text at 50% of its parent container
-slds-truncate_container_66 | slds-truncate:66% | Truncates text at 66% of its parent container
-slds-truncate_container_75 | slds-truncate:75% | Truncates text at 75% of its parent container
+assistive-text | Hides an element yet enables a screen reader to read the element that is hidden
+show_inline-block | Shows the element by setting display to inline-block
+show_inline | Shows the element by setting display to inline
+transition-hide | Hides an element from the page by setting the opacity property set to 0
+transition-show | Shows the element using the opacity property set to 1
+hide_x-small | Hides content above 320px screen
+hide_small | Hides content above 480px screen
+hide_medium | Hides content above 768px screen
+hide_large | Hides content above 1024px screen
+hide_x-large | Hides content above 1280px screen
+show_x-small | Shows content above 320px screen
+show_small | Shows content above 480px screen, hides for below
+show_medium | Shows content above 768px screen, hides for below
+show_large | Shows content above 1024px screen, hides for below
+show_x-large | Shows content above 1280px screen, hides for below
+bottom-magnet | Assumes element below is connected
+top-magnet | Assumes element above is connected
+margin-vd:around_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
+margin-vd:around_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
+margin-vd:around_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
+margin-vd:around_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
+margin-vd:around_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
+margin-vd:around_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
+margin-vd:around_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
+margin-vd:around_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
+margin-vd:top_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
+margin-vd:top_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
+margin-vd:top_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
+margin-vd:top_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
+margin-vd:top_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
+margin-vd:top_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
+margin-vd:top_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
+margin-vd:top_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
+margin-vd:left_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
+margin-vd:left_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
+margin-vd:left_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
+margin-vd:left_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
+margin-vd:left_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
+margin-vd:left_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
+margin-vd:left_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
+margin-vd:left_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
+margin-vd:right_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
+margin-vd:right_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
+margin-vd:right_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
+margin-vd:right_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
+margin-vd:right_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
+margin-vd:right_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
+margin-vd:right_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
+margin-vd:right_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
+margin-vd:bottom_xxx-small | Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view
+margin-vd:bottom_xx-small | Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view
+margin-vd:bottom_x-small | Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view
+margin-vd:bottom_small | Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view
+margin-vd:bottom_medium | Adds margin of 1rem in Comfy view and 0.5rem in Compact view
+margin-vd:bottom_large | Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view
+margin-vd:bottom_x-large | Adds margin of 2rem in Comfy view and 1rem in Compact view
+margin-vd:bottom_xx-large | Adds margin of 3rem in Comfy view and 1.5rem in Compact view
+padding-vd:around_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
+padding-vd:around_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
+padding-vd:around_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
+padding-vd:around_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
+padding-vd:around_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
+padding-vd:around_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
+padding-vd:around_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
+padding-vd:around_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
+padding-vd:top_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
+padding-vd:top_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
+padding-vd:top_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
+padding-vd:top_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
+padding-vd:top_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
+padding-vd:top_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
+padding-vd:top_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
+padding-vd:top_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
+padding-vd:left_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
+padding-vd:left_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
+padding-vd:left_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
+padding-vd:left_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
+padding-vd:left_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
+padding-vd:left_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
+padding-vd:left_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
+padding-vd:left_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
+padding-vd:right_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
+padding-vd:right_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
+padding-vd:right_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
+padding-vd:right_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
+padding-vd:right_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
+padding-vd:right_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
+padding-vd:right_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
+padding-vd:right_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
+padding-vd:bottom_xxx-small | Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view
+padding-vd:bottom_xx-small | Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view
+padding-vd:bottom_x-small | Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view
+padding-vd:bottom_small | Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view
+padding-vd:bottom_medium | Adds padding of 1rem in Comfy view and 0.5rem in Compact view
+padding-vd:bottom_large | Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view
+padding-vd:bottom_x-large | Adds padding of 2rem in Comfy view and 1rem in Compact view
+padding-vd:bottom_xx-large | Adds padding of 3rem in Comfy view and 1.5rem in Compact view
+slds-scrollable:auto | Forces element to scroll horizontally and vertically when content exceeds element's width and height
+slds-scrollable:none | Forces overflow items to not scroll within element's width and height
+slds-scrollable:yAxis | Forces element to scroll vertically when content exceeds element's height
+slds-scrollable:xAxis | Forces element to scroll vertically when content exceeds element's width
+slds-truncate:25% | Truncates text at 25% of its parent container
+slds-truncate:33% | Truncates text at 33% of its parent container
+slds-truncate:50% | Truncates text at 50% of its parent container
+slds-truncate:66% | Truncates text at 66% of its parent container
+slds-truncate:75% | Truncates text at 75% of its parent container
+card:narrow-lwc | LWC Narrow Card
+card:narrow-aura | Aura Narrow Card
+button:group-dropdown-lwc | Button Group Dropdown LWC
+button:group-dropdown-aura | Button Group Aura Dropdown 
 
 ## Release Notes
 
-### 1.0.0 - Amber
-- Snippets for SLDS HTML 
+### Amber - v1.0.0 
+- Snippets for Apex
 - Snippets for Aura Components
 - Snippets for Javascript
-- Snippets for Apex
+- Snippets for LWC
+- Snippets for SLDS Classes 
 
 ## Credits
 The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit Bhargava** and **Ashutosh Bhardwaj** for supporting us in this project and providing us valuable feedback and we would also like to thank the entire **Salesforce Team** to have given us their feedback on the survey which motivated us to build this tool.
