@@ -1,7 +1,7 @@
 {
     "name": "audibenecodesnippets",
     "displayName": "Audibene Code Snippets",
-    "description": "Code Snippets for Audibene",
+    "description": "Quick Code Snippets for Audibene",
     "version": "1.0.0",
     "icon": "icon.png",
     "publisher": "UIUXTeamAudibene",
@@ -15,24 +15,48 @@
     "categories": [
         "Snippets"
     ],
+    "main": "./src/extension.js",
+    "activationEvents": [
+		"onLanguage:html",
+		"onLanguage:javascript",
+		"onLanguage:apex"
+    ],
     "contributes": {
-        "snippets": [
-            {
-                "language": "html",
-                "path": "./snippets/html.code-snippets"
-            },
-            {
-                "language": "html",
-                "path": "./snippets/classes.code-snippets"
-            },
-            {
-				"language": "javascript",
-				"path": "./snippets/js.code-snippets"
-            },
-            {
-				"language": "apex",
-				"path": "./snippets/apex.code-snippets"
-			}
-        ]
+        "configuration": {
+            "type": "object",
+            "title": "Audibene Code Snippets",
+            "properties": {
+                "audibenecodesnippets.enableSLDSClass": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable SLDS Classes"
+                },
+                "audibenecodesnippets.enableAuraSnippets": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable Aura Snippets"
+                },
+                "audibenecodesnippets.enableLWCSnippets": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable LWC Snippets"
+                },
+                "audibenecodesnippets.enableApexSnippets": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable Apex snippets"
+                },
+                "audibenecodesnippets.enableJavascriptSnippets": {
+                    "type": "boolean",
+                    "default": true,
+                    "description": "Enable JavaScript snippets"
+                },
+                "audibenecodesnippets.enableAdvancedMode": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Enable Advanced Mode to see all SLDS classes and Snippets. By default it only supports the most used snippets in Audibene"
+                }
+            }
+        }
     }
 }
