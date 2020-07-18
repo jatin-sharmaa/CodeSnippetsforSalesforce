@@ -254,48 +254,6 @@ padding:horizontal_x-large | Adds 2rem padding to left and right
 padding:horizontal_xx-large | Adds 3rem padding to left and right
 slds:truncate | Truncates text
 
-
-
-
-adbn-grid | Default Grid
-adbn-grid:gutters | Grid Gutters
-adbn-grid:wrap | Grid Wrap
-adbn-grid:vertical | Grid Vertical
-adbn-grid:centered | Grid centered
-adbn-grid:spaced | Grid evenly spaced
-adbn-grid:spread | Grid evenly spread
-adbn-grid:right | Grid Right
-adbn-grid:vertical_top | Vertical Top
-adbn-grid:vertical_center | Vertical Center
-adbn-grid:vertical_bottom | Vertical Bottom
-adbn-column:1 | Column 1
-adbn-column:2 | Column 2
-adbn-column:3 | Column 3
-adbn-column:4 | Column 4
-adbn-column:5 | Column 5
-adbn-column:6 | Column 6
-adbn-column:7 | Column 7
-adbn-column:8 | Column 8
-adbn-column:9 | Column 9
-adbn-column:10 | Column 10
-adbn-column:11 | Column 11
-adbn-absolute:center | Absolute Center
-adbn-heading | Heading
-adbn-heading:large | Large Heading
-adbn-heading:medium | Medium Heading
-adbn-heading:small | Small Heading
-adbn-text | Text
-adbn-text:left | Text Left
-adbn-text:center | Text Center
-adbn-text:right | Text Right
-adbn-textColor:default | Default Text Color
-adbn-textColor:green | Green Text Color
-adbn-textColor:weak | Weak Text Color
-adbn-textColor:red | Red Text Color
-adbn-textColor:inverse | Inverse Text Color
-adbn-textColor:inverse-weak | Inverse Weak Text Color
-
-
 ### Advacned Mode
 
 #### HTML Snippets
