@@ -2642,6 +2642,14 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
+                label: "combobox-aura",
+                insertText: new vscode.SnippetString(
+                    "<aura:attribute name=\"${1:Options}\" type=\"List\" description=\"${2:description}\"/>\n<lightning:combobox name=\"${3:name}\" label=\"${4:label}\" placeholder=\"${5:placeholder}\" options=\"{! v.${1:Options} }\" onchange=\"{! c.${6:function} }\"/>"
+                ),
+                detail: "A combobox enables you to select only one option",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
                 label: "card:basic-aura",
                 insertText: new vscode.SnippetString(
                     "<lightning:card>\n\t<aura:set attribute=\"title\">\n\t\t${1:Title}\n\t</aura:set>\n\t<aura:set attribute=\"footer\">\n\t\t${2:Footer}\n\t</aura:set>\n\t${3:Card Body}\n</lightning:card>",
@@ -2844,6 +2852,14 @@ function activate(context) {
                     "<lightning-input type=\"password\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"${3:Enter Password...} \"></lightning-input>"
                 ),
                 detail: "Password input fields obscure your text input",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
+                label: "combobox-lwc",
+                insertText: new vscode.SnippetString(
+                    "<lightning-combobox\n\tname=\"${1:name}\"\n\tlabel=\"${2:label}\"\n\tvalue=\"\"\n\tplaceholder=\"${3:placeholder}\"\n\toptions={options}\n\tonchange={handleChange}\n\trequired\n></lightning-combobox>"
+                ),
+                detail: "A combobox enables you to select only one option",
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
