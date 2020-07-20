@@ -1,14 +1,23 @@
 const vscode = require('vscode');
+const TelemetryReporter = require('vscode-extension-telemetry');
+
+const extensionId = 'ADBNCodeSnippet';
+const extensionVersion = "v1.0.1";
+const key = '03b9b83b-55d1-4146-bd0a-d135c07dd0bf'; 
+
+let reporter;
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
 
-    vscode.window.showInformationMessage('Audibene Code Snippet is loaded'); 
-
+    vscode.window.showInformationMessage('Audibene Code Snippet is loaded');
+    
+    reporter = new TelemetryReporter.default(extensionId, extensionVersion, key);
+    context.subscriptions.push(reporter);
+    
     let configs = vscode.workspace.getConfiguration('audibenecodesnippets');
-
     let enableApexSnippets          = configs.get("enableApexSnippets", true);
     let enableJavascriptSnippets    = configs.get("enableJavascriptSnippets", true);
     let enableAuraSnippets          = configs.get("enableAuraSnippets", true);
@@ -16,10 +25,16 @@ function activate(context) {
     let isAdvancedMode              = configs.get("enableAdvancedMode", false);
     let enableSLDSClass             = configs.get("enableSLDSClass", false);
     
+    sendTeleEventforConfigs( configs );
+
     if (enableApexSnippets) {
         vscode.languages.registerCompletionItemProvider('apex', {
             provideCompletionItems(doc, pos, token, context) {
                 return apexSnippets();
+            },
+            resolveCompletionItem(item, token) {
+                reporter.sendTelemetryEvent('lang_usage', {"language": "Apex"}, { 'lang_count': 1});
+                reporter.sendTelemetryEvent('apex', {"Apex": item.label}, { 'count': 1});
             }
         });
     } else {
@@ -32,6 +47,10 @@ function activate(context) {
         vscode.languages.registerCompletionItemProvider('javascript', {
             provideCompletionItems(doc, pos, token, context) {
                 return jsSnippets();
+            },
+            resolveCompletionItem(item, token) {
+                reporter.sendTelemetryEvent('lang_usage', {"language": "JavaScript"}, { 'lang_count': 1});
+                reporter.sendTelemetryEvent('javascript', {"JavaScript": item.label}, { 'count': 1});
             }
         });
     } else {
@@ -44,6 +63,10 @@ function activate(context) {
         vscode.languages.registerCompletionItemProvider('html', {
             provideCompletionItems(doc, pos, token, context) {
                 return advancedHtmlSnippets();
+            },
+            resolveCompletionItem(item, token) {
+                reporter.sendTelemetryEvent('lang_usage', {"language": "Advanced Mode"}, { 'lang_count': 1});
+                reporter.sendTelemetryEvent('advancedMode', {"Advanced Mode": item.label}, { 'count': 1});
             }
         });
     }
@@ -62,6 +85,10 @@ function activate(context) {
                 } else {
                     return sldsClasses();
                 }
+            },
+            resolveCompletionItem(item, token) {
+                reporter.sendTelemetryEvent('lang_usage', {"language": "Classes"}, { 'lang_count': 1});
+                reporter.sendTelemetryEvent('htmlClasses', {"classes": item.label}, { 'count': 1});
             }
         });
     }
@@ -70,6 +97,10 @@ function activate(context) {
         vscode.languages.registerCompletionItemProvider('html', {
             provideCompletionItems(doc, pos, token, context) {
                 return auraSnippets();
+            },
+            resolveCompletionItem(item, token) {
+                reporter.sendTelemetryEvent('lang_usage', {"language": "Aura"}, { 'lang_count': 1});
+                reporter.sendTelemetryEvent('htmlAura', {"Aura": item.label}, { 'count': 1});
             }
         });
     }
@@ -78,6 +109,10 @@ function activate(context) {
         vscode.languages.registerCompletionItemProvider('html', {
             provideCompletionItems(doc, pos, token, context) {
                 return lwcSnippets();
+            },
+            resolveCompletionItem(item, token) {
+                reporter.sendTelemetryEvent('lang_usage', {"language": "LWC"}, { 'lang_count': 1});
+                reporter.sendTelemetryEvent('htmlLWC', {"LWC": item.label}, { 'count': 1});
             }
         });
     }
@@ -85,14 +120,88 @@ function activate(context) {
     vscode.languages.registerCompletionItemProvider('html', {
         provideCompletionItems(doc, pos, token, context) {
             return htmlSnippets();
+        },
+        resolveCompletionItem(item, token) {
+            reporter.sendTelemetryEvent('lang_usage', {"language": "HTML"}, { 'lang_count': 1});
+            reporter.sendTelemetryEvent('html', {"html": item.label}, { 'count': 1});
         }
     });
 }
 
 /*
+ * Flag Updators
+ */
+    function enableApexSnippetsFlag() {
+        
+        reporter.sendTelemetryEvent('actions', {"Setting Update": "Apex"}, { 'flag': 1});
+        var configs = vscode.workspace.getConfiguration('audibenecodesnippets');
+        configs.update("enableApexSnippets", true, vscode.ConfigurationTarget.Global).then(() => {
+            vscode.window.showInformationMessage('Audibene Code Snippets is actiavted for Apex');
+        });
+    }
+
+    function enableJavascriptSnippetsFlag() {
+        
+        reporter.sendTelemetryEvent('actions', {"Setting Update": "Javascript"}, { 'flag': 1});
+        var configs = vscode.workspace.getConfiguration('audibenecodesnippets');
+        configs.update("enableJavascriptSnippets", true, vscode.ConfigurationTarget.Global).then(() => {
+            vscode.window.showInformationMessage('Audibene Code Snippets is actiavted for Javascript');
+        });
+    }
+
+/*
+ * Telemetry
+ */
+    function sendTeleEventforConfigs( configs ) {
+
+        let enableApexSnippets          = configs.get("enableApexSnippets", true);
+        let enableJavascriptSnippets    = configs.get("enableJavascriptSnippets", true);
+        let enableAuraSnippets          = configs.get("enableAuraSnippets", true);
+        let enableLWCSnippets           = configs.get("enableLWCSnippets", true);
+        let isAdvancedMode              = configs.get("enableAdvancedMode", false);
+        let enableSLDSClass             = configs.get("enableSLDSClass", false);
+
+        if(enableApexSnippets){
+            reporter.sendTelemetryEvent('settings', {"Config": "Apex"}, { 'switch': 1});
+        } else {
+            reporter.sendTelemetryEvent('settings', {"Config": "Apex"}, { 'switch': 0});
+        }
+
+        if(enableJavascriptSnippets){
+            reporter.sendTelemetryEvent('settings', {"Config": "JavaScript"}, { 'switch': 1});
+        } else {
+            reporter.sendTelemetryEvent('settings', {"Config": "JavaScript"}, { 'switch': 0});
+        }
+
+        if(enableAuraSnippets){
+            reporter.sendTelemetryEvent('settings', {"Config": "Aura"}, { 'switch': 1});
+        } else {
+            reporter.sendTelemetryEvent('settings', {"Config": "Aura"}, { 'switch': 0});
+        }
+
+        if(enableLWCSnippets){
+            reporter.sendTelemetryEvent('settings', {"Config": "LWC"}, { 'switch': 1});
+        } else {
+            reporter.sendTelemetryEvent('settings', {"Config": "LWC"}, { 'switch': 0});
+        }
+
+        if(isAdvancedMode){
+            reporter.sendTelemetryEvent('settings', {"Config": "Advanced Mode"}, { 'switch': 1});
+        } else {
+            reporter.sendTelemetryEvent('settings', {"Config": "Advanced Mode"}, { 'switch': 0});
+        }
+
+        if(enableSLDSClass){
+            reporter.sendTelemetryEvent('settings', {"Config": "SLDS Classes"}, { 'switch': 1});
+        } else {
+            reporter.sendTelemetryEvent('settings', {"Config": "SLDS Classes"}, { 'switch': 0});
+        }
+
+    }
+
+/*
  * Snippets
  */
-
     function htmlSnippets() {
         return [
             {
@@ -2905,29 +3014,13 @@ function activate(context) {
         ];
     }
 
-/*
- * Flag Updators
- */
-    function enableApexSnippetsFlag() {
-        
-        var configs = vscode.workspace.getConfiguration('audibenecodesnippets');
-        configs.update("enableApexSnippets", true, vscode.ConfigurationTarget.Global).then(() => {
-            vscode.window.showInformationMessage('Audibene Code Snippets is actiavted for Apex');
-        });
-    }
-
-    function enableJavascriptSnippetsFlag() {
-        
-        var configs = vscode.workspace.getConfiguration('audibenecodesnippets');
-        configs.update("enableJavascriptSnippets", true, vscode.ConfigurationTarget.Global).then(() => {
-            vscode.window.showInformationMessage('Audibene Code Snippets is actiavted for Javascript');
-        });
-    }
 
 exports.activate = activate;
 exports.deactivate = deactivate;
 
-function deactivate() {}
+function deactivate() {
+    reporter.dispose();
+}
 
 module.exports = {
 	activate,
@@ -2940,5 +3033,104 @@ module.exports = {
     auraSnippets,
     lwcSnippets,
     enableApexSnippetsFlag,
-    enableJavascriptSnippetsFlag
+    enableJavascriptSnippetsFlag,
+    sendTeleEventforConfigs
 }
+
+
+
+// "Aura Checkbox": {
+//     "prefix": "adbn:checkbox-aura",
+//     "body": "",
+//     "description": ""
+// },
+
+// "LWC Checkbox":{
+//     "prefix": "adbn:checkbox-lwc",
+//     "body": "",
+//     "description": ""
+// },
+
+// "Aura Checkbox Group":{
+//     "prefix": "adbn:checkbox-group-aura",
+//     "body": "",
+//     "description": ""
+// },
+// "LWC Checkbox Group":{
+//     "prefix": "adbn:checkbox-group-lwc",
+//     "body": "",
+//     "description": ""
+// },
+
+// "Aura Combobox (Select)":{
+//     "prefix": "adbn:combobox-aura",
+//     "body": "",
+//     "description": ""
+// },
+
+// "LWC Combobox (Select)":{
+//     "prefix": "adbn:combobox-lwc",
+//     "body": "",
+//     "description": ""
+// },
+
+// "Aura Toggle button":{
+//     "prefix": "adbn:toggle-button-aura",
+//     "body": "",
+//     "description": ""
+// },
+
+// "LWC Toggle button":{
+//     "prefix": "adbn:toggle-button-lwc",
+//     "body": "",
+//     "description": ""
+// },
+
+// "Aura Radio Button":{
+//     "prefix": "adbn:radio-button-aura",
+//     "body": "",
+//     "description": ""
+// },
+
+// "LWC Radio button":{
+//     "prefix": "adbn:radio-button-lwc",
+//     "body": "",
+//     "description": ""
+// },
+
+// "Aura Text Area":{
+//     "prefix": "adbn:text-aread-aura",
+//     "body": "",
+//     "description": ""
+// },
+
+// "LWC Text Area":{
+//     "prefix": "adbn:text-area-lwc",
+//     "body": "",
+//     "description": ""
+// },
+// "Aura Dual List Box":{
+//     "prefix": "adbn:dual-list-box-aura",
+//     "body": "",
+//     "description": ""
+// },
+// "LWC Dual List Box":{
+//     "prefix": "adbn:dual-list-box-lwc",
+//     "body": "",
+//     "description": ""
+// },
+
+// "Aura Data Table":{
+//     "prefix": "adbn:data-table-aura",
+//     "body": "",
+//     "description": ""
+// },
+
+// "Aura Formatted Text":{
+//     "prefix": "adbn:formatted-text-aura",
+//     "body":""
+// },
+// "LWC Formatted Text":{
+//     "prefix": "adbn:formatted-text-aura",
+//     "body":"<lightning-formatted-text value=\"${1:test@domain.com}\" linkify=${2|true,false|}></lightning-formatted-text>"
+// },
