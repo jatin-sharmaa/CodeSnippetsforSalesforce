@@ -62,6 +62,7 @@ input:datetime-aura | Date/Time input fields provide a date and time picker for 
 input:file-aura | File input fields support upload of single or multiple files and can restrict the accepted file types
 input:email-aura | Email input fields are for entering email addresses
 input:password-aura | Password input fields obscure your text input
+combobox-aura | A combobox enables you to select only one option.
 card:basic-aura | Aura Basic Card
 icon:aura | Aura Icon
 button:basic-aura | Basic Button Aura
@@ -91,6 +92,7 @@ input:datetime-lwc | Date/Time input fields provide a date and time picker for e
 input:file-lwc | File input fields support upload of single or multiple files and can restrict th
 input:email-lwc | Email input fields are for entering email addresses
 input:password-lwc | Password input fields obscure your text input
+combobox-aura | A combobox enables you to select only one option.
 card:basic-lwc | LWC Basic Card
 icon:lwc | LWC Icon. Supports all Utility icons
 button:basic-lwc | Basic Button LWC
@@ -254,7 +256,7 @@ padding:horizontal_x-large | Adds 2rem padding to left and right
 padding:horizontal_xx-large | Adds 3rem padding to left and right
 slds:truncate | Truncates text
 
-### Advacned Mode
+### Advanced Mode
 
 #### HTML Snippets
 Trigger | Description
@@ -404,6 +406,9 @@ button:group-dropdown-aura | Button Group Aura Dropdown
 - Snippets for Javascript
 - Snippets for LWC
 - Snippets for SLDS Classes 
+
+### Amber - v1.0.1 
+- Snippet for Combobox is added for Aura and LWC 
 
 ## Credits
 The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit Bhargava** and **Ashutosh Bhardwaj** for supporting us in this project and providing us valuable feedback and we would also like to thank the entire **Salesforce Team** to have given us their feedback on the survey which motivated us to build this tool.
