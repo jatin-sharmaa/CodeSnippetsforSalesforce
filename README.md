@@ -256,7 +256,7 @@ padding:horizontal_x-large | Adds 2rem padding to left and right
 padding:horizontal_xx-large | Adds 3rem padding to left and right
 slds:truncate | Truncates text
 
-### Advacned Mode
+### Advanced Mode
 
 #### HTML Snippets
 Trigger | Description
