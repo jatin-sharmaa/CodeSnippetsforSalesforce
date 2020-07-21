@@ -49,6 +49,16 @@ json:stringify | JSON.stringify(data)
 evt:dataSet | dataSet
 promise | Creates and returns a new Promise in the standard ES6 syntax
 thencatch | Add the .then and .catch methods to handle promises
+forEach | Adds a forEach Statement
+component:set | Adds a component setter Statement
+component:get | Adds a component getter Statement
+component:find | Adds a component finder Statement
+function:controller | Adds a new functions for Controllers
+function:helper | Adds a new functions for Helpers
+action:Callback | Adds code for callback method
+filter | Adds a filter statement
+splice | Adds a splice Statement
+action:event | Adds code for firing event
 
 ### Aura Snippets
 Trigger | Description
@@ -400,15 +410,28 @@ button:group-dropdown-aura | Button Group Aura Dropdown
 
 ## Release Notes
 
+### Amber - v1.0.2 
+- 10 New Snippets added for JavaScript
+    - forEach
+    - component:set
+    - component:get
+    - component:find
+    - function:controller
+    - function:helper
+    - action:Callback
+    - filter
+    - splice
+    - action:event
+
+### Amber - v1.0.1 
+- Snippet for Combobox is added for Aura and LWC 
+
 ### Amber - v1.0.0 
 - Snippets for Apex
 - Snippets for Aura Components
 - Snippets for Javascript
 - Snippets for LWC
 - Snippets for SLDS Classes 
-
-### Amber - v1.0.1 
-- Snippet for Combobox is added for Aura and LWC 
 
 ## Credits
 The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit Bhargava** and **Ashutosh Bhardwaj** for supporting us in this project and providing us valuable feedback and we would also like to thank the entire **Salesforce Team** to have given us their feedback on the survey which motivated us to build this tool.
