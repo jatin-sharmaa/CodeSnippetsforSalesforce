@@ -2,9 +2,9 @@ const vscode = require('vscode');
 const TelemetryReporter = require('vscode-extension-telemetry');
 
 const extensionId = 'ADBNCodeSnippet';
-const extensionVersion = "v1.0.1";
-const key = '03b9b83b-55d1-4146-bd0a-d135c07dd0bf'; 
-
+var thisExt = vscode.extensions.getExtension('UIUXTeamAudibene.audibenecodesnippets');
+const extensionVersion = "v"+thisExt.packageJSON.version;
+const key = '03b9b83b-55d1-4146-bd0a-d135c07dd0bfTEST'; 
 let reporter;
 
 /**
