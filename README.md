@@ -410,6 +410,9 @@ button:group-dropdown-aura | Button Group Aura Dropdown
 
 ## Release Notes
 
+### Amber - v1.0.3 
+- Bug Fixes
+
 ### Amber - v1.0.2 
 - 10 New Snippets added for JavaScript
     - forEach
