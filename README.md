@@ -27,6 +27,9 @@ Modal Layer | Adds the Audibene Modal Layer HTML along with Controller and Helpe
 absolute:center | Adds SLDS layout for absolute center
 heading | Adds heading HTML. Supports heading_large, heading_medium, heading_small
 text | Adds text HTML - Supports align_left, align_center ,align_right, color_default, color_success,color_weak, color_error, color_inverse, color_inverse-weak
+text:left | Text Left
+text:center | Text Center
+text:right | Text Right
 
 ### Apex Snippets
 Trigger | Description

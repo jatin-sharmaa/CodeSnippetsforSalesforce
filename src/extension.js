@@ -276,7 +276,30 @@ function activate(context) {
                 detail: "Text",
                 kind: vscode.CompletionItemKind.Snippet,
             },
-            
+            {
+                label: "text:left",
+                insertText: new vscode.SnippetString(
+                    "<div class=\"slds-text-align_left\">$1</div>",
+                ),
+                detail: "Text Left",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
+                label: "text:center",
+                insertText: new vscode.SnippetString(
+                    "<div class=\"slds-text-align_center\">$1</div>",
+                ),
+                detail: "Text Center",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
+                label: "text:right",
+                insertText: new vscode.SnippetString(
+                    "<div class=\"slds-text-align_right\">$1</div>",
+                ),
+                detail: "Text Right",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
         ];
     }
 
@@ -1530,25 +1553,25 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "text:left",
+                label: "text-left",
                 insertText: new vscode.SnippetString(
-                    "<div class=\"slds-text-align_left\">$1</div>",
+                    "slds-text-align_left",
                 ),
                 detail: "Text Left",
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "text:center",
+                label: "text-center",
                 insertText: new vscode.SnippetString(
-                    "<div class=\"slds-text-align_center\">$1</div>",
+                    "slds-text-align_center",
                 ),
                 detail: "Text Center",
                 kind: vscode.CompletionItemKind.Class,
             },
             {
-                label: "text:right",
+                label: "text-right",
                 insertText: new vscode.SnippetString(
-                    "<div class=\"slds-text-align_right\">$1</div>",
+                    "slds-text-align_right",
                 ),
                 detail: "Text Right",
                 kind: vscode.CompletionItemKind.Class,
