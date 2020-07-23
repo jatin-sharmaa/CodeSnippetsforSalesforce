@@ -1354,7 +1354,7 @@ function activate(context) {
             {
                 label: "function",
                 insertText: new vscode.SnippetString(
-                    "${1|public,static,private|} ${2:FunctionName} (${3:parameters}){\n\t${4:body}\n}"
+                    "${1|public,static,private|} void ${2:FunctionName} (${3:parameters}){\n\t${4:body}\n}"
                 ),
                 detail: "New Function | Audibene Code Snippets",
                 kind: vscode.CompletionItemKind.Function,
@@ -1362,7 +1362,7 @@ function activate(context) {
             {
                 label: "testFunction",
                 insertText: new vscode.SnippetString(
-                    "@isTest\n${1|public,static,private|} ${2:FunctionName}_Test (${3:parameters}){\n\ttest.startTest();\n\t${4:body}\n\ttest.stropTest();\n}"
+                    "@isTest\n${1|public,static,private|} void ${2:FunctionName}_Test (${3:parameters}){\n\ttest.startTest();\n\t${4:body}\n\ttest.stopTest();\n}"
                 ),
                 detail: "New Test Function | Audibene Code Snippets",
                 kind: vscode.CompletionItemKind.Function,
@@ -2857,7 +2857,7 @@ function activate(context) {
             {
                 label: "button:basic-aura",
                 insertText: new vscode.SnippetString(
-                    "<lightning:button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:label}\" title=\"${2:Title}\" onclick={!c.${3:Function Name}}/>",
+                    "<lightning:button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:label}\" title=\"${2:Title}\" onclick=\"{!c.${3:Function Name}}\"/>",
                 ),
                 detail: "Basic Button Aura",
                 kind: vscode.CompletionItemKind.Snippet,
