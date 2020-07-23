@@ -284,9 +284,6 @@ grid:vertical_bottom | Vertical Bottom
 heading:large | Large Heading
 heading:medium | Medium Heading
 heading:small | Small Heading
-text:left | Text Left
-text:center | Text Center
-text:right | Text Right
 textColor:default | Default Text Color
 textColor:green | Green Text Color
 textColor:weak | Weak Text Color
@@ -298,6 +295,9 @@ textColor:inverse-weak | Inverse Weak Text Color
 Trigger | Description
 --- | ---
 assistive-text | Hides an element yet enables a screen reader to read the element that is hidden
+text:left | Text Left
+text:center | Text Center
+text:right | Text Right
 show_inline-block | Shows the element by setting display to inline-block
 show_inline | Shows the element by setting display to inline
 transition-hide | Hides an element from the page by setting the opacity property set to 0
@@ -412,6 +412,7 @@ button:group-dropdown-aura | Button Group Aura Dropdown
 
 ### Amber - v1.0.3 
 - Bug Fixes
+- Text Alignment Classes moved outside the Advanced mode
 
 ### Amber - v1.0.2 
 - 10 New Snippets added for JavaScript
