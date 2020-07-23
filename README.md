@@ -3,7 +3,7 @@
 A set of HTML, JS and Apex Snippets for Visual Studio Code.
 You can also press `Ctrl + Space` if the snippets are not displayed
 
-![promo](./images/screen1.png)
+![promo](./images/ABDN_Cover.jpg)
 
 ## Configurations
 - Enable Apex snippets
@@ -15,30 +15,22 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 
 ## Release Notes
 
-### Amber - v1.0.3 
+### Amber
+
+#### v1.0.3 
 - Bug Fixes and Improvements
 - Text Alignment Classes moved outside the Advanced mode
 - Snippets for Theme Cards
 - Updated Classes
 - Updated Classes in Advanced Mode 
 
-### Amber - v1.0.2 
-- 10 New Snippets added for JavaScript
-    - forEach
-    - component:set
-    - component:get
-    - component:find
-    - function:controller
-    - function:helper
-    - action:Callback
-    - filter
-    - splice
-    - action:event
+#### v1.0.2 
+- 10 New Snippets added for JavaScript : `forEach`, `component:set`, `component:get`, `component:find`, `function:controller`, `function:helper`, `action:Callback`, `filter`, `splice`, `action:event`
 
-### Amber - v1.0.1 
+#### v1.0.1 
 - Snippet for Combobox is added for Aura and LWC 
 
-### Amber - v1.0.0 
+#### v1.0.0 
 - Snippets for Apex
 - Snippets for Aura Components
 - Snippets for Javascript
