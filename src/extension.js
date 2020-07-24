@@ -3809,6 +3809,14 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
+                label: "input:checkbox-aura",
+                insertText: new vscode.SnippetString(
+                    "<lightning:input type=\"checkbox\" label=\"${1:label}\" name=\"${2:name}\" checked=\"${3|true,false|}\" required=\"${4|true,false|}\" disabled=\"${5|true,false|}\"/>"
+                ),
+                detail: "Checkbox options can be required or disabled.",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
                 label: "combobox-aura",
                 insertText: new vscode.SnippetString(
                     "<aura:attribute name=\"${1:Options}\" type=\"List\" description=\"${2:description}\"/>\n<lightning:combobox name=\"${3:name}\" label=\"${4:label}\" placeholder=\"${5:placeholder}\" options=\"{! v.${1:Options} }\" onchange=\"{! c.${6:function} }\"/>"
@@ -4022,6 +4030,14 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
+                label: "input:checkbox-lwc",
+                insertText: new vscode.SnippetString(
+                    "<lightning-input type=\"checkbox\" label=\"${1:label}\" name=\"${2:name}\" ${3:checked} ${4:required} ${4:disabled}\"></lightning-input>"
+                ),
+                detail: "Checkbox options can be required or disabled.",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
                 label: "combobox-lwc",
                 insertText: new vscode.SnippetString(
                     "<lightning-combobox\n\tname=\"${1:name}\"\n\tlabel=\"${2:label}\"\n\tvalue=\"\"\n\tplaceholder=\"${3:placeholder}\"\n\toptions={options}\n\tonchange={handleChange}\n\trequired\n></lightning-combobox>"
@@ -4093,14 +4109,6 @@ module.exports = {
     enableJavascriptSnippetsFlag,
     sendTeleEventforConfigs
 }
-
-
-
-// "Aura Checkbox": {
-//     "prefix": "adbn:checkbox-aura",
-//     "body": "",
-//     "description": ""
-// },
 
 // "LWC Checkbox":{
 //     "prefix": "adbn:checkbox-lwc",

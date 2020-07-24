@@ -22,7 +22,8 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 - Text Alignment Classes moved outside the Advanced mode
 - Snippets for Theme Cards
 - Updated Classes
-- Updated Classes in Advanced Mode 
+- Updated Classes in Advanced Mode
+- Checkbox added in Aura and LWC
 
 #### v1.0.2 
 - 10 New Snippets added for JavaScript : `forEach`, `component:set`, `component:get`, `component:find`, `function:controller`, `function:helper`, `action:Callback`, `filter`, `splice`, `action:event`
@@ -111,6 +112,7 @@ input:datetime-aura | Date/Time input fields provide a date and time picker for 
 input:file-aura | File input fields support upload of single or multiple files and can restrict the accepted file types
 input:email-aura | Email input fields are for entering email addresses
 input:password-aura | Password input fields obscure your text input
+input:checkbox-aura | Checkbox options can be required or disabled.
 combobox-aura | A combobox enables you to select only one option.
 card:basic-aura | Aura Basic Card
 icon:aura | Aura Icon
@@ -141,6 +143,7 @@ input:datetime-lwc | Date/Time input fields provide a date and time picker for e
 input:file-lwc | File input fields support upload of single or multiple files and can restrict th
 input:email-lwc | Email input fields are for entering email addresses
 input:password-lwc | Password input fields obscure your text input
+input:checkbox-lwc | Checkbox options can be required or disabled.
 combobox-aura | A combobox enables you to select only one option.
 card:basic-lwc | LWC Basic Card
 icon:lwc | LWC Icon. Supports all Utility icons
