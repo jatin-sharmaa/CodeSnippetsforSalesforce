@@ -4032,7 +4032,7 @@ function activate(context) {
             {
                 label: "input:checkbox-lwc",
                 insertText: new vscode.SnippetString(
-                    "<lightning-input type=\"checkbox\" label=\"${1:label}\" name=\"${2:name}\" ${3:checked} ${4:required} ${4:disabled}\"></lightning-input>"
+                    "<lightning-input type=\"checkbox\" label=\"${1:label}\" name=\"${2:name}\" ${3:checked} ${4:required} ${5:disabled}></lightning-input>"
                 ),
                 detail: "Checkbox options can be required or disabled.",
                 kind: vscode.CompletionItemKind.Snippet,
