@@ -25,6 +25,7 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 - Updated Classes in Advanced Mode
 - Checkbox added in Aura and LWC
 - Included `if`, `if empty`, `if not empty`, `if equals`, `if not equals`, `if else`, `else` in Aura
+- Variant and Size attributes added in aura and lwc icon snippets
 
 #### v1.0.2 
 - 10 New Snippets added for JavaScript : `forEach`, `component:set`, `component:get`, `component:find`, `function:controller`, `function:helper`, `action:Callback`, `filter`, `splice`, `action:event`
