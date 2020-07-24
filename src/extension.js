@@ -7,6 +7,14 @@ const extensionVersion = "v"+thisExt.packageJSON.version;
 const key = '03b9b83b-55d1-4146-bd0a-d135c07dd0bf';
 let reporter;
 
+let configs = vscode.workspace.getConfiguration('audibenecodesnippets');
+let enableApexSnippets          = configs.get("enableApexSnippets", true);
+let enableJavascriptSnippets    = configs.get("enableJavascriptSnippets", true);
+let enableAuraSnippets          = configs.get("enableAuraSnippets", true);
+let enableLWCSnippets           = configs.get("enableLWCSnippets", true);
+let isAdvancedMode              = configs.get("enableAdvancedMode", false);
+let enableSLDSClass             = configs.get("enableSLDSClass", false);
+
 /**
  * @param {vscode.ExtensionContext} context
  */
@@ -17,15 +25,7 @@ function activate(context) {
     reporter = new TelemetryReporter.default(extensionId, extensionVersion, key);
     context.subscriptions.push(reporter);
     
-    let configs = vscode.workspace.getConfiguration('audibenecodesnippets');
-    let enableApexSnippets          = configs.get("enableApexSnippets", true);
-    let enableJavascriptSnippets    = configs.get("enableJavascriptSnippets", true);
-    let enableAuraSnippets          = configs.get("enableAuraSnippets", true);
-    let enableLWCSnippets           = configs.get("enableLWCSnippets", true);
-    let isAdvancedMode              = configs.get("enableAdvancedMode", false);
-    let enableSLDSClass             = configs.get("enableSLDSClass", false);
-    
-    sendTeleEventforConfigs( configs );
+    sendTeleEventforConfigs();
 
     if (enableApexSnippets) {
         vscode.languages.registerCompletionItemProvider('apex', {
@@ -154,13 +154,6 @@ function activate(context) {
  */
     function sendTeleEventforConfigs( configs ) {
 
-        let enableApexSnippets          = configs.get("enableApexSnippets", true);
-        let enableJavascriptSnippets    = configs.get("enableJavascriptSnippets", true);
-        let enableAuraSnippets          = configs.get("enableAuraSnippets", true);
-        let enableLWCSnippets           = configs.get("enableLWCSnippets", true);
-        let isAdvancedMode              = configs.get("enableAdvancedMode", false);
-        let enableSLDSClass             = configs.get("enableSLDSClass", false);
-
         if(enableApexSnippets){
             reporter.sendTelemetryEvent('settings', {"Config": "Apex"}, { 'switch': 1});
         } else {
@@ -247,7 +240,7 @@ function activate(context) {
             {
                 label: "Modal Layer",
                 insertText: new vscode.SnippetString(
-                    "<!--  ====== Paste below function in controller ====== -->\ncloseModal : function(component, event, helper) {\n\thelper.closeModal(component);\n}\n<!-- ====== Paste below function in helper ====== -->\ncloseModal : function(component) {\n\tvar currentValue = component.get(\"v.displayModal\");\n\tcomponent.set(\"v.displayModal\", !currentValue);\n}\n\n<aura:attribute name=\"displayModal\" type=\"Boolean\" default=\"true\" description=\"boolean flag to control modal visibility\"/>\n\n<aura:if isTrue=\"{!v.displayModal}\">\n\t<div role=\"dialog\" tabindex=\"-1\" aria-labelledby=\"Modal\" class=\"slds-modal slds-fade-in-open slds-modal_small\">\n\t\t<div class=\"slds-modal__container c__modalContainer\">\n\t\t\t<div class=\"slds-modal__header\">\n\t\t\t\t<button class=\"slds-button slds-button--icon-inverse slds-modal__close\" onclick=\"{!c.closeModal}\">\n\t\t\t\t\t<lightning:icon iconName=\"utility:close\" size=\"medium\" variant=\"bare\"/>\n\t\t\t\t\t<span class=\"slds-assistive-text\"> <!-- FIX {Label.c.Close} --> </span>\n\t\t\t\t</button>\n\t\t\t\t<h1 class=\"slds-text-heading--medium c__fontWeightTitle\">${1:Modal Title}</h1>\n\t\t\t</div>\n\t\t\t<div class=\"slds-modal__content slds-p-around--medium c__modalContent\">\n\t\t\t\t<div class=\"c_tableWrapper\">\n\t\t\t\t\t${2:Modal Body}\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\t<div class=\"slds-backdrop slds-backdrop_open\" aura:id=\"modalBackground\"></div>\n</aura:if>",
+                    "<!--  ====== Paste below function in controller ====== -->\n\tcloseModal : function(component, event, helper) {\n\t\thelper.closeModal(component);\n\t}\n<!-- ====== Paste below function in helper ====== -->\n\tcloseModal : function(component) {\n\t\tvar currentValue = component.get(\"v.displayModal\");\n\t\tcomponent.set(\"v.displayModal\", !currentValue);\n\t}\n\n<aura:attribute name=\"displayModal\" type=\"Boolean\" default=\"true\" description=\"boolean flag to control modal visibility\" />\n\n<aura:if isTrue=\"{!v.displayModal}\">\n\t<div role=\"dialog\" tabindex=\"-1\" aria-labelledby=\"Modal\" class=\"slds-modal slds-fade-in-open slds-modal_small\">\n\t\t<div class=\"slds-modal__container c__modalContainer\">\n\t\t\t<div class=\"slds-modal__header\">\n\t\t\t\t<button class=\"slds-button slds-button--icon-inverse slds-modal__close\" onclick=\"{!c.closeModal}\">\n\t\t\t\t\t<lightning:icon iconName=\"utility:close\" size=\"medium\" variant=\"bare\" />\n\t\t\t\t\t<span class=\"slds-assistive-text\"><!-- FIX {Label.c.Close} --> </span>\n\t\t\t\t</button>\n\t\t\t\t<h1 class=\"slds-text-heading--medium c__fontWeightTitle\">${1:Modal Title}</h1>\n\t\t\t</div>\n\t\t\t<div class=\"slds-modal__content slds-p-around--medium c__modalContent\">\n\t\t\t\t<div class=\"c_tableWrapper\">\n\t\t\t\t\t${2:Modal Body}\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"slds-modal__footer c__modalFooter\">\n\t\t\t\t<div class=\"slds-grid\">\n\t\t\t\t\t<div class=\"slds-col slds-size_6-of-12\">\n\t\t\t\t\t\t<!-- Code -->\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"slds-col slds-size_6-of-12 slds-text-align_right\">\n\t\t\t\t\t\t<lightning:button class=\"slds-p-horizontal_xx-large\" variant=\"neutral\" label=\"Back\" title=\"Back\" />\n\t\t\t\t\t\t<lightning:button class=\"slds-p-horizontal_xx-large\" variant=\"brand\" label=\"Next\" title=\"Next\" />\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<div class=\"slds-backdrop slds-backdrop_open\" aura:id=\"modalBackground\"></div>\n</aura:if>",
                 ),
                 detail: "Audibene Modal Layer",
                 kind: vscode.CompletionItemKind.Snippet,
@@ -257,7 +250,7 @@ function activate(context) {
                 insertText: new vscode.SnippetString(
                     "<div class=\"slds-align_absolute-center\">$1</div>",
                 ),
-                detail: "Absolute Center",
+                detail: "Class will absolutely center children content",
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
@@ -276,7 +269,46 @@ function activate(context) {
                 detail: "Text",
                 kind: vscode.CompletionItemKind.Snippet,
             },
-            
+            {
+                label: "text:left",
+                insertText: new vscode.SnippetString(
+                    "<div class=\"slds-text-align_left\">$1</div>",
+                ),
+                detail: "Text Left",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
+                label: "text:center",
+                insertText: new vscode.SnippetString(
+                    "<div class=\"slds-text-align_center\">$1</div>",
+                ),
+                detail: "Text Center",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
+                label: "text:right",
+                insertText: new vscode.SnippetString(
+                    "<div class=\"slds-text-align_right\">$1</div>",
+                ),
+                detail: "Text Right",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
+                label: "Theme Card: One Column",
+                insertText: new vscode.SnippetString(
+                    "<div class=\"slds-card ${1|slds-theme_default,slds-theme_shade,slds-theme_inverse,slds-theme_alt-inverse,slds-theme_success,slds-theme_info,slds-theme_warning,slds-theme_error,slds-theme_offline,slds-theme_alert-texture slds-theme_shade|}\">\n\t<div class=\"slds-card__body slds-card__body_inner\">\n\t\t<div class=\"slds-grid slds-wrap slds-p-bottom_xx-small\">\n\t\t\t<div class=\"slds-col slds-size_12-of-12 slds-text-heading_small\">\n\t\t\t\t<strong>${2:Label 1}</strong>\n\t\t\t</div>\n\t\t\t<div class=\"slds-col slds-size_12-of-12\">\n\t\t\t\t<lightning-formatted-text class=\"slds-form-element__static\" data-aura-rendered-by=\"1554:0\">\n\t\t\t\t\t${3:Text 1}\n\t\t\t\t</lightning-formatted-text>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"slds-grid slds-wrap\">\n\t\t\t<div class=\"slds-col slds-size_12-of-12 slds-text-heading_small\">\n\t\t\t\t<strong>${4:Label 2}:</strong>\n\t\t\t</div>\n\t\t\t<div class=\"slds-col slds-size_12-of-12\">\n\t\t\t\t<lightning-formatted-rich-text class=\"slds-form-element__static slds-rich-text-editor__output\">\n\t\t\t\t\t${5:Text 2}\n\t\t\t\t</lightning-formatted-rich-text>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+                ),
+                detail: "Use a color theme to apply color to the background and text. Some color themes apply a background image or texture.",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
+                label: "Theme Card: Two Columns",
+                insertText: new vscode.SnippetString(
+                    "<div class=\"slds-card ${1|slds-theme_default,slds-theme_shade,slds-theme_inverse,slds-theme_alt-inverse,slds-theme_success,slds-theme_info,slds-theme_warning,slds-theme_error,slds-theme_offline,slds-theme_alert-texture slds-theme_shade|}\">\n\t<div class=\"slds-card__body slds-card__body_inner\">\n\t\t<div class=\"slds-grid slds-wrap slds-p-bottom_xx-small\">\n\t\t\t<div class=\"slds-col slds-size_5-of-12 slds-text-heading_small\">\n\t\t\t\t<strong>${2:Label 1}</strong>\n\t\t\t</div>\n\t\t\t<div class=\"slds-col slds-size_7-of-12\">\n\t\t\t\t<lightning-formatted-text class=\"slds-form-element__static\" data-aura-rendered-by=\"1554:0\">\n\t\t\t\t\t${3:Text 1}\n\t\t\t\t</lightning-formatted-text>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"slds-grid slds-wrap\">\n\t\t\t<div class=\"slds-col slds-size_5-of-12 slds-text-heading_small\">\n\t\t\t\t<strong>${4:Label 2}:</strong>\n\t\t\t</div>\n\t\t\t<div class=\"slds-col slds-size_7-of-12\">\n\t\t\t\t<lightning-formatted-rich-text class=\"slds-form-element__static slds-rich-text-editor__output\">\n\t\t\t\t\t${:Text 2}\n\t\t\t\t</lightning-formatted-rich-text>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
+                ),
+                detail: "Use a color theme to apply color to the background and text. Some color themes apply a background image or texture.",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
         ];
     }
 
@@ -387,30 +419,6 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
-                label: "text:left",
-                insertText: new vscode.SnippetString(
-                    "<div class=\"slds-text-align_left\">$1</div>",
-                ),
-                detail: "Text Left",
-                kind: vscode.CompletionItemKind.Snippet,
-            },
-            {
-                label: "text:center",
-                insertText: new vscode.SnippetString(
-                    "<div class=\"slds-text-align_center\">$1</div>",
-                ),
-                detail: "Text Center",
-                kind: vscode.CompletionItemKind.Snippet,
-            },
-            {
-                label: "text:right",
-                insertText: new vscode.SnippetString(
-                    "<div class=\"slds-text-align_right\">$1</div>",
-                ),
-                detail: "Text Right",
-                kind: vscode.CompletionItemKind.Snippet,
-            },
-            {
                 label: "textColor:default",
                 insertText: new vscode.SnippetString(
                     "<div class=\"slds-text-color_default\">$1</div>",
@@ -457,854 +465,6 @@ function activate(context) {
                 ),
                 detail: "Inverse Weak Text Color",
                 kind: vscode.CompletionItemKind.Snippet,
-            },
-            {
-                label: "assistive-text",
-                insertText: new vscode.SnippetString(
-                    "slds-assistive-text",
-                ),
-                detail: "Hides an element yet enables a screen reader to read the element that is hidden",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "show_inline-block",
-                insertText: new vscode.SnippetString(
-                    "slds-show_inline-block",
-                ),
-                detail: "Shows the element by setting display to inline-block",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "show_inline",
-                insertText: new vscode.SnippetString(
-                    "slds-show_inline",
-                ),
-                detail: "Shows the element by setting display to inline",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "transition-hide",
-                insertText: new vscode.SnippetString(
-                    "transition-hide",
-                ),
-                detail: "Hides an element from the page by setting the opacity property set to 0",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "transition-show",
-                insertText: new vscode.SnippetString(
-                    "transition-show",
-                ),
-                detail: "Shows the element using the opacity property set to 1",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "hide_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-hide_x-small",
-                ),
-                detail: "Hides content above 320px screen",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "hide_small",
-                insertText: new vscode.SnippetString(
-                    "slds-hide_small",
-                ),
-                detail: "Hides content above 480px screen",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "hide_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-hide_medium",
-                ),
-                detail: "Hides content above 768px screen",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "hide_large",
-                insertText: new vscode.SnippetString(
-                    "slds-hide_large",
-                ),
-                detail: "Hides content above 1024px screen",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "hide_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-hide_x-large",
-                ),
-                detail: "Hides content above 1280px screen",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "show_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-show_x-small",
-                ),
-                detail: "Shows content above 320px screen",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "show_small",
-                insertText: new vscode.SnippetString(
-                    "slds-show_small",
-                ),
-                detail: "Shows content above 480px screen, hides for below",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "show_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-show_medium",
-                ),
-                detail: "Shows content above 768px screen, hides for below",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "show_large",
-                insertText: new vscode.SnippetString(
-                    "slds-show_large",
-                ),
-                detail: "Shows content above 1024px screen, hides for below",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "show_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-show_x-large",
-                ),
-                detail: "Shows content above 1280px screen, hides for below",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "bottom-magnet",
-                insertText: new vscode.SnippetString(
-                    "slds-has-bottom-magnet",
-                ),
-                detail: "Assumes element below is connected",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "top-magnet",
-                insertText: new vscode.SnippetString(
-                    "slds-has-top-magnet",
-                ),
-                detail: "Assumes element above is connected",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:around_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-around_xxx-small",
-                ),
-                detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:around_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-around_xx-small",
-                ),
-                detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:around_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-around_x-small",
-                ),
-                detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:around_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-around_small",
-                ),
-                detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:around_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-around_medium",
-                ),
-                detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:around_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-around_large",
-                ),
-                detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:around_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-around_x-large",
-                ),
-                detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:around_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-around_xx-large",
-                ),
-                detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:top_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-top_xxx-small",
-                ),
-                detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:top_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-top_xx-small",
-                ),
-                detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:top_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-top_x-small",
-                ),
-                detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:top_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-top_small",
-                ),
-                detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:top_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-top_medium",
-                ),
-                detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:top_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-top_large",
-                ),
-                detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:top_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-top_x-large",
-                ),
-                detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:top_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-top_xx-large",
-                ),
-                detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:left_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-left_xxx-small",
-                ),
-                detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:left_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-left_xx-small",
-                ),
-                detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:left_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-left_x-small",
-                ),
-                detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:left_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-left_small",
-                ),
-                detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:left_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-left_medium",
-                ),
-                detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:left_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-left_large",
-                ),
-                detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:left_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-left_x-large",
-                ),
-                detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:left_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-left_xx-large",
-                ),
-                detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:right_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-right_xxx-small",
-                ),
-                detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:right_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-right_xx-small",
-                ),
-                detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:right_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-right_x-small",
-                ),
-                detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:right_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-right_small",
-                ),
-                detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:right_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-right_medium",
-                ),
-                detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:right_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-right_large",
-                ),
-                detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:right_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-right_x-large",
-                ),
-                detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:right_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-right_xx-large",
-                ),
-                detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:bottom_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-bottom_xxx-small",
-                ),
-                detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:bottom_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-bottom_xx-small",
-                ),
-                detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:bottom_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-bottom_x-small",
-                ),
-                detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:bottom_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-bottom_small",
-                ),
-                detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:bottom_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-bottom_medium",
-                ),
-                detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:bottom_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-bottom_large",
-                ),
-                detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:bottom_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-bottom_x-large",
-                ),
-                detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "margin-vd:bottom_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-m-bottom_xx-large",
-                ),
-                detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:around_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-around_xxx-small",
-                ),
-                detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:around_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-around_xx-small",
-                ),
-                detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:around_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-around_x-small",
-                ),
-                detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:around_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-around_small",
-                ),
-                detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:around_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-around_medium",
-                ),
-                detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:around_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-around_large",
-                ),
-                detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:around_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-around_x-large",
-                ),
-                detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:around_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-around_xx-large",
-                ),
-                detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:top_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-top_xxx-small",
-                ),
-                detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:top_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-top_xx-small",
-                ),
-                detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:top_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-top_x-small",
-                ),
-                detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:top_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-top_small",
-                ),
-                detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:top_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-top_medium",
-                ),
-                detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:top_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-top_large",
-                ),
-                detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:top_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-top_x-large",
-                ),
-                detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:top_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-top_xx-large",
-                ),
-                detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:left_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-left_xxx-small",
-                ),
-                detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:left_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-left_xx-small",
-                ),
-                detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:left_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-left_x-small",
-                ),
-                detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:left_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-left_small",
-                ),
-                detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:left_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-left_medium",
-                ),
-                detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:left_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-left_large",
-                ),
-                detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:left_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-left_x-large",
-                ),
-                detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:left_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-left_xx-large",
-                ),
-                detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:right_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-right_xxx-small",
-                ),
-                detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:right_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-right_xx-small",
-                ),
-                detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:right_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-right_x-small",
-                ),
-                detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:right_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-right_small",
-                ),
-                detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:right_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-right_medium",
-                ),
-                detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:right_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-right_large",
-                ),
-                detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:right_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-right_x-large",
-                ),
-                detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:right_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-right_xx-large",
-                ),
-                detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:bottom_xxx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-bottom_xxx-small",
-                ),
-                detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:bottom_xx-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-bottom_xx-small",
-                ),
-                detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:bottom_x-small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-bottom_x-small",
-                ),
-                detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:bottom_small",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-bottom_small",
-                ),
-                detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:bottom_medium",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-bottom_medium",
-                ),
-                detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:bottom_large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-bottom_large",
-                ),
-                detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:bottom_x-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-bottom_x-large",
-                ),
-                detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "padding-vd:bottom_xx-large",
-                insertText: new vscode.SnippetString(
-                    "slds-var-p-bottom_xx-large",
-                ),
-                detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-scrollable:auto",
-                insertText: new vscode.SnippetString(
-                    "slds-scrollable",
-                ),
-                detail: "Forces element to scroll horizontally and vertically when content exceeds element's width and height",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-scrollable:none",
-                insertText: new vscode.SnippetString(
-                    "slds-scrollable_none",
-                ),
-                detail: "Forces overflow items to not scroll within element's width and height",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-scrollable:yAxis",
-                insertText: new vscode.SnippetString(
-                    "slds-scrollable_y",
-                ),
-                detail: "Forces element to scroll vertically when content exceeds element's height",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-scrollable:xAxis",
-                insertText: new vscode.SnippetString(
-                    "slds-scrollable_x",
-                ),
-                detail: "Forces element to scroll vertically when content exceeds element's width",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-truncate:25%",
-                insertText: new vscode.SnippetString(
-                    "slds-truncate_container_25",
-                ),
-                detail: "Truncates text at 25% of its parent container",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-truncate:33%",
-                insertText: new vscode.SnippetString(
-                    "slds-truncate_container_33",
-                ),
-                detail: "Truncates text at 33% of its parent container",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-truncate:50%",
-                insertText: new vscode.SnippetString(
-                    "slds-truncate_container_50",
-                ),
-                detail: "Truncates text at 50% of its parent container",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-truncate:66%",
-                insertText: new vscode.SnippetString(
-                    "slds-truncate_container_66",
-                ),
-                detail: "Truncates text at 66% of its parent container",
-                kind: vscode.CompletionItemKind.Class,
-            },
-            {
-                label: "slds-truncate:75%",
-                insertText: new vscode.SnippetString(
-                    "slds-truncate_container_75",
-                ),
-                detail: "Truncates text at 75% of its parent container",
-                kind: vscode.CompletionItemKind.Class,
             },
             {
                 label: "card:narrow-lwc",
@@ -1354,7 +514,7 @@ function activate(context) {
             {
                 label: "function",
                 insertText: new vscode.SnippetString(
-                    "${1|public,static,private|} ${2:FunctionName} (${3:parameters}){\n\t${4:body}\n}"
+                    "${1|public,static,private|} void ${2:FunctionName} (${3:parameters}){\n\t${4:body}\n}"
                 ),
                 detail: "New Function | Audibene Code Snippets",
                 kind: vscode.CompletionItemKind.Function,
@@ -1362,7 +522,7 @@ function activate(context) {
             {
                 label: "testFunction",
                 insertText: new vscode.SnippetString(
-                    "@isTest\n${1|public,static,private|} ${2:FunctionName}_Test (${3:parameters}){\n\ttest.startTest();\n\t${4:body}\n\ttest.stropTest();\n}"
+                    "@isTest\n${1|public,static,private|} void ${2:FunctionName}_Test (${3:parameters}){\n\ttest.startTest();\n\t${4:body}\n\ttest.stopTest();\n}"
                 ),
                 detail: "New Test Function | Audibene Code Snippets",
                 kind: vscode.CompletionItemKind.Function,
@@ -1544,13 +704,38 @@ function activate(context) {
     }
 
     function sldsClasses() {
-        return [
+
+        var defaultClass = [
             {
                 label: "align_absolute-center",
                 insertText: new vscode.SnippetString(
                     "slds-align_absolute-center" ,
                 ),
                 detail: "Class will absolutely center children content",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "text-left",
+                insertText: new vscode.SnippetString(
+                    "slds-text-align_left",
+                ),
+                detail: "Text Left",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "text-center",
+                insertText: new vscode.SnippetString(
+                    "slds-text-align_center",
+                ),
+                detail: "Text Center",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "text-right",
+                insertText: new vscode.SnippetString(
+                    "slds-text-align_right",
+                ),
+                detail: "Text Right",
                 kind: vscode.CompletionItemKind.Class,
             },
             {
@@ -2753,7 +1938,1917 @@ function activate(context) {
                 detail: "Truncates text",
                 kind: vscode.CompletionItemKind.Class,
             },
+            {
+                label: "slds-col",
+                insertText: new vscode.SnippetString(
+                    "slds-col",
+                ),
+                detail: "Initializes a grid column",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid",
+                insertText: new vscode.SnippetString(
+                    "slds-grid",
+                ),
+                detail: "Initializes grid",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid_align-center",
+                insertText: new vscode.SnippetString(
+                    "slds-grid_align-center",
+                ),
+                detail: "Columns align in the center to the main axis and expand in each direction",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid_align-space",
+                insertText: new vscode.SnippetString(
+                    "slds-grid_align-space",
+                ),
+                detail: "Columns are evenly distributed with equal space around them all",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid_align-spread",
+                insertText: new vscode.SnippetString(
+                    "slds-grid_align-spread",
+                ),
+                detail: "Columns align to the left and right followed by center. Space is equal between them",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid_align-end",
+                insertText: new vscode.SnippetString(
+                    "slds-grid_align-end",
+                ),
+                detail: "Columns start on the opposite end of the grid's main axis",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid_vertical-align-start",
+                insertText: new vscode.SnippetString(
+                    "slds-grid_vertical-align-start",
+                ),
+                detail: "Columns start at the beginning of the grid's cross axis",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid_vertical-align-center",
+                insertText: new vscode.SnippetString(
+                    "slds-grid_vertical-align-center",
+                ),
+                detail: "Columns align in the center to the cross axis and expand it each direction",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid_vertical-align-end",
+                insertText: new vscode.SnippetString(
+                    "slds-grid_vertical-align-end",
+                ),
+                detail: "Columns start on the opposite end of the grid's cross axis",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-grid_vertical-stretch",
+                insertText: new vscode.SnippetString(
+                    "slds-grid_vertical-stretch",
+                ),
+                detail: "Stretch the grid items for both single row and multi-line rows to fill the height of the parent grid container",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-gutters",
+                insertText: new vscode.SnippetString(
+                    "slds-gutters",
+                ),
+                detail: "Apply 12px gutters to each grid column when you add this class to an `slds-grid` element",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-hyphenate",
+                insertText: new vscode.SnippetString(
+                    "slds-hyphenate",
+                ),
+                detail: "The truncation class can be used on an element, or the truncation include can be added to an existing class.",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-is-collapsed",
+                insertText: new vscode.SnippetString(
+                    "slds-is-collapsed",
+                ),
+                detail: "Hides elements inside a parent",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-is-expanded",
+                insertText: new vscode.SnippetString(
+                    "slds-is-expanded",
+                ),
+                detail: "Shows the elements inside the parent",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-is-static",
+                insertText: new vscode.SnippetString(
+                    "slds-is-static",
+                ),
+                detail: "Reset positioning back to normal behavior",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-is-relative",
+                insertText: new vscode.SnippetString(
+                    "slds-is-relative",
+                ),
+                detail: "Used to contain children if children are absolutely positioned and out of flow. Also used to position element without changing layout.",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-is-fixed",
+                insertText: new vscode.SnippetString(
+                    "slds-is-fixed",
+                ),
+                detail: "Used to position an element relative to the viewport.",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-is-absolute",
+                insertText: new vscode.SnippetString(
+                    "slds-is-absolute",
+                ),
+                detail: "Used to position an element relative to its closest ancestor with relative positioning.",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-no-flex",
+                insertText: new vscode.SnippetString(
+                    "slds-no-flex",
+                ),
+                detail: "Removes flexbox from grid column",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-no-space",
+                insertText: new vscode.SnippetString(
+                    "slds-no-space",
+                ),
+                detail: "Sets the column to a min-width of 0",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-nowrap",
+                insertText: new vscode.SnippetString(
+                    "slds-nowrap",
+                ),
+                detail: "Keeps columns on one line. Allows columns to stretch and fill 100% of the parent’s width and height.",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-body_regular",
+                insertText: new vscode.SnippetString(
+                    "slds-text-body_regular",
+                ),
+                detail: "Creates the 13px regular body copy",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-body_small",
+                insertText: new vscode.SnippetString(
+                    "slds-text-body_small",
+                ),
+                detail: "Creates a more pale-colored 12px copy",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-color_default",
+                insertText: new vscode.SnippetString(
+                    "slds-text-color_default",
+                ),
+                detail: "Default color of text",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-color_weak",
+                insertText: new vscode.SnippetString(
+                    "slds-text-color_weak",
+                ),
+                detail: "Weak color of text",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-color_error",
+                insertText: new vscode.SnippetString(
+                    "slds-text-color_error",
+                ),
+                detail: "Error color of text",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-color_destructive",
+                insertText: new vscode.SnippetString(
+                    "slds-text-color_destructive",
+                ),
+                detail: "Color of text for destructive actions",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-color_success",
+                insertText: new vscode.SnippetString(
+                    "slds-text-color_success",
+                ),
+                detail: "Success color of text",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-color_inverse",
+                insertText: new vscode.SnippetString(
+                    "slds-text-color_inverse",
+                ),
+                detail: "Default color of text on inversed background",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-color_inverse-weak",
+                insertText: new vscode.SnippetString(
+                    "slds-text-color_inverse-weak",
+                ),
+                detail: "Weak color of text on inversed background",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-heading_large",
+                insertText: new vscode.SnippetString(
+                    "slds-text-heading_large",
+                ),
+                detail: "Very large 28px heading",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-heading_medium",
+                insertText: new vscode.SnippetString(
+                    "slds-text-heading_medium",
+                ),
+                detail: "Large 20px heading",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-text-heading_small",
+                insertText: new vscode.SnippetString(
+                    "slds-text-heading_small",
+                ),
+                detail: "Smaller 16px heading",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_default",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_default",
+                ),
+                detail: "Sets the background color to white",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_shade",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_shade",
+                ),
+                detail: "Sets the background color to gray",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_inverse",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_inverse",
+                ),
+                detail: "Sets the background color to dark blue",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_alt-inverse",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_alt-inverse",
+                ),
+                detail: "Sets the background color to darker blue",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_success",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_success",
+                ),
+                detail: "Sets the background color to green",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_info",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_info",
+                ),
+                detail: "Sets the background color to gray-ish blue",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_warning",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_warning",
+                ),
+                detail: "Sets the background color to yellow",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_error",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_error",
+                ),
+                detail: "Sets the background color to red",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_offline",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_offline",
+                ),
+                detail: "Sets the background color to black",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-theme_alert-texture",
+                insertText: new vscode.SnippetString(
+                    "slds-theme_alert-texture",
+                ),
+                detail: "Adds striped background",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-wrap",
+                insertText: new vscode.SnippetString(
+                    "slds-wrap",
+                ),
+                detail: "Allows columns to wrap when they exceed 100% of their parent’s width",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table",
+                insertText: new vscode.SnippetString(
+                    "slds-table",
+                ),
+                detail: "Initializes data table",
+                documentation: "Can be used on table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-no-row-hover",
+                insertText: new vscode.SnippetString(
+                    "slds-no-row-hover",
+                ),
+                detail: "Default Table Row Hover",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-is-selected",
+                insertText: new vscode.SnippetString(
+                    "slds-is-selected",
+                ),
+                detail: "Selected Table Row + Hover",
+                documentation: "Can be used on .slds-table tr",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-cell-wrap",
+                insertText: new vscode.SnippetString(
+                    "slds-cell-wrap",
+                ),
+                detail: "By default, nowrap is applied",
+                documentation: "Can be used on .slds-table th, .slds-table td",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-cell-buffer_left",
+                insertText: new vscode.SnippetString(
+                    "slds-cell-buffer_left",
+                ),
+                detail: "Use to add a left padding buffer to cells",
+                documentation: "Can be used on .slds-table th, .slds-table td",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-cell-buffer_right",
+                insertText: new vscode.SnippetString(
+                    "slds-cell-buffer_right",
+                ),
+                detail: "Use to add a right padding buffer to cells",
+                documentation: "Can be used on .slds-table th, .slds-table td",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_cell-buffer",
+                insertText: new vscode.SnippetString(
+                    "slds-table_cell-buffer",
+                ),
+                detail: "Add left and right padding to the first and last cells of a table",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_bordered",
+                insertText: new vscode.SnippetString(
+                    "slds-table_bordered",
+                ),
+                detail: "Add vertical borders to a table",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-has-focus",
+                insertText: new vscode.SnippetString(
+                    "slds-has-focus",
+                ),
+                detail: "Focus state on a cell",
+                documentation: "Can be on .slds-table th, .slds-table td",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_bordered",
+                insertText: new vscode.SnippetString(
+                    "slds-table_bordered",
+                ),
+                detail: "Add vertical borders to a table",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_col-bordered",
+                insertText: new vscode.SnippetString(
+                    "slds-table_col-bordered",
+                ),
+                detail: "Add column borders",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_striped",
+                insertText: new vscode.SnippetString(
+                    "slds-table_striped",
+                ),
+                detail: "Add alternating strips to rows",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_fixed-layout",
+                insertText: new vscode.SnippetString(
+                    "slds-table_fixed-layout",
+                ),
+                detail: "Set table to use fixed layout for width and truncation purposes",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
         ];
+
+        if( isAdvancedMode ) {
+            var advancedClass = [
+                {
+                    label: "assistive-text",
+                    insertText: new vscode.SnippetString(
+                        "slds-assistive-text",
+                    ),
+                    detail: "Hides an element yet enables a screen reader to read the element that is hidden",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "show_inline-block",
+                    insertText: new vscode.SnippetString(
+                        "slds-show_inline-block",
+                    ),
+                    detail: "Shows the element by setting display to inline-block",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "show_inline",
+                    insertText: new vscode.SnippetString(
+                        "slds-show_inline",
+                    ),
+                    detail: "Shows the element by setting display to inline",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "transition-hide",
+                    insertText: new vscode.SnippetString(
+                        "transition-hide",
+                    ),
+                    detail: "Hides an element from the page by setting the opacity property set to 0",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "transition-show",
+                    insertText: new vscode.SnippetString(
+                        "transition-show",
+                    ),
+                    detail: "Shows the element using the opacity property set to 1",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "hide_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-hide_x-small",
+                    ),
+                    detail: "Hides content above 320px screen",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "hide_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-hide_small",
+                    ),
+                    detail: "Hides content above 480px screen",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "hide_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-hide_medium",
+                    ),
+                    detail: "Hides content above 768px screen",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "hide_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-hide_large",
+                    ),
+                    detail: "Hides content above 1024px screen",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "hide_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-hide_x-large",
+                    ),
+                    detail: "Hides content above 1280px screen",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "show_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-show_x-small",
+                    ),
+                    detail: "Shows content above 320px screen",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "show_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-show_small",
+                    ),
+                    detail: "Shows content above 480px screen, hides for below",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "show_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-show_medium",
+                    ),
+                    detail: "Shows content above 768px screen, hides for below",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "show_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-show_large",
+                    ),
+                    detail: "Shows content above 1024px screen, hides for below",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "show_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-show_x-large",
+                    ),
+                    detail: "Shows content above 1280px screen, hides for below",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "bottom-magnet",
+                    insertText: new vscode.SnippetString(
+                        "slds-has-bottom-magnet",
+                    ),
+                    detail: "Assumes element below is connected",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "top-magnet",
+                    insertText: new vscode.SnippetString(
+                        "slds-has-top-magnet",
+                    ),
+                    detail: "Assumes element above is connected",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:around_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-around_xxx-small",
+                    ),
+                    detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:around_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-around_xx-small",
+                    ),
+                    detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:around_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-around_x-small",
+                    ),
+                    detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:around_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-around_small",
+                    ),
+                    detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:around_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-around_medium",
+                    ),
+                    detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:around_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-around_large",
+                    ),
+                    detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:around_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-around_x-large",
+                    ),
+                    detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:around_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-around_xx-large",
+                    ),
+                    detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:top_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-top_xxx-small",
+                    ),
+                    detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:top_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-top_xx-small",
+                    ),
+                    detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:top_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-top_x-small",
+                    ),
+                    detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:top_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-top_small",
+                    ),
+                    detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:top_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-top_medium",
+                    ),
+                    detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:top_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-top_large",
+                    ),
+                    detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:top_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-top_x-large",
+                    ),
+                    detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:top_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-top_xx-large",
+                    ),
+                    detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:left_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-left_xxx-small",
+                    ),
+                    detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:left_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-left_xx-small",
+                    ),
+                    detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:left_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-left_x-small",
+                    ),
+                    detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:left_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-left_small",
+                    ),
+                    detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:left_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-left_medium",
+                    ),
+                    detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:left_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-left_large",
+                    ),
+                    detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:left_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-left_x-large",
+                    ),
+                    detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:left_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-left_xx-large",
+                    ),
+                    detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:right_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-right_xxx-small",
+                    ),
+                    detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:right_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-right_xx-small",
+                    ),
+                    detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:right_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-right_x-small",
+                    ),
+                    detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:right_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-right_small",
+                    ),
+                    detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:right_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-right_medium",
+                    ),
+                    detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:right_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-right_large",
+                    ),
+                    detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:right_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-right_x-large",
+                    ),
+                    detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:right_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-right_xx-large",
+                    ),
+                    detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:bottom_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-bottom_xxx-small",
+                    ),
+                    detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:bottom_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-bottom_xx-small",
+                    ),
+                    detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:bottom_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-bottom_x-small",
+                    ),
+                    detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:bottom_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-bottom_small",
+                    ),
+                    detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:bottom_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-bottom_medium",
+                    ),
+                    detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:bottom_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-bottom_large",
+                    ),
+                    detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:bottom_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-bottom_x-large",
+                    ),
+                    detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "margin-vd:bottom_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-m-bottom_xx-large",
+                    ),
+                    detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:around_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-around_xxx-small",
+                    ),
+                    detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:around_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-around_xx-small",
+                    ),
+                    detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:around_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-around_x-small",
+                    ),
+                    detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:around_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-around_small",
+                    ),
+                    detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:around_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-around_medium",
+                    ),
+                    detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:around_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-around_large",
+                    ),
+                    detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:around_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-around_x-large",
+                    ),
+                    detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:around_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-around_xx-large",
+                    ),
+                    detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:top_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-top_xxx-small",
+                    ),
+                    detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:top_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-top_xx-small",
+                    ),
+                    detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:top_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-top_x-small",
+                    ),
+                    detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:top_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-top_small",
+                    ),
+                    detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:top_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-top_medium",
+                    ),
+                    detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:top_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-top_large",
+                    ),
+                    detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:top_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-top_x-large",
+                    ),
+                    detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:top_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-top_xx-large",
+                    ),
+                    detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:left_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-left_xxx-small",
+                    ),
+                    detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:left_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-left_xx-small",
+                    ),
+                    detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:left_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-left_x-small",
+                    ),
+                    detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:left_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-left_small",
+                    ),
+                    detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:left_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-left_medium",
+                    ),
+                    detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:left_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-left_large",
+                    ),
+                    detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:left_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-left_x-large",
+                    ),
+                    detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:left_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-left_xx-large",
+                    ),
+                    detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:right_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-right_xxx-small",
+                    ),
+                    detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:right_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-right_xx-small",
+                    ),
+                    detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:right_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-right_x-small",
+                    ),
+                    detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:right_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-right_small",
+                    ),
+                    detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:right_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-right_medium",
+                    ),
+                    detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:right_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-right_large",
+                    ),
+                    detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:right_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-right_x-large",
+                    ),
+                    detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:right_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-right_xx-large",
+                    ),
+                    detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:bottom_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-bottom_xxx-small",
+                    ),
+                    detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:bottom_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-bottom_xx-small",
+                    ),
+                    detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:bottom_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-bottom_x-small",
+                    ),
+                    detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:bottom_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-bottom_small",
+                    ),
+                    detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:bottom_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-bottom_medium",
+                    ),
+                    detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:bottom_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-bottom_large",
+                    ),
+                    detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:bottom_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-bottom_x-large",
+                    ),
+                    detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "padding-vd:bottom_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-var-p-bottom_xx-large",
+                    ),
+                    detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-scrollable:auto",
+                    insertText: new vscode.SnippetString(
+                        "slds-scrollable",
+                    ),
+                    detail: "Forces element to scroll horizontally and vertically when content exceeds element's width and height",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-scrollable:none",
+                    insertText: new vscode.SnippetString(
+                        "slds-scrollable_none",
+                    ),
+                    detail: "Forces overflow items to not scroll within element's width and height",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-scrollable:yAxis",
+                    insertText: new vscode.SnippetString(
+                        "slds-scrollable_y",
+                    ),
+                    detail: "Forces element to scroll vertically when content exceeds element's height",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-scrollable:xAxis",
+                    insertText: new vscode.SnippetString(
+                        "slds-scrollable_x",
+                    ),
+                    detail: "Forces element to scroll vertically when content exceeds element's width",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-truncate:25%",
+                    insertText: new vscode.SnippetString(
+                        "slds-truncate_container_25",
+                    ),
+                    detail: "Truncates text at 25% of its parent container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-truncate:33%",
+                    insertText: new vscode.SnippetString(
+                        "slds-truncate_container_33",
+                    ),
+                    detail: "Truncates text at 33% of its parent container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-truncate:50%",
+                    insertText: new vscode.SnippetString(
+                        "slds-truncate_container_50",
+                    ),
+                    detail: "Truncates text at 50% of its parent container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-truncate:66%",
+                    insertText: new vscode.SnippetString(
+                        "slds-truncate_container_66",
+                    ),
+                    detail: "Truncates text at 66% of its parent container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-truncate:75%",
+                    insertText: new vscode.SnippetString(
+                        "slds-truncate_container_75",
+                    ),
+                    detail: "Truncates text at 75% of its parent container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-col_bump-top",
+                    insertText: new vscode.SnippetString(
+                        "slds-col_bump-top",
+                    ),
+                    detail: "Bumps grid item(s) away from the other grid items to sit at the top, taking up the remaining white-space of the grid container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-col_bump-right",
+                    insertText: new vscode.SnippetString(
+                        "slds-col_bump-right",
+                    ),
+                    detail: "Bumps grid item(s) away from the other grid items to sit to the right, taking up the remaining white-space of the grid container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-col_bump-bottom",
+                    insertText: new vscode.SnippetString(
+                        "slds-col_bump-bottom",
+                    ),
+                    detail: "Bumps grid item(s) away from the other grid items to sit at the bottom, taking up the remaining white-space of the grid container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-col_bump-left",
+                    insertText: new vscode.SnippetString(
+                        "slds-col_bump-left",
+                    ),
+                    detail: "Bumps grid item(s) away from the other grid items to sit to the left, taking up the remaining white-space of the grid container",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-container_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-container_small",
+                    ),
+                    detail: "Restrict width of containers to a maximum of 480px",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-container_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-container_medium",
+                    ),
+                    detail: "Restrict width of containers to a maximum of 768px",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-container_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-container_large",
+                    ),
+                    detail: "Restrict width of containers to a maximum of 1024px",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-container_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-container_x-large",
+                    ),
+                    detail: "Restrict width of containers to a maximum of 1280px",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-container_fluid",
+                    insertText: new vscode.SnippetString(
+                        "slds-container_fluid",
+                    ),
+                    detail: "Width of container takes up 100% of viewport",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-container_center",
+                    insertText: new vscode.SnippetString(
+                        "slds-container_center",
+                    ),
+                    detail: "Horizontally positions containers in the center of the viewport",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-container_left",
+                    insertText: new vscode.SnippetString(
+                        "slds-container_left",
+                    ),
+                    detail: "Horizontally positions containers to the left of the viewport",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-container_right",
+                    insertText: new vscode.SnippetString(
+                        "slds-container_right",
+                    ),
+                    detail: "Horizontally positions containers to the right of the viewport",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-dl_inline",
+                    insertText: new vscode.SnippetString(
+                        "slds-dl_inline",
+                    ),
+                    detail: "Causes description list to display horizontally with `dt` followed immediately by the `dd`.",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-dl_inline__label",
+                    insertText: new vscode.SnippetString(
+                        "slds-dl_inline__label",
+                    ),
+                    detail: "Marks a term",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-dl_inline__detail",
+                    insertText: new vscode.SnippetString(
+                        "slds-dl_inline__detail",
+                    ),
+                    detail: "Marks a description",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-dl_horizontal",
+                    insertText: new vscode.SnippetString(
+                        "slds-dl_horizontal",
+                    ),
+                    detail: "Causes description list to display horizontally with `dt` consuming 33% of the space and the `dd` taking up the rest.",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-dl_horizontal__label",
+                    insertText: new vscode.SnippetString(
+                        "slds-dl_horizontal__label",
+                    ),
+                    detail: "Marks a term",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-dl_horizontal__detail",
+                    insertText: new vscode.SnippetString(
+                        "slds-dl_horizontal__detail",
+                    ),
+                    detail: "Marks a description",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_frame",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_frame",
+                    ),
+                    detail: "Initializes grid",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_vertical",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_vertical",
+                    ),
+                    detail: "Initializes grid",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_vertical-reverse",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_vertical-reverse",
+                    ),
+                    detail: "Initializes grid",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_reverse",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_reverse",
+                    ),
+                    detail: "Initializes grid",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded",
+                    ),
+                    detail: "Normalizes the 0.75rem of padding when nesting a grid in a region with `.slds-p-horizontal_small`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded-xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded-xxx-small",
+                    ),
+                    detail: "Normalizes the 0.125rem of padding when nesting a grid in a region with `.slds-p-horizontal_xxx-small`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded-xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded-xx-small",
+                    ),
+                    detail: "Normalizes the 0.25rem of padding when nesting a grid in a region with `.slds-p-horizontal_xx-small`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded-x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded-x-small",
+                    ),
+                    detail: "Normalizes the 0.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_x-small`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded-small",
+                    ),
+                    detail: "Normalizes the 0.75rem of padding when nesting a grid in a region with `.slds-p-horizontal_small`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded-medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded-medium",
+                    ),
+                    detail: "Normalizes the 1rem of padding when nesting a grid in a region with `.slds-p-horizontal_medium`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded-large",
+                    ),
+                    detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_large`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded-x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded-x-large",
+                    ),
+                    detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_x-large`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grid_pull-padded-xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-grid_pull-padded-xx-large",
+                    ),
+                    detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_xx-large`",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grow",
+                    insertText: new vscode.SnippetString(
+                        "slds-grow",
+                    ),
+                    detail: "Allows column to grow to children’s content",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-grow-none",
+                    insertText: new vscode.SnippetString(
+                        "slds-grow-none",
+                    ),
+                    detail: "Prevents column from growing to children’s content",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_xxx-small",
+                    ),
+                    detail: "Apply 2px gutters to each grid column when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_xx-small",
+                    ),
+                    detail: "Apply 4px gutters to each grid column when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_x-small",
+                    ),
+                    detail: "Apply 8px gutters to each grid column when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_small",
+                    ),
+                    detail: "Apply 12px gutters to each grid column when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_medium",
+                    ),
+                    detail: "Apply 16px gutters to each grid column when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_large",
+                    ),
+                    detail: "Apply 24px gutters to each grid column when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_x-large",
+                    ),
+                    detail: "Apply 32px gutters to each grid column when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_xx-large",
+                    ),
+                    detail: "Apply 48px gutters to each grid column when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct",
+                    ),
+                    detail: "Apply 12px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct-xxx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct-xxx-small",
+                    ),
+                    detail: "Apply 2px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct-xx-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct-xx-small",
+                    ),
+                    detail: "Apply 4px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct-x-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct-x-small",
+                    ),
+                    detail: "Apply 8px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct-small",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct-small",
+                    ),
+                    detail: "Apply 12px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct-medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct-medium",
+                    ),
+                    detail: "Apply 16px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct-large",
+                    ),
+                    detail: "Apply 24px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct-x-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct-x-large",
+                    ),
+                    detail: "Apply 32px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-gutters_direct-xx-large",
+                    insertText: new vscode.SnippetString(
+                        "slds-gutters_direct-xx-large",
+                    ),
+                    detail: "Apply 48px gutters to only direct column children when you add this class to an `slds-grid` element",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-has-flexi-truncate",
+                    insertText: new vscode.SnippetString(
+                        "slds-has-flexi-truncate",
+                    ),
+                    detail: "Needed when truncation is nested in a flexible container in a grid",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                
+                {
+                    label: "slds-is-nested",
+                    insertText: new vscode.SnippetString(
+                        "slds-is-nested",
+                    ),
+                    detail: "Provides styles for a nested lists",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-is-visually-empty",
+                    insertText: new vscode.SnippetString(
+                        "slds-is-visually-empty",
+                    ),
+                    detail: "Hides element and removes width",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-item_label",
+                    insertText: new vscode.SnippetString(
+                        "slds-item_label",
+                    ),
+                    detail: "Label of the name-value pair variant. Layout is modified by its parent class.",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-item_detail",
+                    insertText: new vscode.SnippetString(
+                        "slds-item_detail",
+                    ),
+                    detail: "Label of the name-value pair variant. Layout is modified by its parent class.",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-list_horizontal",
+                    insertText: new vscode.SnippetString(
+                        "slds-list_horizontal",
+                    ),
+                    detail: "Causes items of a list to display horizontally",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-list_vertical-space",
+                    insertText: new vscode.SnippetString(
+                        "slds-list_vertical-space",
+                    ),
+                    detail: "Marks a vertical list with .5rem spacing around",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-list_vertical-space-medium",
+                    insertText: new vscode.SnippetString(
+                        "slds-list_vertical-space-medium",
+                    ),
+                    detail: "Marks a vertical list with 1rem spacing around",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-media__figure",
+                    insertText: new vscode.SnippetString(
+                        "slds-media__figure",
+                    ),
+                    detail: "Defines the figure area",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-media__body",
+                    insertText: new vscode.SnippetString(
+                        "slds-media__body",
+                    ),
+                    detail: "Defines the body area",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-media_small",
+                    insertText: new vscode.SnippetString(
+                        "slds-media_small",
+                    ),
+                    detail: "Adjusts whitespace on smaller media objects",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-media_large",
+                    insertText: new vscode.SnippetString(
+                        "slds-media_large",
+                    ),
+                    detail: "Adjusts whitespace on larger media objects",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-media_inline",
+                    insertText: new vscode.SnippetString(
+                        "slds-media_inline",
+                    ),
+                    detail: "Aligns the figure and body to be inline-block of each other",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-media_center",
+                    insertText: new vscode.SnippetString(
+                        "slds-media_center",
+                    ),
+                    detail: "Aligns the content in the .slds-media__body to the middle of the .slds-media__figure",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-media__figure_reverse",
+                    insertText: new vscode.SnippetString(
+                        "slds-media__figure_reverse",
+                    ),
+                    detail: "Defines the figure area on the other side",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-media_responsive",
+                    insertText: new vscode.SnippetString(
+                        "slds-media_responsive",
+                    ),
+                    detail: ".slds-media__figure and .slds-media__body stack on smaller screens",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-shrink",
+                    insertText: new vscode.SnippetString(
+                        "slds-shrink",
+                    ),
+                    detail: "Allows column to shrink to children's content",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-shrink-none",
+                    insertText: new vscode.SnippetString(
+                        "slds-shrink-none",
+                    ),
+                    detail: "Prevents column from shrinking to children's content",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-text-font_monospace",
+                    insertText: new vscode.SnippetString(
+                        "slds-text-font_monospace",
+                    ),
+                    detail: "Monospace font family",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-text-link_reset",
+                    insertText: new vscode.SnippetString(
+                        "slds-text-link_reset",
+                    ),
+                    detail: "Makes links and buttons appear as regular text",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-text-link",
+                    insertText: new vscode.SnippetString(
+                        "slds-text-link",
+                    ),
+                    detail: "Used in combination with `.slds-text-link--reset`, you can apply the class `.slds-text-link` to a child element to reset its styles back to that of a link.",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-text-link_faux",
+                    insertText: new vscode.SnippetString(
+                        "slds-text-link_faux",
+                    ),
+                    detail: "Faux links are used on areas that can't be wrapped in an `a` element, but need to appear to be a link with an underline on hover. An example is in the page header for Object home. The `H1` and `button` that sit next to each other have the `.slds-text-link--faux` class on their parent element.",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+                {
+                    label: "slds-text-longform",
+                    insertText: new vscode.SnippetString(
+                        "slds-text-longform",
+                    ),
+                    detail: "Adds default spacing and list styling within a wrapper",
+                    kind: vscode.CompletionItemKind.Class,
+                },
+            ];
+            return defaultClass.concat(advancedClass); 
+        } else {
+            return defaultClass;
+        }
     }
 
     function auraSnippets() {
@@ -2831,6 +3926,14 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
+                label: "input:checkbox-aura",
+                insertText: new vscode.SnippetString(
+                    "<lightning:input type=\"checkbox\" label=\"${1:label}\" name=\"${2:name}\" checked=\"${3|true,false|}\" required=\"${4|true,false|}\" disabled=\"${5|true,false|}\"/>"
+                ),
+                detail: "Checkbox options can be required or disabled.",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
                 label: "combobox-aura",
                 insertText: new vscode.SnippetString(
                     "<aura:attribute name=\"${1:Options}\" type=\"List\" description=\"${2:description}\"/>\n<lightning:combobox name=\"${3:name}\" label=\"${4:label}\" placeholder=\"${5:placeholder}\" options=\"{! v.${1:Options} }\" onchange=\"{! c.${6:function} }\"/>"
@@ -2849,7 +3952,7 @@ function activate(context) {
             {
                 label: "icon:aura",
                 insertText: new vscode.SnippetString(
-                    "<lightning:icon iconName=\"${1|utility:activity, utility:ad_set, utility:add, utility:adduser, utility:advanced_function, utility:advertising, utility:agent_session, utility:alert, utility:all, utility:anchor, utility:animal_and_nature, utility:announcement, utility:answer, utility:answered_twice, utility:apex_plugin, utility:apex, utility:approval, utility:apps, utility:archive, utility:arrowdown, utility:arrowup, utility:assignment, utility:attach, utility:automate, utility:away, utility:back, utility:ban, utility:block_visitor, utility:bold, utility:bookmark, utility:breadcrumbs, utility:broadcast, utility:brush, utility:bucket, utility:builder, utility:button_choice, utility:call, utility:campaign, utility:cancel_file_request, utility:cancel_transfer, utility:capslock, utility:cart, utility:case, utility:cases, utility:center_align_text, utility:change_owner, utility:change_record_type, utility:chart, utility:chat, utility:check, utility:checkin, utility:chevrondown, utility:chevronleft, utility:chevronright, utility:chevronup, utility:choice, utility:classic_interface, utility:clear, utility:clock, utility:close, utility:collapse_all, utility:collection_variable, utility:color_swatch, utility:comments, utility:company, utility:component_customization, utility:connected_apps, utility:constant, utility:contact_request, utility:contract_alt, utility:contract, utility:copy_to_clipboard, utility:copy, utility:crossfilter, utility:currency_input, utility:currency, utility:custom_apps, utility:cut, utility:dash, utility:database, utility:datadotcom, utility:date_input, utility:date_time, utility:dayview, utility:delete, utility:deprecate, utility:description, utility:desktop_and_phone, utility:desktop_console, utility:desktop, utility:dialing, utility:diamond, utility:dislike, utility:display_rich_text, utility:display_text, utility:dock_panel, utility:down, utility:download, utility:drag_and_drop, utility:drag, utility:dynamic_record_choice, utility:edit_form, utility:edit, utility:education, utility:einstein, utility:email_open, utility:email, utility:emoji, utility:end_call, utility:end_chat, utility:end_messaging_session, utility:engage, utility:enter, utility:erect_window, utility:error, utility:event, utility:events, utility:expand_all, utility:expand_alt, utility:expand, utility:fallback, utility:favorite, utility:feed, utility:file, utility:filter, utility:filterList, utility:flow_alt, utility:flow, utility:food_and_drink, utility:formula, utility:forward_up, utility:forward, utility:frozen, utility:fulfillment_order, utility:full_width_view, utility:global_constant, utility:graph, utility:groups, utility:help_center, utility:help, utility:hide_mobile, utility:hide, utility:hierarchy, utility:high_velocity_sales, utility:home, utility:identity, utility:image, utility:in_app_assistant, utility:inbox, utility:incoming_call, utility:info_alt, utility:info, utility:insert_tag_field, utility:insert_template, utility:inspector_panel, utility:internal_share, utility:italic, utility:jump_to_bottom, utility:jump_to_top, utility:justify_text, utility:kanban, utility:keyboard_dismiss, utility:knowledge_base, utility:layers, utility:layout, utility:leave_conference, utility:left_align_text, utility:left, utility:level_down, utility:level_up, utility:light_bulb, utility:lightning_extension, utility:lightning_inspector, utility:like, utility:link, utility:linked, utility:list, utility:listen, utility:live_message, utility:location, utility:lock, utility:locker_service_api_viewer, utility:locker_service_console, utility:log_a_call, utility:logout, utility:loop, utility:lower_flag, utility:macros, utility:magicwand, utility:mark_all_as_read, utility:matrix, utility:merge_field, utility:merge, utility:metrics, utility:minimize_window, utility:missed_call, utility:money, utility:moneybag, utility:monthlyview, utility:move, utility:multi_picklist, utility:multi_select_checkbox, utility:muted, utility:new_direct_message, utility:new_window, utility:new, utility:news, utility:note, utility:notebook, utility:notification, utility:number_input, utility:office365, utility:offline_cached, utility:offline, utility:omni_channel, utility:open_folder, utility:open, utility:opened_folder, utility:outbound_call, utility:outcome, utility:overflow, utility:package_org_beta, utility:package_org, utility:package, utility:page, utility:palette, utility:password, utility:paste, utility:pause, utility:people, utility:phone_landscape, utility:phone_portrait, utility:photo, utility:picklist_choice, utility:picklist_type, utility:picklist, utility:pin, utility:pinned, utility:play, utility:podcast_webinar, utility:pop_in, utility:power, utility:preview, utility:print, utility:priority, utility:privately_shared, utility:process, utility:prompt_edit, utility:prompt, utility:push, utility:puzzle, utility:question_mark, utility:question, utility:questions_and_answers, utility:quick_text, utility:quip, utility:quotation_marks, utility:quote, utility:radio_button, utility:rating, utility:reassign, utility:record_create, utility:record_delete, utility:record_lookup, utility:record_update, utility:record, utility:recurring_exception, utility:recycle_bin_empty, utility:recycle_bin_full, utility:redo, utility:refresh, utility:relate, utility:reminder, utility:remove_formatting, utility:remove_link, utility:replace, utility:reply_all, utility:reply, utility:report_issue, utility:reset_password, utility:resource_absence, utility:resource_capacity, utility:resource_territory, utility:retail_execution, utility:retweet, utility:ribbon, utility:richtextbulletedlist, utility:richtextindent, utility:richtextnumberedlist, utility:richtextoutdent, utility:right_align_text, utility:right, utility:rotate, utility:routing_offline, utility:rows, utility:rules, utility:salesforce1, utility:save, utility:screen, utility:search, utility:section, utility:send, utility:sentiment_negative, utility:sentiment_neutral, utility:settings, utility:setup_assistant_guide, utility:setup_modal, utility:setup, utility:share_file, utility:share_mobile, utility:share_post, utility:share, utility:shield, utility:shift_ui, utility:shopping_bag, utility:shortcuts, utility:side_list, utility:signpost, utility:skip_back, utility:skip_forward, utility:skip, utility:slider, utility:smiley_and_people, utility:sms, utility:snippet, utility:sobject_collection, utility:sobject, utility:socialshare, utility:sort, utility:spinner, utility:stage_collection, utility:stage, utility:standard_objects, utility:steps, utility:stop, utility:store, utility:strategy, utility:strikethrough, utility:success, utility:summary, utility:summarydetail, utility:survey, utility:switch, utility:symbols, utility:sync, utility:system_and_global_variable, utility:table_settings, utility:table, utility:tablet_landscape, utility:tablet_portrait, utility:tabset, utility:target, utility:task, utility:text_background_color, utility:text_color, utility:text_template, utility:text, utility:textarea, utility:textbox, utility:threedots_vertical, utility:threedots, utility:thunder, utility:tile_card_list, utility:toggle_panel_bottom, utility:toggle_panel_left, utility:toggle_panel_right, utility:toggle_panel_top, utility:toggle, utility:topic, utility:topic2, utility:touch_action, utility:tracker, utility:trail, utility:trailhead, utility:travel_and_places, utility:trending, utility:turn_off_notifications, utility:type_tool, utility:type, utility:undelete, utility:undeprecate, utility:underline, utility:undo, utility:unlinked, utility:unlock, utility:unmuted, utility:up, utility:upload, utility:user_role, utility:user, utility:variable, utility:video, utility:voicemail_drop, utility:volume_high, utility:volume_low, utility:volume_off, utility:waits, utility:warning, utility:watchlist, utility:weeklyview, utility:wifi, utility:work_order_type, utility:world, utility:yubi_key, utility:zoomin, utility:zoomout|}\" alternativeText=\"${2:Title}\" title=\"${2:Title}\" />",
+                    "<lightning:icon iconName=\"${1|utility:activity,utility:ad_set,utility:add,utility:adduser,utility:advanced_function,utility:advertising,utility:agent_session,utility:alert,utility:all,utility:anchor,utility:animal_and_nature,utility:announcement,utility:answer,utility:answered_twice,utility:apex_plugin,utility:apex,utility:approval,utility:apps,utility:archive,utility:arrowdown,utility:arrowup,utility:assignment,utility:attach,utility:automate,utility:away,utility:back,utility:ban,utility:block_visitor,utility:bold,utility:bookmark,utility:breadcrumbs,utility:broadcast,utility:brush,utility:bucket,utility:builder,utility:button_choice,utility:call,utility:campaign,utility:cancel_file_request,utility:cancel_transfer,utility:capslock,utility:cart,utility:case,utility:cases,utility:center_align_text,utility:change_owner,utility:change_record_type,utility:chart,utility:chat,utility:check,utility:checkin,utility:chevrondown,utility:chevronleft,utility:chevronright,utility:chevronup,utility:choice,utility:classic_interface,utility:clear,utility:clock,utility:close,utility:collapse_all,utility:collection_variable,utility:color_swatch,utility:comments,utility:company,utility:component_customization,utility:connected_apps,utility:constant,utility:contact_request,utility:contract_alt,utility:contract,utility:copy_to_clipboard,utility:copy,utility:crossfilter,utility:currency_input,utility:currency,utility:custom_apps,utility:cut,utility:dash,utility:database,utility:datadotcom,utility:date_input,utility:date_time,utility:dayview,utility:delete,utility:deprecate,utility:description,utility:desktop_and_phone,utility:desktop_console,utility:desktop,utility:dialing,utility:diamond,utility:dislike,utility:display_rich_text,utility:display_text,utility:dock_panel,utility:down,utility:download,utility:drag_and_drop,utility:drag,utility:dynamic_record_choice,utility:edit_form,utility:edit,utility:education,utility:einstein,utility:email_open,utility:email,utility:emoji,utility:end_call,utility:end_chat,utility:end_messaging_session,utility:engage,utility:enter,utility:erect_window,utility:error,utility:event,utility:events,utility:expand_all,utility:expand_alt,utility:expand,utility:fallback,utility:favorite,utility:feed,utility:file,utility:filter,utility:filterList,utility:flow_alt,utility:flow,utility:food_and_drink,utility:formula,utility:forward_up,utility:forward,utility:frozen,utility:fulfillment_order,utility:full_width_view,utility:global_constant,utility:graph,utility:groups,utility:help_center,utility:help,utility:hide_mobile,utility:hide,utility:hierarchy,utility:high_velocity_sales,utility:home,utility:identity,utility:image,utility:in_app_assistant,utility:inbox,utility:incoming_call,utility:info_alt,utility:info,utility:insert_tag_field,utility:insert_template,utility:inspector_panel,utility:internal_share,utility:italic,utility:jump_to_bottom,utility:jump_to_top,utility:justify_text,utility:kanban,utility:keyboard_dismiss,utility:knowledge_base,utility:layers,utility:layout,utility:leave_conference,utility:left_align_text,utility:left,utility:level_down,utility:level_up,utility:light_bulb,utility:lightning_extension,utility:lightning_inspector,utility:like,utility:link,utility:linked,utility:list,utility:listen,utility:live_message,utility:location,utility:lock,utility:locker_service_api_viewer,utility:locker_service_console,utility:log_a_call,utility:logout,utility:loop,utility:lower_flag,utility:macros,utility:magicwand,utility:mark_all_as_read,utility:matrix,utility:merge_field,utility:merge,utility:metrics,utility:minimize_window,utility:missed_call,utility:money,utility:moneybag,utility:monthlyview,utility:move,utility:multi_picklist,utility:multi_select_checkbox,utility:muted,utility:new_direct_message,utility:new_window,utility:new,utility:news,utility:note,utility:notebook,utility:notification,utility:number_input,utility:office365,utility:offline_cached,utility:offline,utility:omni_channel,utility:open_folder,utility:open,utility:opened_folder,utility:outbound_call,utility:outcome,utility:overflow,utility:package_org_beta,utility:package_org,utility:package,utility:page,utility:palette,utility:password,utility:paste,utility:pause,utility:people,utility:phone_landscape,utility:phone_portrait,utility:photo,utility:picklist_choice,utility:picklist_type,utility:picklist,utility:pin,utility:pinned,utility:play,utility:podcast_webinar,utility:pop_in,utility:power,utility:preview,utility:print,utility:priority,utility:privately_shared,utility:process,utility:prompt_edit,utility:prompt,utility:push,utility:puzzle,utility:question_mark,utility:question,utility:questions_and_answers,utility:quick_text,utility:quip,utility:quotation_marks,utility:quote,utility:radio_button,utility:rating,utility:reassign,utility:record_create,utility:record_delete,utility:record_lookup,utility:record_update,utility:record,utility:recurring_exception,utility:recycle_bin_empty,utility:recycle_bin_full,utility:redo,utility:refresh,utility:relate,utility:reminder,utility:remove_formatting,utility:remove_link,utility:replace,utility:reply_all,utility:reply,utility:report_issue,utility:reset_password,utility:resource_absence,utility:resource_capacity,utility:resource_territory,utility:retail_execution,utility:retweet,utility:ribbon,utility:richtextbulletedlist,utility:richtextindent,utility:richtextnumberedlist,utility:richtextoutdent,utility:right_align_text,utility:right,utility:rotate,utility:routing_offline,utility:rows,utility:rules,utility:salesforce1,utility:save,utility:screen,utility:search,utility:section,utility:send,utility:sentiment_negative,utility:sentiment_neutral,utility:settings,utility:setup_assistant_guide,utility:setup_modal,utility:setup,utility:share_file,utility:share_mobile,utility:share_post,utility:share,utility:shield,utility:shift_ui,utility:shopping_bag,utility:shortcuts,utility:side_list,utility:signpost,utility:skip_back,utility:skip_forward,utility:skip,utility:slider,utility:smiley_and_people,utility:sms,utility:snippet,utility:sobject_collection,utility:sobject,utility:socialshare,utility:sort,utility:spinner,utility:stage_collection,utility:stage,utility:standard_objects,utility:steps,utility:stop,utility:store,utility:strategy,utility:strikethrough,utility:success,utility:summary,utility:summarydetail,utility:survey,utility:switch,utility:symbols,utility:sync,utility:system_and_global_variable,utility:table_settings,utility:table,utility:tablet_landscape,utility:tablet_portrait,utility:tabset,utility:target,utility:task,utility:text_background_color,utility:text_color,utility:text_template,utility:text,utility:textarea,utility:textbox,utility:threedots_vertical,utility:threedots,utility:thunder,utility:tile_card_list,utility:toggle_panel_bottom,utility:toggle_panel_left,utility:toggle_panel_right,utility:toggle_panel_top,utility:toggle,utility:topic,utility:topic2,utility:touch_action,utility:tracker,utility:trail,utility:trailhead,utility:travel_and_places,utility:trending,utility:turn_off_notifications,utility:type_tool,utility:type,utility:undelete,utility:undeprecate,utility:underline,utility:undo,utility:unlinked,utility:unlock,utility:unmuted,utility:up,utility:upload,utility:user_role,utility:user,utility:variable,utility:video,utility:voicemail_drop,utility:volume_high,utility:volume_low,utility:volume_off,utility:waits,utility:warning,utility:watchlist,utility:weeklyview,utility:wifi,utility:work_order_type,utility:world,utility:yubi_key,utility:zoomin,utility:zoomout|}\" alternativeText=\"${2:Title}\" title=\"${2:Title}\" variant=\"${3|Success,warning,error,inverse|}\" size=\"${4|xx-small,x-small,small,medium,large|}\" />",
                 ),
                 detail: "Aura Icon",
                 kind: vscode.CompletionItemKind.Snippet,
@@ -2857,7 +3960,7 @@ function activate(context) {
             {
                 label: "button:basic-aura",
                 insertText: new vscode.SnippetString(
-                    "<lightning:button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:label}\" title=\"${2:Title}\" onclick={!c.${3:Function Name}}/>",
+                    "<lightning:button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:label}\" title=\"${2:Title}\" onclick=\"{!c.${3:Function Name}}\"/>",
                 ),
                 detail: "Basic Button Aura",
                 kind: vscode.CompletionItemKind.Snippet,
@@ -2881,9 +3984,57 @@ function activate(context) {
             {
                 label: "if",
                 insertText: new vscode.SnippetString(
-                    "<aura:if isTrue=\"{!v.${1:bar}}\">\n\t${2:ifBody}\n\t<aura:set attribute=\"else\">\n\t\t${3:elseBody}\n\t</aura:set>\n</aura:if>",
+                    "<aura:if isTrue=\"{!v.${1:variable}}\">\n\t${2:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally instantiates and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if empty",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!empty(v.${1:variable})}\">\n\t${2:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally checks if empty and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if not empty",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!not(empty(v.${1:variable}))}\">\n\t${2:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally checks if not empty and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if equals",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!v.${1:variable} == '${2:text}'}\">\n\t${3:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally checks if equals and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if not equals",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!not(v.${1:variable} == '${2:text}')}\">\n\t${3:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally if not equals and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if else",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!v.${1:variable}}\">\n\t${2:ifBody}\n\t<aura:set attribute=\"else\">\n\t\t${3:elseBody}\n\t</aura:set>\n</aura:if>",
                     ),
                 detail: "Conditionally instantiates and renders either the body or the components in the else attribute.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "else",
+                insertText: new vscode.SnippetString(
+                    "<aura:set attribute=\"else\">\n\t${3:elseBody}\n</aura:set>",
+                    ),
+                detail: "Renders else attribute",
                 kind: vscode.CompletionItemKind.Method,
             },
             {
@@ -3044,6 +4195,14 @@ function activate(context) {
                 kind: vscode.CompletionItemKind.Snippet,
             },
             {
+                label: "input:checkbox-lwc",
+                insertText: new vscode.SnippetString(
+                    "<lightning-input type=\"checkbox\" label=\"${1:label}\" name=\"${2:name}\" ${3:checked} ${4:required} ${5:disabled}></lightning-input>"
+                ),
+                detail: "Checkbox options can be required or disabled.",
+                kind: vscode.CompletionItemKind.Snippet,
+            },
+            {
                 label: "combobox-lwc",
                 insertText: new vscode.SnippetString(
                     "<lightning-combobox\n\tname=\"${1:name}\"\n\tlabel=\"${2:label}\"\n\tvalue=\"\"\n\tplaceholder=\"${3:placeholder}\"\n\toptions={options}\n\tonchange={handleChange}\n\trequired\n></lightning-combobox>"
@@ -3062,7 +4221,7 @@ function activate(context) {
             {
                 label: "icon:lwc",
                 insertText: new vscode.SnippetString(
-                    "<lightning-icon icon-name=\"${1|utility:activity, utility:ad_set, utility:add, utility:adduser, utility:advanced_function, utility:advertising, utility:agent_session, utility:alert, utility:all, utility:anchor, utility:animal_and_nature, utility:announcement, utility:answer, utility:answered_twice, utility:apex_plugin, utility:apex, utility:approval, utility:apps, utility:archive, utility:arrowdown, utility:arrowup, utility:assignment, utility:attach, utility:automate, utility:away, utility:back, utility:ban, utility:block_visitor, utility:bold, utility:bookmark, utility:breadcrumbs, utility:broadcast, utility:brush, utility:bucket, utility:builder, utility:button_choice, utility:call, utility:campaign, utility:cancel_file_request, utility:cancel_transfer, utility:capslock, utility:cart, utility:case, utility:cases, utility:center_align_text, utility:change_owner, utility:change_record_type, utility:chart, utility:chat, utility:check, utility:checkin, utility:chevrondown, utility:chevronleft, utility:chevronright, utility:chevronup, utility:choice, utility:classic_interface, utility:clear, utility:clock, utility:close, utility:collapse_all, utility:collection_variable, utility:color_swatch, utility:comments, utility:company, utility:component_customization, utility:connected_apps, utility:constant, utility:contact_request, utility:contract_alt, utility:contract, utility:copy_to_clipboard, utility:copy, utility:crossfilter, utility:currency_input, utility:currency, utility:custom_apps, utility:cut, utility:dash, utility:database, utility:datadotcom, utility:date_input, utility:date_time, utility:dayview, utility:delete, utility:deprecate, utility:description, utility:desktop_and_phone, utility:desktop_console, utility:desktop, utility:dialing, utility:diamond, utility:dislike, utility:display_rich_text, utility:display_text, utility:dock_panel, utility:down, utility:download, utility:drag_and_drop, utility:drag, utility:dynamic_record_choice, utility:edit_form, utility:edit, utility:education, utility:einstein, utility:email_open, utility:email, utility:emoji, utility:end_call, utility:end_chat, utility:end_messaging_session, utility:engage, utility:enter, utility:erect_window, utility:error, utility:event, utility:events, utility:expand_all, utility:expand_alt, utility:expand, utility:fallback, utility:favorite, utility:feed, utility:file, utility:filter, utility:filterList, utility:flow_alt, utility:flow, utility:food_and_drink, utility:formula, utility:forward_up, utility:forward, utility:frozen, utility:fulfillment_order, utility:full_width_view, utility:global_constant, utility:graph, utility:groups, utility:help_center, utility:help, utility:hide_mobile, utility:hide, utility:hierarchy, utility:high_velocity_sales, utility:home, utility:identity, utility:image, utility:in_app_assistant, utility:inbox, utility:incoming_call, utility:info_alt, utility:info, utility:insert_tag_field, utility:insert_template, utility:inspector_panel, utility:internal_share, utility:italic, utility:jump_to_bottom, utility:jump_to_top, utility:justify_text, utility:kanban, utility:keyboard_dismiss, utility:knowledge_base, utility:layers, utility:layout, utility:leave_conference, utility:left_align_text, utility:left, utility:level_down, utility:level_up, utility:light_bulb, utility:lightning_extension, utility:lightning_inspector, utility:like, utility:link, utility:linked, utility:list, utility:listen, utility:live_message, utility:location, utility:lock, utility:locker_service_api_viewer, utility:locker_service_console, utility:log_a_call, utility:logout, utility:loop, utility:lower_flag, utility:macros, utility:magicwand, utility:mark_all_as_read, utility:matrix, utility:merge_field, utility:merge, utility:metrics, utility:minimize_window, utility:missed_call, utility:money, utility:moneybag, utility:monthlyview, utility:move, utility:multi_picklist, utility:multi_select_checkbox, utility:muted, utility:new_direct_message, utility:new_window, utility:new, utility:news, utility:note, utility:notebook, utility:notification, utility:number_input, utility:office365, utility:offline_cached, utility:offline, utility:omni_channel, utility:open_folder, utility:open, utility:opened_folder, utility:outbound_call, utility:outcome, utility:overflow, utility:package_org_beta, utility:package_org, utility:package, utility:page, utility:palette, utility:password, utility:paste, utility:pause, utility:people, utility:phone_landscape, utility:phone_portrait, utility:photo, utility:picklist_choice, utility:picklist_type, utility:picklist, utility:pin, utility:pinned, utility:play, utility:podcast_webinar, utility:pop_in, utility:power, utility:preview, utility:print, utility:priority, utility:privately_shared, utility:process, utility:prompt_edit, utility:prompt, utility:push, utility:puzzle, utility:question_mark, utility:question, utility:questions_and_answers, utility:quick_text, utility:quip, utility:quotation_marks, utility:quote, utility:radio_button, utility:rating, utility:reassign, utility:record_create, utility:record_delete, utility:record_lookup, utility:record_update, utility:record, utility:recurring_exception, utility:recycle_bin_empty, utility:recycle_bin_full, utility:redo, utility:refresh, utility:relate, utility:reminder, utility:remove_formatting, utility:remove_link, utility:replace, utility:reply_all, utility:reply, utility:report_issue, utility:reset_password, utility:resource_absence, utility:resource_capacity, utility:resource_territory, utility:retail_execution, utility:retweet, utility:ribbon, utility:richtextbulletedlist, utility:richtextindent, utility:richtextnumberedlist, utility:richtextoutdent, utility:right_align_text, utility:right, utility:rotate, utility:routing_offline, utility:rows, utility:rules, utility:salesforce1, utility:save, utility:screen, utility:search, utility:section, utility:send, utility:sentiment_negative, utility:sentiment_neutral, utility:settings, utility:setup_assistant_guide, utility:setup_modal, utility:setup, utility:share_file, utility:share_mobile, utility:share_post, utility:share, utility:shield, utility:shift_ui, utility:shopping_bag, utility:shortcuts, utility:side_list, utility:signpost, utility:skip_back, utility:skip_forward, utility:skip, utility:slider, utility:smiley_and_people, utility:sms, utility:snippet, utility:sobject_collection, utility:sobject, utility:socialshare, utility:sort, utility:spinner, utility:stage_collection, utility:stage, utility:standard_objects, utility:steps, utility:stop, utility:store, utility:strategy, utility:strikethrough, utility:success, utility:summary, utility:summarydetail, utility:survey, utility:switch, utility:symbols, utility:sync, utility:system_and_global_variable, utility:table_settings, utility:table, utility:tablet_landscape, utility:tablet_portrait, utility:tabset, utility:target, utility:task, utility:text_background_color, utility:text_color, utility:text_template, utility:text, utility:textarea, utility:textbox, utility:threedots_vertical, utility:threedots, utility:thunder, utility:tile_card_list, utility:toggle_panel_bottom, utility:toggle_panel_left, utility:toggle_panel_right, utility:toggle_panel_top, utility:toggle, utility:topic, utility:topic2, utility:touch_action, utility:tracker, utility:trail, utility:trailhead, utility:travel_and_places, utility:trending, utility:turn_off_notifications, utility:type_tool, utility:type, utility:undelete, utility:undeprecate, utility:underline, utility:undo, utility:unlinked, utility:unlock, utility:unmuted, utility:up, utility:upload, utility:user_role, utility:user, utility:variable, utility:video, utility:voicemail_drop, utility:volume_high, utility:volume_low, utility:volume_off, utility:waits, utility:warning, utility:watchlist, utility:weeklyview, utility:wifi, utility:work_order_type, utility:world, utility:yubi_key, utility:zoomin, utility:zoomout|}\" alternative-text=\"${2:Title}\" title=\"${2:Title}\"></lightning-icon>",
+                    "<lightning-icon icon-name=\"${1|utility:activity,utility:ad_set,utility:add,utility:adduser,utility:advanced_function,utility:advertising,utility:agent_session,utility:alert,utility:all,utility:anchor,utility:animal_and_nature,utility:announcement,utility:answer,utility:answered_twice,utility:apex_plugin,utility:apex,utility:approval,utility:apps,utility:archive,utility:arrowdown,utility:arrowup,utility:assignment,utility:attach,utility:automate,utility:away,utility:back,utility:ban,utility:block_visitor,utility:bold,utility:bookmark,utility:breadcrumbs,utility:broadcast,utility:brush,utility:bucket,utility:builder,utility:button_choice,utility:call,utility:campaign,utility:cancel_file_request,utility:cancel_transfer,utility:capslock,utility:cart,utility:case,utility:cases,utility:center_align_text,utility:change_owner,utility:change_record_type,utility:chart,utility:chat,utility:check,utility:checkin,utility:chevrondown,utility:chevronleft,utility:chevronright,utility:chevronup,utility:choice,utility:classic_interface,utility:clear,utility:clock,utility:close,utility:collapse_all,utility:collection_variable,utility:color_swatch,utility:comments,utility:company,utility:component_customization,utility:connected_apps,utility:constant,utility:contact_request,utility:contract_alt,utility:contract,utility:copy_to_clipboard,utility:copy,utility:crossfilter,utility:currency_input,utility:currency,utility:custom_apps,utility:cut,utility:dash,utility:database,utility:datadotcom,utility:date_input,utility:date_time,utility:dayview,utility:delete,utility:deprecate,utility:description,utility:desktop_and_phone,utility:desktop_console,utility:desktop,utility:dialing,utility:diamond,utility:dislike,utility:display_rich_text,utility:display_text,utility:dock_panel,utility:down,utility:download,utility:drag_and_drop,utility:drag,utility:dynamic_record_choice,utility:edit_form,utility:edit,utility:education,utility:einstein,utility:email_open,utility:email,utility:emoji,utility:end_call,utility:end_chat,utility:end_messaging_session,utility:engage,utility:enter,utility:erect_window,utility:error,utility:event,utility:events,utility:expand_all,utility:expand_alt,utility:expand,utility:fallback,utility:favorite,utility:feed,utility:file,utility:filter,utility:filterList,utility:flow_alt,utility:flow,utility:food_and_drink,utility:formula,utility:forward_up,utility:forward,utility:frozen,utility:fulfillment_order,utility:full_width_view,utility:global_constant,utility:graph,utility:groups,utility:help_center,utility:help,utility:hide_mobile,utility:hide,utility:hierarchy,utility:high_velocity_sales,utility:home,utility:identity,utility:image,utility:in_app_assistant,utility:inbox,utility:incoming_call,utility:info_alt,utility:info,utility:insert_tag_field,utility:insert_template,utility:inspector_panel,utility:internal_share,utility:italic,utility:jump_to_bottom,utility:jump_to_top,utility:justify_text,utility:kanban,utility:keyboard_dismiss,utility:knowledge_base,utility:layers,utility:layout,utility:leave_conference,utility:left_align_text,utility:left,utility:level_down,utility:level_up,utility:light_bulb,utility:lightning_extension,utility:lightning_inspector,utility:like,utility:link,utility:linked,utility:list,utility:listen,utility:live_message,utility:location,utility:lock,utility:locker_service_api_viewer,utility:locker_service_console,utility:log_a_call,utility:logout,utility:loop,utility:lower_flag,utility:macros,utility:magicwand,utility:mark_all_as_read,utility:matrix,utility:merge_field,utility:merge,utility:metrics,utility:minimize_window,utility:missed_call,utility:money,utility:moneybag,utility:monthlyview,utility:move,utility:multi_picklist,utility:multi_select_checkbox,utility:muted,utility:new_direct_message,utility:new_window,utility:new,utility:news,utility:note,utility:notebook,utility:notification,utility:number_input,utility:office365,utility:offline_cached,utility:offline,utility:omni_channel,utility:open_folder,utility:open,utility:opened_folder,utility:outbound_call,utility:outcome,utility:overflow,utility:package_org_beta,utility:package_org,utility:package,utility:page,utility:palette,utility:password,utility:paste,utility:pause,utility:people,utility:phone_landscape,utility:phone_portrait,utility:photo,utility:picklist_choice,utility:picklist_type,utility:picklist,utility:pin,utility:pinned,utility:play,utility:podcast_webinar,utility:pop_in,utility:power,utility:preview,utility:print,utility:priority,utility:privately_shared,utility:process,utility:prompt_edit,utility:prompt,utility:push,utility:puzzle,utility:question_mark,utility:question,utility:questions_and_answers,utility:quick_text,utility:quip,utility:quotation_marks,utility:quote,utility:radio_button,utility:rating,utility:reassign,utility:record_create,utility:record_delete,utility:record_lookup,utility:record_update,utility:record,utility:recurring_exception,utility:recycle_bin_empty,utility:recycle_bin_full,utility:redo,utility:refresh,utility:relate,utility:reminder,utility:remove_formatting,utility:remove_link,utility:replace,utility:reply_all,utility:reply,utility:report_issue,utility:reset_password,utility:resource_absence,utility:resource_capacity,utility:resource_territory,utility:retail_execution,utility:retweet,utility:ribbon,utility:richtextbulletedlist,utility:richtextindent,utility:richtextnumberedlist,utility:richtextoutdent,utility:right_align_text,utility:right,utility:rotate,utility:routing_offline,utility:rows,utility:rules,utility:salesforce1,utility:save,utility:screen,utility:search,utility:section,utility:send,utility:sentiment_negative,utility:sentiment_neutral,utility:settings,utility:setup_assistant_guide,utility:setup_modal,utility:setup,utility:share_file,utility:share_mobile,utility:share_post,utility:share,utility:shield,utility:shift_ui,utility:shopping_bag,utility:shortcuts,utility:side_list,utility:signpost,utility:skip_back,utility:skip_forward,utility:skip,utility:slider,utility:smiley_and_people,utility:sms,utility:snippet,utility:sobject_collection,utility:sobject,utility:socialshare,utility:sort,utility:spinner,utility:stage_collection,utility:stage,utility:standard_objects,utility:steps,utility:stop,utility:store,utility:strategy,utility:strikethrough,utility:success,utility:summary,utility:summarydetail,utility:survey,utility:switch,utility:symbols,utility:sync,utility:system_and_global_variable,utility:table_settings,utility:table,utility:tablet_landscape,utility:tablet_portrait,utility:tabset,utility:target,utility:task,utility:text_background_color,utility:text_color,utility:text_template,utility:text,utility:textarea,utility:textbox,utility:threedots_vertical,utility:threedots,utility:thunder,utility:tile_card_list,utility:toggle_panel_bottom,utility:toggle_panel_left,utility:toggle_panel_right,utility:toggle_panel_top,utility:toggle,utility:topic,utility:topic2,utility:touch_action,utility:tracker,utility:trail,utility:trailhead,utility:travel_and_places,utility:trending,utility:turn_off_notifications,utility:type_tool,utility:type,utility:undelete,utility:undeprecate,utility:underline,utility:undo,utility:unlinked,utility:unlock,utility:unmuted,utility:up,utility:upload,utility:user_role,utility:user,utility:variable,utility:video,utility:voicemail_drop,utility:volume_high,utility:volume_low,utility:volume_off,utility:waits,utility:warning,utility:watchlist,utility:weeklyview,utility:wifi,utility:work_order_type,utility:world,utility:yubi_key,utility:zoomin,utility:zoomout|}\" alternative-text=\"${2:Title}\" title=\"${2:Title}\" variant=\"${3|Success,warning,error,inverse|}\" size=\"${4|xx-small,x-small,small,medium,large|}\"></lightning-icon>",
                 ),
                 detail: "LWC Icon",
                 kind: vscode.CompletionItemKind.Snippet,
@@ -3094,7 +4253,6 @@ function activate(context) {
         ];
     }
 
-
 exports.activate = activate;
 exports.deactivate = deactivate;
 
@@ -3116,14 +4274,6 @@ module.exports = {
     enableJavascriptSnippetsFlag,
     sendTeleEventforConfigs
 }
-
-
-
-// "Aura Checkbox": {
-//     "prefix": "adbn:checkbox-aura",
-//     "body": "",
-//     "description": ""
-// },
 
 // "LWC Checkbox":{
 //     "prefix": "adbn:checkbox-lwc",
