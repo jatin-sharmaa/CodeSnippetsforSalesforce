@@ -22,7 +22,11 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 - Text Alignment Classes moved outside the Advanced mode
 - Snippets for Theme Cards
 - Updated Classes
-- Updated Classes in Advanced Mode 
+- Updated Classes in Advanced Mode
+- Checkbox added in Aura and LWC
+- Included `if`, `if empty`, `if not empty`, `if equals`, `if not equals`, `if else`, `else` in Aura
+- Variant and Size attributes added in aura and lwc icon snippets
+- SLDS Table Classes added
 
 #### v1.0.2 
 - 10 New Snippets added for JavaScript : `forEach`, `component:set`, `component:get`, `component:find`, `function:controller`, `function:helper`, `action:Callback`, `filter`, `splice`, `action:event`
@@ -111,13 +115,20 @@ input:datetime-aura | Date/Time input fields provide a date and time picker for 
 input:file-aura | File input fields support upload of single or multiple files and can restrict the accepted file types
 input:email-aura | Email input fields are for entering email addresses
 input:password-aura | Password input fields obscure your text input
+input:checkbox-aura | Checkbox options can be required or disabled.
 combobox-aura | A combobox enables you to select only one option.
 card:basic-aura | Aura Basic Card
 icon:aura | Aura Icon
 button:basic-aura | Basic Button Aura
 button:icon-aura | Basic Button Aura
 button:group-aura | Button Group Aura
-if | Conditionally instantiates and renders either the body or the components in the else attribute.
+if | Conditionally instantiates and renders either the body.
+if empty | Conditionally checks if empty and renders either the body.
+if not empty | Conditionally checks if not empty and renders either the body.
+if equals | Conditionally checks if equals and renders either the body.
+if not equals | Conditionally if not equals and renders either the body.
+if else | Conditionally instantiates and renders either the body or the components in the else attribute.
+else | Renders else attribute
 iteration | Renders a view of a collection of items. Supports iterations containing components that can be created exclusively on the client-side.
 attribute | Adds Attributes HTML
 hasRecordId | Add the force:hasRecordId interface to a Lightning component to enable the component to be assigned the ID of the current record
@@ -141,6 +152,7 @@ input:datetime-lwc | Date/Time input fields provide a date and time picker for e
 input:file-lwc | File input fields support upload of single or multiple files and can restrict th
 input:email-lwc | Email input fields are for entering email addresses
 input:password-lwc | Password input fields obscure your text input
+input:checkbox-lwc | Checkbox options can be required or disabled.
 combobox-aura | A combobox enables you to select only one option.
 card:basic-lwc | LWC Basic Card
 icon:lwc | LWC Icon. Supports all Utility icons
@@ -346,6 +358,19 @@ slds-theme_shade | Sets the background color to gray
 slds-theme_success | Sets the background color to green
 slds-theme_warning | Sets the background color to yellow
 slds-wrap | Allows columns to wrap when they exceed 100% of their parent’s width
+slds-table | Initializes data table
+slds-no-row-hover | Default Table Row Hover
+slds-is-selected | Selected Table Row + Hover
+slds-cell-wrap | By default, nowrap is applied
+slds-cell-buffer_left | Use to add a left padding buffer to cells
+slds-cell-buffer_right | Use to add a right padding buffer to cells
+slds-table_cell-buffer | Add left and right padding to the first and last cells of a table
+slds-table_bordered | Add vertical borders to a table
+slds-has-focus | Focus state on a cell
+slds-table_bordered | Add vertical borders to a table
+slds-table_col-bordered | Add column borders
+slds-table_striped | Add alternating strips to rows
+slds-table_fixed-layout | Set table to use fixed layout for width and truncation purposes
 text-center | Text Center
 text-left | Text Left
 text-right | Text Right
