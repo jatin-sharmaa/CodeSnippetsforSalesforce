@@ -24,6 +24,7 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 - Updated Classes
 - Updated Classes in Advanced Mode
 - Checkbox added in Aura and LWC
+- Included if and if else in Aura
 
 #### v1.0.2 
 - 10 New Snippets added for JavaScript : `forEach`, `component:set`, `component:get`, `component:find`, `function:controller`, `function:helper`, `action:Callback`, `filter`, `splice`, `action:event`

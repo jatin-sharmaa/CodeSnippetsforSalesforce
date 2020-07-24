@@ -3867,6 +3867,14 @@ function activate(context) {
             {
                 label: "if",
                 insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!v.${1:bar}}\">\n\t${2:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally instantiates and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if else",
+                insertText: new vscode.SnippetString(
                     "<aura:if isTrue=\"{!v.${1:bar}}\">\n\t${2:ifBody}\n\t<aura:set attribute=\"else\">\n\t\t${3:elseBody}\n\t</aura:set>\n</aura:if>",
                     ),
                 detail: "Conditionally instantiates and renders either the body or the components in the else attribute.",
