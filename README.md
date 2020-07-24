@@ -24,7 +24,7 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 - Updated Classes
 - Updated Classes in Advanced Mode
 - Checkbox added in Aura and LWC
-- Included if and if else in Aura
+- Included `if`, `if empty`, `if not empty`, `if equals`, `if not equals`, `if else`, `else` in Aura
 
 #### v1.0.2 
 - 10 New Snippets added for JavaScript : `forEach`, `component:set`, `component:get`, `component:find`, `function:controller`, `function:helper`, `action:Callback`, `filter`, `splice`, `action:event`
@@ -120,7 +120,13 @@ icon:aura | Aura Icon
 button:basic-aura | Basic Button Aura
 button:icon-aura | Basic Button Aura
 button:group-aura | Button Group Aura
-if | Conditionally instantiates and renders either the body or the components in the else attribute.
+if | Conditionally instantiates and renders either the body.
+if empty | Conditionally checks if empty and renders either the body.
+if not empty | Conditionally checks if not empty and renders either the body.
+if equals | Conditionally checks if equals and renders either the body.
+if not equals | Conditionally if not equals and renders either the body.
+if else | Conditionally instantiates and renders either the body or the components in the else attribute.
+else | Renders else attribute
 iteration | Renders a view of a collection of items. Supports iterations containing components that can be created exclusively on the client-side.
 attribute | Adds Attributes HTML
 hasRecordId | Add the force:hasRecordId interface to a Lightning component to enable the component to be assigned the ID of the current record

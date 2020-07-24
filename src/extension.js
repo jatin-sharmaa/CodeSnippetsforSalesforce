@@ -3867,17 +3867,57 @@ function activate(context) {
             {
                 label: "if",
                 insertText: new vscode.SnippetString(
-                    "<aura:if isTrue=\"{!v.${1:bar}}\">\n\t${2:ifBody}\n</aura:if>",
+                    "<aura:if isTrue=\"{!v.${1:variable}}\">\n\t${2:ifBody}\n</aura:if>",
                     ),
                 detail: "Conditionally instantiates and renders either the body.",
                 kind: vscode.CompletionItemKind.Method,
             },
             {
+                label: "if empty",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!empty(v.${1:variable})}\">\n\t${2:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally checks if empty and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if not empty",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!not(empty(v.${1:variable}))}\">\n\t${2:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally checks if not empty and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if equals",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!v.${1:variable} == '${2:text}'}\">\n\t${3:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally checks if equals and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "if not equals",
+                insertText: new vscode.SnippetString(
+                    "<aura:if isTrue=\"{!not(v.${1:variable} == '${2:text}')}\">\n\t${3:ifBody}\n</aura:if>",
+                    ),
+                detail: "Conditionally if not equals and renders either the body.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
                 label: "if else",
                 insertText: new vscode.SnippetString(
-                    "<aura:if isTrue=\"{!v.${1:bar}}\">\n\t${2:ifBody}\n\t<aura:set attribute=\"else\">\n\t\t${3:elseBody}\n\t</aura:set>\n</aura:if>",
+                    "<aura:if isTrue=\"{!v.${1:variable}}\">\n\t${2:ifBody}\n\t<aura:set attribute=\"else\">\n\t\t${3:elseBody}\n\t</aura:set>\n</aura:if>",
                     ),
                 detail: "Conditionally instantiates and renders either the body or the components in the else attribute.",
+                kind: vscode.CompletionItemKind.Method,
+            },
+            {
+                label: "else",
+                insertText: new vscode.SnippetString(
+                    "<aura:set attribute=\"else\">\n\t${3:elseBody}\n</aura:set>",
+                    ),
+                detail: "Renders else attribute",
                 kind: vscode.CompletionItemKind.Method,
             },
             {
