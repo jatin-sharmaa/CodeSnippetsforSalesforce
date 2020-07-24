@@ -2290,6 +2290,123 @@ function activate(context) {
                 detail: "Allows columns to wrap when they exceed 100% of their parent’s width",
                 kind: vscode.CompletionItemKind.Class,
             },
+            {
+                label: "slds-table",
+                insertText: new vscode.SnippetString(
+                    "slds-table",
+                ),
+                detail: "Initializes data table",
+                documentation: "Can be used on table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-no-row-hover",
+                insertText: new vscode.SnippetString(
+                    "slds-no-row-hover",
+                ),
+                detail: "Default Table Row Hover",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-is-selected",
+                insertText: new vscode.SnippetString(
+                    "slds-is-selected",
+                ),
+                detail: "Selected Table Row + Hover",
+                documentation: "Can be used on .slds-table tr",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-cell-wrap",
+                insertText: new vscode.SnippetString(
+                    "slds-cell-wrap",
+                ),
+                detail: "By default, nowrap is applied",
+                documentation: "Can be used on .slds-table th, .slds-table td",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-cell-buffer_left",
+                insertText: new vscode.SnippetString(
+                    "slds-cell-buffer_left",
+                ),
+                detail: "Use to add a left padding buffer to cells",
+                documentation: "Can be used on .slds-table th, .slds-table td",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-cell-buffer_right",
+                insertText: new vscode.SnippetString(
+                    "slds-cell-buffer_right",
+                ),
+                detail: "Use to add a right padding buffer to cells",
+                documentation: "Can be used on .slds-table th, .slds-table td",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_cell-buffer",
+                insertText: new vscode.SnippetString(
+                    "slds-table_cell-buffer",
+                ),
+                detail: "Add left and right padding to the first and last cells of a table",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_bordered",
+                insertText: new vscode.SnippetString(
+                    "slds-table_bordered",
+                ),
+                detail: "Add vertical borders to a table",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-has-focus",
+                insertText: new vscode.SnippetString(
+                    "slds-has-focus",
+                ),
+                detail: "Focus state on a cell",
+                documentation: "Can be on .slds-table th, .slds-table td",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_bordered",
+                insertText: new vscode.SnippetString(
+                    "slds-table_bordered",
+                ),
+                detail: "Add vertical borders to a table",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_col-bordered",
+                insertText: new vscode.SnippetString(
+                    "slds-table_col-bordered",
+                ),
+                detail: "Add column borders",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_striped",
+                insertText: new vscode.SnippetString(
+                    "slds-table_striped",
+                ),
+                detail: "Add alternating strips to rows",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
+            {
+                label: "slds-table_fixed-layout",
+                insertText: new vscode.SnippetString(
+                    "slds-table_fixed-layout",
+                ),
+                detail: "Set table to use fixed layout for width and truncation purposes",
+                documentation: "Can be used with .slds-table",
+                kind: vscode.CompletionItemKind.Class,
+            },
         ];
 
         if( isAdvancedMode ) {

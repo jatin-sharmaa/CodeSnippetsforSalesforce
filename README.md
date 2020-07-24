@@ -26,6 +26,7 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 - Checkbox added in Aura and LWC
 - Included `if`, `if empty`, `if not empty`, `if equals`, `if not equals`, `if else`, `else` in Aura
 - Variant and Size attributes added in aura and lwc icon snippets
+- SLDS Table Classes added
 
 #### v1.0.2 
 - 10 New Snippets added for JavaScript : `forEach`, `component:set`, `component:get`, `component:find`, `function:controller`, `function:helper`, `action:Callback`, `filter`, `splice`, `action:event`
@@ -357,6 +358,19 @@ slds-theme_shade | Sets the background color to gray
 slds-theme_success | Sets the background color to green
 slds-theme_warning | Sets the background color to yellow
 slds-wrap | Allows columns to wrap when they exceed 100% of their parent’s width
+slds-table | Initializes data table
+slds-no-row-hover | Default Table Row Hover
+slds-is-selected | Selected Table Row + Hover
+slds-cell-wrap | By default, nowrap is applied
+slds-cell-buffer_left | Use to add a left padding buffer to cells
+slds-cell-buffer_right | Use to add a right padding buffer to cells
+slds-table_cell-buffer | Add left and right padding to the first and last cells of a table
+slds-table_bordered | Add vertical borders to a table
+slds-has-focus | Focus state on a cell
+slds-table_bordered | Add vertical borders to a table
+slds-table_col-bordered | Add column borders
+slds-table_striped | Add alternating strips to rows
+slds-table_fixed-layout | Set table to use fixed layout for width and truncation purposes
 text-center | Text Center
 text-left | Text Left
 text-right | Text Right
