@@ -1,4 +1,13 @@
-.vscode/**
-.vscode-test/**
-.gitignore
-vsc-extension-quickstart.md
+*
+*/**
+**/.DS_Store
+!dist/*
+!out/*
+!package.json
+!README.md
+!CHANGELOG.md
+!images/*
+!icon.png
+!.vsixmanifest
+!node_modules/applicationinsights/**/*
+!node_modules/vscode-extension-telemetry/**/*
