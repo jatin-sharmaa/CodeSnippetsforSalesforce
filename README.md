@@ -15,6 +15,11 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 
 ## Release Notes
 
+### Beige
+
+#### v2.0.0
+- Conversion from JS to TS
+
 ### Amber
 
 #### v1.0.3 
