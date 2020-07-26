@@ -1,7 +1,10 @@
 # Change Log
 All notable changes to the Audibene Code Snippets will be documented here.
 
-## Amber - v1.0.3 
+## Beige - v2.0.0
+- Structural Changes
+
+## Amber - v1.1.0 
 - Bug Fixes and Improvements
 - Text Alignment Classes moved outside the Advanced mode
 - Snippets for Theme Cards
