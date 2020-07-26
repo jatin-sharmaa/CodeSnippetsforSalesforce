@@ -163,7 +163,6 @@ card:basic-lwc | LWC Basic Card
 icon:lwc | LWC Icon. Supports all Utility icons
 button:basic-lwc | Basic Button LWC
 button:icon-lwc | Basic Button LWC
-button:group-lwc | Button Group LWC
 
 ### SLDS Classes 
 > These will only work inside the class attributes

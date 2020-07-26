@@ -10,7 +10,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input name=\"${1:input1}\" label=\"${2:Input}\" value=\"${3:value}\" placeholder=\"${4:type here...}\"/>"
             ),
             detail: "Text input fields are for entering single-line text.",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:number-aura",
@@ -18,7 +18,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input type=\"number\" name=\"${1:input1}\" label=\"${2:Number}\" placeholder=\"${3:type here...}\"/>"
             ),
             detail: "Number input fields support decimal, percentage, and currency values.",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:search-aura",
@@ -26,7 +26,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<div onkeyup=\"{! c.handleKeyUp }\">\n\t<lightning:input\n\t\ttype=\"search\"\n\t\taura:id=\"${1:enter-search}\"\n\t\tname=\"${2:input1}\"\n\t\tlabel=\"${3:Search when user hits the 'enter' key}\"\n\t/>\n</div>"
             ),
             detail: "Search input fields enable search queries",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:date-aura",
@@ -34,7 +34,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input type=\"date\" name=\"${1:input1}\" label=\"${2:Date}\" value=\"${3:2020-12-31}\" placeholder=\"${4:enter date...}\"/>"
             ),
             detail: "Date input fields provide a date picker for entering a date.",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:time-aura",
@@ -42,7 +42,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input type=\"time\" name=\"${1:input1}\" label=\"${2:Time}\" value=\"${3:23:59:59.000Z} placeholder=\"${4:enter time...}\"/>"
             ),
             detail: "Time input fields provide a dropdown list of time values",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:datetime-aura",
@@ -50,7 +50,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input type=\"datetime\" name=\"${1:input1}\" label=\"${2:Date Time}\" value=\"${3:2000-12-31T23:59:59Z}\"/>"
             ),
             detail: "Date/Time input fields provide a date and time picker for entering a date and time.",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:file-aura",
@@ -58,7 +58,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input type=\"file\" name=\"${1:input1}\"  label=\"${2:Attachment}\" multiple=\"${3|true,false|}\" accept=\"${4:}\" onchange=\"{! c.${5:handleFilesChange} }\"/>"
             ),
             detail: "File input fields support upload of single or multiple files and can restrict the accepted file types",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:email-aura",
@@ -66,7 +66,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input type=\"email\" name=\"${1:input1}\" label=\"${2:Email}\" value=\"${3:abc@domain.com}\"  placeholder=\"${4:youraddress@company.com}\"/>"
             ),
             detail: "Email input fields are for entering email addresses",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:password-aura",
@@ -74,7 +74,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input type=\"password\" name=\"${1:input1}\" label=\"${2:label}\" placeholder=\"Enter Password...\"/>"
             ),
             detail: "Password input fields obscure your text input",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "input:checkbox-aura",
@@ -82,7 +82,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:input type=\"checkbox\" label=\"${1:label}\" name=\"${2:name}\" checked=\"${3|true,false|}\" required=\"${4|true,false|}\" disabled=\"${5|true,false|}\"/>"
             ),
             detail: "Checkbox options can be required or disabled.",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "combobox-aura",
@@ -90,7 +90,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<aura:attribute name=\"${1:Options}\" type=\"List\" description=\"${2:description}\"/>\n<lightning:combobox name=\"${3:name}\" label=\"${4:label}\" placeholder=\"${5:placeholder}\" options=\"{! v.${1:Options} }\" onchange=\"{! c.${6:function} }\"/>"
             ),
             detail: "A combobox enables you to select only one option",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "card:basic-aura",
@@ -98,7 +98,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:card>\n\t<aura:set attribute=\"title\">\n\t\t${1:Title}\n\t</aura:set>\n\t<aura:set attribute=\"footer\">\n\t\t${2:Footer}\n\t</aura:set>\n\t${3:Card Body}\n</lightning:card>",
             ),
             detail: "Aura Basic Card",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "icon:aura",
@@ -106,7 +106,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:icon iconName=\"${1|utility:activity,utility:ad_set,utility:add,utility:adduser,utility:advanced_function,utility:advertising,utility:agent_session,utility:alert,utility:all,utility:anchor,utility:animal_and_nature,utility:announcement,utility:answer,utility:answered_twice,utility:apex_plugin,utility:apex,utility:approval,utility:apps,utility:archive,utility:arrowdown,utility:arrowup,utility:assignment,utility:attach,utility:automate,utility:away,utility:back,utility:ban,utility:block_visitor,utility:bold,utility:bookmark,utility:breadcrumbs,utility:broadcast,utility:brush,utility:bucket,utility:builder,utility:button_choice,utility:call,utility:campaign,utility:cancel_file_request,utility:cancel_transfer,utility:capslock,utility:cart,utility:case,utility:cases,utility:center_align_text,utility:change_owner,utility:change_record_type,utility:chart,utility:chat,utility:check,utility:checkin,utility:chevrondown,utility:chevronleft,utility:chevronright,utility:chevronup,utility:choice,utility:classic_interface,utility:clear,utility:clock,utility:close,utility:collapse_all,utility:collection_variable,utility:color_swatch,utility:comments,utility:company,utility:component_customization,utility:connected_apps,utility:constant,utility:contact_request,utility:contract_alt,utility:contract,utility:copy_to_clipboard,utility:copy,utility:crossfilter,utility:currency_input,utility:currency,utility:custom_apps,utility:cut,utility:dash,utility:database,utility:datadotcom,utility:date_input,utility:date_time,utility:dayview,utility:delete,utility:deprecate,utility:description,utility:desktop_and_phone,utility:desktop_console,utility:desktop,utility:dialing,utility:diamond,utility:dislike,utility:display_rich_text,utility:display_text,utility:dock_panel,utility:down,utility:download,utility:drag_and_drop,utility:drag,utility:dynamic_record_choice,utility:edit_form,utility:edit,utility:education,utility:einstein,utility:email_open,utility:email,utility:emoji,utility:end_call,utility:end_chat,utility:end_messaging_session,utility:engage,utility:enter,utility:erect_window,utility:error,utility:event,utility:events,utility:expand_all,utility:expand_alt,utility:expand,utility:fallback,utility:favorite,utility:feed,utility:file,utility:filter,utility:filterList,utility:flow_alt,utility:flow,utility:food_and_drink,utility:formula,utility:forward_up,utility:forward,utility:frozen,utility:fulfillment_order,utility:full_width_view,utility:global_constant,utility:graph,utility:groups,utility:help_center,utility:help,utility:hide_mobile,utility:hide,utility:hierarchy,utility:high_velocity_sales,utility:home,utility:identity,utility:image,utility:in_app_assistant,utility:inbox,utility:incoming_call,utility:info_alt,utility:info,utility:insert_tag_field,utility:insert_template,utility:inspector_panel,utility:internal_share,utility:italic,utility:jump_to_bottom,utility:jump_to_top,utility:justify_text,utility:kanban,utility:keyboard_dismiss,utility:knowledge_base,utility:layers,utility:layout,utility:leave_conference,utility:left_align_text,utility:left,utility:level_down,utility:level_up,utility:light_bulb,utility:lightning_extension,utility:lightning_inspector,utility:like,utility:link,utility:linked,utility:list,utility:listen,utility:live_message,utility:location,utility:lock,utility:locker_service_api_viewer,utility:locker_service_console,utility:log_a_call,utility:logout,utility:loop,utility:lower_flag,utility:macros,utility:magicwand,utility:mark_all_as_read,utility:matrix,utility:merge_field,utility:merge,utility:metrics,utility:minimize_window,utility:missed_call,utility:money,utility:moneybag,utility:monthlyview,utility:move,utility:multi_picklist,utility:multi_select_checkbox,utility:muted,utility:new_direct_message,utility:new_window,utility:new,utility:news,utility:note,utility:notebook,utility:notification,utility:number_input,utility:office365,utility:offline_cached,utility:offline,utility:omni_channel,utility:open_folder,utility:open,utility:opened_folder,utility:outbound_call,utility:outcome,utility:overflow,utility:package_org_beta,utility:package_org,utility:package,utility:page,utility:palette,utility:password,utility:paste,utility:pause,utility:people,utility:phone_landscape,utility:phone_portrait,utility:photo,utility:picklist_choice,utility:picklist_type,utility:picklist,utility:pin,utility:pinned,utility:play,utility:podcast_webinar,utility:pop_in,utility:power,utility:preview,utility:print,utility:priority,utility:privately_shared,utility:process,utility:prompt_edit,utility:prompt,utility:push,utility:puzzle,utility:question_mark,utility:question,utility:questions_and_answers,utility:quick_text,utility:quip,utility:quotation_marks,utility:quote,utility:radio_button,utility:rating,utility:reassign,utility:record_create,utility:record_delete,utility:record_lookup,utility:record_update,utility:record,utility:recurring_exception,utility:recycle_bin_empty,utility:recycle_bin_full,utility:redo,utility:refresh,utility:relate,utility:reminder,utility:remove_formatting,utility:remove_link,utility:replace,utility:reply_all,utility:reply,utility:report_issue,utility:reset_password,utility:resource_absence,utility:resource_capacity,utility:resource_territory,utility:retail_execution,utility:retweet,utility:ribbon,utility:richtextbulletedlist,utility:richtextindent,utility:richtextnumberedlist,utility:richtextoutdent,utility:right_align_text,utility:right,utility:rotate,utility:routing_offline,utility:rows,utility:rules,utility:salesforce1,utility:save,utility:screen,utility:search,utility:section,utility:send,utility:sentiment_negative,utility:sentiment_neutral,utility:settings,utility:setup_assistant_guide,utility:setup_modal,utility:setup,utility:share_file,utility:share_mobile,utility:share_post,utility:share,utility:shield,utility:shift_ui,utility:shopping_bag,utility:shortcuts,utility:side_list,utility:signpost,utility:skip_back,utility:skip_forward,utility:skip,utility:slider,utility:smiley_and_people,utility:sms,utility:snippet,utility:sobject_collection,utility:sobject,utility:socialshare,utility:sort,utility:spinner,utility:stage_collection,utility:stage,utility:standard_objects,utility:steps,utility:stop,utility:store,utility:strategy,utility:strikethrough,utility:success,utility:summary,utility:summarydetail,utility:survey,utility:switch,utility:symbols,utility:sync,utility:system_and_global_variable,utility:table_settings,utility:table,utility:tablet_landscape,utility:tablet_portrait,utility:tabset,utility:target,utility:task,utility:text_background_color,utility:text_color,utility:text_template,utility:text,utility:textarea,utility:textbox,utility:threedots_vertical,utility:threedots,utility:thunder,utility:tile_card_list,utility:toggle_panel_bottom,utility:toggle_panel_left,utility:toggle_panel_right,utility:toggle_panel_top,utility:toggle,utility:topic,utility:topic2,utility:touch_action,utility:tracker,utility:trail,utility:trailhead,utility:travel_and_places,utility:trending,utility:turn_off_notifications,utility:type_tool,utility:type,utility:undelete,utility:undeprecate,utility:underline,utility:undo,utility:unlinked,utility:unlock,utility:unmuted,utility:up,utility:upload,utility:user_role,utility:user,utility:variable,utility:video,utility:voicemail_drop,utility:volume_high,utility:volume_low,utility:volume_off,utility:waits,utility:warning,utility:watchlist,utility:weeklyview,utility:wifi,utility:work_order_type,utility:world,utility:yubi_key,utility:zoomin,utility:zoomout|}\" alternativeText=\"${2:Title}\" title=\"${2:Title}\" variant=\"${3|Success,warning,error,inverse|}\" size=\"${4|xx-small,x-small,small,medium,large|}\" />",
             ),
             detail: "Aura Icon",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "button:basic-aura",
@@ -114,7 +114,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:label}\" title=\"${2:Title}\" onclick=\"{!c.${3:Function Name}}\"/>",
             ),
             detail: "Basic Button Aura",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "button:icon-aura",
@@ -122,7 +122,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:label}\" title=\"${2:Title}\" onclick={!c.${3:Function Name}} iconName=\"${4|utility:activity, utility:ad_set, utility:add, utility:adduser, utility:advanced_function, utility:advertising, utility:agent_session, utility:alert, utility:all, utility:anchor, utility:animal_and_nature, utility:announcement, utility:answer, utility:answered_twice, utility:apex_plugin, utility:apex, utility:approval, utility:apps, utility:archive, utility:arrowdown, utility:arrowup, utility:assignment, utility:attach, utility:automate, utility:away, utility:back, utility:ban, utility:block_visitor, utility:bold, utility:bookmark, utility:breadcrumbs, utility:broadcast, utility:brush, utility:bucket, utility:builder, utility:button_choice, utility:call, utility:campaign, utility:cancel_file_request, utility:cancel_transfer, utility:capslock, utility:cart, utility:case, utility:cases, utility:center_align_text, utility:change_owner, utility:change_record_type, utility:chart, utility:chat, utility:check, utility:checkin, utility:chevrondown, utility:chevronleft, utility:chevronright, utility:chevronup, utility:choice, utility:classic_interface, utility:clear, utility:clock, utility:close, utility:collapse_all, utility:collection_variable, utility:color_swatch, utility:comments, utility:company, utility:component_customization, utility:connected_apps, utility:constant, utility:contact_request, utility:contract_alt, utility:contract, utility:copy_to_clipboard, utility:copy, utility:crossfilter, utility:currency_input, utility:currency, utility:custom_apps, utility:cut, utility:dash, utility:database, utility:datadotcom, utility:date_input, utility:date_time, utility:dayview, utility:delete, utility:deprecate, utility:description, utility:desktop_and_phone, utility:desktop_console, utility:desktop, utility:dialing, utility:diamond, utility:dislike, utility:display_rich_text, utility:display_text, utility:dock_panel, utility:down, utility:download, utility:drag_and_drop, utility:drag, utility:dynamic_record_choice, utility:edit_form, utility:edit, utility:education, utility:einstein, utility:email_open, utility:email, utility:emoji, utility:end_call, utility:end_chat, utility:end_messaging_session, utility:engage, utility:enter, utility:erect_window, utility:error, utility:event, utility:events, utility:expand_all, utility:expand_alt, utility:expand, utility:fallback, utility:favorite, utility:feed, utility:file, utility:filter, utility:filterList, utility:flow_alt, utility:flow, utility:food_and_drink, utility:formula, utility:forward_up, utility:forward, utility:frozen, utility:fulfillment_order, utility:full_width_view, utility:global_constant, utility:graph, utility:groups, utility:help_center, utility:help, utility:hide_mobile, utility:hide, utility:hierarchy, utility:high_velocity_sales, utility:home, utility:identity, utility:image, utility:in_app_assistant, utility:inbox, utility:incoming_call, utility:info_alt, utility:info, utility:insert_tag_field, utility:insert_template, utility:inspector_panel, utility:internal_share, utility:italic, utility:jump_to_bottom, utility:jump_to_top, utility:justify_text, utility:kanban, utility:keyboard_dismiss, utility:knowledge_base, utility:layers, utility:layout, utility:leave_conference, utility:left_align_text, utility:left, utility:level_down, utility:level_up, utility:light_bulb, utility:lightning_extension, utility:lightning_inspector, utility:like, utility:link, utility:linked, utility:list, utility:listen, utility:live_message, utility:location, utility:lock, utility:locker_service_api_viewer, utility:locker_service_console, utility:log_a_call, utility:logout, utility:loop, utility:lower_flag, utility:macros, utility:magicwand, utility:mark_all_as_read, utility:matrix, utility:merge_field, utility:merge, utility:metrics, utility:minimize_window, utility:missed_call, utility:money, utility:moneybag, utility:monthlyview, utility:move, utility:multi_picklist, utility:multi_select_checkbox, utility:muted, utility:new_direct_message, utility:new_window, utility:new, utility:news, utility:note, utility:notebook, utility:notification, utility:number_input, utility:office365, utility:offline_cached, utility:offline, utility:omni_channel, utility:open_folder, utility:open, utility:opened_folder, utility:outbound_call, utility:outcome, utility:overflow, utility:package_org_beta, utility:package_org, utility:package, utility:page, utility:palette, utility:password, utility:paste, utility:pause, utility:people, utility:phone_landscape, utility:phone_portrait, utility:photo, utility:picklist_choice, utility:picklist_type, utility:picklist, utility:pin, utility:pinned, utility:play, utility:podcast_webinar, utility:pop_in, utility:power, utility:preview, utility:print, utility:priority, utility:privately_shared, utility:process, utility:prompt_edit, utility:prompt, utility:push, utility:puzzle, utility:question_mark, utility:question, utility:questions_and_answers, utility:quick_text, utility:quip, utility:quotation_marks, utility:quote, utility:radio_button, utility:rating, utility:reassign, utility:record_create, utility:record_delete, utility:record_lookup, utility:record_update, utility:record, utility:recurring_exception, utility:recycle_bin_empty, utility:recycle_bin_full, utility:redo, utility:refresh, utility:relate, utility:reminder, utility:remove_formatting, utility:remove_link, utility:replace, utility:reply_all, utility:reply, utility:report_issue, utility:reset_password, utility:resource_absence, utility:resource_capacity, utility:resource_territory, utility:retail_execution, utility:retweet, utility:ribbon, utility:richtextbulletedlist, utility:richtextindent, utility:richtextnumberedlist, utility:richtextoutdent, utility:right_align_text, utility:right, utility:rotate, utility:routing_offline, utility:rows, utility:rules, utility:salesforce1, utility:save, utility:screen, utility:search, utility:section, utility:send, utility:sentiment_negative, utility:sentiment_neutral, utility:settings, utility:setup_assistant_guide, utility:setup_modal, utility:setup, utility:share_file, utility:share_mobile, utility:share_post, utility:share, utility:shield, utility:shift_ui, utility:shopping_bag, utility:shortcuts, utility:side_list, utility:signpost, utility:skip_back, utility:skip_forward, utility:skip, utility:slider, utility:smiley_and_people, utility:sms, utility:snippet, utility:sobject_collection, utility:sobject, utility:socialshare, utility:sort, utility:spinner, utility:stage_collection, utility:stage, utility:standard_objects, utility:steps, utility:stop, utility:store, utility:strategy, utility:strikethrough, utility:success, utility:summary, utility:summarydetail, utility:survey, utility:switch, utility:symbols, utility:sync, utility:system_and_global_variable, utility:table_settings, utility:table, utility:tablet_landscape, utility:tablet_portrait, utility:tabset, utility:target, utility:task, utility:text_background_color, utility:text_color, utility:text_template, utility:text, utility:textarea, utility:textbox, utility:threedots_vertical, utility:threedots, utility:thunder, utility:tile_card_list, utility:toggle_panel_bottom, utility:toggle_panel_left, utility:toggle_panel_right, utility:toggle_panel_top, utility:toggle, utility:topic, utility:topic2, utility:touch_action, utility:tracker, utility:trail, utility:trailhead, utility:travel_and_places, utility:trending, utility:turn_off_notifications, utility:type_tool, utility:type, utility:undelete, utility:undeprecate, utility:underline, utility:undo, utility:unlinked, utility:unlock, utility:unmuted, utility:up, utility:upload, utility:user_role, utility:user, utility:variable, utility:video, utility:voicemail_drop, utility:volume_high, utility:volume_low, utility:volume_off, utility:waits, utility:warning, utility:watchlist, utility:weeklyview, utility:wifi, utility:work_order_type, utility:world, utility:yubi_key, utility:zoomin, utility:zoomout|}\" iconPosition=\"${5|left,right|}\"/>",
             ),
             detail: "Basic Button Aura",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },
         {
             label: "button:group-aura",
@@ -130,7 +130,7 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
                 "<lightning:buttonGroup>\n\t<lightning:button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:Label}\" onclick=\"{!c.${3:Function}}\"/>\n\t<lightning:button variant=\"${4|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${5:Label}\" onclick=\"{!c.${6:Function}}\"/>\n\t<lightning:button variant=\"${7|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${8:Label}\" onclick=\"{!c.${9:Function}}\"/>\n</lightning:buttonGroup>",
             ),
             detail: "Button Group Aura",
-            kind: vscode.CompletionItemKind.Snippet,
+            kind: vscode.CompletionItemKind.Property,
         },            
         {
             label: "if",
@@ -272,7 +272,14 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
 
     return vscode.languages.registerCompletionItemProvider('html', {
         provideCompletionItems(doc, pos, token, context) {
-            return auraSnippets;
+            var start = new vscode.Position(pos.line, 0);
+            var range = new vscode.Range(start, pos);
+            var text = doc.getText(range);
+
+            var rawClasses = text.match(/class=["|']([\w- ]*$)/);
+            if (rawClasses === null) {
+                return auraSnippets;
+            }
         },
         resolveCompletionItem(item) {
             let tele = new ADBNTelemetry( context );
