@@ -9,7 +9,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-gutters\">\n\t$1\n</div>",
             ),
-            detail: "Grid Gutters",
+            detail: "Grid Gutters (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -17,7 +17,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-wrap\">\n\t$1\n</div>",
             ),
-            detail: "Grid Wrap",
+            detail: "Grid Wrap (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -25,7 +25,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-grid_vertical\">\n\t$1\n</div>",
             ),
-            detail: "Grid Vertical",
+            detail: "Grid Vertical (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -33,7 +33,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-grid_align-center\">\n\t$1\n</div>",
             ),
-            detail: "Grid centered",
+            detail: "Grid centered (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -41,7 +41,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-grid_align-space\">\n\t$1\n</div>",
             ),
-            detail: "Grid evenly spaced",
+            detail: "Grid evenly spaced (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -49,7 +49,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-grid_align-spread\">\n\t$1\n</div>",
             ),
-            detail: "Grid evenly spread",
+            detail: "Grid evenly spread (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -57,7 +57,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-grid_align-end\">\n\t$1\n</div>",
             ),
-            detail: "Grid Right",
+            detail: "Grid Right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -65,7 +65,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-grid_vertical-align-start\">\n\t$1\n</div>",
             ),
-            detail: "Vertical Top",
+            detail: "Vertical Top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -73,7 +73,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-grid_vertical-align-center\">\n\t$1\n</div>",
             ),
-            detail: "Vertical Center",
+            detail: "Vertical Center (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -81,7 +81,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid slds-grid_vertical-align-end\">\n\t$1\n</div>",
             ),
-            detail: "Vertical Bottom",
+            detail: "Vertical Bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -89,7 +89,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-heading_large\">$1</div>",
             ),
-            detail: "Large Heading",
+            detail: "Large Heading (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -97,7 +97,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-heading_medium\">$1</div>",
             ),
-            detail: "Medium Heading",
+            detail: "Medium Heading (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -105,7 +105,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-heading_small\">$1</div>",
             ),
-            detail: "Small Heading",
+            detail: "Small Heading (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -113,7 +113,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-color_default\">$1</div>",
             ),
-            detail: "Default Text Color",
+            detail: "Default Text Color (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -121,7 +121,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-color_success\">$1</div>",
             ),
-            detail: "Green Text Color",
+            detail: "Green Text Color (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -129,7 +129,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-color_weak\">$1</div>",
             ),
-            detail: "Weak Text Color",
+            detail: "Weak Text Color (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -137,7 +137,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-color_error\">$1</div>",
             ),
-            detail: "Red Text Color",
+            detail: "Red Text Color (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -145,7 +145,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-color_inverse\">$1</div>",
             ),
-            detail: "Inverse Text Color",
+            detail: "Inverse Text Color (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -153,7 +153,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-color_inverse-weak\">$1</div>",
             ),
-            detail: "Inverse Weak Text Color",
+            detail: "Inverse Weak Text Color (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -161,7 +161,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<lightning-card title=\"${1:title}\" variant=\"Narrow\">\n\t<p class=\"slds-p-horizontal_small\">\n\t\t${2:Card Body}\n\t</p>\n\t<p slot=\"footer\">\n\t\t${3:Card Footer}\n\t</p>\n</lightning-card>",
             ),
-            detail: "LWC Narrow Card",
+            detail: "LWC Narrow Card (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -169,7 +169,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<lightning:card variant=\"Narrow\">\n\t<aura:set attribute=\"title\">\n\t\t${1:Title}\n\t</aura:set>\n\t<aura:set attribute=\"footer\">\n\t\t${2:Footer}\n\t</aura:set>\n\t${3:Card Body}\n</lightning:card>",
             ),
-            detail: "Aura Narrow Card",
+            detail: "Aura Narrow Card (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -177,7 +177,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<lightning-button-group>\n\t<lightning-button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:Label}\" onclick=\"{!c.${3:Function}}\" />\n\t<lightning-button variant=\"${4|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${5:Label}\" onclick=\"{!c.${6:Function}}\" />\n\t<lightning-button variant=\"${7|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${8:Label}\" onclick=\"{!c.${9:Function}}\" />\n\t<lightning-button-menu alternativeText=\"${10:Text}\" class=\"slds-button_last\" variant=\"border-filled\">\n\t\t<lightning-menu-item label=\"${11:Label}\" value=\"${12:Value}\" onclick=\"{!c.${13:Function}}\"></lightning-menu-item>\n\t\t<lightning-menu-item label=\"${14:Label}\" value=\"${15:Value}\" onclick=\"{!c.${16:Function}}\"></lightning-menu-item>\n\t\t<lightning-menu-item label=\"${17:Label}\" value=\"${18:Value}\" onclick=\"{!c.${19:Function}}\"></lightning-menu-item>\n\t</lightning-button-menu>\n</lightning-button-group>"
             ),
-            detail: "Button Group Dropdown LWC",
+            detail: "Button Group Dropdown LWC (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -185,7 +185,7 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<lightning:buttonGroup>\n\t<lightning:button variant=\"${1|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${2:Label}\" onclick=\"{!c.${3:Function}}\" />\n\t<lightning:button variant=\"${4|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${5:Label}\" onclick=\"{!c.${6:Function}}\" />\n\t<lightning:button variant=\"${7|base,default,brand,brand-outline,destructive,destructive-text,success|}\" label=\"${8:Label}\" onclick=\"{!c.${9:Function}}\" />\n\t<lightning:buttonMenu alternativeText=\"${10:Text}\" class=\"slds-button_last\">\n\t\t<lightning:menuItem label=\"${11:Label}\" value=\"${12:Value}\" onclick=\"{!c.${13:Function}}\" />\n\t\t<lightning:menuItem label=\"${14:Label}\" value=\"${15:Value}\" onclick=\"{!c.${16:Function}}\" />\n\t\t<lightning:menuItem label=\"${17:Label}\" value=\"${18:Value}\" onclick=\"{!c.${19:Function}}\" />\n\t</lightning:buttonMenu>\n</lightning:buttonGroup>"
             ),
-            detail: "Button Group Aura Dropdown ",
+            detail: "Button Group Aura Dropdown (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
     ];
