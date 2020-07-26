@@ -3,18 +3,6 @@ import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
 
-    vscode.languages.registerCompletionItemProvider('html', {
-        provideCompletionItems(doc, pos, token, context) {
-            return htmlSnippets;
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "HTML"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('html', {"html": item.label}, { 'count': 1});
-            return item;
-        }
-    });
-
     let htmlSnippets = [
         {
             label: "bold",
@@ -129,4 +117,17 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             kind: vscode.CompletionItemKind.Snippet,
         },
     ];
+
+    return vscode.languages.registerCompletionItemProvider('html', {
+        provideCompletionItems(doc, pos, token, context) {
+            return htmlSnippets;
+        },
+        resolveCompletionItem(item) {
+            let tele = new ADBNTelemetry( context );
+            tele.sendAdbnTelementry('lang_usage', {"language": "HTML"}, { 'lang_count': 1});
+            tele.sendAdbnTelementry('html', {"html": item.label}, { 'count': 1});
+            return item;
+        }
+    });
+    
 }

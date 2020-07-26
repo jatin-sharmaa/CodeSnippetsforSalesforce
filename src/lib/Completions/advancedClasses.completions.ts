@@ -3,28 +3,6 @@ import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
 
-    vscode.languages.registerCompletionItemProvider('html', {
-        provideCompletionItems(doc, pos, token, context) {
-
-            var start = new vscode.Position(pos.line, 0);
-            var range = new vscode.Range(start, pos);
-            var text = doc.getText(range);
-
-            var rawClasses = text.match(/class=["|']([\w- ]*$)/);
-            if (rawClasses === null) {
-                return [];
-            } else {
-                return sldsClasses;
-            }
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "Classes"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('htmlClasses', {"classes": item.label}, { 'count': 1});
-            return item;
-        }
-    });
-
     let sldsClasses = [
         {
             label: "assistive-text",
@@ -1460,4 +1438,28 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             kind: vscode.CompletionItemKind.Class,
         },
     ];
+
+    return vscode.languages.registerCompletionItemProvider('html', {
+        provideCompletionItems(doc, pos, token, context) {
+
+            var start = new vscode.Position(pos.line, 0);
+            var range = new vscode.Range(start, pos);
+            var text = doc.getText(range);
+
+            var rawClasses = text.match(/class=["|']([\w- ]*$)/);
+            if (rawClasses === null) {
+                return [];
+            } else {
+                return sldsClasses;
+            }
+        },
+        resolveCompletionItem(item) {
+            let tele = new ADBNTelemetry( context );
+            tele.sendAdbnTelementry('lang_usage', {"language": "Classes"}, { 'lang_count': 1});
+            tele.sendAdbnTelementry('htmlClasses', {"classes": item.label}, { 'count': 1});
+            return item;
+        }
+    });
+
+    
 }

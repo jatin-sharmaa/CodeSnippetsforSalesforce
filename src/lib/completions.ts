@@ -1,14 +1,15 @@
 import * as vscode from 'vscode';
-import Configuration from "../configuration";
-import { loadApexSnippets } from "./apex.completions";
-import { loadHTMLSnippets } from "./html.completions";
-import { loadAdvancedSnippets } from "./advanced.completions";
-import { loadJavascriptSnippets } from "./javascript.completions";
-import { loadAuraSnippets } from "./aura.completions";
-import { loadLWCSnippets } from "./lwc.completions";
-import { loadAdvancedClassesSnippets } from "./advancedClasses.completions";
-import { loadClassesSnippets } from "./classes.completions";
+import Configuration from "../helper/configuration";
+import { loadApexSnippets } from "./Completions/apex.completions";
+import { loadHTMLSnippets } from "./Completions/html.completions";
+import { loadAdvancedSnippets } from "./Completions/advanced.completions";
+import { loadJavascriptSnippets } from "./Completions/javascript.completions";
+import { loadAuraSnippets } from "./Completions/aura.completions";
+import { loadLWCSnippets } from "./Completions/lwc.completions";
+import { loadAdvancedClassesSnippets } from "./Completions/advancedClasses.completions";
+import { loadClassesSnippets } from "./Completions/classes.completions";
 
+const disposables: vscode.Disposable[] = [];
 
 export default class Completions {
     
@@ -18,10 +19,10 @@ export default class Completions {
 
         let Configs = new Configuration( context );
 
-        loadHTMLSnippets(context);
+        disposables.push( loadHTMLSnippets(context) );
 
         if ( Configs.enableApexSnippets ) {
-            loadApexSnippets(context);
+            disposables.push( loadApexSnippets(context) );
         } else {
             vscode.window.showWarningMessage('Audibene Code Snippets is disabled for Apex', "Enable").then(()=>{
                 Configs.setConfig("enableApexSnippets", true);
@@ -29,7 +30,7 @@ export default class Completions {
         }
 
         if ( Configs.enableJavascriptSnippets ) {
-            loadJavascriptSnippets(context);
+            disposables.push( loadJavascriptSnippets(context) );
         } else {
             vscode.window.showWarningMessage('Audibene Code Snippets is disabled for Javascript', "Enable").then(()=>{
                 Configs.setConfig("enableJavascriptSnippets", true);
@@ -37,22 +38,36 @@ export default class Completions {
         }
 
         if ( Configs.enableAuraSnippets ) {
-            loadAuraSnippets(context);
+            disposables.push( loadAuraSnippets(context) );
         }
 
         if ( Configs.enableLWCSnippets ) {
-            loadLWCSnippets(context);
+            disposables.push( loadLWCSnippets(context) );
         }
 
         if ( Configs.enableSLDSClass ) {
-            loadClassesSnippets(context);
+            disposables.push( loadClassesSnippets(context) );
         }
 
         if ( Configs.isAdvancedMode ) {
-            loadAdvancedSnippets(context);
-            loadAdvancedClassesSnippets(context);
+            disposables.push( loadAdvancedSnippets(context) );
+            disposables.push( loadAdvancedClassesSnippets(context) );
         }
 
+        context.subscriptions.push(...disposables);
+
+    }
+
+    public unregisterCompletions( context: vscode.ExtensionContext ){
+
+        for (const disposable of disposables) {
+            const existingIndex = context.subscriptions.indexOf(disposable);
+            if (existingIndex !== -1) {
+                context.subscriptions.splice(existingIndex, 1);
+            }
+    
+            disposable.dispose();
+        }
     }
 }
 

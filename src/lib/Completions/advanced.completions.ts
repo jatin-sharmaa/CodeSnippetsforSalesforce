@@ -3,18 +3,6 @@ import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
 
-    vscode.languages.registerCompletionItemProvider('html', {
-        provideCompletionItems(doc, pos, token, context) {
-            return advancedSnippets;
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "Advanced Mode"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('advancedMode', {"Advanced Mode": item.label}, { 'count': 1});
-            return item;
-        }
-    });
-
     let advancedSnippets = [
         {
             label: "grid:gutters",
@@ -201,4 +189,17 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             kind: vscode.CompletionItemKind.Snippet,
         },
     ];
+
+    return vscode.languages.registerCompletionItemProvider('html', {
+        provideCompletionItems(doc, pos, token, context) {
+            return advancedSnippets;
+        },
+        resolveCompletionItem(item) {
+            let tele = new ADBNTelemetry( context );
+            tele.sendAdbnTelementry('lang_usage', {"language": "Advanced Mode"}, { 'lang_count': 1});
+            tele.sendAdbnTelementry('advancedMode', {"Advanced Mode": item.label}, { 'count': 1});
+            return item;
+        }
+    });
+
 }

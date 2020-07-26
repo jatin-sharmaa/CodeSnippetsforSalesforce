@@ -3,18 +3,6 @@ import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadApexSnippets( context:vscode.ExtensionContext ) {
 
-    vscode.languages.registerCompletionItemProvider('apex', {
-        provideCompletionItems(doc, pos, token, context) {
-            return apexSnippets;
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "Apex"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('apex', {"Apex": item.label}, { 'count': 1});
-            return item;
-        }
-    });
-
     let apexSnippets = [
         {
             label: "sysDebug",
@@ -73,4 +61,16 @@ export function loadApexSnippets( context:vscode.ExtensionContext ) {
             kind: vscode.CompletionItemKind.Method,
         },
     ];
+
+    return vscode.languages.registerCompletionItemProvider('apex', {
+        provideCompletionItems(doc, pos, token, context) {
+            return apexSnippets;
+        },
+        resolveCompletionItem(item) {
+            let tele = new ADBNTelemetry( context );
+            tele.sendAdbnTelementry('lang_usage', {"language": "Apex"}, { 'lang_count': 1});
+            tele.sendAdbnTelementry('apex', {"Apex": item.label}, { 'count': 1});
+            return item;
+        }
+    });
 }

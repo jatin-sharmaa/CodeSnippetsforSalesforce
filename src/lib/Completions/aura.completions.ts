@@ -3,18 +3,6 @@ import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadAuraSnippets( context:vscode.ExtensionContext ) {
 
-    vscode.languages.registerCompletionItemProvider('html', {
-        provideCompletionItems(doc, pos, token, context) {
-            return auraSnippets;
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "Aura"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('htmlAura', {"Aura": item.label}, { 'count': 1});
-            return item;
-        }
-    });
-
     let auraSnippets = [
         {
             label: "input:text-aura",
@@ -281,4 +269,18 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
             kind: vscode.CompletionItemKind.Method,
         },
     ];
+
+    return vscode.languages.registerCompletionItemProvider('html', {
+        provideCompletionItems(doc, pos, token, context) {
+            return auraSnippets;
+        },
+        resolveCompletionItem(item) {
+            let tele = new ADBNTelemetry( context );
+            tele.sendAdbnTelementry('lang_usage', {"language": "Aura"}, { 'lang_count': 1});
+            tele.sendAdbnTelementry('htmlAura', {"Aura": item.label}, { 'count': 1});
+            return item;
+        }
+    });
+
+    
 }

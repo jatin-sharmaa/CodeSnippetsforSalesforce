@@ -30,22 +30,3 @@ export default class ADBNTelemetry {
         this.reporter.sendTelemetryEvent(eventName, properties, measurements);
     } 
 }
-
-// "vscode:prepublish": "npm install vscode-extension-telemetry && webpack --mode production",
-
-// "vscode:prepublish": "npm run compile",
-// "compile": "tsc -p ./",
-// "lint": "eslint src --ext ts",
-// "watch": "tsc -watch -p ./",
-// "pretest": "npm run compile && npm run lint",
-// "test": "node ./out/test/runTest.js"
-
-
-// "lint": "eslint src --ext ts",
-// "watch": "tsc -watch -p ./",
-// "pretest": "npm run compile && npm run lint",
-// "test": "node ./out/test/runTest.js",
-// "devMode": "npm run install_webpack",
-// "install_webpack": "npm i --save-dev webpack webpack-cli && npm run install_ts_loader",
-// "install_ts_loader": "npm i --save-dev ts-loader",
-// "install-telemetry": "npm install vscode-extension-telemetry"
