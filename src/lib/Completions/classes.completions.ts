@@ -9,7 +9,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-align_absolute-center" ,
             ),
-            detail: "Class will absolutely center children content",
+            detail: "Class will absolutely center children content (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -17,7 +17,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-align_left",
             ),
-            detail: "Text Left",
+            detail: "Text Left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -25,7 +25,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-align_center",
             ),
-            detail: "Text Center",
+            detail: "Text Center (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -33,7 +33,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-align_right",
             ),
-            detail: "Text Right",
+            detail: "Text Right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -41,7 +41,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-border_bottom",
             ),
-            detail: "Adds a bottom border to an element",
+            detail: "Adds a bottom border to an element (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -49,7 +49,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-border_left",
             ),
-            detail: "Adds a left border to an element",
+            detail: "Adds a left border to an element (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -57,7 +57,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-border_right",
             ),
-            detail: "Adds a right border to an element",
+            detail: "Adds a right border to an element (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -65,7 +65,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-border_top",
             ),
-            detail: "Adds a top border to an element",
+            detail: "Adds a top border to an element (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -73,7 +73,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box",
             ),
-            detail: "Provides 1rem base padding and borders",
+            detail: "Provides 1rem base padding and borders (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -81,7 +81,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-box_x-small",
             ),
-            detail: "Provides .5rem base padding and borders",
+            detail: "Provides .5rem base padding and borders (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -89,7 +89,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-box_xx-small",
             ),
-            detail: "Provides .25rem base padding and borders",
+            detail: "Provides .25rem base padding and borders (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -97,7 +97,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_shade",
             ),
-            detail: "Sets the background color to gray",
+            detail: "Sets the background color to gray (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -105,7 +105,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_inverse",
             ),
-            detail: "Sets the background color to dark blue",
+            detail: "Sets the background color to dark blue (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -113,7 +113,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_alt-inverse",
             ),
-            detail: "Sets the background color to darker blue",
+            detail: "Sets the background color to darker blue (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -121,7 +121,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_success",
             ),
-            detail: "Sets the background color to green",
+            detail: "Sets the background color to green (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -129,7 +129,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_info",
             ),
-            detail: "Sets the background color to gray-ish blue",
+            detail: "Sets the background color to gray-ish blue (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -137,7 +137,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_warning",
             ),
-            detail: "Sets the background color to yellow",
+            detail: "Sets the background color to yellow (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -145,7 +145,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_error",
             ),
-            detail: "Sets the background color to red",
+            detail: "Sets the background color to red (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -153,7 +153,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_offline",
             ),
-            detail: "Sets the background color to black",
+            detail: "Sets the background color to black (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -161,7 +161,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_alert-texture",
             ),
-            detail: "Adds striped background",
+            detail: "Adds striped background (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -169,7 +169,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-float_left",
             ),
-            detail: "Pulls element from document flow and floats left. Text and other elements wrap around it.",
+            detail: "Pulls element from document flow and floats left. Text and other elements wrap around it. (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -177,7 +177,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-float_none",
             ),
-            detail: "Removes float from an element that has attribute already",
+            detail: "Removes float from an element that has attribute already (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -185,7 +185,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-float_right",
             ),
-            detail: "Pulls element from document flow and floats right. Text and other elements wrap around it.",
+            detail: "Pulls element from document flow and floats right. Text and other elements wrap around it. (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -193,7 +193,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hide",
             ),
-            detail: "Hides an element from the page by setting display propery to none",
+            detail: "Hides an element from the page by setting display propery to none (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -201,7 +201,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show",
             ),
-            detail: "Shows the element by setting display property to block",
+            detail: "Shows the element by setting display property to block (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -209,7 +209,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hidden",
             ),
-            detail: "Hides an element but reserve the space on the page",
+            detail: "Hides an element but reserve the space on the page (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -217,7 +217,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-visible",
             ),
-            detail: "Shows an element which was hidden by slds-hidden",
+            detail: "Shows an element which was hidden by slds-hidden (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -225,7 +225,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_none",
             ),
-            detail: "Removes margin from all sides",
+            detail: "Removes margin from all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -233,7 +233,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_xxx-small",
             ),
-            detail: "Adds .125rem margin to all sides",
+            detail: "Adds .125rem margin to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -241,7 +241,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_xx-small",
             ),
-            detail: "Adds .25rem margin to all sides",
+            detail: "Adds .25rem margin to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -249,7 +249,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_x-small",
             ),
-            detail: "Adds .5rem margin to all sides",
+            detail: "Adds .5rem margin to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -257,7 +257,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_small",
             ),
-            detail: "Adds .75rem margin to all sides",
+            detail: "Adds .75rem margin to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -265,7 +265,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_medium",
             ),
-            detail: "Adds 1rem margin to all sides",
+            detail: "Adds 1rem margin to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -273,7 +273,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_large",
             ),
-            detail: "Adds 1.5rem margin to all sides",
+            detail: "Adds 1.5rem margin to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -281,7 +281,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_x-large",
             ),
-            detail: "Adds 2rem margin to all sides",
+            detail: "Adds 2rem margin to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -289,7 +289,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_xx-large",
             ),
-            detail: "Adds 3rem margin to all sides",
+            detail: "Adds 3rem margin to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -297,7 +297,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_none",
             ),
-            detail: "Removes margin from top",
+            detail: "Removes margin from top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -305,7 +305,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_xxx-small",
             ),
-            detail: "Adds .125rem margin to top",
+            detail: "Adds .125rem margin to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -313,7 +313,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_xx-small",
             ),
-            detail: "Adds .25rem margin to top",
+            detail: "Adds .25rem margin to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -321,7 +321,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_x-small",
             ),
-            detail: "Adds .5rem margin to top",
+            detail: "Adds .5rem margin to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -329,7 +329,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_small",
             ),
-            detail: "Adds .75rem margin to top",
+            detail: "Adds .75rem margin to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -337,7 +337,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_medium",
             ),
-            detail: "Adds 1rem margin to top",
+            detail: "Adds 1rem margin to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -345,7 +345,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_large",
             ),
-            detail: "Adds 1.5rem margin to top",
+            detail: "Adds 1.5rem margin to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -353,7 +353,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_x-large",
             ),
-            detail: "Adds 2rem margin to top",
+            detail: "Adds 2rem margin to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -361,7 +361,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_xx-large",
             ),
-            detail: "Adds 3rem margin to top",
+            detail: "Adds 3rem margin to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -369,7 +369,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_none",
             ),
-            detail: "Removes margin from left",
+            detail: "Removes margin from left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -377,7 +377,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_xxx-small",
             ),
-            detail: "Adds .125rem margin to left",
+            detail: "Adds .125rem margin to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -385,7 +385,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_xx-small",
             ),
-            detail: "Adds .25rem margin to left",
+            detail: "Adds .25rem margin to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -393,7 +393,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_x-small",
             ),
-            detail: "Adds .5rem margin to left",
+            detail: "Adds .5rem margin to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -401,7 +401,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_small",
             ),
-            detail: "Adds .75rem margin to left",
+            detail: "Adds .75rem margin to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -409,7 +409,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_medium",
             ),
-            detail: "Adds 1rem margin to left",
+            detail: "Adds 1rem margin to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -417,7 +417,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_large",
             ),
-            detail: "Adds 1.5rem margin to left",
+            detail: "Adds 1.5rem margin to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -425,7 +425,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_x-large",
             ),
-            detail: "Adds 2rem margin to left",
+            detail: "Adds 2rem margin to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -433,7 +433,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_xx-large",
             ),
-            detail: "Adds 3rem margin to left",
+            detail: "Adds 3rem margin to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -441,7 +441,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_none",
             ),
-            detail: "Removes margin from right",
+            detail: "Removes margin from right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -449,7 +449,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_xxx-small",
             ),
-            detail: "Adds .125rem margin to right",
+            detail: "Adds .125rem margin to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -457,7 +457,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_xx-small",
             ),
-            detail: "Adds .25rem margin to right",
+            detail: "Adds .25rem margin to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -465,7 +465,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_x-small",
             ),
-            detail: "Adds .5rem margin to right",
+            detail: "Adds .5rem margin to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -473,7 +473,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_small",
             ),
-            detail: "Adds .75rem margin to right",
+            detail: "Adds .75rem margin to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -481,7 +481,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_medium",
             ),
-            detail: "Adds 1rem margin to right",
+            detail: "Adds 1rem margin to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -489,7 +489,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_large",
             ),
-            detail: "Adds 1.5rem margin to right",
+            detail: "Adds 1.5rem margin to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -497,7 +497,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_x-large",
             ),
-            detail: "Adds 2rem margin to right",
+            detail: "Adds 2rem margin to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -505,7 +505,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_xx-large",
             ),
-            detail: "Adds 3rem margin to right",
+            detail: "Adds 3rem margin to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -513,7 +513,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_none",
             ),
-            detail: "Removes margin from bottom",
+            detail: "Removes margin from bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -521,7 +521,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_xxx-small",
             ),
-            detail: "Adds .125rem margin to bottom",
+            detail: "Adds .125rem margin to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -529,7 +529,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_xx-small",
             ),
-            detail: "Adds .25rem margin to bottom",
+            detail: "Adds .25rem margin to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -537,7 +537,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_x-small",
             ),
-            detail: "Adds .5rem margin to bottom",
+            detail: "Adds .5rem margin to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -545,7 +545,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_small",
             ),
-            detail: "Adds .75rem margin to bottom",
+            detail: "Adds .75rem margin to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -553,7 +553,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_medium",
             ),
-            detail: "Adds 1rem margin to bottom",
+            detail: "Adds 1rem margin to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -561,7 +561,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_large",
             ),
-            detail: "Adds 1.5rem margin to bottom",
+            detail: "Adds 1.5rem margin to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -569,7 +569,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_x-large",
             ),
-            detail: "Adds 2rem margin to bottom",
+            detail: "Adds 2rem margin to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -577,7 +577,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_xx-large",
             ),
-            detail: "Adds 3rem margin to bottom",
+            detail: "Adds 3rem margin to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -585,7 +585,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_none",
             ),
-            detail: "Removes margin from top and bottom",
+            detail: "Removes margin from top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -593,7 +593,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_xxx-small",
             ),
-            detail: "Adds .125rem margin to top and bottom",
+            detail: "Adds .125rem margin to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -601,7 +601,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_xx-small",
             ),
-            detail: "Adds .25rem margin to top and bottom",
+            detail: "Adds .25rem margin to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -609,7 +609,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_x-small",
             ),
-            detail: "Adds .5rem margin to top and bottom",
+            detail: "Adds .5rem margin to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -617,7 +617,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_small",
             ),
-            detail: "Adds .75rem margin to top and bottom",
+            detail: "Adds .75rem margin to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -625,7 +625,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_medium",
             ),
-            detail: "Adds 1rem margin to top and bottom",
+            detail: "Adds 1rem margin to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -633,7 +633,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_large",
             ),
-            detail: "Adds 1.5rem margin to top and bottom",
+            detail: "Adds 1.5rem margin to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -641,7 +641,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_x-large",
             ),
-            detail: "Adds 2rem margin to top and bottom",
+            detail: "Adds 2rem margin to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -649,7 +649,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_xx-large",
             ),
-            detail: "Adds 3rem margin to top and bottom",
+            detail: "Adds 3rem margin to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -657,7 +657,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_none",
             ),
-            detail: "Removes margin from left and right",
+            detail: "Removes margin from left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -665,7 +665,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_xxx-small",
             ),
-            detail: "Adds .125rem margin to left and right",
+            detail: "Adds .125rem margin to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -673,7 +673,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_xx-small",
             ),
-            detail: "Adds .25rem margin to left and right",
+            detail: "Adds .25rem margin to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -681,7 +681,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_x-small",
             ),
-            detail: "Adds .5rem margin to left and right",
+            detail: "Adds .5rem margin to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -689,7 +689,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_small",
             ),
-            detail: "Adds .75rem margin to left and right",
+            detail: "Adds .75rem margin to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -697,7 +697,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_medium",
             ),
-            detail: "Adds 1rem margin to left and right",
+            detail: "Adds 1rem margin to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -705,7 +705,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_large",
             ),
-            detail: "Adds 1.5rem margin to left and right",
+            detail: "Adds 1.5rem margin to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -713,7 +713,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_x-large",
             ),
-            detail: "Adds 2rem margin to left and right",
+            detail: "Adds 2rem margin to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -721,7 +721,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_xx-large",
             ),
-            detail: "Adds 3rem margin to left and right",
+            detail: "Adds 3rem margin to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -729,7 +729,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_none",
             ),
-            detail: "Removes padding from all sides",
+            detail: "Removes padding from all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -737,7 +737,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_xxx-small",
             ),
-            detail: "Adds .125rem padding to all sides",
+            detail: "Adds .125rem padding to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -745,7 +745,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_xx-small",
             ),
-            detail: "Adds .25rem padding to all sides",
+            detail: "Adds .25rem padding to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -753,7 +753,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_x-small",
             ),
-            detail: "Adds .5rem padding to all sides",
+            detail: "Adds .5rem padding to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -761,7 +761,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_small",
             ),
-            detail: "Adds .75rem padding to all sides",
+            detail: "Adds .75rem padding to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -769,7 +769,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_medium",
             ),
-            detail: "Adds 1rem padding to all sides",
+            detail: "Adds 1rem padding to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -777,7 +777,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_large",
             ),
-            detail: "Adds 1.5rem padding to all sides",
+            detail: "Adds 1.5rem padding to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -785,7 +785,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_x-large",
             ),
-            detail: "Adds 2rem padding to all sides",
+            detail: "Adds 2rem padding to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -793,7 +793,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_xx-large",
             ),
-            detail: "Adds 3rem padding to all sides",
+            detail: "Adds 3rem padding to all sides (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -801,7 +801,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_none",
             ),
-            detail: "Removes padding from top",
+            detail: "Removes padding from top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -809,7 +809,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_xxx-small",
             ),
-            detail: "Adds .125rem padding to top",
+            detail: "Adds .125rem padding to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -817,7 +817,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_xx-small",
             ),
-            detail: "Adds .25rem padding to top",
+            detail: "Adds .25rem padding to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -825,7 +825,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_x-small",
             ),
-            detail: "Adds .5rem padding to top",
+            detail: "Adds .5rem padding to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -833,7 +833,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_small",
             ),
-            detail: "Adds .75rem padding to top",
+            detail: "Adds .75rem padding to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -841,7 +841,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_medium",
             ),
-            detail: "Adds 1rem padding to top",
+            detail: "Adds 1rem padding to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -849,7 +849,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_large",
             ),
-            detail: "Adds 1.5rem padding to top",
+            detail: "Adds 1.5rem padding to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -857,7 +857,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_x-large",
             ),
-            detail: "Adds 2rem padding to top",
+            detail: "Adds 2rem padding to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -865,7 +865,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_xx-large",
             ),
-            detail: "Adds 3rem padding to top",
+            detail: "Adds 3rem padding to top (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -873,7 +873,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_none",
             ),
-            detail: "Removes padding from left",
+            detail: "Removes padding from left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -881,7 +881,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_xxx-small",
             ),
-            detail: "Adds .125rem padding to left",
+            detail: "Adds .125rem padding to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -889,7 +889,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_xx-small",
             ),
-            detail: "Adds .25rem padding to left",
+            detail: "Adds .25rem padding to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -897,7 +897,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_x-small",
             ),
-            detail: "Adds .5rem padding to left",
+            detail: "Adds .5rem padding to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -905,7 +905,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_small",
             ),
-            detail: "Adds .75rem padding to left",
+            detail: "Adds .75rem padding to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -913,7 +913,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_medium",
             ),
-            detail: "Adds 1rem padding to left",
+            detail: "Adds 1rem padding to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -921,7 +921,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_large",
             ),
-            detail: "Adds 1.5rem padding to left",
+            detail: "Adds 1.5rem padding to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -929,7 +929,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_x-large",
             ),
-            detail: "Adds 2rem padding to left",
+            detail: "Adds 2rem padding to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -937,7 +937,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_xx-large",
             ),
-            detail: "Adds 3rem padding to left",
+            detail: "Adds 3rem padding to left (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -945,7 +945,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_none",
             ),
-            detail: "Removes padding from right",
+            detail: "Removes padding from right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -953,7 +953,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_xxx-small",
             ),
-            detail: "Adds .125rem padding to right",
+            detail: "Adds .125rem padding to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -961,7 +961,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_xx-small",
             ),
-            detail: "Adds .25rem padding to right",
+            detail: "Adds .25rem padding to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -969,7 +969,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_x-small",
             ),
-            detail: "Adds .5rem padding to right",
+            detail: "Adds .5rem padding to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -977,7 +977,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_small",
             ),
-            detail: "Adds .75rem padding to right",
+            detail: "Adds .75rem padding to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -985,7 +985,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_medium",
             ),
-            detail: "Adds 1rem padding to right",
+            detail: "Adds 1rem padding to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -993,7 +993,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_large",
             ),
-            detail: "Adds 1.5rem padding to right",
+            detail: "Adds 1.5rem padding to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1001,7 +1001,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_x-large",
             ),
-            detail: "Adds 2rem padding to right",
+            detail: "Adds 2rem padding to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1009,7 +1009,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_xx-large",
             ),
-            detail: "Adds 3rem padding to right",
+            detail: "Adds 3rem padding to right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1017,7 +1017,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_none",
             ),
-            detail: "Removes padding from bottom",
+            detail: "Removes padding from bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1025,7 +1025,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_xxx-small",
             ),
-            detail: "Adds .125rem padding to bottom",
+            detail: "Adds .125rem padding to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1033,7 +1033,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_xx-small",
             ),
-            detail: "Adds .25rem padding to bottom",
+            detail: "Adds .25rem padding to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1041,7 +1041,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_x-small",
             ),
-            detail: "Adds .5rem padding to bottom",
+            detail: "Adds .5rem padding to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1049,7 +1049,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_small",
             ),
-            detail: "Adds .75rem padding to bottom",
+            detail: "Adds .75rem padding to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1057,7 +1057,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_medium",
             ),
-            detail: "Adds 1rem padding to bottom",
+            detail: "Adds 1rem padding to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1065,7 +1065,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_large",
             ),
-            detail: "Adds 1.5rem padding to bottom",
+            detail: "Adds 1.5rem padding to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1073,7 +1073,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_x-large",
             ),
-            detail: "Adds 2rem padding to bottom",
+            detail: "Adds 2rem padding to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1081,7 +1081,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_xx-large",
             ),
-            detail: "Adds 3rem padding to bottom",
+            detail: "Adds 3rem padding to bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1089,7 +1089,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_none",
             ),
-            detail: "Removes padding from top and bottom",
+            detail: "Removes padding from top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1097,7 +1097,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_xxx-small",
             ),
-            detail: "Adds .125rem padding to top and bottom",
+            detail: "Adds .125rem padding to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1105,7 +1105,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_xx-small",
             ),
-            detail: "Adds .25rem padding to top and bottom",
+            detail: "Adds .25rem padding to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1113,7 +1113,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_x-small",
             ),
-            detail: "Adds .5rem padding to top and bottom",
+            detail: "Adds .5rem padding to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1121,7 +1121,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_small",
             ),
-            detail: "Adds .75rem padding to top and bottom",
+            detail: "Adds .75rem padding to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1129,7 +1129,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_medium",
             ),
-            detail: "Adds 1rem padding to top and bottom",
+            detail: "Adds 1rem padding to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1137,7 +1137,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_large",
             ),
-            detail: "Adds 1.5rem padding to top and bottom",
+            detail: "Adds 1.5rem padding to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1145,7 +1145,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_x-large",
             ),
-            detail: "Adds 2rem padding to top and bottom",
+            detail: "Adds 2rem padding to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1153,7 +1153,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_xx-large",
             ),
-            detail: "Adds 3rem padding to top and bottom",
+            detail: "Adds 3rem padding to top and bottom (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1161,7 +1161,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_none",
             ),
-            detail: "Removes padding from left and right",
+            detail: "Removes padding from left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1169,7 +1169,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_xxx-small",
             ),
-            detail: "Adds .125rem padding to left and right",
+            detail: "Adds .125rem padding to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1177,7 +1177,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_xx-small",
             ),
-            detail: "Adds .25rem padding to left and right",
+            detail: "Adds .25rem padding to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1185,7 +1185,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_x-small",
             ),
-            detail: "Adds .5rem padding to left and right",
+            detail: "Adds .5rem padding to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1193,7 +1193,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_small",
             ),
-            detail: "Adds .75rem padding to left and right",
+            detail: "Adds .75rem padding to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1201,7 +1201,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_medium",
             ),
-            detail: "Adds 1rem padding to left and right",
+            detail: "Adds 1rem padding to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1209,7 +1209,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_large",
             ),
-            detail: "Adds 1.5rem padding to left and right",
+            detail: "Adds 1.5rem padding to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1217,7 +1217,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_x-large",
             ),
-            detail: "Adds 2rem padding to left and right",
+            detail: "Adds 2rem padding to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1225,7 +1225,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_xx-large",
             ),
-            detail: "Adds 3rem padding to left and right",
+            detail: "Adds 3rem padding to left and right (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1233,7 +1233,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-truncate",
             ),
-            detail: "Truncates text",
+            detail: "Truncates text (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1241,7 +1241,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-col",
             ),
-            detail: "Initializes a grid column",
+            detail: "Initializes a grid column (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1249,7 +1249,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid",
             ),
-            detail: "Initializes grid",
+            detail: "Initializes grid (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1257,7 +1257,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_align-center",
             ),
-            detail: "Columns align in the center to the main axis and expand in each direction",
+            detail: "Columns align in the center to the main axis and expand in each direction (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1265,7 +1265,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_align-space",
             ),
-            detail: "Columns are evenly distributed with equal space around them all",
+            detail: "Columns are evenly distributed with equal space around them all (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1273,7 +1273,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_align-spread",
             ),
-            detail: "Columns align to the left and right followed by center. Space is equal between them",
+            detail: "Columns align to the left and right followed by center. Space is equal between them (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1281,7 +1281,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_align-end",
             ),
-            detail: "Columns start on the opposite end of the grid's main axis",
+            detail: "Columns start on the opposite end of the grid's main axis (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1289,7 +1289,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-align-start",
             ),
-            detail: "Columns start at the beginning of the grid's cross axis",
+            detail: "Columns start at the beginning of the grid's cross axis (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1297,7 +1297,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-align-center",
             ),
-            detail: "Columns align in the center to the cross axis and expand it each direction",
+            detail: "Columns align in the center to the cross axis and expand it each direction (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1305,7 +1305,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-align-end",
             ),
-            detail: "Columns start on the opposite end of the grid's cross axis",
+            detail: "Columns start on the opposite end of the grid's cross axis (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1313,7 +1313,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-stretch",
             ),
-            detail: "Stretch the grid items for both single row and multi-line rows to fill the height of the parent grid container",
+            detail: "Stretch the grid items for both single row and multi-line rows to fill the height of the parent grid container (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1321,7 +1321,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters",
             ),
-            detail: "Apply 12px gutters to each grid column when you add this class to an `slds-grid` element",
+            detail: "Apply 12px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1329,7 +1329,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hyphenate",
             ),
-            detail: "The truncation class can be used on an element, or the truncation include can be added to an existing class.",
+            detail: "The truncation class can be used on an element, or the truncation include can be added to an existing class. (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1337,7 +1337,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-collapsed",
             ),
-            detail: "Hides elements inside a parent",
+            detail: "Hides elements inside a parent (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1345,7 +1345,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-expanded",
             ),
-            detail: "Shows the elements inside the parent",
+            detail: "Shows the elements inside the parent (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1353,7 +1353,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-static",
             ),
-            detail: "Reset positioning back to normal behavior",
+            detail: "Reset positioning back to normal behavior (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1361,7 +1361,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-relative",
             ),
-            detail: "Used to contain children if children are absolutely positioned and out of flow. Also used to position element without changing layout.",
+            detail: "Used to contain children if children are absolutely positioned and out of flow. Also used to position element without changing layout. (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1369,7 +1369,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-fixed",
             ),
-            detail: "Used to position an element relative to the viewport.",
+            detail: "Used to position an element relative to the viewport. (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1377,7 +1377,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-absolute",
             ),
-            detail: "Used to position an element relative to its closest ancestor with relative positioning.",
+            detail: "Used to position an element relative to its closest ancestor with relative positioning. (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1385,7 +1385,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-no-flex",
             ),
-            detail: "Removes flexbox from grid column",
+            detail: "Removes flexbox from grid column (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1393,7 +1393,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-no-space",
             ),
-            detail: "Sets the column to a min-width of 0",
+            detail: "Sets the column to a min-width of 0 (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1401,7 +1401,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-nowrap",
             ),
-            detail: "Keeps columns on one line. Allows columns to stretch and fill 100% of the parent’s width and height.",
+            detail: "Keeps columns on one line. Allows columns to stretch and fill 100% of the parent’s width and height. (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1409,7 +1409,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-body_regular",
             ),
-            detail: "Creates the 13px regular body copy",
+            detail: "Creates the 13px regular body copy (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1417,7 +1417,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-body_small",
             ),
-            detail: "Creates a more pale-colored 12px copy",
+            detail: "Creates a more pale-colored 12px copy (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1425,7 +1425,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_default",
             ),
-            detail: "Default color of text",
+            detail: "Default color of text (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1433,7 +1433,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_weak",
             ),
-            detail: "Weak color of text",
+            detail: "Weak color of text (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1441,7 +1441,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_error",
             ),
-            detail: "Error color of text",
+            detail: "Error color of text (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1449,7 +1449,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_destructive",
             ),
-            detail: "Color of text for destructive actions",
+            detail: "Color of text for destructive actions (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1457,7 +1457,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_success",
             ),
-            detail: "Success color of text",
+            detail: "Success color of text (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1465,7 +1465,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_inverse",
             ),
-            detail: "Default color of text on inversed background",
+            detail: "Default color of text on inversed background (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1473,7 +1473,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_inverse-weak",
             ),
-            detail: "Weak color of text on inversed background",
+            detail: "Weak color of text on inversed background (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1481,7 +1481,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-heading_large",
             ),
-            detail: "Very large 28px heading",
+            detail: "Very large 28px heading (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1489,7 +1489,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-heading_medium",
             ),
-            detail: "Large 20px heading",
+            detail: "Large 20px heading (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1497,7 +1497,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-heading_small",
             ),
-            detail: "Smaller 16px heading",
+            detail: "Smaller 16px heading (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1505,7 +1505,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_default",
             ),
-            detail: "Sets the background color to white",
+            detail: "Sets the background color to white (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1513,7 +1513,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_shade",
             ),
-            detail: "Sets the background color to gray",
+            detail: "Sets the background color to gray (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1521,7 +1521,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_inverse",
             ),
-            detail: "Sets the background color to dark blue",
+            detail: "Sets the background color to dark blue (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1529,7 +1529,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_alt-inverse",
             ),
-            detail: "Sets the background color to darker blue",
+            detail: "Sets the background color to darker blue (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1537,7 +1537,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_success",
             ),
-            detail: "Sets the background color to green",
+            detail: "Sets the background color to green (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1545,7 +1545,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_info",
             ),
-            detail: "Sets the background color to gray-ish blue",
+            detail: "Sets the background color to gray-ish blue (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1553,7 +1553,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_warning",
             ),
-            detail: "Sets the background color to yellow",
+            detail: "Sets the background color to yellow (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1561,7 +1561,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_error",
             ),
-            detail: "Sets the background color to red",
+            detail: "Sets the background color to red (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1569,7 +1569,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_offline",
             ),
-            detail: "Sets the background color to black",
+            detail: "Sets the background color to black (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1577,7 +1577,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_alert-texture",
             ),
-            detail: "Adds striped background",
+            detail: "Adds striped background (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1585,7 +1585,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-wrap",
             ),
-            detail: "Allows columns to wrap when they exceed 100% of their parent’s width",
+            detail: "Allows columns to wrap when they exceed 100% of their parent’s width (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1593,7 +1593,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table",
             ),
-            detail: "Initializes data table",
+            detail: "Initializes data table (Audibene Code Snippets)",
             documentation: "Can be used on table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1602,7 +1602,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-no-row-hover",
             ),
-            detail: "Default Table Row Hover",
+            detail: "Default Table Row Hover (Audibene Code Snippets)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1611,7 +1611,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-selected",
             ),
-            detail: "Selected Table Row + Hover",
+            detail: "Selected Table Row + Hover (Audibene Code Snippets)",
             documentation: "Can be used on .slds-table tr",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1620,7 +1620,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-cell-wrap",
             ),
-            detail: "By default, nowrap is applied",
+            detail: "By default, nowrap is applied (Audibene Code Snippets)",
             documentation: "Can be used on .slds-table th, .slds-table td",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1629,7 +1629,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-cell-buffer_left",
             ),
-            detail: "Use to add a left padding buffer to cells",
+            detail: "Use to add a left padding buffer to cells (Audibene Code Snippets)",
             documentation: "Can be used on .slds-table th, .slds-table td",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1638,7 +1638,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-cell-buffer_right",
             ),
-            detail: "Use to add a right padding buffer to cells",
+            detail: "Use to add a right padding buffer to cells (Audibene Code Snippets)",
             documentation: "Can be used on .slds-table th, .slds-table td",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1647,7 +1647,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_cell-buffer",
             ),
-            detail: "Add left and right padding to the first and last cells of a table",
+            detail: "Add left and right padding to the first and last cells of a table (Audibene Code Snippets)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1656,7 +1656,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_bordered",
             ),
-            detail: "Add vertical borders to a table",
+            detail: "Add vertical borders to a table (Audibene Code Snippets)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1665,7 +1665,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-has-focus",
             ),
-            detail: "Focus state on a cell",
+            detail: "Focus state on a cell (Audibene Code Snippets)",
             documentation: "Can be on .slds-table th, .slds-table td",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1674,7 +1674,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_bordered",
             ),
-            detail: "Add vertical borders to a table",
+            detail: "Add vertical borders to a table (Audibene Code Snippets)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1683,7 +1683,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_col-bordered",
             ),
-            detail: "Add column borders",
+            detail: "Add column borders (Audibene Code Snippets)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1692,7 +1692,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_striped",
             ),
-            detail: "Add alternating strips to rows",
+            detail: "Add alternating strips to rows (Audibene Code Snippets)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1701,7 +1701,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_fixed-layout",
             ),
-            detail: "Set table to use fixed layout for width and truncation purposes",
+            detail: "Set table to use fixed layout for width and truncation purposes (Audibene Code Snippets)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
