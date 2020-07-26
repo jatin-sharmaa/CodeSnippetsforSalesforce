@@ -22,7 +22,7 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 
 ### Amber
 
-#### v1.0.3 
+#### v1.1.0 
 - Bug Fixes and Improvements
 - Text Alignment Classes moved outside the Advanced mode
 - Snippets for Theme Cards
