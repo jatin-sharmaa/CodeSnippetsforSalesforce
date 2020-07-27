@@ -3,10 +3,10 @@ All notable changes to the Audibene Code Snippets will be documented here.
 
 ## Beige - v2.1.0
 - Added Snippets for tables
-    -Table:2-columns
-    -Table:3-columns
-    -Table:fixed-layout 2-columns
-    -Table:fixed-layout 3-columns
+    - Table:2-columns
+    - Table:3-columns
+    - Table:fixed-layout 2-columns
+    - Table:fixed-layout 3-columns
 - Updated documentation
 
 ## Beige - v2.0.0

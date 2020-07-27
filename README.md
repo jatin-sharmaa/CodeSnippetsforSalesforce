@@ -1,7 +1,7 @@
 # Audibene Code Snippets
 
 A set of HTML, JS and Apex Snippets for Visual Studio Code.
-You can also press `Ctrl + Space (Windows) | Fn + Control + Space (Mac)` if the snippets are not displayed
+You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space (Mac)` on **Mac** if the snippets are not displayed.
 
 ![promo](./images/ABDN_Cover.jpg)
 
@@ -20,7 +20,6 @@ The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit 
 - Marcel Hirthe
 - Jatin Sharma
 - Suraj Raval 
-
 
 
 ## Available Snippets
