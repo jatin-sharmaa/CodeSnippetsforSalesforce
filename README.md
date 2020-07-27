@@ -3,7 +3,9 @@
 A set of HTML, JS and Apex Snippets for Visual Studio Code.
 You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space` on **Mac** if the snippets are not displayed.
 
-![promo](./images/ABDN_Cover.jpg)
+![](./images/ABDN_Cover.jpg)
+![](./images/grid.gif)
+![](./images/heading.gif)
 
 ## Configurations
 - Enable Apex snippets
@@ -41,10 +43,10 @@ text:center | Text Center
 text:right | Text Right
 Theme Card: One Column | Use a color theme to apply color to the background and text. Some color themes apply a background image or texture.
 Theme Card: Two Columns | Use a color theme to apply color to the background and text. Some color themes apply a background image or texture.
-Table:2-columns | "Table with 2 columns. Uses automatic column widths based on the content. May overflow from the parent container if it has too many columns.
-Table:3-columns | "Table with 3 columns. Uses automatic column widths based on the content. May overflow from the parent container if it has too many columns.
-Table:fixed-layout 2-columns | "Table with 2 columns. Fixed layout makes sure table fits the parent, but all columns have equal width.
-Table:fixed-layout 3-columns | "Table with 3 columns. Fixed layout makes sure table fits the parent, but all columns have equal width.
+Table:2-columns | Table with 2 columns. Uses automatic column widths based on the content. May overflow from the parent container if it has too many columns.
+Table:3-columns | Table with 3 columns. Uses automatic column widths based on the content. May overflow from the parent container if it has too many columns.
+Table:fixed-layout 2-columns | Table with 2 columns. Fixed layout makes sure table fits the parent, but all columns have equal width.
+Table:fixed-layout 3-columns | Table with 3 columns. Fixed layout makes sure table fits the parent, but all columns have equal width.
 
 ### Apex Snippets
 Trigger | Description
