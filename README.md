@@ -1,7 +1,7 @@
 # Audibene Code Snippets
 
 A set of HTML, JS and Apex Snippets for Visual Studio Code.
-You can also press `Ctrl + Space` if the snippets are not displayed
+You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space (Mac)` on **Mac** if the snippets are not displayed.
 
 ![promo](./images/ABDN_Cover.jpg)
 
@@ -13,39 +13,6 @@ You can also press `Ctrl + Space` if the snippets are not displayed
 - Enable SLDS Classes
 - Enable Advanced Mode
 
-## Release Notes
-
-### Beige
-
-#### v2.0.0
-- Conversion from JS to TS
-
-### Amber
-
-#### v1.1.0 
-- Bug Fixes and Improvements
-- Text Alignment Classes moved outside the Advanced mode
-- Snippets for Theme Cards
-- Updated Classes
-- Updated Classes in Advanced Mode
-- Checkbox added in Aura and LWC
-- Included `if`, `if empty`, `if not empty`, `if equals`, `if not equals`, `if else`, `else` in Aura
-- Variant and Size attributes added in aura and lwc icon snippets
-- SLDS Table Classes added
-
-#### v1.0.2 
-- 10 New Snippets added for JavaScript : `forEach`, `component:set`, `component:get`, `component:find`, `function:controller`, `function:helper`, `action:Callback`, `filter`, `splice`, `action:event`
-
-#### v1.0.1 
-- Snippet for Combobox is added for Aura and LWC 
-
-#### v1.0.0 
-- Snippets for Apex
-- Snippets for Aura Components
-- Snippets for Javascript
-- Snippets for LWC
-- Snippets for SLDS Classes 
-
 ## Credits
 The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit Bhargava** and **Ashutosh Bhardwaj** for supporting us in this project and providing us valuable feedback and we would also like to thank the entire **Salesforce Team** to have given us their feedback on the survey which motivated us to build this tool.
 
@@ -53,7 +20,6 @@ The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit 
 - Marcel Hirthe
 - Jatin Sharma
 - Suraj Raval 
-
 
 
 ## Available Snippets
@@ -75,6 +41,10 @@ text:center | Text Center
 text:right | Text Right
 Theme Card: One Column | Use a color theme to apply color to the background and text. Some color themes apply a background image or texture.
 Theme Card: Two Columns | Use a color theme to apply color to the background and text. Some color themes apply a background image or texture.
+Table:2-columns | "Table with 2 columns. Uses automatic column widths based on the content. May overflow from the parent container if it has too many columns.
+Table:3-columns | "Table with 3 columns. Uses automatic column widths based on the content. May overflow from the parent container if it has too many columns.
+Table:fixed-layout 2-columns | "Table with 2 columns. Fixed layout makes sure table fits the parent, but all columns have equal width.
+Table:fixed-layout 3-columns | "Table with 3 columns. Fixed layout makes sure table fits the parent, but all columns have equal width.
 
 ### Apex Snippets
 Trigger | Description

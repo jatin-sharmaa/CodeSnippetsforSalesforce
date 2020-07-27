@@ -116,6 +116,38 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             detail: "Use a color theme to apply color to the background and text. Some color themes apply a background image or texture. (Audibene Code Snippets)",
             kind: vscode.CompletionItemKind.Property,
         },
+        {
+            label: "Table:2-columns",
+            insertText: new vscode.SnippetString(
+                "<table class=\"slds-table slds-table_cell-buffer slds-table_bordered\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Column A</th>\n\t\t\t<th scope=\"col\">Column B</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"slds-truncate\">A row 1</td>\n\t\t\t<td class=\"slds-truncate\">B row 1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"slds-truncate\">A row 2</td>\n\t\t\t<td class=\"slds-truncate\">B row 2</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+            ),
+            detail: "Table with 2 columns. Uses automatic column widths based on the content. May overflow from the parent container if it has too many columns",
+            kind: vscode.CompletionItemKind.Property,
+        },
+        {
+            label: "Table:3-columns",
+            insertText: new vscode.SnippetString(
+                "<table class=\"slds-table slds-table_cell-buffer slds-table_bordered\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Column A</th>\n\t\t\t<th scope=\"col\">Column B</th>\n\t\t\t<th scope=\"col\">Column C</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"slds-truncate\">A row 1</td>\n\t\t\t<td class=\"slds-truncate\">B row 1</td>\n\t\t\t<td class=\"slds-truncate\">C row 1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"slds-truncate\">A row 2</td>\n\t\t\t<td class=\"slds-truncate\">B row 2</td>\n\t\t\t<td class=\"slds-truncate\">C row 2</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+            ),
+            detail: "Table with 2 columns. Uses automatic column widths based on the content. May overflow from the parent container if it has too many columns",
+            kind: vscode.CompletionItemKind.Property,
+        },
+        {
+            label: "Table:fixed-layout 2-columns",
+            insertText: new vscode.SnippetString(
+                "<table class=\"slds-table slds-table_cell-buffer slds-table_bordered slds-table-fixed_layout\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Column A</th>\n\t\t\t<th scope=\"col\">Column B</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"slds-truncate\">A row 1</td>\n\t\t\t<td class=\"slds-truncate\">B row 1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"slds-truncate\">A row 2</td>\n\t\t\t<td class=\"slds-truncate\">B row 2</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+            ),
+            detail: "Table with 2 columns. Fixed layout makes sure table fits the parent, but all columns have equal width.",
+            kind: vscode.CompletionItemKind.Property,
+        },
+        {
+            label: "Table:fixed-layout 3-columns",
+            insertText: new vscode.SnippetString(
+                "<table class=\"slds-table slds-table_cell-buffer slds-table_bordered slds-table-fixed_layout\">\n\t<thead>\n\t\t<tr>\n\t\t\t<th scope=\"col\">Column A</th>\n\t\t\t<th scope=\"col\">Column B</th>\n\t\t\t<th scope=\"col\">Column C</th>\n\t\t</tr>\n\t</thead>\n\t<tbody>\n\t\t<tr>\n\t\t\t<td class=\"slds-truncate\">A row 1</td>\n\t\t\t<td class=\"slds-truncate\">B row 1</td>\n\t\t\t<td class=\"slds-truncate\">C row 1</td>\n\t\t</tr>\n\t\t<tr>\n\t\t\t<td class=\"slds-truncate\">A row 2</td>\n\t\t\t<td class=\"slds-truncate\">B row 2</td>\n\t\t\t<td class=\"slds-truncate\">C row 2</td>\n\t\t</tr>\n\t</tbody>\n</table>",
+            ),
+            detail: "Table with 3 columns. Fixed layout makes sure table fits the parent, but all columns have equal width.",
+            kind: vscode.CompletionItemKind.Property,
+        }
     ];
 
     return vscode.languages.registerCompletionItemProvider('html', {
