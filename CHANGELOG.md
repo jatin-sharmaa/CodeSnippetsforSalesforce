@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to the Audibene Code Snippets will be documented here.
 
+## Beige - v2.2.0
+- Bug Fixes and Improvements
+
 ## Beige - v2.1.0
 - Added Snippets for tables
     - Table:2-columns
