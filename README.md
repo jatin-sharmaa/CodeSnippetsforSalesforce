@@ -3,7 +3,6 @@
 A set of HTML, JS and Apex Snippets for Visual Studio Code.
 You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space` on **Mac** if the snippets are not displayed.
 
-![](./images/ABDN_Cover.jpg)
 ![](./images/grid.gif)
 ![](./images/heading.gif)
 
