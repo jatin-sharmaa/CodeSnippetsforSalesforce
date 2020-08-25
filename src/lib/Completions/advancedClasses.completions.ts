@@ -9,7 +9,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-assistive-text",
             ),
-            detail: "Hides an element yet enables a screen reader to read the element that is hidden (Audibene Code Snippets)",
+            detail: "Hides an element yet enables a screen reader to read the element that is hidden (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -17,7 +17,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show_inline-block",
             ),
-            detail: "Shows the element by setting display to inline-block (Audibene Code Snippets)",
+            detail: "Shows the element by setting display to inline-block (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -25,7 +25,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show_inline",
             ),
-            detail: "Shows the element by setting display to inline (Audibene Code Snippets)",
+            detail: "Shows the element by setting display to inline (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -33,7 +33,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "transition-hide",
             ),
-            detail: "Hides an element from the page by setting the opacity property set to 0 (Audibene Code Snippets)",
+            detail: "Hides an element from the page by setting the opacity property set to 0 (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -41,7 +41,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "transition-show",
             ),
-            detail: "Shows the element using the opacity property set to 1 (Audibene Code Snippets)",
+            detail: "Shows the element using the opacity property set to 1 (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -49,7 +49,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hide_x-small",
             ),
-            detail: "Hides content above 320px screen (Audibene Code Snippets)",
+            detail: "Hides content above 320px screen (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -57,7 +57,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hide_small",
             ),
-            detail: "Hides content above 480px screen (Audibene Code Snippets)",
+            detail: "Hides content above 480px screen (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -65,7 +65,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hide_medium",
             ),
-            detail: "Hides content above 768px screen (Audibene Code Snippets)",
+            detail: "Hides content above 768px screen (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -73,7 +73,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hide_large",
             ),
-            detail: "Hides content above 1024px screen (Audibene Code Snippets)",
+            detail: "Hides content above 1024px screen (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -81,7 +81,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hide_x-large",
             ),
-            detail: "Hides content above 1280px screen (Audibene Code Snippets)",
+            detail: "Hides content above 1280px screen (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -89,7 +89,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show_x-small",
             ),
-            detail: "Shows content above 320px screen (Audibene Code Snippets)",
+            detail: "Shows content above 320px screen (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -97,7 +97,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show_small",
             ),
-            detail: "Shows content above 480px screen, hides for below (Audibene Code Snippets)",
+            detail: "Shows content above 480px screen, hides for below (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -105,7 +105,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show_medium",
             ),
-            detail: "Shows content above 768px screen, hides for below (Audibene Code Snippets)",
+            detail: "Shows content above 768px screen, hides for below (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -113,7 +113,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show_large",
             ),
-            detail: "Shows content above 1024px screen, hides for below (Audibene Code Snippets)",
+            detail: "Shows content above 1024px screen, hides for below (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -121,7 +121,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show_x-large",
             ),
-            detail: "Shows content above 1280px screen, hides for below (Audibene Code Snippets)",
+            detail: "Shows content above 1280px screen, hides for below (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -129,7 +129,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-has-bottom-magnet",
             ),
-            detail: "Assumes element below is connected (Audibene Code Snippets)",
+            detail: "Assumes element below is connected (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -137,7 +137,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-has-top-magnet",
             ),
-            detail: "Assumes element above is connected (Audibene Code Snippets)",
+            detail: "Assumes element above is connected (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -145,7 +145,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-around_xxx-small",
             ),
-            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -153,7 +153,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-around_xx-small",
             ),
-            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -161,7 +161,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-around_x-small",
             ),
-            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -169,7 +169,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-around_small",
             ),
-            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -177,7 +177,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-around_medium",
             ),
-            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -185,7 +185,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-around_large",
             ),
-            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -193,7 +193,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-around_x-large",
             ),
-            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -201,7 +201,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-around_xx-large",
             ),
-            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -209,7 +209,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-top_xxx-small",
             ),
-            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -217,7 +217,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-top_xx-small",
             ),
-            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -225,7 +225,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-top_x-small",
             ),
-            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -233,7 +233,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-top_small",
             ),
-            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -241,7 +241,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-top_medium",
             ),
-            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -249,7 +249,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-top_large",
             ),
-            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -257,7 +257,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-top_x-large",
             ),
-            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -265,7 +265,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-top_xx-large",
             ),
-            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -273,7 +273,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-left_xxx-small",
             ),
-            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -281,7 +281,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-left_xx-small",
             ),
-            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -289,7 +289,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-left_x-small",
             ),
-            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -297,7 +297,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-left_small",
             ),
-            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -305,7 +305,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-left_medium",
             ),
-            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -313,7 +313,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-left_large",
             ),
-            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -321,7 +321,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-left_x-large",
             ),
-            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -329,7 +329,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-left_xx-large",
             ),
-            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -337,7 +337,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-right_xxx-small",
             ),
-            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -345,7 +345,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-right_xx-small",
             ),
-            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -353,7 +353,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-right_x-small",
             ),
-            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -361,7 +361,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-right_small",
             ),
-            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -369,7 +369,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-right_medium",
             ),
-            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -377,7 +377,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-right_large",
             ),
-            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -385,7 +385,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-right_x-large",
             ),
-            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -393,7 +393,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-right_xx-large",
             ),
-            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -401,7 +401,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-bottom_xxx-small",
             ),
-            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -409,7 +409,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-bottom_xx-small",
             ),
-            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -417,7 +417,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-bottom_x-small",
             ),
-            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -425,7 +425,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-bottom_small",
             ),
-            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -433,7 +433,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-bottom_medium",
             ),
-            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -441,7 +441,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-bottom_large",
             ),
-            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -449,7 +449,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-bottom_x-large",
             ),
-            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -457,7 +457,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-m-bottom_xx-large",
             ),
-            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds margin of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -465,7 +465,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-around_xxx-small",
             ),
-            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -473,7 +473,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-around_xx-small",
             ),
-            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -481,7 +481,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-around_x-small",
             ),
-            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -489,7 +489,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-around_small",
             ),
-            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -497,7 +497,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-around_medium",
             ),
-            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -505,7 +505,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-around_large",
             ),
-            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -513,7 +513,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-around_x-large",
             ),
-            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -521,7 +521,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-around_xx-large",
             ),
-            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -529,7 +529,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-top_xxx-small",
             ),
-            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -537,7 +537,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-top_xx-small",
             ),
-            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -545,7 +545,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-top_x-small",
             ),
-            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -553,7 +553,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-top_small",
             ),
-            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -561,7 +561,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-top_medium",
             ),
-            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -569,7 +569,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-top_large",
             ),
-            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -577,7 +577,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-top_x-large",
             ),
-            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -585,7 +585,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-top_xx-large",
             ),
-            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -593,7 +593,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-left_xxx-small",
             ),
-            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -601,7 +601,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-left_xx-small",
             ),
-            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -609,7 +609,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-left_x-small",
             ),
-            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -617,7 +617,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-left_small",
             ),
-            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -625,7 +625,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-left_medium",
             ),
-            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -633,7 +633,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-left_large",
             ),
-            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -641,7 +641,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-left_x-large",
             ),
-            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -649,7 +649,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-left_xx-large",
             ),
-            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -657,7 +657,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-right_xxx-small",
             ),
-            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -665,7 +665,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-right_xx-small",
             ),
-            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -673,7 +673,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-right_x-small",
             ),
-            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -681,7 +681,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-right_small",
             ),
-            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -689,7 +689,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-right_medium",
             ),
-            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -697,7 +697,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-right_large",
             ),
-            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -705,7 +705,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-right_x-large",
             ),
-            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -713,7 +713,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-right_xx-large",
             ),
-            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -721,7 +721,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-bottom_xxx-small",
             ),
-            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.125rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -729,7 +729,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-bottom_xx-small",
             ),
-            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.25rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -737,7 +737,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-bottom_x-small",
             ),
-            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.5rem in Comfy view and 0.125rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -745,7 +745,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-bottom_small",
             ),
-            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 0.75rem in Comfy view and 0.25rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -753,7 +753,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-bottom_medium",
             ),
-            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1rem in Comfy view and 0.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -761,7 +761,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-bottom_large",
             ),
-            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 1.5rem in Comfy view and 0.75rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -769,7 +769,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-bottom_x-large",
             ),
-            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 2rem in Comfy view and 1rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -777,7 +777,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-var-p-bottom_xx-large",
             ),
-            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Audibene Code Snippets)",
+            detail: "Adds padding of 3rem in Comfy view and 1.5rem in Compact view (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -785,7 +785,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-scrollable",
             ),
-            detail: "Forces element to scroll horizontally and vertically when content exceeds element's width and height (Audibene Code Snippets)",
+            detail: "Forces element to scroll horizontally and vertically when content exceeds element's width and height (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -793,7 +793,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-scrollable_none",
             ),
-            detail: "Forces overflow items to not scroll within element's width and height (Audibene Code Snippets)",
+            detail: "Forces overflow items to not scroll within element's width and height (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -801,7 +801,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-scrollable_y",
             ),
-            detail: "Forces element to scroll vertically when content exceeds element's height (Audibene Code Snippets)",
+            detail: "Forces element to scroll vertically when content exceeds element's height (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -809,7 +809,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-scrollable_x",
             ),
-            detail: "Forces element to scroll vertically when content exceeds element's width (Audibene Code Snippets)",
+            detail: "Forces element to scroll vertically when content exceeds element's width (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -817,7 +817,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-truncate_container_25",
             ),
-            detail: "Truncates text at 25% of its parent container (Audibene Code Snippets)",
+            detail: "Truncates text at 25% of its parent container (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -825,7 +825,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-truncate_container_33",
             ),
-            detail: "Truncates text at 33% of its parent container (Audibene Code Snippets)",
+            detail: "Truncates text at 33% of its parent container (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -833,7 +833,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-truncate_container_50",
             ),
-            detail: "Truncates text at 50% of its parent container (Audibene Code Snippets)",
+            detail: "Truncates text at 50% of its parent container (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -841,7 +841,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-truncate_container_66",
             ),
-            detail: "Truncates text at 66% of its parent container (Audibene Code Snippets)",
+            detail: "Truncates text at 66% of its parent container (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -849,7 +849,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-truncate_container_75",
             ),
-            detail: "Truncates text at 75% of its parent container (Audibene Code Snippets)",
+            detail: "Truncates text at 75% of its parent container (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -857,7 +857,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-col_bump-top",
             ),
-            detail: "Bumps grid item(s) away from the other grid items to sit at the top, taking up the remaining white-space of the grid container (Audibene Code Snippets)",
+            detail: "Bumps grid item(s) away from the other grid items to sit at the top, taking up the remaining white-space of the grid container Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -865,7 +865,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-col_bump-right",
             ),
-            detail: "Bumps grid item(s) away from the other grid items to sit to the right, taking up the remaining white-space of the grid container (Audibene Code Snippets)",
+            detail: "Bumps grid item(s) away from the other grid items to sit to the right, taking up the remaining white-space of the grid container Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -873,7 +873,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-col_bump-bottom",
             ),
-            detail: "Bumps grid item(s) away from the other grid items to sit at the bottom, taking up the remaining white-space of the grid container (Audibene Code Snippets)",
+            detail: "Bumps grid item(s) away from the other grid items to sit at the bottom, taking up the remaining white-space of the grid container Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -881,7 +881,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-col_bump-left",
             ),
-            detail: "Bumps grid item(s) away from the other grid items to sit to the left, taking up the remaining white-space of the grid container (Audibene Code Snippets)",
+            detail: "Bumps grid item(s) away from the other grid items to sit to the left, taking up the remaining white-space of the grid container Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -889,7 +889,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-container_small",
             ),
-            detail: "Restrict width of containers to a maximum of 480px (Audibene Code Snippets)",
+            detail: "Restrict width of containers to a maximum of 480px (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -897,7 +897,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-container_medium",
             ),
-            detail: "Restrict width of containers to a maximum of 768px (Audibene Code Snippets)",
+            detail: "Restrict width of containers to a maximum of 768px (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -905,7 +905,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-container_large",
             ),
-            detail: "Restrict width of containers to a maximum of 1024px (Audibene Code Snippets)",
+            detail: "Restrict width of containers to a maximum of 1024px (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -913,7 +913,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-container_x-large",
             ),
-            detail: "Restrict width of containers to a maximum of 1280px (Audibene Code Snippets)",
+            detail: "Restrict width of containers to a maximum of 1280px (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -921,7 +921,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-container_fluid",
             ),
-            detail: "Width of container takes up 100% of viewport (Audibene Code Snippets)",
+            detail: "Width of container takes up 100% of viewport (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -929,7 +929,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-container_center",
             ),
-            detail: "Horizontally positions containers in the center of the viewport (Audibene Code Snippets)",
+            detail: "Horizontally positions containers in the center of the viewport (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -937,7 +937,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-container_left",
             ),
-            detail: "Horizontally positions containers to the left of the viewport (Audibene Code Snippets)",
+            detail: "Horizontally positions containers to the left of the viewport (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -945,7 +945,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-container_right",
             ),
-            detail: "Horizontally positions containers to the right of the viewport (Audibene Code Snippets)",
+            detail: "Horizontally positions containers to the right of the viewport (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -953,7 +953,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-dl_inline",
             ),
-            detail: "Causes description list to display horizontally with `dt` followed immediately by the `dd`. (Audibene Code Snippets)",
+            detail: "Causes description list to display horizontally with `dt` followed immediately by the `dd`. (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -961,7 +961,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-dl_inline__label",
             ),
-            detail: "Marks a term (Audibene Code Snippets)",
+            detail: "Marks a term (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -969,7 +969,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-dl_inline__detail",
             ),
-            detail: "Marks a description (Audibene Code Snippets)",
+            detail: "Marks a description (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -977,7 +977,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-dl_horizontal",
             ),
-            detail: "Causes description list to display horizontally with `dt` consuming 33% of the space and the `dd` taking up the rest. (Audibene Code Snippets)",
+            detail: "Causes description list to display horizontally with `dt` consuming 33% of the space and the `dd` taking up the rest. Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -985,7 +985,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-dl_horizontal__label",
             ),
-            detail: "Marks a term (Audibene Code Snippets)",
+            detail: "Marks a term (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -993,7 +993,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-dl_horizontal__detail",
             ),
-            detail: "Marks a description (Audibene Code Snippets)",
+            detail: "Marks a description (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1001,7 +1001,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_frame",
             ),
-            detail: "Initializes grid (Audibene Code Snippets)",
+            detail: "Initializes grid (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1009,7 +1009,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical",
             ),
-            detail: "Initializes grid (Audibene Code Snippets)",
+            detail: "Initializes grid (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1017,7 +1017,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-reverse",
             ),
-            detail: "Initializes grid (Audibene Code Snippets)",
+            detail: "Initializes grid (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1025,7 +1025,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_reverse",
             ),
-            detail: "Initializes grid (Audibene Code Snippets)",
+            detail: "Initializes grid (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1033,7 +1033,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded",
             ),
-            detail: "Normalizes the 0.75rem of padding when nesting a grid in a region with `.slds-p-horizontal_small` (Audibene Code Snippets)",
+            detail: "Normalizes the 0.75rem of padding when nesting a grid in a region with `.slds-p-horizontal_small` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1041,7 +1041,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded-xxx-small",
             ),
-            detail: "Normalizes the 0.125rem of padding when nesting a grid in a region with `.slds-p-horizontal_xxx-small` (Audibene Code Snippets)",
+            detail: "Normalizes the 0.125rem of padding when nesting a grid in a region with `.slds-p-horizontal_xxx-small` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1049,7 +1049,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded-xx-small",
             ),
-            detail: "Normalizes the 0.25rem of padding when nesting a grid in a region with `.slds-p-horizontal_xx-small` (Audibene Code Snippets)",
+            detail: "Normalizes the 0.25rem of padding when nesting a grid in a region with `.slds-p-horizontal_xx-small` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1057,7 +1057,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded-x-small",
             ),
-            detail: "Normalizes the 0.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_x-small` (Audibene Code Snippets)",
+            detail: "Normalizes the 0.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_x-small` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1065,7 +1065,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded-small",
             ),
-            detail: "Normalizes the 0.75rem of padding when nesting a grid in a region with `.slds-p-horizontal_small` (Audibene Code Snippets)",
+            detail: "Normalizes the 0.75rem of padding when nesting a grid in a region with `.slds-p-horizontal_small` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1073,7 +1073,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded-medium",
             ),
-            detail: "Normalizes the 1rem of padding when nesting a grid in a region with `.slds-p-horizontal_medium` (Audibene Code Snippets)",
+            detail: "Normalizes the 1rem of padding when nesting a grid in a region with `.slds-p-horizontal_medium` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1081,7 +1081,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded-large",
             ),
-            detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_large` (Audibene Code Snippets)",
+            detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_large` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1089,7 +1089,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded-x-large",
             ),
-            detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_x-large` (Audibene Code Snippets)",
+            detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_x-large` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1097,7 +1097,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_pull-padded-xx-large",
             ),
-            detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_xx-large` (Audibene Code Snippets)",
+            detail: "Normalizes the 1.5rem of padding when nesting a grid in a region with `.slds-p-horizontal_xx-large` (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1105,7 +1105,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grow",
             ),
-            detail: "Allows column to grow to children’s content (Audibene Code Snippets)",
+            detail: "Allows column to grow to children’s content (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1113,7 +1113,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grow-none",
             ),
-            detail: "Prevents column from growing to children’s content (Audibene Code Snippets)",
+            detail: "Prevents column from growing to children’s content (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1121,7 +1121,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_xxx-small",
             ),
-            detail: "Apply 2px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 2px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1129,7 +1129,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_xx-small",
             ),
-            detail: "Apply 4px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 4px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1137,7 +1137,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_x-small",
             ),
-            detail: "Apply 8px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 8px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1145,7 +1145,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_small",
             ),
-            detail: "Apply 12px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 12px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1153,7 +1153,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_medium",
             ),
-            detail: "Apply 16px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 16px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1161,7 +1161,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_large",
             ),
-            detail: "Apply 24px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 24px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1169,7 +1169,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_x-large",
             ),
-            detail: "Apply 32px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 32px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1177,7 +1177,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_xx-large",
             ),
-            detail: "Apply 48px gutters to each grid column when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 48px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1185,7 +1185,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct",
             ),
-            detail: "Apply 12px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 12px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1193,7 +1193,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct-xxx-small",
             ),
-            detail: "Apply 2px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 2px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1201,7 +1201,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct-xx-small",
             ),
-            detail: "Apply 4px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 4px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1209,7 +1209,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct-x-small",
             ),
-            detail: "Apply 8px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 8px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1217,7 +1217,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct-small",
             ),
-            detail: "Apply 12px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 12px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1225,7 +1225,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct-medium",
             ),
-            detail: "Apply 16px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 16px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1233,7 +1233,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct-large",
             ),
-            detail: "Apply 24px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 24px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1241,7 +1241,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct-x-large",
             ),
-            detail: "Apply 32px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 32px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1249,7 +1249,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters_direct-xx-large",
             ),
-            detail: "Apply 48px gutters to only direct column children when you add this class to an `slds-grid` element (Audibene Code Snippets)",
+            detail: "Apply 48px gutters to only direct column children when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1257,7 +1257,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-has-flexi-truncate",
             ),
-            detail: "Needed when truncation is nested in a flexible container in a grid (Audibene Code Snippets)",
+            detail: "Needed when truncation is nested in a flexible container in a grid (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         
@@ -1266,7 +1266,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-nested",
             ),
-            detail: "Provides styles for a nested lists (Audibene Code Snippets)",
+            detail: "Provides styles for a nested lists (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1274,7 +1274,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-visually-empty",
             ),
-            detail: "Hides element and removes width (Audibene Code Snippets)",
+            detail: "Hides element and removes width (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1282,7 +1282,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-item_label",
             ),
-            detail: "Label of the name-value pair variant. Layout is modified by its parent class. (Audibene Code Snippets)",
+            detail: "Label of the name-value pair variant. Layout is modified by its parent class. (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1290,7 +1290,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-item_detail",
             ),
-            detail: "Label of the name-value pair variant. Layout is modified by its parent class. (Audibene Code Snippets)",
+            detail: "Label of the name-value pair variant. Layout is modified by its parent class. (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1298,7 +1298,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-list_horizontal",
             ),
-            detail: "Causes items of a list to display horizontally (Audibene Code Snippets)",
+            detail: "Causes items of a list to display horizontally (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1306,7 +1306,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-list_vertical-space",
             ),
-            detail: "Marks a vertical list with .5rem spacing around (Audibene Code Snippets)",
+            detail: "Marks a vertical list with .5rem spacing around (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1314,7 +1314,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-list_vertical-space-medium",
             ),
-            detail: "Marks a vertical list with 1rem spacing around (Audibene Code Snippets)",
+            detail: "Marks a vertical list with 1rem spacing around (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1322,7 +1322,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-media__figure",
             ),
-            detail: "Defines the figure area (Audibene Code Snippets)",
+            detail: "Defines the figure area (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1330,7 +1330,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-media__body",
             ),
-            detail: "Defines the body area (Audibene Code Snippets)",
+            detail: "Defines the body area (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1338,7 +1338,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-media_small",
             ),
-            detail: "Adjusts whitespace on smaller media objects (Audibene Code Snippets)",
+            detail: "Adjusts whitespace on smaller media objects (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1346,7 +1346,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-media_large",
             ),
-            detail: "Adjusts whitespace on larger media objects (Audibene Code Snippets)",
+            detail: "Adjusts whitespace on larger media objects (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1354,7 +1354,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-media_inline",
             ),
-            detail: "Aligns the figure and body to be inline-block of each other (Audibene Code Snippets)",
+            detail: "Aligns the figure and body to be inline-block of each other (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1362,7 +1362,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-media_center",
             ),
-            detail: "Aligns the content in the .slds-media__body to the middle of the .slds-media__figure (Audibene Code Snippets)",
+            detail: "Aligns the content in the .slds-media__body to the middle of the .slds-media__figure (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1370,7 +1370,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-media__figure_reverse",
             ),
-            detail: "Defines the figure area on the other side (Audibene Code Snippets)",
+            detail: "Defines the figure area on the other side (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1378,7 +1378,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-media_responsive",
             ),
-            detail: ".slds-media__figure and .slds-media__body stack on smaller screens (Audibene Code Snippets)",
+            detail: ".slds-media__figure and .slds-media__body stack on smaller screens (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1386,7 +1386,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-shrink",
             ),
-            detail: "Allows column to shrink to children's content (Audibene Code Snippets)",
+            detail: "Allows column to shrink to children's content (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1394,7 +1394,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-shrink-none",
             ),
-            detail: "Prevents column from shrinking to children's content (Audibene Code Snippets)",
+            detail: "Prevents column from shrinking to children's content (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1402,7 +1402,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-font_monospace",
             ),
-            detail: "Monospace font family (Audibene Code Snippets)",
+            detail: "Monospace font family (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1410,7 +1410,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-link_reset",
             ),
-            detail: "Makes links and buttons appear as regular text (Audibene Code Snippets)",
+            detail: "Makes links and buttons appear as regular text (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1418,7 +1418,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-link",
             ),
-            detail: "Used in combination with `.slds-text-link--reset`, you can apply the class `.slds-text-link` to a child element to reset its styles back to that of a link. (Audibene Code Snippets)",
+            detail: "Used in combination with `.slds-text-link--reset`, you can apply the class `.slds-text-link` to a child element to reset its styles back to that of a link. (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1426,7 +1426,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-link_faux",
             ),
-            detail: "Faux links are used on areas that can't be wrapped in an `a` element, but need to appear to be a link with an underline on hover. An example is in the page header for Object home. The `H1` and `button` that sit next to each other have the `.slds-text-link--faux` class on their parent element. (Audibene Code Snippets)",
+            detail: "Faux links are used on areas that can't be wrapped in an `a` element, but need to appear to be a link with an underline on hover. An example is in the page header for Object home. The `H1` and `button` that sit next to each other have the `.slds-text-link--faux` class on their parent element. (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1434,7 +1434,7 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-longform",
             ),
-            detail: "Adds default spacing and list styling within a wrapper (Audibene Code Snippets)",
+            detail: "Adds default spacing and list styling within a wrapper (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Class,
         },
     ];

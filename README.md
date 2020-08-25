@@ -1,4 +1,4 @@
-# Audibene Code Snippets
+# Salesforce Code Snippets
 
 A set of HTML, JS and Apex Snippets for Visual Studio Code.
 You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space` on **Mac** if the snippets are not displayed.
@@ -15,14 +15,12 @@ You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space` on **
 - Enable SLDS Classes
 - Enable Advanced Mode
 
-## Credits
-The UI/UX Team at Audibene would like to acknowledge **Marcel Hirthe**, **Rohit Bhargava** and **Ashutosh Bhardwaj** for supporting us in this project and providing us valuable feedback and we would also like to thank the entire **Salesforce Team** to have given us their feedback on the survey which motivated us to build this tool.
-
 ## Contributors
 - Marcel Hirthe
 - Jatin Sharma
-- Suraj Raval 
-
+- Suraj Raval
+- Rohit Bhargava
+- Ashutosh Bhardwaj
 
 ## Available Snippets
 

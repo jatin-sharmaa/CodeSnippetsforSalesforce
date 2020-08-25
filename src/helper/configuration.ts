@@ -13,8 +13,8 @@ export default class Configurations {
     private context: vscode.ExtensionContext;
 
     constructor( context: vscode.ExtensionContext ) {
-        this.configurationSection        = 'audibenecodesnippets';
-        let configs                     = vscode.workspace.getConfiguration(this.configurationSection);
+        this.configurationSection        = 'salesforcecodesnippets';
+        let configs                      = vscode.workspace.getConfiguration(this.configurationSection);
         this.enableApexSnippets          = configs.get("enableApexSnippets", true);
         this.enableJavascriptSnippets    = configs.get("enableJavascriptSnippets", true);
         this.enableAuraSnippets          = configs.get("enableAuraSnippets", true);

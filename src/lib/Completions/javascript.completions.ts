@@ -9,7 +9,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "console.log('${1:variable}:', ${1:variable});",
             ),
-            detail: "Console Log (Audibene Code Snippets)",
+            detail: "Console Log (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -17,7 +17,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "JSON.parse(JSON.stringify(${1:variable}));",
             ),
-            detail: "JSON.parse(JSON.stringify(data)) (Audibene Code Snippets)",
+            detail: "JSON.parse(JSON.stringify(data)) (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -25,7 +25,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "JSON.parse(${1:variable});",
             ),
-            detail: "JSON.parse(data) (Audibene Code Snippets)",
+            detail: "JSON.parse(data) (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -33,7 +33,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "JSON.stringify(${1:variable});",
             ),
-            detail: "JSON.stringify(data) (Audibene Code Snippets)",
+            detail: "JSON.stringify(data) (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -41,7 +41,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "event.currentTarget.dataset;",
             ),
-            detail: "dataSet (Audibene Code Snippets)",
+            detail: "dataSet (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -49,7 +49,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "return new Promise((resolve, reject) => {\n\t${1}\n});",
             ),
-            detail: "Creates and returns a new Promise in the standard ES6 syntax (Audibene Code Snippets)",
+            detail: "Creates and returns a new Promise in the standard ES6 syntax (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -57,7 +57,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 ".then((${1:result}) => {\n\t${2}\n}).catch((${3:err}) => {\n\t${4}\n});",
             ),
-            detail: "Add the .then and .catch methods to handle promises (Audibene Code Snippets)",
+            detail: "Add the .then and .catch methods to handle promises (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -65,7 +65,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "${1:variable}.forEach(function(${2:variable}){\n\t${3:code}\n});",
             ),
-            detail: "for each (Audibene Code Snippets)",
+            detail: "for each (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -73,7 +73,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "component.set(\"v.${1:variable}\", ${2:value});",
             ),
-            detail: "Component setter (Audibene Code Snippets)",
+            detail: "Component setter (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -81,7 +81,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "component.get(\"v.${1:variable}\");",
             ),
-            detail: "Component getter (Audibene Code Snippets)",
+            detail: "Component getter (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -89,7 +89,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "component.find(\"${1:auraId}\").get(\"v.${2:variable}\");",
             ),
-            detail: "Component finder (Audibene Code Snippets)",
+            detail: "Component finder (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -97,7 +97,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "${1:functionName} : function (component, event, helper) {\n\thelper.${1:functionName}Helper(component, event);\n},",
             ),
-            detail: "New Controller Function (Audibene Code Snippets)",
+            detail: "New Controller Function (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Function,
         },
         {
@@ -105,7 +105,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "${1:functionName} : function (component, event) {\n\t${2:Code}\n},",
             ),
-            detail: "New Helper Function (Audibene Code Snippets)",
+            detail: "New Helper Function (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Function,
         },
         {
@@ -113,7 +113,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "var action = component.get(\"${1:name}\");\naction.setParams({${2:parameters}});\naction.setCallback(this, function (response) {\n\tvar state = response.getState();\n\tif (state === this.MESSAGES.SUCCESS) {\n\t\tvar result = response.getReturnValue();\n\t\t// Code when Success\n\t} else if (state === this.MESSAGES.INCOMPLETE) {\n\t\t// Code when Imcomplete\n\t} else if (state === this.MESSAGES.ERROR) {\n\t\tvar errors = response.getError();\n\t\tif (errors) {\n\t\t\tif (errors[0] && errors[0].message) {\n\t\t\t\tconsole.log(\"Error message: \" + errors[0].message);\n\t\t\t}\n\t\t} else {\n\t\t\t\tconsole.log(\"Unknown error\");\n\t\t}\n\t}\n});\n$A.enqueueAction(action);",
             ),
-            detail: "Callback Action (Audibene Code Snippets)",
+            detail: "Callback Action (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -121,7 +121,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "${1:varibale}.filter(function(${2:varibale}) {\n\t${3:Code}\n});",
             ),
-            detail: "Filter (Audibene Code Snippets)",
+            detail: "Filter (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -129,7 +129,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "${1:varibale}.splice(${2:varibale}, ${2:position});",
             ),
-            detail: "splice (Audibene Code Snippets)",
+            detail: "splice (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -137,7 +137,7 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "var ${1:variable} = component.getEvent(\"${2:event}\");\n${1:variable}.setParams({${3:parameters}});\n${1:variable}.fire();",
             ),
-            detail: "Event (Audibene Code Snippets)",
+            detail: "Event (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
     ];

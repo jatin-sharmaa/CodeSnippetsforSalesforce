@@ -23,7 +23,7 @@ export function activate( context: vscode.ExtensionContext ) {
 function initializeTool( context: vscode.ExtensionContext){
     Configs.loadConfigurations();
     Completion.initCompletions( context );
-    vscode.window.showInformationMessage('Audibene Code Snippet is loaded');
+    vscode.window.showInformationMessage('Salesforce Snippet is loaded');
 }
 
 export function deactivate( context: vscode.ExtensionContext ) {
