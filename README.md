@@ -1,8 +1,13 @@
 # Salesforce Code Snippets
 
+![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Audibene.salesforcecodesnippets?style=flat-square)
+![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/Audibene.salesforcecodesnippets?style=flat-square)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
+
 A set of HTML, JS and Apex Snippets for Visual Studio Code.
 You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space` on **Mac** if the snippets are not displayed.
 
+![](./images/cover.jpg)
 ![](./images/grid.gif)
 ![](./images/heading.gif)
 
