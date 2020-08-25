@@ -12,7 +12,7 @@ export default class ADBNTelemetry {
     constructor( context: vscode.ExtensionContext ) {
         
         this.extensionId = 'ADBNCodeSnippet';
-        this.thisExt = vscode.extensions.getExtension('UIUXTeamAudibene.audibenecodesnippets');
+        this.thisExt = vscode.extensions.getExtension('Audibene.salesforcecodesnippets');
         this.extensionVersion = "v"+this.thisExt.packageJSON.version;
         this.key = '03b9b83b-55d1-4146-bd0a-d135c07dd0bf';
         // this.key = '03b9b83b-55d1-4146-bd0a-d135c07dd0bf-TEST';

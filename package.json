@@ -1,16 +1,16 @@
 {
-    "name": "audibenecodesnippets",
-    "displayName": "Audibene Code Snippets",
-    "description": "Quick Code Snippets for Audibene",
+    "name": "salesforcecodesnippets",
+    "displayName": "Salesforce Code Snippets",
+    "description": "A set of Snippets for Salesforce Component Development",
     "version": "2.2.0",
     "icon": "icon.png",
-    "publisher": "UIUXTeamAudibene",
+    "publisher": "Audibene",
     "engines": {
         "vscode": "^1.47.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/jatinsharmaa/AudibeneCodeSnippets"
+        "url": "https://github.com/jatinsharmaa/SalesforceCodeSnippets"
     },
     "categories": [
         "Snippets"
@@ -24,37 +24,37 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "Audibene Code Snippets",
+            "title": "Salesforce Code Snippets",
             "properties": {
-                "audibenecodesnippets.enableSLDSClass": {
+                "salesforcecodesnippets.enableSLDSClass": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable SLDS Classes"
                 },
-                "audibenecodesnippets.enableAuraSnippets": {
+                "salesforcecodesnippets.enableAuraSnippets": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable Aura Snippets"
                 },
-                "audibenecodesnippets.enableLWCSnippets": {
+                "salesforcecodesnippets.enableLWCSnippets": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable LWC Snippets"
                 },
-                "audibenecodesnippets.enableApexSnippets": {
+                "salesforcecodesnippets.enableApexSnippets": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable Apex snippets"
                 },
-                "audibenecodesnippets.enableJavascriptSnippets": {
+                "salesforcecodesnippets.enableJavascriptSnippets": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable JavaScript snippets"
                 },
-                "audibenecodesnippets.enableAdvancedMode": {
+                "salesforcecodesnippets.enableAdvancedMode": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Enable Advanced Mode to see all SLDS classes and Snippets. By default it only supports the most used snippets in Audibene"
+                    "description": "Enable Advanced Mode to see all SLDS classes and Snippets"
                 }
             }
         }
