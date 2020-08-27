@@ -4,7 +4,6 @@
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Audibene.salesforcecodesnippets?style=flat-square)
 ![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/Audibene.salesforcecodesnippets?style=flat-square)
-![GitHub](https://img.shields.io/github/license/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
 
 ![](./images/cover.jpg)
 
