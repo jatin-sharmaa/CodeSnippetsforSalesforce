@@ -9,5 +9,3 @@
 !images/*
 !icon.png
 !.vsixmanifest
-!node_modules/applicationinsights/**/*
-!node_modules/vscode-extension-telemetry/**/*

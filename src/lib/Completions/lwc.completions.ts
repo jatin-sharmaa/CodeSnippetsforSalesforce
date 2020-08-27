@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadLWCSnippets( context:vscode.ExtensionContext ) {
 
@@ -124,6 +123,15 @@ export function loadLWCSnippets( context:vscode.ExtensionContext ) {
             detail: "Basic Button LWC",
             kind: vscode.CompletionItemKind.Property,
         },
+        {
+            label: "spinner-lwc",
+            insertText: new vscode.SnippetString(
+                "<template if:true={${1:isLoading}}>\n\t<div>\n\t\t<lightning-spinner alternative-text=\"Loading\" size=\"small\"></lightning-spinner>\n\t</div>\n</template>\n\n<!--paste the below code in the js file-->\n\n@track ${1:isLoading} = ${2|true,false|}; // initialize the flag to show the spinner when the component is rendered\n\nthis.${1:isLoading} = true; //show the spinner when data is being fetched\nthis.${1:isLoading} = false; // hide the spinner once fetching is complete\n\n<!--Example usage \n\tfetchDataFromServerSide({data :this.data})\n\t.then(result=>{\n\t\t\n\t\t// process data\n\n\t\tthis.showSpinner = false;\n\t\t\n\t.catch(error=>{\n\t\t\n\t\t// handle error\n\n\t\tthis.showSpinner = false;\n\n\t});\n-->\n",
+            ),
+            detail: "Spinner to be displayed in the component body while data is loading.",
+            kind: vscode.CompletionItemKind.Property,
+        },
+
     ];
 
     return vscode.languages.registerCompletionItemProvider('html', {
@@ -137,12 +145,6 @@ export function loadLWCSnippets( context:vscode.ExtensionContext ) {
             if (rawClasses === null) {
                 return lwcSnippets;
             }
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "LWC"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('htmlLWC', {"LWC": item.label}, { 'count': 1});
-            return item;
         }
     });
     

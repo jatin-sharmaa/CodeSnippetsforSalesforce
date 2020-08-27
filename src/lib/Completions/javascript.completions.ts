@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
 
@@ -145,12 +144,6 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
     return vscode.languages.registerCompletionItemProvider('javascript', {
         provideCompletionItems(doc, pos, token, context) {
             return jsSnippets;
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "JavaScript"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('javascript', {"JavaScript": item.label}, { 'count': 1});
-            return item;
         }
     });
     

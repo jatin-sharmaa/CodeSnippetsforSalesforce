@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
 
@@ -1452,12 +1451,6 @@ export function loadAdvancedClassesSnippets( context:vscode.ExtensionContext ) {
             } else {
                 return sldsClasses;
             }
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "Classes"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('htmlClasses', {"classes": item.label}, { 'count': 1});
-            return item;
         }
     });
 
