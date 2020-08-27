@@ -568,12 +568,12 @@ transition-show | Shows the element using the opacity property set to 1
 - [Salesforce Code Snippets on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Audibene.salesforcecodesnippets)
 
 ## Configurations
-- [] Enable Apex snippets 
-- [] Enable Aura Snippets
-- [] Enable JavaScript snippets
-- [] Enable LWC Snippets
-- [] Enable SLDS Classes
-- [] Enable Advanced Mode
+- [x] Enable Apex snippets 
+- [x] Enable Aura Snippets
+- [x] Enable JavaScript snippets
+- [x] Enable LWC Snippets
+- [x] Enable SLDS Classes
+- [x] Enable Advanced Mode
 
 ## Contributors
 - Marcel Hirthe
