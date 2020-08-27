@@ -1,6 +1,10 @@
 # Change Log
 All notable changes to the Audibene Code Snippets will be documented here.
 
+## Crimson - v3.0.0
+- Bug Fixes and Improvements
+- Spinner added for Aura and LWC
+
 ## Beige - v2.2.0
 - Bug Fixes and Improvements
 

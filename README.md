@@ -1,32 +1,26 @@
 # Salesforce Code Snippets
 
+![GitHub Release Date](https://img.shields.io/github/release-date/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Audibene.salesforcecodesnippets?style=flat-square)
 ![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/Audibene.salesforcecodesnippets?style=flat-square)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
-
-A set of HTML, JS and Apex Snippets for Visual Studio Code.
-You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space` on **Mac** if the snippets are not displayed.
+![GitHub](https://img.shields.io/github/license/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
 
 ![](./images/cover.jpg)
+
+A set of HTML, JS and Apex Snippets for Visual Studio Code. We bring HTML, JavaScript, SLDS Component Blueprints, Aura and LWC specific Blueprints, and SLDS classes directly to your code editor.
+
+> You can also press `Ctrl + Space` on **Windows** or `Fn + Control + Space` on **Mac** if the snippets are not displayed.
+
+[How it Works](#how-it-works) | [Available Snippets](#available-snippets) | [Advanced Mode](#advanced-mode) | [Installation](#installation) | [Configurations](#configurations) | [Contributors](#contributors)
+
+## How it Works
 ![](./images/grid.gif)
 ![](./images/heading.gif)
 
-## Configurations
-- Enable Apex snippets
-- Enable Aura Snippets
-- Enable JavaScript snippets
-- Enable LWC Snippets
-- Enable SLDS Classes
-- Enable Advanced Mode
-
-## Contributors
-- Marcel Hirthe
-- Jatin Sharma
-- Suraj Raval
-- Rohit Bhargava
-- Ashutosh Bhardwaj
-
 ## Available Snippets
+
+[HTML Snippets](#html-snippets) | [Apex Snippets](#apex-snippets) | [Javascript Snippets](#javascript-snippets) | [Aura Snippets](#aura-snippets) | [Ligntning Web Components Snippets](#ligntning-web-components-snippets) | [SLDS Classes](#slds-classes)
 
 ### HTML Snippets
 Trigger | Description
@@ -101,6 +95,7 @@ icon:aura | Aura Icon
 button:basic-aura | Basic Button Aura
 button:icon-aura | Basic Button Aura
 button:group-aura | Button Group Aura
+spinner-aura | Spinner to be displayed in the component body while data is loading
 if | Conditionally instantiates and renders either the body.
 if empty | Conditionally checks if empty and renders either the body.
 if not empty | Conditionally checks if not empty and renders either the body.
@@ -137,6 +132,7 @@ card:basic-lwc | LWC Basic Card
 icon:lwc | LWC Icon. Supports all Utility icons
 button:basic-lwc | Basic Button LWC
 button:icon-lwc | Basic Button LWC
+spinner-lwc | Spinner to be displayed in the component body while data is loading.
 
 ### SLDS Classes 
 > These will only work inside the class attributes
@@ -566,3 +562,22 @@ slds-truncate:75% | Truncates text at 75% of its parent container
 top-magnet | Assumes element above is connected
 transition-hide | Hides an element from the page by setting the opacity property set to 0
 transition-show | Shows the element using the opacity property set to 1
+
+
+## Installation
+- [Salesforce Code Snippets on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Audibene.salesforcecodesnippets)
+
+## Configurations
+- [] Enable Apex snippets 
+- [] Enable Aura Snippets
+- [] Enable JavaScript snippets
+- [] Enable LWC Snippets
+- [] Enable SLDS Classes
+- [] Enable Advanced Mode
+
+## Contributors
+- Marcel Hirthe
+- Jatin Sharma
+- Suraj Raval
+- Rohit Bhargava
+- Ashutosh Bhardwaj
