@@ -267,6 +267,15 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
             detail: "This event is automatically fired when an app or component is initialized, prior to rendering. (Salesforce Code Snippets)",
             kind: vscode.CompletionItemKind.Method,
         },
+
+        {
+            label: "spinner-aura",
+            insertText: new vscode.SnippetString(
+                "\n<!--Set the default value depending on whether the spinner should be displayed when component is first rendered. Here the spinner loads by default until it is disabled-->\n<aura:attribute name=\"${1:isLoading}\" type=\"Boolean\" default=\"${2|true,false|}\" description=\"flag to indicate whether to show the spinner (true) or hide it (false)\"/>\n\t\n<aura:if isTrue=\"{!v.${1:isLoading}}\">\n\t<!-- Use padding only if the spinner takes up too little space -->\n\t<div class=\"${3|slds-var-p-around_medium,slds-var-p-around_large,slds-var-p-around_xx-large|}\">\n\t\t<lightning:spinner alternativeText=\"Loading\" size=\"small\" />\n\t</div>\n</aura:if>\n<!--paste the below line in the callback function for any time intensive process to hide the spinner once data has loaded-->\ncomponent.set(\"v.${1:isLoading}\", false); \n\n<!-- example helper function shown below: delete this comment block when not needed\n\tvar action = component.get(\"c.serverMethod\");\n\t// Callback function for action that could take time to load\n\taction.setCallback(this, function (response) {\n\t\t//paste the below line in the callback function for any time intensive process to hide the spinner once data has loaded\n\t\tcomponent.set(\"v.isLoading\", false);  \n\t});\n\t\$A.enqueueAction(action);\n-->\n",
+            ),
+            detail: "Spinner to be displayed in the component body while data is loading.",
+            kind: vscode.CompletionItemKind.Method,
+        },
     ];
 
     return vscode.languages.registerCompletionItemProvider('html', {
