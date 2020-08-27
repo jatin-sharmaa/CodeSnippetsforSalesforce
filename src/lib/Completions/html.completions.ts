@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
 
@@ -161,12 +160,6 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             if (rawClasses === null) {
                 return htmlSnippets;
             }
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "HTML"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('html', {"html": item.label}, { 'count': 1});
-            return item;
         }
     });
     

@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
 
@@ -200,12 +199,6 @@ export function loadAdvancedSnippets( context:vscode.ExtensionContext ) {
             if (rawClasses === null) {
                 return advancedSnippets;
             }
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "Advanced Mode"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('advancedMode', {"Advanced Mode": item.label}, { 'count': 1});
-            return item;
         }
     });
 

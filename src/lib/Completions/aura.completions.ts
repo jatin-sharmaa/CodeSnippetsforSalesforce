@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadAuraSnippets( context:vscode.ExtensionContext ) {
 
@@ -280,12 +279,6 @@ export function loadAuraSnippets( context:vscode.ExtensionContext ) {
             if (rawClasses === null) {
                 return auraSnippets;
             }
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "Aura"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('htmlAura', {"Aura": item.label}, { 'count': 1});
-            return item;
         }
     });
 

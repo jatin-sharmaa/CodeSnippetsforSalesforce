@@ -1,5 +1,4 @@
 import * as vscode from 'vscode';
-import ADBNTelemetry from '../../helper/telemetry';
 
 export function loadLWCSnippets( context:vscode.ExtensionContext ) {
 
@@ -137,12 +136,6 @@ export function loadLWCSnippets( context:vscode.ExtensionContext ) {
             if (rawClasses === null) {
                 return lwcSnippets;
             }
-        },
-        resolveCompletionItem(item) {
-            let tele = new ADBNTelemetry( context );
-            tele.sendAdbnTelementry('lang_usage', {"language": "LWC"}, { 'lang_count': 1});
-            tele.sendAdbnTelementry('htmlLWC', {"LWC": item.label}, { 'count': 1});
-            return item;
         }
     });
     
