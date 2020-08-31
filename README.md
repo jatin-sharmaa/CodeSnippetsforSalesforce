@@ -29,7 +29,7 @@ grid:1 Column | Adds SLDS grid layout along with single column
 grid:2 Columns | Adds SLDS grid layout along with two columns
 grid:3 Columns | Adds SLDS grid layout along with three columns
 column | Adds Column
-Modal Layer | Adds the Audibene Modal Layer HTML along with Controller and Helper function
+Modal Layer | Adds the Modal Layer HTML along with Controller and Helper function
 absolute:center | Adds SLDS layout for absolute center
 heading | Adds heading HTML. Supports heading_large, heading_medium, heading_small
 text | Adds text HTML - Supports align_left, align_center ,align_right, color_default, color_success,color_weak, color_error, color_inverse, color_inverse-weak
