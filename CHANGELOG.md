@@ -1,6 +1,9 @@
 # Change Log
 All notable changes to the Audibene Code Snippets will be documented here.
 
+## Crimson - v3.0.1
+- Minor changes for VS Code Marketplace Page
+
 ## Crimson - v3.0.0
 - Bug Fixes and Improvements
 - Spinner added for Aura and LWC

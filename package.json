@@ -2,9 +2,11 @@
     "name": "salesforcecodesnippets",
     "displayName": "Salesforce Code Snippets",
     "description": "A set of Snippets for Salesforce Component Development",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "icon": "icon.png",
     "publisher": "Audibene",
+    "license": "SEE LICENSE IN LICENSE",
+    "homepage": "https://github.com/jatinsharmaa/SalesforceCodeSnippets/blob/master/README.md",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -12,8 +14,22 @@
         "type": "git",
         "url": "https://github.com/jatinsharmaa/SalesforceCodeSnippets"
     },
+    "bugs": {
+        "url": "https://github.com/jatinsharmaa/SalesforceCodeSnippets/issues"
+    },
     "categories": [
         "Snippets"
+    ],
+    "keywords": [
+        "Apex",
+        "HTML",
+        "JavaScript",
+        "Aura",
+        "Lightning Web Components (LWC)",
+        "Salesforce Design System",
+        "SLDS classes",
+        "Component Blueprints",
+        "Salesforce Code Snippets"
     ],
     "main": "./dist/extension.js",
     "activationEvents": [
