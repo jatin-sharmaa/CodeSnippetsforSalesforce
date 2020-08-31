@@ -2,7 +2,7 @@
     "name": "salesforcecodesnippets",
     "displayName": "Salesforce Code Snippets",
     "description": "A set of Snippets for Salesforce Component Development",
-    "version": "3.0.0",
+    "version": "3.0.1",
     "icon": "icon.png",
     "publisher": "Audibene",
     "license": "SEE LICENSE IN LICENSE",
