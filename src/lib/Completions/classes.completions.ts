@@ -8,7 +8,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-align_absolute-center" ,
             ),
-            detail: "Class will absolutely center children content (Salesforce Code Snippets)",
+            detail: "Class will absolutely center children content (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -16,7 +16,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-align_left",
             ),
-            detail: "Text Left (Salesforce Code Snippets)",
+            detail: "Text Left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -24,7 +24,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-align_center",
             ),
-            detail: "Text Center (Salesforce Code Snippets)",
+            detail: "Text Center (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -32,7 +32,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-align_right",
             ),
-            detail: "Text Right (Salesforce Code Snippets)",
+            detail: "Text Right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -40,7 +40,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-border_bottom",
             ),
-            detail: "Adds a bottom border to an element (Salesforce Code Snippets)",
+            detail: "Adds a bottom border to an element (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -48,7 +48,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-border_left",
             ),
-            detail: "Adds a left border to an element (Salesforce Code Snippets)",
+            detail: "Adds a left border to an element (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -56,7 +56,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-border_right",
             ),
-            detail: "Adds a right border to an element (Salesforce Code Snippets)",
+            detail: "Adds a right border to an element (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -64,7 +64,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-border_top",
             ),
-            detail: "Adds a top border to an element (Salesforce Code Snippets)",
+            detail: "Adds a top border to an element (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -72,7 +72,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box",
             ),
-            detail: "Provides 1rem base padding and borders (Salesforce Code Snippets)",
+            detail: "Provides 1rem base padding and borders (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -80,7 +80,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-box_x-small",
             ),
-            detail: "Provides .5rem base padding and borders (Salesforce Code Snippets)",
+            detail: "Provides .5rem base padding and borders (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -88,7 +88,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-box_xx-small",
             ),
-            detail: "Provides .25rem base padding and borders (Salesforce Code Snippets)",
+            detail: "Provides .25rem base padding and borders (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -96,7 +96,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_shade",
             ),
-            detail: "Sets the background color to gray (Salesforce Code Snippets)",
+            detail: "Sets the background color to gray (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -104,7 +104,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_inverse",
             ),
-            detail: "Sets the background color to dark blue (Salesforce Code Snippets)",
+            detail: "Sets the background color to dark blue (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -112,7 +112,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_alt-inverse",
             ),
-            detail: "Sets the background color to darker blue (Salesforce Code Snippets)",
+            detail: "Sets the background color to darker blue (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -120,7 +120,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_success",
             ),
-            detail: "Sets the background color to green (Salesforce Code Snippets)",
+            detail: "Sets the background color to green (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -128,7 +128,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_info",
             ),
-            detail: "Sets the background color to gray-ish blue (Salesforce Code Snippets)",
+            detail: "Sets the background color to gray-ish blue (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -136,7 +136,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_warning",
             ),
-            detail: "Sets the background color to yellow (Salesforce Code Snippets)",
+            detail: "Sets the background color to yellow (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -144,7 +144,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_error",
             ),
-            detail: "Sets the background color to red (Salesforce Code Snippets)",
+            detail: "Sets the background color to red (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -152,7 +152,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_offline",
             ),
-            detail: "Sets the background color to black (Salesforce Code Snippets)",
+            detail: "Sets the background color to black (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -160,7 +160,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-box slds-theme_alert-texture",
             ),
-            detail: "Adds striped background (Salesforce Code Snippets)",
+            detail: "Adds striped background (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -168,7 +168,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-float_left",
             ),
-            detail: "Pulls element from document flow and floats left. Text and other elements wrap around it. (Salesforce Code Snippets)",
+            detail: "Pulls element from document flow and floats left. Text and other elements wrap around it. (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -176,7 +176,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-float_none",
             ),
-            detail: "Removes float from an element that has attribute already (Salesforce Code Snippets)",
+            detail: "Removes float from an element that has attribute already (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -184,7 +184,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-float_right",
             ),
-            detail: "Pulls element from document flow and floats right. Text and other elements wrap around it. (Salesforce Code Snippets)",
+            detail: "Pulls element from document flow and floats right. Text and other elements wrap around it. (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -192,7 +192,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hide",
             ),
-            detail: "Hides an element from the page by setting display propery to none (Salesforce Code Snippets)",
+            detail: "Hides an element from the page by setting display propery to none (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -200,7 +200,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-show",
             ),
-            detail: "Shows the element by setting display property to block (Salesforce Code Snippets)",
+            detail: "Shows the element by setting display property to block (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -208,7 +208,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hidden",
             ),
-            detail: "Hides an element but reserve the space on the page (Salesforce Code Snippets)",
+            detail: "Hides an element but reserve the space on the page (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -216,7 +216,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-visible",
             ),
-            detail: "Shows an element which was hidden by slds-hidden (Salesforce Code Snippets)",
+            detail: "Shows an element which was hidden by slds-hidden (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -224,7 +224,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_none",
             ),
-            detail: "Removes margin from all sides (Salesforce Code Snippets)",
+            detail: "Removes margin from all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -232,7 +232,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_xxx-small",
             ),
-            detail: "Adds .125rem margin to all sides (Salesforce Code Snippets)",
+            detail: "Adds .125rem margin to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -240,7 +240,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_xx-small",
             ),
-            detail: "Adds .25rem margin to all sides (Salesforce Code Snippets)",
+            detail: "Adds .25rem margin to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -248,7 +248,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_x-small",
             ),
-            detail: "Adds .5rem margin to all sides (Salesforce Code Snippets)",
+            detail: "Adds .5rem margin to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -256,7 +256,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_small",
             ),
-            detail: "Adds .75rem margin to all sides (Salesforce Code Snippets)",
+            detail: "Adds .75rem margin to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -264,7 +264,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_medium",
             ),
-            detail: "Adds 1rem margin to all sides (Salesforce Code Snippets)",
+            detail: "Adds 1rem margin to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -272,7 +272,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_large",
             ),
-            detail: "Adds 1.5rem margin to all sides (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem margin to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -280,7 +280,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_x-large",
             ),
-            detail: "Adds 2rem margin to all sides (Salesforce Code Snippets)",
+            detail: "Adds 2rem margin to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -288,7 +288,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-around_xx-large",
             ),
-            detail: "Adds 3rem margin to all sides (Salesforce Code Snippets)",
+            detail: "Adds 3rem margin to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -296,7 +296,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_none",
             ),
-            detail: "Removes margin from top (Salesforce Code Snippets)",
+            detail: "Removes margin from top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -304,7 +304,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_xxx-small",
             ),
-            detail: "Adds .125rem margin to top (Salesforce Code Snippets)",
+            detail: "Adds .125rem margin to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -312,7 +312,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_xx-small",
             ),
-            detail: "Adds .25rem margin to top (Salesforce Code Snippets)",
+            detail: "Adds .25rem margin to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -320,7 +320,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_x-small",
             ),
-            detail: "Adds .5rem margin to top (Salesforce Code Snippets)",
+            detail: "Adds .5rem margin to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -328,7 +328,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_small",
             ),
-            detail: "Adds .75rem margin to top (Salesforce Code Snippets)",
+            detail: "Adds .75rem margin to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -336,7 +336,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_medium",
             ),
-            detail: "Adds 1rem margin to top (Salesforce Code Snippets)",
+            detail: "Adds 1rem margin to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -344,7 +344,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_large",
             ),
-            detail: "Adds 1.5rem margin to top (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem margin to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -352,7 +352,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_x-large",
             ),
-            detail: "Adds 2rem margin to top (Salesforce Code Snippets)",
+            detail: "Adds 2rem margin to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -360,7 +360,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-top_xx-large",
             ),
-            detail: "Adds 3rem margin to top (Salesforce Code Snippets)",
+            detail: "Adds 3rem margin to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -368,7 +368,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_none",
             ),
-            detail: "Removes margin from left (Salesforce Code Snippets)",
+            detail: "Removes margin from left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -376,7 +376,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_xxx-small",
             ),
-            detail: "Adds .125rem margin to left (Salesforce Code Snippets)",
+            detail: "Adds .125rem margin to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -384,7 +384,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_xx-small",
             ),
-            detail: "Adds .25rem margin to left (Salesforce Code Snippets)",
+            detail: "Adds .25rem margin to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -392,7 +392,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_x-small",
             ),
-            detail: "Adds .5rem margin to left (Salesforce Code Snippets)",
+            detail: "Adds .5rem margin to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -400,7 +400,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_small",
             ),
-            detail: "Adds .75rem margin to left (Salesforce Code Snippets)",
+            detail: "Adds .75rem margin to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -408,7 +408,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_medium",
             ),
-            detail: "Adds 1rem margin to left (Salesforce Code Snippets)",
+            detail: "Adds 1rem margin to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -416,7 +416,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_large",
             ),
-            detail: "Adds 1.5rem margin to left (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem margin to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -424,7 +424,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_x-large",
             ),
-            detail: "Adds 2rem margin to left (Salesforce Code Snippets)",
+            detail: "Adds 2rem margin to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -432,7 +432,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-left_xx-large",
             ),
-            detail: "Adds 3rem margin to left (Salesforce Code Snippets)",
+            detail: "Adds 3rem margin to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -440,7 +440,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_none",
             ),
-            detail: "Removes margin from right (Salesforce Code Snippets)",
+            detail: "Removes margin from right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -448,7 +448,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_xxx-small",
             ),
-            detail: "Adds .125rem margin to right (Salesforce Code Snippets)",
+            detail: "Adds .125rem margin to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -456,7 +456,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_xx-small",
             ),
-            detail: "Adds .25rem margin to right (Salesforce Code Snippets)",
+            detail: "Adds .25rem margin to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -464,7 +464,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_x-small",
             ),
-            detail: "Adds .5rem margin to right (Salesforce Code Snippets)",
+            detail: "Adds .5rem margin to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -472,7 +472,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_small",
             ),
-            detail: "Adds .75rem margin to right (Salesforce Code Snippets)",
+            detail: "Adds .75rem margin to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -480,7 +480,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_medium",
             ),
-            detail: "Adds 1rem margin to right (Salesforce Code Snippets)",
+            detail: "Adds 1rem margin to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -488,7 +488,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_large",
             ),
-            detail: "Adds 1.5rem margin to right (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem margin to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -496,7 +496,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_x-large",
             ),
-            detail: "Adds 2rem margin to right (Salesforce Code Snippets)",
+            detail: "Adds 2rem margin to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -504,7 +504,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-right_xx-large",
             ),
-            detail: "Adds 3rem margin to right (Salesforce Code Snippets)",
+            detail: "Adds 3rem margin to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -512,7 +512,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_none",
             ),
-            detail: "Removes margin from bottom (Salesforce Code Snippets)",
+            detail: "Removes margin from bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -520,7 +520,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_xxx-small",
             ),
-            detail: "Adds .125rem margin to bottom (Salesforce Code Snippets)",
+            detail: "Adds .125rem margin to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -528,7 +528,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_xx-small",
             ),
-            detail: "Adds .25rem margin to bottom (Salesforce Code Snippets)",
+            detail: "Adds .25rem margin to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -536,7 +536,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_x-small",
             ),
-            detail: "Adds .5rem margin to bottom (Salesforce Code Snippets)",
+            detail: "Adds .5rem margin to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -544,7 +544,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_small",
             ),
-            detail: "Adds .75rem margin to bottom (Salesforce Code Snippets)",
+            detail: "Adds .75rem margin to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -552,7 +552,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_medium",
             ),
-            detail: "Adds 1rem margin to bottom (Salesforce Code Snippets)",
+            detail: "Adds 1rem margin to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -560,7 +560,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_large",
             ),
-            detail: "Adds 1.5rem margin to bottom (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem margin to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -568,7 +568,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_x-large",
             ),
-            detail: "Adds 2rem margin to bottom (Salesforce Code Snippets)",
+            detail: "Adds 2rem margin to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -576,7 +576,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-bottom_xx-large",
             ),
-            detail: "Adds 3rem margin to bottom (Salesforce Code Snippets)",
+            detail: "Adds 3rem margin to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -584,7 +584,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_none",
             ),
-            detail: "Removes margin from top and bottom (Salesforce Code Snippets)",
+            detail: "Removes margin from top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -592,7 +592,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_xxx-small",
             ),
-            detail: "Adds .125rem margin to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds .125rem margin to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -600,7 +600,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_xx-small",
             ),
-            detail: "Adds .25rem margin to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds .25rem margin to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -608,7 +608,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_x-small",
             ),
-            detail: "Adds .5rem margin to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds .5rem margin to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -616,7 +616,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_small",
             ),
-            detail: "Adds .75rem margin to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds .75rem margin to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -624,7 +624,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_medium",
             ),
-            detail: "Adds 1rem margin to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds 1rem margin to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -632,7 +632,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_large",
             ),
-            detail: "Adds 1.5rem margin to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem margin to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -640,7 +640,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_x-large",
             ),
-            detail: "Adds 2rem margin to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds 2rem margin to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -648,7 +648,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-vertical_xx-large",
             ),
-            detail: "Adds 3rem margin to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds 3rem margin to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -656,7 +656,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_none",
             ),
-            detail: "Removes margin from left and right (Salesforce Code Snippets)",
+            detail: "Removes margin from left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -664,7 +664,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_xxx-small",
             ),
-            detail: "Adds .125rem margin to left and right (Salesforce Code Snippets)",
+            detail: "Adds .125rem margin to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -672,7 +672,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_xx-small",
             ),
-            detail: "Adds .25rem margin to left and right (Salesforce Code Snippets)",
+            detail: "Adds .25rem margin to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -680,7 +680,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_x-small",
             ),
-            detail: "Adds .5rem margin to left and right (Salesforce Code Snippets)",
+            detail: "Adds .5rem margin to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -688,7 +688,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_small",
             ),
-            detail: "Adds .75rem margin to left and right (Salesforce Code Snippets)",
+            detail: "Adds .75rem margin to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -696,7 +696,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_medium",
             ),
-            detail: "Adds 1rem margin to left and right (Salesforce Code Snippets)",
+            detail: "Adds 1rem margin to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -704,7 +704,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_large",
             ),
-            detail: "Adds 1.5rem margin to left and right (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem margin to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -712,7 +712,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_x-large",
             ),
-            detail: "Adds 2rem margin to left and right (Salesforce Code Snippets)",
+            detail: "Adds 2rem margin to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -720,7 +720,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-m-horizontal_xx-large",
             ),
-            detail: "Adds 3rem margin to left and right (Salesforce Code Snippets)",
+            detail: "Adds 3rem margin to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -728,7 +728,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_none",
             ),
-            detail: "Removes padding from all sides (Salesforce Code Snippets)",
+            detail: "Removes padding from all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -736,7 +736,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_xxx-small",
             ),
-            detail: "Adds .125rem padding to all sides (Salesforce Code Snippets)",
+            detail: "Adds .125rem padding to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -744,7 +744,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_xx-small",
             ),
-            detail: "Adds .25rem padding to all sides (Salesforce Code Snippets)",
+            detail: "Adds .25rem padding to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -752,7 +752,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_x-small",
             ),
-            detail: "Adds .5rem padding to all sides (Salesforce Code Snippets)",
+            detail: "Adds .5rem padding to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -760,7 +760,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_small",
             ),
-            detail: "Adds .75rem padding to all sides (Salesforce Code Snippets)",
+            detail: "Adds .75rem padding to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -768,7 +768,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_medium",
             ),
-            detail: "Adds 1rem padding to all sides (Salesforce Code Snippets)",
+            detail: "Adds 1rem padding to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -776,7 +776,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_large",
             ),
-            detail: "Adds 1.5rem padding to all sides (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem padding to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -784,7 +784,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_x-large",
             ),
-            detail: "Adds 2rem padding to all sides (Salesforce Code Snippets)",
+            detail: "Adds 2rem padding to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -792,7 +792,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-around_xx-large",
             ),
-            detail: "Adds 3rem padding to all sides (Salesforce Code Snippets)",
+            detail: "Adds 3rem padding to all sides (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -800,7 +800,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_none",
             ),
-            detail: "Removes padding from top (Salesforce Code Snippets)",
+            detail: "Removes padding from top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -808,7 +808,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_xxx-small",
             ),
-            detail: "Adds .125rem padding to top (Salesforce Code Snippets)",
+            detail: "Adds .125rem padding to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -816,7 +816,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_xx-small",
             ),
-            detail: "Adds .25rem padding to top (Salesforce Code Snippets)",
+            detail: "Adds .25rem padding to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -824,7 +824,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_x-small",
             ),
-            detail: "Adds .5rem padding to top (Salesforce Code Snippets)",
+            detail: "Adds .5rem padding to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -832,7 +832,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_small",
             ),
-            detail: "Adds .75rem padding to top (Salesforce Code Snippets)",
+            detail: "Adds .75rem padding to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -840,7 +840,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_medium",
             ),
-            detail: "Adds 1rem padding to top (Salesforce Code Snippets)",
+            detail: "Adds 1rem padding to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -848,7 +848,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_large",
             ),
-            detail: "Adds 1.5rem padding to top (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem padding to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -856,7 +856,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_x-large",
             ),
-            detail: "Adds 2rem padding to top (Salesforce Code Snippets)",
+            detail: "Adds 2rem padding to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -864,7 +864,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-top_xx-large",
             ),
-            detail: "Adds 3rem padding to top (Salesforce Code Snippets)",
+            detail: "Adds 3rem padding to top (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -872,7 +872,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_none",
             ),
-            detail: "Removes padding from left (Salesforce Code Snippets)",
+            detail: "Removes padding from left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -880,7 +880,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_xxx-small",
             ),
-            detail: "Adds .125rem padding to left (Salesforce Code Snippets)",
+            detail: "Adds .125rem padding to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -888,7 +888,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_xx-small",
             ),
-            detail: "Adds .25rem padding to left (Salesforce Code Snippets)",
+            detail: "Adds .25rem padding to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -896,7 +896,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_x-small",
             ),
-            detail: "Adds .5rem padding to left (Salesforce Code Snippets)",
+            detail: "Adds .5rem padding to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -904,7 +904,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_small",
             ),
-            detail: "Adds .75rem padding to left (Salesforce Code Snippets)",
+            detail: "Adds .75rem padding to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -912,7 +912,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_medium",
             ),
-            detail: "Adds 1rem padding to left (Salesforce Code Snippets)",
+            detail: "Adds 1rem padding to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -920,7 +920,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_large",
             ),
-            detail: "Adds 1.5rem padding to left (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem padding to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -928,7 +928,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_x-large",
             ),
-            detail: "Adds 2rem padding to left (Salesforce Code Snippets)",
+            detail: "Adds 2rem padding to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -936,7 +936,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-left_xx-large",
             ),
-            detail: "Adds 3rem padding to left (Salesforce Code Snippets)",
+            detail: "Adds 3rem padding to left (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -944,7 +944,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_none",
             ),
-            detail: "Removes padding from right (Salesforce Code Snippets)",
+            detail: "Removes padding from right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -952,7 +952,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_xxx-small",
             ),
-            detail: "Adds .125rem padding to right (Salesforce Code Snippets)",
+            detail: "Adds .125rem padding to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -960,7 +960,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_xx-small",
             ),
-            detail: "Adds .25rem padding to right (Salesforce Code Snippets)",
+            detail: "Adds .25rem padding to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -968,7 +968,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_x-small",
             ),
-            detail: "Adds .5rem padding to right (Salesforce Code Snippets)",
+            detail: "Adds .5rem padding to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -976,7 +976,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_small",
             ),
-            detail: "Adds .75rem padding to right (Salesforce Code Snippets)",
+            detail: "Adds .75rem padding to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -984,7 +984,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_medium",
             ),
-            detail: "Adds 1rem padding to right (Salesforce Code Snippets)",
+            detail: "Adds 1rem padding to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -992,7 +992,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_large",
             ),
-            detail: "Adds 1.5rem padding to right (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem padding to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1000,7 +1000,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_x-large",
             ),
-            detail: "Adds 2rem padding to right (Salesforce Code Snippets)",
+            detail: "Adds 2rem padding to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1008,7 +1008,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-right_xx-large",
             ),
-            detail: "Adds 3rem padding to right (Salesforce Code Snippets)",
+            detail: "Adds 3rem padding to right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1016,7 +1016,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_none",
             ),
-            detail: "Removes padding from bottom (Salesforce Code Snippets)",
+            detail: "Removes padding from bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1024,7 +1024,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_xxx-small",
             ),
-            detail: "Adds .125rem padding to bottom (Salesforce Code Snippets)",
+            detail: "Adds .125rem padding to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1032,7 +1032,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_xx-small",
             ),
-            detail: "Adds .25rem padding to bottom (Salesforce Code Snippets)",
+            detail: "Adds .25rem padding to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1040,7 +1040,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_x-small",
             ),
-            detail: "Adds .5rem padding to bottom (Salesforce Code Snippets)",
+            detail: "Adds .5rem padding to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1048,7 +1048,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_small",
             ),
-            detail: "Adds .75rem padding to bottom (Salesforce Code Snippets)",
+            detail: "Adds .75rem padding to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1056,7 +1056,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_medium",
             ),
-            detail: "Adds 1rem padding to bottom (Salesforce Code Snippets)",
+            detail: "Adds 1rem padding to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1064,7 +1064,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_large",
             ),
-            detail: "Adds 1.5rem padding to bottom (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem padding to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1072,7 +1072,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_x-large",
             ),
-            detail: "Adds 2rem padding to bottom (Salesforce Code Snippets)",
+            detail: "Adds 2rem padding to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1080,7 +1080,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-bottom_xx-large",
             ),
-            detail: "Adds 3rem padding to bottom (Salesforce Code Snippets)",
+            detail: "Adds 3rem padding to bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1088,7 +1088,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_none",
             ),
-            detail: "Removes padding from top and bottom (Salesforce Code Snippets)",
+            detail: "Removes padding from top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1096,7 +1096,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_xxx-small",
             ),
-            detail: "Adds .125rem padding to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds .125rem padding to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1104,7 +1104,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_xx-small",
             ),
-            detail: "Adds .25rem padding to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds .25rem padding to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1112,7 +1112,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_x-small",
             ),
-            detail: "Adds .5rem padding to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds .5rem padding to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1120,7 +1120,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_small",
             ),
-            detail: "Adds .75rem padding to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds .75rem padding to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1128,7 +1128,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_medium",
             ),
-            detail: "Adds 1rem padding to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds 1rem padding to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1136,7 +1136,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_large",
             ),
-            detail: "Adds 1.5rem padding to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem padding to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1144,7 +1144,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_x-large",
             ),
-            detail: "Adds 2rem padding to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds 2rem padding to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1152,7 +1152,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-vertical_xx-large",
             ),
-            detail: "Adds 3rem padding to top and bottom (Salesforce Code Snippets)",
+            detail: "Adds 3rem padding to top and bottom (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1160,7 +1160,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_none",
             ),
-            detail: "Removes padding from left and right (Salesforce Code Snippets)",
+            detail: "Removes padding from left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1168,7 +1168,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_xxx-small",
             ),
-            detail: "Adds .125rem padding to left and right (Salesforce Code Snippets)",
+            detail: "Adds .125rem padding to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1176,7 +1176,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_xx-small",
             ),
-            detail: "Adds .25rem padding to left and right (Salesforce Code Snippets)",
+            detail: "Adds .25rem padding to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1184,7 +1184,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_x-small",
             ),
-            detail: "Adds .5rem padding to left and right (Salesforce Code Snippets)",
+            detail: "Adds .5rem padding to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1192,7 +1192,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_small",
             ),
-            detail: "Adds .75rem padding to left and right (Salesforce Code Snippets)",
+            detail: "Adds .75rem padding to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1200,7 +1200,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_medium",
             ),
-            detail: "Adds 1rem padding to left and right (Salesforce Code Snippets)",
+            detail: "Adds 1rem padding to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1208,7 +1208,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_large",
             ),
-            detail: "Adds 1.5rem padding to left and right (Salesforce Code Snippets)",
+            detail: "Adds 1.5rem padding to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1216,7 +1216,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_x-large",
             ),
-            detail: "Adds 2rem padding to left and right (Salesforce Code Snippets)",
+            detail: "Adds 2rem padding to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1224,7 +1224,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-p-horizontal_xx-large",
             ),
-            detail: "Adds 3rem padding to left and right (Salesforce Code Snippets)",
+            detail: "Adds 3rem padding to left and right (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1232,7 +1232,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-truncate",
             ),
-            detail: "Truncates text (Salesforce Code Snippets)",
+            detail: "Truncates text (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1240,7 +1240,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-col",
             ),
-            detail: "Initializes a grid column (Salesforce Code Snippets)",
+            detail: "Initializes a grid column (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1248,7 +1248,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid",
             ),
-            detail: "Initializes grid (Salesforce Code Snippets)",
+            detail: "Initializes grid (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1256,7 +1256,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_align-center",
             ),
-            detail: "Columns align in the center to the main axis and expand in each direction (Salesforce Code Snippets)",
+            detail: "Columns align in the center to the main axis and expand in each direction (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1264,7 +1264,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_align-space",
             ),
-            detail: "Columns are evenly distributed with equal space around them all (Salesforce Code Snippets)",
+            detail: "Columns are evenly distributed with equal space around them all (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1272,7 +1272,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_align-spread",
             ),
-            detail: "Columns align to the left and right followed by center. Space is equal between them (Salesforce Code Snippets)",
+            detail: "Columns align to the left and right followed by center. Space is equal between them (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1280,7 +1280,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_align-end",
             ),
-            detail: "Columns start on the opposite end of the grid's main axis (Salesforce Code Snippets)",
+            detail: "Columns start on the opposite end of the grid's main axis (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1288,7 +1288,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-align-start",
             ),
-            detail: "Columns start at the beginning of the grid's cross axis (Salesforce Code Snippets)",
+            detail: "Columns start at the beginning of the grid's cross axis (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1296,7 +1296,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-align-center",
             ),
-            detail: "Columns align in the center to the cross axis and expand it each direction (Salesforce Code Snippets)",
+            detail: "Columns align in the center to the cross axis and expand it each direction (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1304,7 +1304,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-align-end",
             ),
-            detail: "Columns start on the opposite end of the grid's cross axis (Salesforce Code Snippets)",
+            detail: "Columns start on the opposite end of the grid's cross axis (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1312,7 +1312,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-grid_vertical-stretch",
             ),
-            detail: "Stretch the grid items for both single row and multi-line rows to fill the height of the parent grid container (Salesforce Code Snippets)",
+            detail: "Stretch the grid items for both single row and multi-line rows to fill the height of the parent grid container (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1320,7 +1320,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-gutters",
             ),
-            detail: "Apply 12px gutters to each grid column when you add this class to an `slds-grid` element (Salesforce Code Snippets)",
+            detail: "Apply 12px gutters to each grid column when you add this class to an `slds-grid` element (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1328,7 +1328,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-hyphenate",
             ),
-            detail: "The truncation class can be used on an element, or the truncation include can be added to an existing class. (Salesforce Code Snippets)",
+            detail: "The truncation class can be used on an element, or the truncation include can be added to an existing class. (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1336,7 +1336,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-collapsed",
             ),
-            detail: "Hides elements inside a parent (Salesforce Code Snippets)",
+            detail: "Hides elements inside a parent (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1344,7 +1344,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-expanded",
             ),
-            detail: "Shows the elements inside the parent (Salesforce Code Snippets)",
+            detail: "Shows the elements inside the parent (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1352,7 +1352,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-static",
             ),
-            detail: "Reset positioning back to normal behavior (Salesforce Code Snippets)",
+            detail: "Reset positioning back to normal behavior (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1360,7 +1360,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-relative",
             ),
-            detail: "Used to contain children if children are absolutely positioned and out of flow. Also used to position element without changing layout. (Salesforce Code Snippets)",
+            detail: "Used to contain children if children are absolutely positioned and out of flow. Also used to position element without changing layout. (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1368,7 +1368,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-fixed",
             ),
-            detail: "Used to position an element relative to the viewport. (Salesforce Code Snippets)",
+            detail: "Used to position an element relative to the viewport. (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1376,7 +1376,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-absolute",
             ),
-            detail: "Used to position an element relative to its closest ancestor with relative positioning. (Salesforce Code Snippets)",
+            detail: "Used to position an element relative to its closest ancestor with relative positioning. (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1384,7 +1384,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-no-flex",
             ),
-            detail: "Removes flexbox from grid column (Salesforce Code Snippets)",
+            detail: "Removes flexbox from grid column (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1392,7 +1392,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-no-space",
             ),
-            detail: "Sets the column to a min-width of 0 (Salesforce Code Snippets)",
+            detail: "Sets the column to a min-width of 0 (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1400,7 +1400,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-nowrap",
             ),
-            detail: "Keeps columns on one line. Allows columns to stretch and fill 100% of the parent’s width and height. (Salesforce Code Snippets)",
+            detail: "Keeps columns on one line. Allows columns to stretch and fill 100% of the parent’s width and height. (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1408,7 +1408,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-body_regular",
             ),
-            detail: "Creates the 13px regular body copy (Salesforce Code Snippets)",
+            detail: "Creates the 13px regular body copy (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1416,7 +1416,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-body_small",
             ),
-            detail: "Creates a more pale-colored 12px copy (Salesforce Code Snippets)",
+            detail: "Creates a more pale-colored 12px copy (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1424,7 +1424,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_default",
             ),
-            detail: "Default color of text (Salesforce Code Snippets)",
+            detail: "Default color of text (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1432,7 +1432,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_weak",
             ),
-            detail: "Weak color of text (Salesforce Code Snippets)",
+            detail: "Weak color of text (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1440,7 +1440,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_error",
             ),
-            detail: "Error color of text (Salesforce Code Snippets)",
+            detail: "Error color of text (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1448,7 +1448,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_destructive",
             ),
-            detail: "Color of text for destructive actions (Salesforce Code Snippets)",
+            detail: "Color of text for destructive actions (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1456,7 +1456,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_success",
             ),
-            detail: "Success color of text (Salesforce Code Snippets)",
+            detail: "Success color of text (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1464,7 +1464,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_inverse",
             ),
-            detail: "Default color of text on inversed background (Salesforce Code Snippets)",
+            detail: "Default color of text on inversed background (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1472,7 +1472,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-color_inverse-weak",
             ),
-            detail: "Weak color of text on inversed background (Salesforce Code Snippets)",
+            detail: "Weak color of text on inversed background (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1480,7 +1480,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-heading_large",
             ),
-            detail: "Very large 28px heading (Salesforce Code Snippets)",
+            detail: "Very large 28px heading (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1488,7 +1488,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-heading_medium",
             ),
-            detail: "Large 20px heading (Salesforce Code Snippets)",
+            detail: "Large 20px heading (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1496,7 +1496,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-text-heading_small",
             ),
-            detail: "Smaller 16px heading (Salesforce Code Snippets)",
+            detail: "Smaller 16px heading (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1504,7 +1504,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_default",
             ),
-            detail: "Sets the background color to white (Salesforce Code Snippets)",
+            detail: "Sets the background color to white (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1512,7 +1512,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_shade",
             ),
-            detail: "Sets the background color to gray (Salesforce Code Snippets)",
+            detail: "Sets the background color to gray (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1520,7 +1520,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_inverse",
             ),
-            detail: "Sets the background color to dark blue (Salesforce Code Snippets)",
+            detail: "Sets the background color to dark blue (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1528,7 +1528,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_alt-inverse",
             ),
-            detail: "Sets the background color to darker blue (Salesforce Code Snippets)",
+            detail: "Sets the background color to darker blue (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1536,7 +1536,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_success",
             ),
-            detail: "Sets the background color to green (Salesforce Code Snippets)",
+            detail: "Sets the background color to green (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1544,7 +1544,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_info",
             ),
-            detail: "Sets the background color to gray-ish blue (Salesforce Code Snippets)",
+            detail: "Sets the background color to gray-ish blue (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1552,7 +1552,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_warning",
             ),
-            detail: "Sets the background color to yellow (Salesforce Code Snippets)",
+            detail: "Sets the background color to yellow (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1560,7 +1560,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_error",
             ),
-            detail: "Sets the background color to red (Salesforce Code Snippets)",
+            detail: "Sets the background color to red (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1568,7 +1568,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_offline",
             ),
-            detail: "Sets the background color to black (Salesforce Code Snippets)",
+            detail: "Sets the background color to black (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1576,7 +1576,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-theme_alert-texture",
             ),
-            detail: "Adds striped background (Salesforce Code Snippets)",
+            detail: "Adds striped background (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1584,7 +1584,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-wrap",
             ),
-            detail: "Allows columns to wrap when they exceed 100% of their parent’s width (Salesforce Code Snippets)",
+            detail: "Allows columns to wrap when they exceed 100% of their parent’s width (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Class,
         },
         {
@@ -1592,7 +1592,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table",
             ),
-            detail: "Initializes data table (Salesforce Code Snippets)",
+            detail: "Initializes data table (Code Snippets for Salesforce)",
             documentation: "Can be used on table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1601,7 +1601,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-no-row-hover",
             ),
-            detail: "Default Table Row Hover (Salesforce Code Snippets)",
+            detail: "Default Table Row Hover (Code Snippets for Salesforce)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1610,7 +1610,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-is-selected",
             ),
-            detail: "Selected Table Row + Hover (Salesforce Code Snippets)",
+            detail: "Selected Table Row + Hover (Code Snippets for Salesforce)",
             documentation: "Can be used on .slds-table tr",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1619,7 +1619,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-cell-wrap",
             ),
-            detail: "By default, nowrap is applied (Salesforce Code Snippets)",
+            detail: "By default, nowrap is applied (Code Snippets for Salesforce)",
             documentation: "Can be used on .slds-table th, .slds-table td",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1628,7 +1628,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-cell-buffer_left",
             ),
-            detail: "Use to add a left padding buffer to cells (Salesforce Code Snippets)",
+            detail: "Use to add a left padding buffer to cells (Code Snippets for Salesforce)",
             documentation: "Can be used on .slds-table th, .slds-table td",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1637,7 +1637,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-cell-buffer_right",
             ),
-            detail: "Use to add a right padding buffer to cells (Salesforce Code Snippets)",
+            detail: "Use to add a right padding buffer to cells (Code Snippets for Salesforce)",
             documentation: "Can be used on .slds-table th, .slds-table td",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1646,7 +1646,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_cell-buffer",
             ),
-            detail: "Add left and right padding to the first and last cells of a table (Salesforce Code Snippets)",
+            detail: "Add left and right padding to the first and last cells of a table (Code Snippets for Salesforce)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1655,7 +1655,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_bordered",
             ),
-            detail: "Add vertical borders to a table (Salesforce Code Snippets)",
+            detail: "Add vertical borders to a table (Code Snippets for Salesforce)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1664,7 +1664,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-has-focus",
             ),
-            detail: "Focus state on a cell (Salesforce Code Snippets)",
+            detail: "Focus state on a cell (Code Snippets for Salesforce)",
             documentation: "Can be on .slds-table th, .slds-table td",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1673,7 +1673,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_bordered",
             ),
-            detail: "Add vertical borders to a table (Salesforce Code Snippets)",
+            detail: "Add vertical borders to a table (Code Snippets for Salesforce)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1682,7 +1682,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_col-bordered",
             ),
-            detail: "Add column borders (Salesforce Code Snippets)",
+            detail: "Add column borders (Code Snippets for Salesforce)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1691,7 +1691,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_striped",
             ),
-            detail: "Add alternating strips to rows (Salesforce Code Snippets)",
+            detail: "Add alternating strips to rows (Code Snippets for Salesforce)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },
@@ -1700,7 +1700,7 @@ export function loadClassesSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "slds-table_fixed-layout",
             ),
-            detail: "Set table to use fixed layout for width and truncation purposes (Salesforce Code Snippets)",
+            detail: "Set table to use fixed layout for width and truncation purposes (Code Snippets for Salesforce)",
             documentation: "Can be used with .slds-table",
             kind: vscode.CompletionItemKind.Class,
         },

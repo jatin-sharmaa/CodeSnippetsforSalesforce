@@ -1,21 +1,21 @@
 {
     "name": "salesforcecodesnippets",
-    "displayName": "Salesforce Code Snippets",
+    "displayName": "Code Snippets for Salesforce",
     "description": "A set of Snippets for Salesforce Component Development",
-    "version": "3.0.1",
+    "version": "3.1.1",
     "icon": "icon.png",
     "publisher": "Audibene",
     "license": "SEE LICENSE IN LICENSE",
-    "homepage": "https://github.com/jatinsharmaa/SalesforceCodeSnippets/blob/master/README.md",
+    "homepage": "https://github.com/jatinsharmaa/CodeSnippetsforSalesforce/blob/master/README.md",
     "engines": {
         "vscode": "^1.47.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/jatinsharmaa/SalesforceCodeSnippets"
+        "url": "https://github.com/jatinsharmaa/CodeSnippetsforSalesforce"
     },
     "bugs": {
-        "url": "https://github.com/jatinsharmaa/SalesforceCodeSnippets/issues"
+        "url": "https://github.com/jatinsharmaa/CodeSnippetsforSalesforce/issues"
     },
     "categories": [
         "Snippets"
@@ -29,7 +29,7 @@
         "Salesforce Design System",
         "SLDS classes",
         "Component Blueprints",
-        "Salesforce Code Snippets"
+        "Code Snippets for Salesforce"
     ],
     "main": "./dist/extension.js",
     "activationEvents": [
@@ -40,7 +40,7 @@
     "contributes": {
         "configuration": {
             "type": "object",
-            "title": "Salesforce Code Snippets",
+            "title": "Code Snippets for Salesforce",
             "properties": {
                 "salesforcecodesnippets.enableSLDSClass": {
                     "type": "boolean",

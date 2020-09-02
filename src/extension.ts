@@ -23,7 +23,7 @@ export function activate( context: vscode.ExtensionContext ) {
 function initializeTool( context: vscode.ExtensionContext){
     Configs.loadConfigurations();
     Completion.initCompletions( context );
-    vscode.window.showInformationMessage('Salesforce Snippet is loaded');
+    vscode.window.showInformationMessage('Code Snippets for Salesforce is loaded');
 }
 
 export function deactivate( context: vscode.ExtensionContext ) {
