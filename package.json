@@ -29,7 +29,8 @@
         "Salesforce Design System",
         "SLDS classes",
         "Component Blueprints",
-        "Code Snippets for Salesforce"
+        "Code Snippets for Salesforce",
+        "Salesforce Snippets"
     ],
     "main": "./dist/extension.js",
     "activationEvents": [
