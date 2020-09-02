@@ -8,7 +8,7 @@ export function loadApexSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "System.debug('${1:variable}: ' + ${1:variable});"
             ),
-            detail: "System Debug (Salesforce Code Snippets)",
+            detail: "System Debug (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -16,7 +16,7 @@ export function loadApexSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "${1|public,static,private|} void ${2:FunctionName} (${3:parameters}){\n\t${4:body}\n}"
             ),
-            detail: "New Function (Salesforce Code Snippets)",
+            detail: "New Function (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Function,
         },
         {
@@ -24,7 +24,7 @@ export function loadApexSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "@isTest\n${1|public,static,private|} void ${2:FunctionName}_Test (${3:parameters}){\n\ttest.startTest();\n\t${4:body}\n\ttest.stopTest();\n}"
             ),
-            detail: "New Test Function (Salesforce Code Snippets)",
+            detail: "New Test Function (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Function,
         },
         {
@@ -32,7 +32,7 @@ export function loadApexSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "try {\n\t${1:data}\n} catch(Exception e) {\n\tSystem.debug(e.getMessage());\n}"
             ),
-            detail: "Try Catch (Salesforce Code Snippets)",
+            detail: "Try Catch (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -40,7 +40,7 @@ export function loadApexSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "${1|public,static,private|} ${2:FunctionName} {\n\tget {\n\t\t${3:code}\n\t\treturn // variable\n\t} set;\n}"
             ),
-            detail: "Getter Setter (Salesforce Code Snippets)",
+            detail: "Getter Setter (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -48,7 +48,7 @@ export function loadApexSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "system.assert(${1:variable 1}, ${2:variable 2});"
             ),
-            detail: "System Assert (Salesforce Code Snippets)",
+            detail: "System Assert (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Method,
         },
         {
@@ -56,7 +56,7 @@ export function loadApexSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "system.assertEquals(${1:variable 1}, ${2:variable 2});"
             ),
-            detail: "System Assert Equal (Salesforce Code Snippets)",
+            detail: "System Assert Equal (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Method,
         },
     ];

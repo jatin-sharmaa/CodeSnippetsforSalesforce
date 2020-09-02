@@ -1,5 +1,11 @@
 # Change Log
-All notable changes to the Audibene Code Snippets will be documented here.
+All notable changes to the Code Snippets for Salesforce will be documented here.
+
+## Crimson - v3.1.1
+- Changes for Issue#57
+
+## Crimson - v3.0.1
+- Minor changes for VS Code Marketplace Page
 
 ## Crimson - v3.0.1
 - Minor changes for VS Code Marketplace Page

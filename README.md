@@ -1,7 +1,7 @@
-# Salesforce Code Snippets
+# Code Snippets for Salesforce
 
-![GitHub Release Date](https://img.shields.io/github/release-date/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/jatinsharmaa/SalesforceCodeSnippets?style=flat-square)
+![GitHub Release Date](https://img.shields.io/github/release-date/jatinsharmaa/CodeSnippetsforSalesforce?style=flat-square)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/jatinsharmaa/CodeSnippetsforSalesforce?style=flat-square)
 ![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/Audibene.salesforcecodesnippets?style=flat-square)
 ![Visual Studio Marketplace Rating (Stars)](https://img.shields.io/visual-studio-marketplace/stars/Audibene.salesforcecodesnippets?style=flat-square)
 
@@ -564,15 +564,15 @@ transition-show | Shows the element using the opacity property set to 1
 
 
 ## Installation
-- [Salesforce Code Snippets on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Audibene.salesforcecodesnippets)
+- [Code Snippets for Salesforce on Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=Audibene.salesforcecodesnippets)
 
 ## Configurations
-- [x] Enable Apex snippets 
-- [x] Enable Aura Snippets
-- [x] Enable JavaScript snippets
-- [x] Enable LWC Snippets
-- [x] Enable SLDS Classes
-- [x] Enable Advanced Mode
+- Enable Apex snippets 
+- Enable Aura Snippets
+- Enable JavaScript snippets
+- Enable LWC Snippets
+- Enable SLDS Classes
+- Enable Advanced Mode
 
 ## Contributors
 - Marcel Hirthe
