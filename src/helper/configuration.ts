@@ -9,6 +9,7 @@ export default class Configurations {
     public enableLWCSnippets: boolean;
     public isAdvancedMode: boolean;
     public enableSLDSClass: boolean;
+    public hideFeedbackDialog: boolean;
     private context: vscode.ExtensionContext;
 
     constructor( context: vscode.ExtensionContext ) {
@@ -20,6 +21,7 @@ export default class Configurations {
         this.enableLWCSnippets           = configs.get("enableLWCSnippets", true);
         this.isAdvancedMode              = configs.get("enableAdvancedMode", false);
         this.enableSLDSClass             = configs.get("enableSLDSClass", false);
+        this.hideFeedbackDialog          = configs.get("hideFeedbackDialog", false);
         this.context                     = context;
     }
 
@@ -30,19 +32,29 @@ export default class Configurations {
             enableAuraSnippets : this.enableAuraSnippets,
             enableLWCSnippets : this.enableLWCSnippets,
             isAdvancedMode : this.isAdvancedMode,
-            enableSLDSClas : this.enableSLDSClass
+            enableSLDSClass : this.enableSLDSClass,
+            hideFeedbackDialog : this.hideFeedbackDialog
         };
     }
 
-    public setConfig( name:string, flag:boolean ){
+    public setConfig( name:string, flagString:string ){
         
+        var flag = flagString == "on" ? true : false;
+
         if ( name === "enableApexSnippets") {
             
             this.enableApexSnippets = flag;
-
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("enableApexSnippets", flag);
+            
         } else if ( name === "enableJavascriptSnippets" ) {
             
             this.enableJavascriptSnippets = flag;
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("enableJavascriptSnippets", flag);
+
+        } else if ( name === "hideFeedbackDialog" ) {
+            
+            this.hideFeedbackDialog = flag;
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("hideFeedbackDialog", flag);
 
         }
     }

@@ -44,14 +44,6 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             kind: vscode.CompletionItemKind.Property,
         },
         {
-            label: "Modal Layer",
-            insertText: new vscode.SnippetString(
-                "<!--  ====== Paste below function in controller ====== -->\n\tcloseModal : function(component, event, helper) {\n\t\thelper.closeModal(component);\n\t}\n<!-- ====== Paste below function in helper ====== -->\n\tcloseModal : function(component) {\n\t\tvar currentValue = component.get(\"v.displayModal\");\n\t\tcomponent.set(\"v.displayModal\", !currentValue);\n\t}\n\n<aura:attribute name=\"displayModal\" type=\"Boolean\" default=\"true\" description=\"boolean flag to control modal visibility\" />\n\n<aura:if isTrue=\"{!v.displayModal}\">\n\t<div role=\"dialog\" tabindex=\"-1\" aria-labelledby=\"Modal\" class=\"slds-modal slds-fade-in-open slds-modal_small\">\n\t\t<div class=\"slds-modal__container c__modalContainer\">\n\t\t\t<div class=\"slds-modal__header\">\n\t\t\t\t<button class=\"slds-button slds-button--icon-inverse slds-modal__close\" onclick=\"{!c.closeModal}\">\n\t\t\t\t\t<lightning:icon iconName=\"utility:close\" size=\"medium\" variant=\"bare\" />\n\t\t\t\t\t<span class=\"slds-assistive-text\"><!-- FIX {Label.c.Close} --> </span>\n\t\t\t\t</button>\n\t\t\t\t<h1 class=\"slds-text-heading--medium c__fontWeightTitle\">${1:Modal Title}</h1>\n\t\t\t</div>\n\t\t\t<div class=\"slds-modal__content slds-p-around--medium c__modalContent\">\n\t\t\t\t<div class=\"c_tableWrapper\">\n\t\t\t\t\t${2:Modal Body}\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<div class=\"slds-modal__footer c__modalFooter\">\n\t\t\t\t<div class=\"slds-grid\">\n\t\t\t\t\t<div class=\"slds-col slds-size_6-of-12\">\n\t\t\t\t\t\t<!-- Code -->\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"slds-col slds-size_6-of-12 slds-text-align_right\">\n\t\t\t\t\t\t<lightning:button class=\"slds-p-horizontal_xx-large\" variant=\"neutral\" label=\"Back\" title=\"Back\" />\n\t\t\t\t\t\t<lightning:button class=\"slds-p-horizontal_xx-large\" variant=\"brand\" label=\"Next\" title=\"Next\" />\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n\n\t<div class=\"slds-backdrop slds-backdrop_open\" aura:id=\"modalBackground\"></div>\n</aura:if>",
-            ),
-            detail: "Modal Layer (Code Snippets for Salesforce)",
-            kind: vscode.CompletionItemKind.Property,
-        },
-        {
             label: "absolute:center",
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-align_absolute-center\">$1</div>",

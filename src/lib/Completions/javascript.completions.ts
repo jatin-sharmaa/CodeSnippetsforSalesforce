@@ -139,6 +139,30 @@ export function loadJavascriptSnippets( context:vscode.ExtensionContext ) {
             detail: "Event (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Method,
         },
+        {
+            label: "event:getParameter",
+            insertText: new vscode.SnippetString(
+                '${1:eventName}.getParam("${2:attribute}");',
+            ),
+            detail: "Get event parameter (Code Snippets for Salesforce)",
+            kind: vscode.CompletionItemKind.Method,
+        },
+        {
+            label: "event:setParameter",
+            insertText: new vscode.SnippetString(
+                '${1:eventName}.setParams({ "${2:attribute}" : ${3:value}}).fire();',
+            ),
+            detail: "Set event parameters (Code Snippets for Salesforce)",
+            kind: vscode.CompletionItemKind.Method,
+        },
+        {
+            label: "createComponent",
+            insertText: new vscode.SnippetString(
+                '\\$A.createComponent(\n\t"${1:componentName}",\n\t{\n\t\t"${2:attribute}" : ${3:value}\n\t},\n\tfunction(newcomponent) {\n\t\tif (newcomponent.isValid()) {\n\t\t\tvar body = component.get("v.body");\n\t\t\tbody.push(newcomponent);\n\t\t\tcomponent.find("${4:auraId}").set("v.body", body);\n\t\t}\n\t}\n);',
+            ),
+            detail: "Create Dynamic Component (Code Snippets for Salesforce)",
+            kind: vscode.CompletionItemKind.Method,
+        },
     ];
 
     return vscode.languages.registerCompletionItemProvider('javascript', {

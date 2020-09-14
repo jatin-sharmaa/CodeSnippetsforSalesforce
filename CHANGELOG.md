@@ -1,18 +1,21 @@
 # Change Log
 All notable changes to the Code Snippets for Salesforce will be documented here.
 
+## Crimson - v3.2.0
+- Modal Layer for Aura and LWC (`modal-layer:aura` and `modal-layer:lwc`)
+- `event:getParameter`, `event:setParameter`, `createComponent` added in JavaScript
+- Bug Fixes and Improvements
+- Feedback Flow
+
 ## Crimson - v3.1.1
 - Changes for Issue#57
 
 ## Crimson - v3.0.1
 - Minor changes for VS Code Marketplace Page
 
-## Crimson - v3.0.1
-- Minor changes for VS Code Marketplace Page
-
 ## Crimson - v3.0.0
 - Bug Fixes and Improvements
-- Spinner added for Aura and LWC
+- Spinner added for Aura and LWC (`spinner-aura` and `spinner-lwc`)
 
 ## Beige - v2.2.0
 - Bug Fixes and Improvements

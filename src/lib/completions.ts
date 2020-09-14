@@ -25,7 +25,7 @@ export default class Completions {
             disposables.push( loadApexSnippets(context) );
         } else {
             vscode.window.showWarningMessage('Code Snippets for Salesforce is disabled for Apex', "Enable").then(()=>{
-                Configs.setConfig("enableApexSnippets", true);
+                Configs.setConfig("enableApexSnippets", "on");
             });
         }
 
@@ -33,7 +33,7 @@ export default class Completions {
             disposables.push( loadJavascriptSnippets(context) );
         } else {
             vscode.window.showWarningMessage('Code Snippets for Salesforce is disabled for Javascript', "Enable").then(()=>{
-                Configs.setConfig("enableJavascriptSnippets", true);
+                Configs.setConfig("enableJavascriptSnippets", "on");
             });
         }
 

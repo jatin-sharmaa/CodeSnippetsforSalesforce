@@ -2,7 +2,7 @@
     "name": "salesforcecodesnippets",
     "displayName": "Code Snippets for Salesforce",
     "description": "A set of Snippets for Salesforce Component Development",
-    "version": "3.1.1",
+    "version": "3.2.0",
     "icon": "icon.png",
     "publisher": "Audibene",
     "license": "SEE LICENSE IN LICENSE",
@@ -72,13 +72,18 @@
                     "type": "boolean",
                     "default": false,
                     "description": "Enable Advanced Mode to see all SLDS classes and Snippets"
+                },
+                "salesforcecodesnippets.hideFeedbackDialog": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Controls the visiblity of the Feedback Dialog"
                 }
             }
         }
     },
     "scripts": {
-        "vscode:prepublish": "webpack --mode production",
-        "compile": "tsc -p ./",
+        "vscode:prepublish": "npm i && webpack --mode production",
+        "compile": "npm i && webpack --mode production && tsc -p ./",
         "lint": "eslint src --ext ts",
         "watch": "tsc -watch -p ./",
         "pretest": "npm run compile && npm run lint",

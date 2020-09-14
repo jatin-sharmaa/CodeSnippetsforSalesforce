@@ -29,7 +29,6 @@ grid:1 Column | Adds SLDS grid layout along with single column
 grid:2 Columns | Adds SLDS grid layout along with two columns
 grid:3 Columns | Adds SLDS grid layout along with three columns
 column | Adds Column
-Modal Layer | Adds the Modal Layer HTML along with Controller and Helper function
 absolute:center | Adds SLDS layout for absolute center
 heading | Adds heading HTML. Supports heading_large, heading_medium, heading_small
 text | Adds text HTML - Supports align_left, align_center ,align_right, color_default, color_success,color_weak, color_error, color_inverse, color_inverse-weak
@@ -74,6 +73,9 @@ action:Callback | Adds code for callback method
 filter | Adds a filter statement
 splice | Adds a splice Statement
 action:event | Adds code for firing event
+event:getParameter | Get event parameter
+event:setParameter | Set event parameters
+createComponent | Create Dynamic Component
 
 ### Aura Snippets
 Trigger | Description
@@ -90,6 +92,7 @@ input:password-aura | Password input fields obscure your text input
 input:checkbox-aura | Checkbox options can be required or disabled.
 combobox-aura | A combobox enables you to select only one option.
 card:basic-aura | Aura Basic Card
+modal-layer:aura | Adds the Modal Layer HTML along with Controller and Helper function
 icon:aura | Aura Icon
 button:basic-aura | Basic Button Aura
 button:icon-aura | Basic Button Aura
@@ -126,6 +129,7 @@ input:file-lwc | File input fields support upload of single or multiple files an
 input:email-lwc | Email input fields are for entering email addresses
 input:password-lwc | Password input fields obscure your text input
 input:checkbox-lwc | Checkbox options can be required or disabled.
+modal-layer:lwc | Adds the Modal Layer HTML along with javascript code
 combobox-aura | A combobox enables you to select only one option.
 card:basic-lwc | LWC Basic Card
 icon:lwc | LWC Icon. Supports all Utility icons
@@ -575,8 +579,8 @@ transition-show | Shows the element using the opacity property set to 1
 - Enable Advanced Mode
 
 ## Contributors
-- Marcel Hirthe
-- Jatin Sharma
-- Suraj Raval
-- Rohit Bhargava
-- Ashutosh Bhardwaj
+- [Marcel Hirthe](https://www.linkedin.com/in/mhirthe/)
+- [Jatin Sharma](https://www.linkedin.com/in/jatinsharmaa/)
+- [Suraj Raval](https://www.linkedin.com/in/ravalsuraj/)
+- [Rohit Bhargava](https://www.linkedin.com/in/rohitbhargava7/)
+- [Ashutosh Bhardwaj](https://www.linkedin.com/in/ashutosh-bhardwaj-64a11210b/)
