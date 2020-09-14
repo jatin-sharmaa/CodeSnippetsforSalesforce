@@ -131,7 +131,14 @@ export function loadLWCSnippets( context:vscode.ExtensionContext ) {
             detail: "Spinner to be displayed in the component body while data is loading. (Code Snippets for Salesforce)",
             kind: vscode.CompletionItemKind.Property,
         },
-
+        {
+            label: "modal-layer:lwc",
+            insertText: new vscode.SnippetString(
+                "<!-- Code for Javascript -->\n\tshowModal = true;\n\tisloading = true;\n\tcloseModal() {\n\t\tthis.showModal = false;\n\t}\n<!-- Code for CSS -->\n\t.c__fontWeightTitle {\n\t\tfont-weight: 400;\n\t}\n<!-- Code for Modal Layer:LWC -->\n<template if:true={showModal}>\n\t<section role=\"dialog\" tabindex=\"-1\" aria-labelledby=\"Modal\"  aria-modal=\"true\" aria-describedby=\"modal-content\" class=\"slds-modal slds-fade-in-open slds-modal_small c_partner_info_modal\">\n\t\t<div class=\"slds-modal__container c__modalContainer\">\n\t\t\t<header class=\"slds-modal__header\">\n\t\t\t\t<button class=\"slds-button slds-button_icon slds-modal__close slds-button_icon-inverse\" title=\"Close\" onclick={closeModal}>\n\t\t\t\t\t<lightning-icon icon-name=\"utility:close\" alternative-text=\"Close\" title=\"Close\" variant=\"inverse\" size=\"medium\"></lightning-icon>\n\t\t\t\t\t<span class=\"slds-assistive-text\">Close</span>\n\t\t\t\t</button>\n\t\t\t\t<h2 class=\"slds-text-heading_medium slds-hyphenate c__fontWeightTitle\">${1:Modal_Heading}</h2>\n\t\t\t</header>\n\t\t\t<div class=\"c__modalvisible slds-modal__content slds-p-around_medium\" id=\"modal-content\">\n\t\t\t\t<template if:true={isloading}>\n\t\t\t\t\t<div class=\"slds-is-relative\">\n\t\t\t\t\t\t<lightning-spinner alternative-text=\"Loading\" size=\"small\"></lightning-spinner>\n\t\t\t\t\t</div>\n\t\t\t\t</template>\n\t\t\t\t<template if:false={isloading}>\n\t\t\t\t\t${2:Modal_Body}\n\t\t\t\t</template>\n\t\t\t</div>\n\t\t</div>\n\t</section>\n\t<div class=\"slds-backdrop slds-backdrop_open\"></div>\n</template>",
+            ),
+            detail: "Modal Layer for LWC (Code Snippets for Salesforce)",
+            kind: vscode.CompletionItemKind.Property,
+        },
     ];
 
     return vscode.languages.registerCompletionItemProvider('html', {
