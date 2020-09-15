@@ -18,16 +18,32 @@ export function activate( context: vscode.ExtensionContext ) {
     });
 
     initializeTool(context);
-    if( !Configs.hideFeedbackDialog ) {
+    if( !Configs.hideFeedbackDialogOnStartup ) {
         showFeedbackPage();
-        Configs.setConfig("hideFeedbackDialog", "on");
+        Configs.setConfig("hideFeedbackDialogOnStartup", "on");
     }
 }
 
 function initializeTool( context: vscode.ExtensionContext){
     Configs.loadConfigurations();
     Completion.initCompletions( context );
-    vscode.window.showInformationMessage('Code Snippets for Salesforce is loaded');
+
+    if (Configs.hideFeedbackDialogPrompt) {
+
+        vscode.window.showInformationMessage('Code Snippets for Salesforce is loaded');
+
+    } else {
+
+        vscode.window.showInformationMessage('Code Snippets for Salesforce is loaded', "Don't show Again", "Send Feedback").then((option)=>{
+            if ( option === "Send Feedback" ) {
+                showFeedbackPage();
+            }
+            if ( option === "Don't show Again") {
+                Configs.setConfig("hideFeedbackDialogPrompt", "on");
+            }
+        });
+
+    }
 }
 
 function showFeedbackPage() {
@@ -63,7 +79,7 @@ function getFeedbackPage() {
             <p>
                 Thanks a bunch for installing our extension.<br>It is a great pleasure to announce that we have reached our milestone of and it would not have been
                 possible without you. It means a lot to us. <br><br>We would really appreciate you giving us a moment of
-                your time <br> to fill our <a href="https://forms.gle/M2vRcq1JWEveCc8PA">Feedback Form</a>
+                your time <br> to fill our <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=WECDUZvVykaNEOht6e6JLYKqvqdLL1hDkwRU5_8OjIRUOFpFSkYxQjZZVDZZWDNORjZVOFUwREVaSi4u">Feedback Form</a>
                 <br><br> Happy Coding! <br><br> With regards from 
                 <a href="https://www.linkedin.com/company/audibene/">Audibene</a>/
                 <a href="https://www.linkedin.com/company/hear-com-india/">Hear.com</a>
