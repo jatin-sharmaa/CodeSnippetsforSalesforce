@@ -67,7 +67,7 @@ function getFeedbackPage() {
         <link href='https://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700' rel='stylesheet'
             type='text/css'>
         <style>
-            *{box-sizing:border-box}html{background:#007cce;background:linear-gradient(155deg,#007cce 0,#072d82 100%);height:100vh;margin:auto}body{text-align:center;font-family:Montserrat,sans-serif;background-color:transparent;color:#fff;margin:0}h1{padding-top:50px;font-size:6.25rem;margin-bottom:15px}.imgBlock{background:#1e1e1e;box-shadow:0 0 5px rgba(255,255,255,.55);margin-bottom:25px}.container{max-width:900px;margin:auto}p{font-size:1.25rem;line-height:30px}p a{color:#fff;font-weight:700}
+            *{box-sizing:border-box}html{background:#007cce;background:linear-gradient(155deg,#007cce 0,#072d82 100%);margin:auto}body{text-align:center;font-family:Montserrat,sans-serif;background-color:transparent;color:#fff;margin:0}h1{padding-top:50px;font-size:6.25rem;margin-bottom:15px}.imgBlock{background:#1e1e1e;box-shadow:0 0 5px rgba(255,255,255,.55);margin-bottom:25px}.container{max-width:900px;margin:auto;padding-bottom:50px}p{font-size:1.25rem;line-height:30px}p a{color:#fff;font-weight:700}
         </style>
     </head>
     <body>

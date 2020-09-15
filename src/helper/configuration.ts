@@ -48,22 +48,22 @@ export default class Configurations {
         if ( name === "enableApexSnippets") {
             
             this.enableApexSnippets = flag;
-            vscode.workspace.getConfiguration("salesforcecodesnippets").update("enableApexSnippets", flag);
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("enableApexSnippets", flag, 1);
             
         } else if ( name === "enableJavascriptSnippets" ) {
             
             this.enableJavascriptSnippets = flag;
-            vscode.workspace.getConfiguration("salesforcecodesnippets").update("enableJavascriptSnippets", flag);
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("enableJavascriptSnippets", flag, 1);
 
         } else if ( name === "hideFeedbackDialogPrompt" ) {
             
             this.hideFeedbackDialogPrompt = flag;
-            vscode.workspace.getConfiguration("salesforcecodesnippets").update("hideFeedbackDialogPrompt", flag);
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("hideFeedbackDialogPrompt", flag, 1);
 
         } else if ( name === "hideFeedbackDialogOnStartup" ) {
             
             this.hideFeedbackDialogOnStartup = flag;
-            vscode.workspace.getConfiguration("salesforcecodesnippets").update("hideFeedbackDialogOnStartup", flag);
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("hideFeedbackDialogOnStartup", flag, 1);
 
         }
     }
