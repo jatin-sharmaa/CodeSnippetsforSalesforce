@@ -1,3 +1,4 @@
+import { config } from 'process';
 import * as vscode from 'vscode';
 
 export default class Configurations {
@@ -9,7 +10,8 @@ export default class Configurations {
     public enableLWCSnippets: boolean;
     public isAdvancedMode: boolean;
     public enableSLDSClass: boolean;
-    public hideFeedbackDialog: boolean;
+    public hideFeedbackDialogPrompt: boolean;
+    public hideFeedbackDialogOnStartup: boolean;
     private context: vscode.ExtensionContext;
 
     constructor( context: vscode.ExtensionContext ) {
@@ -21,7 +23,8 @@ export default class Configurations {
         this.enableLWCSnippets           = configs.get("enableLWCSnippets", true);
         this.isAdvancedMode              = configs.get("enableAdvancedMode", false);
         this.enableSLDSClass             = configs.get("enableSLDSClass", false);
-        this.hideFeedbackDialog          = configs.get("hideFeedbackDialog", false);
+        this.hideFeedbackDialogPrompt    = configs.get("hideFeedbackDialogPrompt", false);
+        this.hideFeedbackDialogOnStartup = configs.get("hideFeedbackDialogOnStartup", false);
         this.context                     = context;
     }
 
@@ -33,7 +36,8 @@ export default class Configurations {
             enableLWCSnippets : this.enableLWCSnippets,
             isAdvancedMode : this.isAdvancedMode,
             enableSLDSClass : this.enableSLDSClass,
-            hideFeedbackDialog : this.hideFeedbackDialog
+            hideFeedbackDialogPrompt : this.hideFeedbackDialogPrompt,
+            hideFeedbackDialogOnStartup : this.hideFeedbackDialogOnStartup,
         };
     }
 
@@ -51,10 +55,15 @@ export default class Configurations {
             this.enableJavascriptSnippets = flag;
             vscode.workspace.getConfiguration("salesforcecodesnippets").update("enableJavascriptSnippets", flag);
 
-        } else if ( name === "hideFeedbackDialog" ) {
+        } else if ( name === "hideFeedbackDialogPrompt" ) {
             
-            this.hideFeedbackDialog = flag;
-            vscode.workspace.getConfiguration("salesforcecodesnippets").update("hideFeedbackDialog", flag);
+            this.hideFeedbackDialogPrompt = flag;
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("hideFeedbackDialogPrompt", flag);
+
+        } else if ( name === "hideFeedbackDialogOnStartup" ) {
+            
+            this.hideFeedbackDialogOnStartup = flag;
+            vscode.workspace.getConfiguration("salesforcecodesnippets").update("hideFeedbackDialogOnStartup", flag);
 
         }
     }
