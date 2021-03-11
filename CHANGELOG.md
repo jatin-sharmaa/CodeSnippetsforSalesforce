@@ -1,6 +1,12 @@
 # Change Log
 All notable changes to the Code Snippets for Salesforce will be documented here.
 
+## Crimson - v3.2.2
+- Bug Fixes and Improvements
+
+## Crimson - v3.2.1
+- Bug Fixes and Improvements
+
 ## Crimson - v3.2.0
 - Modal Layer for Aura and LWC (`modal-layer:aura` and `modal-layer:lwc`)
 - `event:getParameter`, `event:setParameter`, `createComponent` added in JavaScript
