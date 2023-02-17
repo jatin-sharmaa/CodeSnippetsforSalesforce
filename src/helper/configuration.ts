@@ -43,7 +43,7 @@ export default class Configurations {
 
     public setConfig( name:string, flagString:string ){
         
-        var flag = flagString == "on" ? true : false;
+        var flag = flagString === "on" ? true : false;
 
         if ( name === "enableApexSnippets") {
             

@@ -1,11 +1,11 @@
 {
-    "name": "salesforcecodesnippets",
-    "displayName": "Code Snippets for Salesforce",
+    "name": "salesforcecodesnippetsenhanced",
+    "displayName": "Code Snippets for Salesforce - Enhanced",
     "description": "A set of Snippets for Salesforce Component Development",
     "version": "3.2.2",
     "icon": "icon.png",
-    "publisher": "Audibene",
-    "license": "SEE LICENSE IN LICENSE",
+    "publisher": "JatinSharma",
+    "license": "https://github.com/jatinsharmaa/CodeSnippetsforSalesforce/blob/master/LICENSE.md",
     "homepage": "https://github.com/jatinsharmaa/CodeSnippetsforSalesforce/blob/master/README.md",
     "engines": {
         "vscode": "^1.47.0"
