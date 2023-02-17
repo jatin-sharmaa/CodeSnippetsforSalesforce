@@ -8,7 +8,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<strong>${1:Text}</strong>"
             ),
-            detail: "Make a text bold (Code Snippets for Salesforce)",
+            detail: "Make a text bold",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -16,7 +16,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid\">\n\t<div class=\"slds-col\"> ${1:<!-- Code -->} </div>\n</div>",
             ),
-            detail: "Default Grid with 1 column (Code Snippets for Salesforce)",
+            detail: "Default Grid with 1 column",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -24,7 +24,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid\">\n\t<div class=\"slds-col slds-size_6-of-12\">${1:<!-- Code -->}</div>\n\t<div class=\"slds-col slds-size_6-of-12\"><!-- Code --></div>\n</div>",
             ),
-            detail: "Default Grid with 2 columns (Code Snippets for Salesforce)",
+            detail: "Default Grid with 2 columns",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -32,7 +32,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-grid\">\n\t<div class=\"slds-col slds-size_4-of-12\">${1:<!-- Code -->}</div>\n\t<div class=\"slds-col slds-size_4-of-12\"><!-- Code --></div>\n\t<div class=\"slds-col slds-size_4-of-12\"><!-- Code --></div>\n</div>",
             ),
-            detail: "Default Grid with 3 columns (Code Snippets for Salesforce)",
+            detail: "Default Grid with 3 columns",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -40,7 +40,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-col slds-size_${1|1,2,3,4,5,6,7,8,9,10,11,12|}-of-${1|1,2,3,4,5,6,7,8,9,10,11,12|}\">\n\t$2\n</div>",
             ),
-            detail: "Grid Column (Code Snippets for Salesforce)",
+            detail: "Grid Column",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -48,7 +48,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-align_absolute-center\">$1</div>",
             ),
-            detail: "Class will absolutely center children content (Code Snippets for Salesforce)",
+            detail: "Class will absolutely center children content",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -56,7 +56,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-${1|heading_large,heading_medium,heading_small|}\">$2</div>",
             ),
-            detail: "Heading (Code Snippets for Salesforce)",
+            detail: "Heading",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -64,7 +64,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-${1|align_left,align_center,align_right,color_default,color_success,color_weak,color_error,color_inverse,color_inverse-weak|}\">$2</div>",
             ),
-            detail: "Text (Code Snippets for Salesforce)",
+            detail: "Text",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -72,7 +72,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-align_left\">$1</div>",
             ),
-            detail: "Text Left (Code Snippets for Salesforce)",
+            detail: "Text Left",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -80,7 +80,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-align_center\">$1</div>",
             ),
-            detail: "Text Center (Code Snippets for Salesforce)",
+            detail: "Text Center",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -88,7 +88,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-text-align_right\">$1</div>",
             ),
-            detail: "Text Right (Code Snippets for Salesforce)",
+            detail: "Text Right",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -96,7 +96,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-card ${1|slds-theme_default,slds-theme_shade,slds-theme_inverse,slds-theme_alt-inverse,slds-theme_success,slds-theme_info,slds-theme_warning,slds-theme_error,slds-theme_offline,slds-theme_alert-texture slds-theme_shade|}\">\n\t<div class=\"slds-card__body slds-card__body_inner\">\n\t\t<div class=\"slds-grid slds-wrap slds-p-bottom_xx-small\">\n\t\t\t<div class=\"slds-col slds-size_12-of-12 slds-text-heading_small\">\n\t\t\t\t<strong>${2:Label 1}</strong>\n\t\t\t</div>\n\t\t\t<div class=\"slds-col slds-size_12-of-12\">\n\t\t\t\t<lightning-formatted-text class=\"slds-form-element__static\" data-aura-rendered-by=\"1554:0\">\n\t\t\t\t\t${3:Text 1}\n\t\t\t\t</lightning-formatted-text>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"slds-grid slds-wrap\">\n\t\t\t<div class=\"slds-col slds-size_12-of-12 slds-text-heading_small\">\n\t\t\t\t<strong>${4:Label 2}:</strong>\n\t\t\t</div>\n\t\t\t<div class=\"slds-col slds-size_12-of-12\">\n\t\t\t\t<lightning-formatted-rich-text class=\"slds-form-element__static slds-rich-text-editor__output\">\n\t\t\t\t\t${5:Text 2}\n\t\t\t\t</lightning-formatted-rich-text>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
             ),
-            detail: "Use a color theme to apply color to the background and text. Some color themes apply a background image or texture. (Code Snippets for Salesforce)",
+            detail: "Use a color theme to apply color to the background and text. Some color themes apply a background image or texture.",
             kind: vscode.CompletionItemKind.Property,
         },
         {
@@ -104,7 +104,7 @@ export function loadHTMLSnippets( context:vscode.ExtensionContext ) {
             insertText: new vscode.SnippetString(
                 "<div class=\"slds-card ${1|slds-theme_default,slds-theme_shade,slds-theme_inverse,slds-theme_alt-inverse,slds-theme_success,slds-theme_info,slds-theme_warning,slds-theme_error,slds-theme_offline,slds-theme_alert-texture slds-theme_shade|}\">\n\t<div class=\"slds-card__body slds-card__body_inner\">\n\t\t<div class=\"slds-grid slds-wrap slds-p-bottom_xx-small\">\n\t\t\t<div class=\"slds-col slds-size_5-of-12 slds-text-heading_small\">\n\t\t\t\t<strong>${2:Label 1}</strong>\n\t\t\t</div>\n\t\t\t<div class=\"slds-col slds-size_7-of-12\">\n\t\t\t\t<lightning-formatted-text class=\"slds-form-element__static\" data-aura-rendered-by=\"1554:0\">\n\t\t\t\t\t${3:Text 1}\n\t\t\t\t</lightning-formatted-text>\n\t\t\t</div>\n\t\t</div>\n\t\t<div class=\"slds-grid slds-wrap\">\n\t\t\t<div class=\"slds-col slds-size_5-of-12 slds-text-heading_small\">\n\t\t\t\t<strong>${4:Label 2}:</strong>\n\t\t\t</div>\n\t\t\t<div class=\"slds-col slds-size_7-of-12\">\n\t\t\t\t<lightning-formatted-rich-text class=\"slds-form-element__static slds-rich-text-editor__output\">\n\t\t\t\t\t${:Text 2}\n\t\t\t\t</lightning-formatted-rich-text>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>",
             ),
-            detail: "Use a color theme to apply color to the background and text. Some color themes apply a background image or texture. (Code Snippets for Salesforce)",
+            detail: "Use a color theme to apply color to the background and text. Some color themes apply a background image or texture.",
             kind: vscode.CompletionItemKind.Property,
         },
         {

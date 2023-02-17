@@ -2,7 +2,7 @@
     "name": "salesforcecodesnippetsenhanced",
     "displayName": "Code Snippets for Salesforce - Enhanced",
     "description": "A set of Snippets for Salesforce Component Development",
-    "version": "3.2.2",
+    "version": "3.2.3",
     "icon": "icon.png",
     "publisher": "JatinSharma",
     "license": "https://github.com/jatinsharmaa/CodeSnippetsforSalesforce/blob/master/LICENSE.md",
@@ -43,45 +43,35 @@
             "type": "object",
             "title": "Code Snippets for Salesforce",
             "properties": {
-                "salesforcecodesnippets.enableSLDSClass": {
+                "salesforcecodesnippetsenhanced.enableSLDSClass": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable SLDS Classes"
                 },
-                "salesforcecodesnippets.enableAuraSnippets": {
+                "salesforcecodesnippetsenhanced.enableAuraSnippets": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable Aura Snippets"
                 },
-                "salesforcecodesnippets.enableLWCSnippets": {
+                "salesforcecodesnippetsenhanced.enableLWCSnippets": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable LWC Snippets"
                 },
-                "salesforcecodesnippets.enableApexSnippets": {
+                "salesforcecodesnippetsenhanced.enableApexSnippets": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable Apex snippets"
                 },
-                "salesforcecodesnippets.enableJavascriptSnippets": {
+                "salesforcecodesnippetsenhanced.enableJavascriptSnippets": {
                     "type": "boolean",
                     "default": true,
                     "description": "Enable JavaScript snippets"
                 },
-                "salesforcecodesnippets.enableAdvancedMode": {
+                "salesforcecodesnippetsenhanced.enableAdvancedMode": {
                     "type": "boolean",
                     "default": false,
                     "description": "Enable Advanced Mode to see all SLDS classes and Snippets"
-                },
-                "salesforcecodesnippets.hideFeedbackDialogOnStartup": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Controls the visiblity of the Feedback Dialog"
-                },
-                "salesforcecodesnippets.hideFeedbackDialogPrompt": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Controls the visiblity of the Feedback Dialog"
                 }
             }
         }
